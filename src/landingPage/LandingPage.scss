@@ -1,0 +1,19 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    #logo{
+        width: 25rem;
+    }
+
+    .coming-soon{
+        font-weight: 300;
+        color: #e8dbc5;
+        letter-spacing: 2px;
+        translate: .75em;
+    }
+}

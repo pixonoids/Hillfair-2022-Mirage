@@ -3,6 +3,7 @@ import './App.scss';
 import { Route, Routes } from 'react-router-dom';
 import { Menu } from './components/organisms/';
 import { useSelector } from 'react-redux';
+import LandingPage from './landingPage/LandingPage';
 
 export default function App() {
   //STATES
@@ -24,7 +25,10 @@ export default function App() {
   return (
     <div>
        
-      {navVisible && <Menu />}
+       < LandingPage />
+
+      {/* {navVisible && <Menu />} */}
+
       {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
