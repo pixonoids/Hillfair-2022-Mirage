@@ -43,25 +43,27 @@ const CountdownTimer = () => {
     })
 
     return (
-        <div className="timer-container">
-            <div className="timer-inner-container">
-                <div className="time days">{timerDays}</div>
-                <p className='time-tag'>Days</p>
-            </div>
-            <span>:</span>
-            <div className="timer-inner-container">
-                <div className="time hours">{timerHours}</div>
-                <p className='time-tag'>Hours</p>
-            </div>
-            <span>:</span>
-            <div className="timer-inner-container">
-                <div className="time minutes">{timerMinutes}</div>
-                <p className='time-tag'>Minutes</p>
-            </div>
-            <span>:</span>
-            <div className="timer-inner-container">
-                <div className="time seconds">{timerSeconds}</div>
-                <p className='time-tag'>Seconds</p>
+        <div>
+            <div className="timer-container">
+                <div className="timer-inner-container">
+                    <div className="time days">{timerDays}</div>
+                    <p className='time-tag days-tag'>Days</p>
+                </div>
+                <span>:</span>
+                <div className="timer-inner-container">
+                    <div className="time hours">{timerHours}</div>
+                    <p className='time-tag hours-tag'>Hours</p>
+                </div>
+                <span>:</span>
+                <div className="timer-inner-container">
+                    <div className="time minutes">{timerMinutes}</div>
+                    <p className='time-tag minutes-tag'>Minutes</p>
+                </div>
+                <span>:</span>
+                <div className="timer-inner-container">
+                     <div className="time seconds">{timerSeconds}</div>
+                    <p className='time-tag seconds-tag'>Seconds</p>
+                </div>
             </div>
         </div>
     );
