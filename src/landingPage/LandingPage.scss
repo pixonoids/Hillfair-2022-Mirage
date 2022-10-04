@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .container{
     width: 100vw;
     height: 100vh;
@@ -5,15 +9,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;   
+
     #logo{
         width: 25rem;
+        translate: 0 -15%;
     }
 
     .coming-soon{
         font-weight: 300;
         color: #e8dbc5;
         letter-spacing: 2px;
-        translate: .75em;
+        translate: .75em -100%;
     }
 }

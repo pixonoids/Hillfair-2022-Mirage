@@ -2,10 +2,16 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    // border: 2px solid #CDC2AF;
+    background-color: #CDC2AF;
+    color: black;
+    border-radius: 3rem ;
+    padding-bottom: 1rem;
+    translate: 3%;
+
     span{
-        padding-top: 1rem;
-        display: none;
+        padding-top: 1.5rem;
+        font-weight: bold;
+        // display: none;
     }
 }
 .timer-inner-container{
@@ -16,13 +22,14 @@
     margin: 0 0rem;
     padding: 1rem;
     padding-bottom: .3rem;
-    border: 2px solid #CDC2AF;
     width: 8rem;
-    .time{
+    // border: 2px solid #CDC2AF;
 
+    .time{
+        font-size: 30px;
     }
     .time-tag{
-        font-weight: 300;
+        font-weight: 400;
         translate: 0 -10px;
         letter-spacing: 3px;
     }
