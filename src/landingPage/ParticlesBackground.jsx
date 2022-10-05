@@ -143,17 +143,17 @@ export default function ParticlesBackground (){
               "area": {
                 "gradient": {
                   "start": {
-                    "value": "3b5e98"
+                    "value": "#ffffff"
                   },
                   "stop": {
-                    "value": "#17163e"
+                    "value": "#000000"
                   }
                 },
                 "radius": 1000
               },
               "shadow": {
                 "color": {
-                  "value": "#17163e"
+                  "value": "#000000"
                 },
                 "length": 2000
               }
@@ -162,9 +162,9 @@ export default function ParticlesBackground (){
         },
         "manualParticles": [],
         "motion": {
-          "disable": false,
+          "disable": true,
           "reduce": {
-            "factor": 4,
+            "factor": 3,
             "value": true
           }
         },
@@ -216,7 +216,7 @@ export default function ParticlesBackground (){
                 "count": 0,
                 "enable": true,
                 "offset": 0,
-                "speed": 20,
+                "speed": 25,
                 "decay": 0,
                 "sync": true
               },
@@ -230,15 +230,48 @@ export default function ParticlesBackground (){
               },
               "l": {
                 "count": 0,
-                "enable": false,
+                "enable": true,
                 "offset": 0,
-                "speed": 1,
+                "speed": 2,
                 "decay": 0,
                 "sync": true
               }
             }
           },
-          "groups": {},
+          "groups": {
+            "z5000": {
+              "number": {
+                "value": 70
+              },
+              "zIndex": {
+                "value": 50
+              }
+            },
+            "z7500": {
+              "number": {
+                "value": 30
+              },
+              "zIndex": {
+                "value": 75
+              }
+            },
+            "z2500": {
+              "number": {
+                "value": 50
+              },
+              "zIndex": {
+                "value": 25
+              }
+            },
+            "z1000": {
+              "number": {
+                "value": 40
+              },
+              "zIndex": {
+                "value": 10
+              }
+            }
+          },
           "move": {
             "angle": {
               "offset": 0,
@@ -273,7 +306,7 @@ export default function ParticlesBackground (){
               "clamp": true,
               "delay": {
                 "random": {
-                  "enable": false,
+                  "enable": true,
                   "minimumValue": 0
                 },
                 "value": 0
@@ -327,7 +360,7 @@ export default function ParticlesBackground (){
             "animation": {
               "count": 0,
               "enable": true,
-              "speed": 0.25,
+              "speed": 5,
               "decay": 0,
               "sync": false,
               "destroy": "none",
@@ -358,8 +391,8 @@ export default function ParticlesBackground (){
             "value": 1,
             "animation": {
               "count": 0,
-              "enable": true,
-              "speed": 5,
+              "enable": false,
+              "speed": 4,
               "decay": 0,
               "sync": false,
               "destroy": "none",
@@ -406,7 +439,7 @@ export default function ParticlesBackground (){
             "value": 0,
             "animation": {
               "enable": true,
-              "speed": 5,
+              "speed": 1,
               "decay": 0,
               "sync": false
             },
@@ -459,8 +492,8 @@ export default function ParticlesBackground (){
             },
             "value": 0,
             "animation": {
-              "enable": false,
-              "speed": 0,
+              "enable": true,
+              "speed": 20,
               "decay": 0,
               "sync": false
             },
@@ -490,8 +523,8 @@ export default function ParticlesBackground (){
           "orbit": {
             "animation": {
               "count": 0,
-              "enable": false,
-              "speed": 1,
+              "enable": true,
+              "speed": 20,
               "decay": 0,
               "sync": false
             },
@@ -509,13 +542,13 @@ export default function ParticlesBackground (){
           "links": {
             "blink": false,
             "color": {
-              "value": "#fff"
+              "value": "#ffffff"
             },
             "consent": false,
             "distance": 100,
             "enable": false,
             "frequency": 1,
-            "opacity": 1,
+            "opacity": 0.4,
             "shadow": {
               "blur": 5,
               "color": {
