@@ -57,10 +57,10 @@ export default function ParticlesBackground (){
               "type": "circle"
             },
             "onHover": {
-              "enable": true,
+              "enable": false,
               "mode": [],
               "parallax": {
-                "enable": true,
+                "enable": false,
                 "force": 2,
                 "smooth": 10
               }
@@ -137,7 +137,7 @@ export default function ParticlesBackground (){
             "trail": {
               "delay": 1,
               "pauseOnStop": false,
-              "quantity": 1
+              "quantity": 0
             },
             "light": {
               "area": {
@@ -164,7 +164,7 @@ export default function ParticlesBackground (){
         "motion": {
           "disable": true,
           "reduce": {
-            "factor": 3,
+            "factor": 2,
             "value": true
           }
         },
@@ -202,7 +202,7 @@ export default function ParticlesBackground (){
                 "value": 1
               }
             },
-            "enable": false,
+            "enable": true,
             "mode": "bounce",
             "overlap": {
               "enable": true,
@@ -216,7 +216,7 @@ export default function ParticlesBackground (){
                 "count": 0,
                 "enable": true,
                 "offset": 0,
-                "speed": 25,
+                "speed": 100,
                 "decay": 0,
                 "sync": true
               },
@@ -230,9 +230,9 @@ export default function ParticlesBackground (){
               },
               "l": {
                 "count": 0,
-                "enable": true,
+                "enable": false,
                 "offset": 0,
-                "speed": 2,
+                "speed": 1,
                 "decay": 0,
                 "sync": true
               }
@@ -330,13 +330,13 @@ export default function ParticlesBackground (){
             },
             "straight": false,
             "trail": {
-              "enable": false,
-              "length": 10,
+              "enable": true,
+              "length": 2,
               "fillColor": {
-                "value": "#000000"
+                "value": "#141414"
               }
             },
-            "vibrate": false,
+            "vibrate": true,
             "warp": false
           },
           "number": {
@@ -360,7 +360,7 @@ export default function ParticlesBackground (){
             "animation": {
               "count": 0,
               "enable": true,
-              "speed": 5,
+              "speed": 10,
               "decay": 0,
               "sync": false,
               "destroy": "none",
@@ -391,8 +391,8 @@ export default function ParticlesBackground (){
             "value": 1,
             "animation": {
               "count": 0,
-              "enable": false,
-              "speed": 4,
+              "enable": true,
+              "speed": 20,
               "decay": 0,
               "sync": false,
               "destroy": "none",
@@ -410,14 +410,14 @@ export default function ParticlesBackground (){
             "value": 0,
             "opacityRate": 1,
             "sizeRate": 1,
-            "velocityRate": 1
+            "velocityRate": 20
           },
           "life": {
             "count": 0,
             "delay": {
               "random": {
-                "enable": false,
-                "minimumValue": 0
+                "enable": true,
+                "minimumValue": 2
               },
               "value": 0,
               "sync": false
@@ -438,8 +438,8 @@ export default function ParticlesBackground (){
             },
             "value": 0,
             "animation": {
-              "enable": true,
-              "speed": 1,
+              "enable": false,
+              "speed": 0,
               "decay": 0,
               "sync": false
             },
@@ -460,7 +460,7 @@ export default function ParticlesBackground (){
               },
               "rate": {
                 "random": {
-                  "enable": false,
+                  "enable": true,
                   "minimumValue": 0
                 },
                 "value": {
@@ -479,8 +479,8 @@ export default function ParticlesBackground (){
             },
             "enable": false,
             "enlighten": {
-              "enable": false,
-              "value": 0
+              "enable": true,
+              "value": 20
             },
             "mode": "vertical",
             "speed": 25
@@ -492,8 +492,8 @@ export default function ParticlesBackground (){
             },
             "value": 0,
             "animation": {
-              "enable": true,
-              "speed": 20,
+              "enable": false,
+              "speed": 0,
               "decay": 0,
               "sync": false
             },
@@ -523,8 +523,8 @@ export default function ParticlesBackground (){
           "orbit": {
             "animation": {
               "count": 0,
-              "enable": true,
-              "speed": 20,
+              "enable": false,
+              "speed": 1,
               "decay": 0,
               "sync": false
             },

@@ -7,6 +7,7 @@ specifiers:
   '@vitejs/plugin-react': ^2.1.0
   react: ^18.2.0
   react-dom: ^18.2.0
+  react-icons: ^4.4.0
   react-redux: ^8.0.4
   react-router-dom: ^6.4.1
   react-tsparticles: ^2.3.3
@@ -18,6 +19,7 @@ dependencies:
   '@reduxjs/toolkit': 1.8.5_kuo2ie247izvzll3jejufdtq3q
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-icons: 4.4.0_react@18.2.0
   react-redux: 8.0.4_5uumaiclxbdbzaqafclbf6maf4
   react-router-dom: 6.4.1_biqbaboplfbrettd7655fr4n2y
   react-tsparticles: 2.3.3_react@18.2.0
@@ -914,6 +916,14 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
+    dev: false
+
+  /react-icons/4.4.0_react@18.2.0:
+    resolution: {integrity: sha512-fSbvHeVYo/B5/L4VhB7sBA1i2tS8MkT0Hb9t2H1AVPkwGfVHLJCqyr2Py9dKMxsyM63Eng1GkdZfbWj+Fmv8Rg==}
+    peerDependencies:
+      react: '*'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /react-is/16.13.1:
