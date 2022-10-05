@@ -57,10 +57,10 @@ export default function ParticlesBackground (){
               "type": "circle"
             },
             "onHover": {
-              "enable": false,
+              "enable": true,
               "mode": [],
               "parallax": {
-                "enable": false,
+                "enable": true,
                 "force": 2,
                 "smooth": 10
               }
