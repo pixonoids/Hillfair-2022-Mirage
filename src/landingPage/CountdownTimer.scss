@@ -6,7 +6,7 @@
     color: black;
     border-radius: 1.25rem ;
     padding-bottom: .75rem;
-    translate: 3% -20%;
+    translate: 0 -20%;
 
     span{
         padding-top: 1.5rem;
@@ -49,4 +49,9 @@
         scale: .65;
     }
 }
-
+@media (max-width: 282px){
+    .timer-container{
+        scale: 0.45;
+        translate: 0 -50%;
+    }
+}

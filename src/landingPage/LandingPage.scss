@@ -10,17 +10,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;   
+    overflow: hidden;
 
     #logo{
         width: 25rem;
-        translate: 0 -15%;
+        translate: 0 -10%;
     }
 
     .coming-soon{
         font-weight: 300;
         color: #e8dbc5;
         letter-spacing: 5px;
-        translate: 0 -120%;
-        
+        translate: 0 -100%;
+    }
+}
+
+@media (max-width: 282px){
+    #logo{
+        scale: 0.7;
+    }
+    .coming-soon{
+        scale: 0.7;
     }
 }
