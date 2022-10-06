@@ -3,6 +3,7 @@ import './App.scss';
 import { Route, Routes } from 'react-router-dom';
 import { Menu } from './components/organisms/';
 import { useSelector } from 'react-redux';
+import {LandingPage} from './pages';
 
 export default function App() {
   //STATES
@@ -24,10 +25,13 @@ export default function App() {
   return (
     <div>
        
-      {navVisible && <Menu />}
-      {/* <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
+       
+
+      {/* {navVisible && <Menu />} */}
+
+      <Routes>
+         <Route path="/" element={< LandingPage />} /> 
+        {/* <Route path="about" element={<About />} />
         <Route path="gallery" element={<Gallery />} />
         <Route path="sponsors" element={<Sponsors />} />
         <Route path="team" element={<Team />} />
@@ -35,8 +39,8 @@ export default function App() {
         <Route path="Footer" element={<Footer />} />
         <Route path="admin" element={<Admin />} />
         <Route path="events" element={<Event/>} />
-        <Route path="" element={<ErrorPage />} />
-      </Routes> */}
+        <Route path="" element={<ErrorPage />} /> */}
+      </Routes> 
       
         
      </div> 
