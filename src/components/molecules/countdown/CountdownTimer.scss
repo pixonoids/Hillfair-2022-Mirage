@@ -14,6 +14,12 @@
         font-weight: bolder;
         // display: none;
     }
+    @media (min-width:400px) and (max-width: 500px) {
+        transform: scale(0.7);
+    }
+    @media (max-width:400px) {
+        transform: scale(0.5);
+    }
 }
 .timer-inner-container{
     display: flex;
@@ -38,21 +44,4 @@
         translate: 5%;
     }
     
-}
-
-@media (max-width: 594px) {
-    .timer-container{
-        scale: .85;
-    }
-}
-@media (max-width: 473px) {
-    .timer-container{
-        scale: .65;
-    }
-}
-@media (max-width: 282px){
-    .timer-container{
-        scale: 0.40;
-        translate: 0 -50%;
-    }
 }
