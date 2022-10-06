@@ -1,7 +1,7 @@
 import './LandingPage.scss';
-import CountdownTimer from '../components/molecules/countdown/CountdownTimer';
+import CountdownTimer from '../../components/molecules/countdown/CountdownTimer';
 import ParticlesBackground from './ParticlesBackground';
-import AudioButton from '../components/molecules/AudioButton/AudioButton';
+import AudioButton from '../../components/molecules/AudioButton/AudioButton';
 
 const LandingPage = () => {
 

@@ -5,7 +5,7 @@
     // background-color: #CDC2AF;
     background: linear-gradient(#CDC2AF,#9a8052c5);
     color: black;
-    border-radius: 1.25rem ;
+    border-radius: 2.5rem ;
     padding-bottom: .75rem;
     translate: 0 -20%;
 
@@ -52,7 +52,7 @@
 }
 @media (max-width: 282px){
     .timer-container{
-        scale: 0.45;
+        scale: 0.40;
         translate: 0 -50%;
     }
 }
