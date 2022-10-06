@@ -1,1 +1,1 @@
-web: pnpm run dev
+web: pnpm build && pnpm serve
