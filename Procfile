@@ -1,1 +1,0 @@
-web: pnpm build && pnpm serve
