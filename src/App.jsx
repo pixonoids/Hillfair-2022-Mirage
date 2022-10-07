@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import { Menu } from './components/organisms/';
 import { useSelector } from 'react-redux';
 // import {LandingPage} from './pages';
-import {Event} from './pages/eventPage'
+// import {Event} from './pages/eventPage'
 
 
 export default function App() {
