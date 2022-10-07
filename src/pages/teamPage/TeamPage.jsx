@@ -28,7 +28,7 @@ const Team = () => {
     
     ])
     return (
-        <div className='container'> 
+        <div className='team-container'> 
             {cards.map((card) => (
                 <TeamCards card = {card} />
             ))}

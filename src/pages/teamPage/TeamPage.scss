@@ -2,11 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: $direction
+    flex-direction: $direction;
 }
 
-.container {
+.team-container {
     @include flexCenter(row);
     gap: 5rem;
     flex-wrap: wrap;
+    margin: 10rem 0 2rem 0;
 }
