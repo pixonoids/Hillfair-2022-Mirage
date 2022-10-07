@@ -23,7 +23,6 @@ $dropShadow : #fff;
     }
   }
 
-
   img {
     border-radius: 1rem;
     width: 20rem;
@@ -86,10 +85,10 @@ $dropShadow : #fff;
 
 @keyframes shine {
   from {
-    -webkit-mask-position: 150%;
+    mask-position: 150%;
   }
 
   to {
-    -webkit-mask-position: -50%;
+    mask-position: -50%;
   }
 }
