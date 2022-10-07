@@ -1,10 +1,28 @@
+$textColor: blue;
+$dropShadow : #fff;
+
+
 .card {
   width: 20rem;
   height: 35rem;
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
-  filter: drop-shadow(0 0 0.35rem #fff);
+  filter: drop-shadow(0 0 0.35rem $dropShadow);
+
+  &:hover {
+    filter: drop-shadow(0 0 0.75rem $dropShadow);
+    img {
+      scale: 1.03;
+    }
+    .card-mask {
+      height: 16rem;
+      svg {
+        top: -2rem;
+      }
+    }
+  }
+
 
   img {
     border-radius: 1rem;
@@ -20,7 +38,7 @@
     bottom: 0;
     height: 18rem;
     width: 100%;
-    background-color: #fff;
+    background-color: $dropShadow;
     transition: all 0.4s;
 
     svg {
@@ -31,14 +49,24 @@
     .card-text {
       text-align: center;
       margin-top: 10%;
-      color: blue;
-    h1 {
-        mask-image: linear-gradient(-45deg, rgba(0,0,0,.9) 20%, #000 50%, rgba(0, 0, 0, 0.9) 70%);
+      color: $textColor;
+      h1 {
+        mask-image: linear-gradient(
+          -45deg,
+          rgba(0, 0, 0, 0.9) 20%,
+          #000 50%,
+          rgba(0, 0, 0, 0.9) 70%
+        );
         mask-size: 300%;
-        -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+        -webkit-mask-image: linear-gradient(
+          -75deg,
+          rgba(0, 0, 0, 0.6) 30%,
+          #000 50%,
+          rgba(0, 0, 0, 0.6) 70%
+        );
         -webkit-mask-size: 200%;
         animation: shine 3s infinite ease;
-    }
+      }
 
       .person-details {
         margin: 1.5rem 1rem 0 1rem;
@@ -46,35 +74,22 @@
     }
   }
 }
-.card:hover {
-    filter: drop-shadow(0 0 0.75rem #fff);
-  img {
-    scale: 1.03;
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
   }
-  .card-mask {
-    height: 16rem;
-    svg {
-      top: -2rem;
-    }
+
+  to {
+    -webkit-mask-position: -50%;
   }
 }
 
-@-webkit-keyframes shine {
-    from {
-      -webkit-mask-position: 150%;
-    }
-    
-    to {
-      -webkit-mask-position: -50%;
-    }
+@keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
   }
 
-@keyframes shine {
-    from {
-      -webkit-mask-position: 150%;
-    }
-    
-    to {
-      -webkit-mask-position: -50%;
-    }
+  to {
+    -webkit-mask-position: -50%;
   }
+}

@@ -1,6 +1,12 @@
-.container {
+@mixin flexCenter($direction) {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction
+}
+
+.container {
+    @include flexCenter(row);
     gap: 5rem;
     flex-wrap: wrap;
 }
