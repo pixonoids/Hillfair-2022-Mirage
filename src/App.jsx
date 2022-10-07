@@ -3,7 +3,7 @@ import './App.scss';
 import { Route, Routes } from 'react-router-dom';
 import { Menu } from './components/organisms/';
 import { useSelector } from 'react-redux';
-import {LandingPage} from './pages';
+import {LandingPage,Home} from './pages';
 
 export default function App() {
   //STATES
@@ -31,6 +31,7 @@ export default function App() {
 
       <Routes>
          <Route path="/" element={< LandingPage />} /> 
+         <Route path="/home" element={< Home />} /> 
         {/* <Route path="about" element={<About />} />
         <Route path="gallery" element={<Gallery />} />
         <Route path="sponsors" element={<Sponsors />} />
