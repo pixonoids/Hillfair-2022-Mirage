@@ -1,15 +1,13 @@
 import './EventPage.scss';
+import Data from './data';
 
 
 const Event = () => {
     return (
-        <>
-            <h1>Hello World</h1>
-        </>
+        <div className='eventContainer'>
+            <h1>Hello</h1>
+        </div>
     );
 }
-
-
-
 
 export default Event;
