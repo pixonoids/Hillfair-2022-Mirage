@@ -1,0 +1,45 @@
+.aboutmini{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color:#CBC3AC;
+    .aboutmini-container{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+        width: 80%;
+        .abouttext{
+            width: 80%;
+            padding:4rem ;
+            border-radius: 20px;
+            background-color: #3A342E;
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            p{
+                margin-bottom: 1rem;
+            }
+            @media (max-width:600px) {
+                width: 100%;
+                padding: 4rem 1rem;
+            }
+        }
+        .ele{
+            width: 200px;
+            transform:translateY(-2%);
+            @media (max-width:450px) {
+                width: 150px;
+            }
+        }
+        .elei{
+            transform:translateY(2%) rotate(180deg);
+        }
+        @media (max-width:600px) {
+            width: 100%;
+        }
+    }
+}

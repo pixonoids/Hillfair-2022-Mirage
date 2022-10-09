@@ -1,0 +1,52 @@
+.socialicons{
+
+.glowingIcons {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    transform: scale(0.6);
+  }
+  
+  ul.glowingIcons li {
+    list-style: none;
+    margin: 0 15px;
+  }
+  
+  ul.glowingIcons li a {
+    position: relative; 
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 63px;
+    background: #333;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #666;
+    transition: .3s;
+  }
+  
+  ul.glowingIcons li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #CBC3AC;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+  }
+  
+  ul.glowingIcons li a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #CBC3AC;
+  }
+  
+  ul.glowingIcons li a:hover i{
+    color: #fff;
+    text-shadow: 0 0 5px #CBC3AC;
+  }
+}
