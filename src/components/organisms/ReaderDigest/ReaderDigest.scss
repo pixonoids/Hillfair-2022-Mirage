@@ -1,0 +1,15 @@
+.readerDigest{
+    border: 2px solid purple;
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    .heading{
+        padding-bottom: 1rem ;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    .quote{
+        color: pink;
+    }
+}
