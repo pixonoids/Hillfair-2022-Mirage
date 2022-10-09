@@ -1,5 +1,6 @@
-$textColor: blue;
-$dropShadow : #fff;
+$textColor: white;
+$boxShadow : black;
+$maskColor: #859d24;
 
 
 .card {
@@ -8,42 +9,47 @@ $dropShadow : #fff;
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
-  filter: drop-shadow(0 0 0.35rem $dropShadow);
-
+  background-color: transparent;
+  box-shadow: 0 0 0.3rem 0.1rem $boxShadow;
+  
   &:hover {
-    filter: drop-shadow(0 0 0.75rem $dropShadow);
+    box-shadow: 0 0 0.4rem 0.2rem $boxShadow;
     img {
       scale: 1.03;
     }
     .card-mask {
-      height: 16rem;
+      height: 14.5rem;
       svg {
-        top: -2rem;
+        top: -3rem;
       }
     }
   }
 
   img {
-    border-radius: 1rem;
+    border-radius: 1rem 1rem 0 0  ;
     width: 20rem;
-    height: 20rem;
+    height: 100%;
+    max-height: 20rem;
     object-fit: cover;
     transition: all 0.2s;
   }
   .card-mask {
-    border-radius: 1rem;
+    border-radius: 0 0 1rem 1rem;
     // z-index: -1;
     position: absolute;
     bottom: 0;
-    height: 18rem;
+    height: 16.5rem;
     width: 100%;
-    background-color: $dropShadow;
+    background: $maskColor;
     transition: all 0.4s;
 
     svg {
       position: absolute;
       top: -2.5rem;
       transition: all 0.3s;
+      path {
+        fill: $maskColor;
+      }
     }
     .card-text {
       text-align: center;
