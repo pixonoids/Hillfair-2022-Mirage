@@ -18,7 +18,8 @@
         7% 15%
       );
       transition: 1s;
-      background-color: #053874;
+      background-color: #0034565b;
+      backdrop-filter: blur(8px);
       // background-color: transparent;
       backdrop-filter: blur(6px);
       @media screen and (max-width: 430px) {

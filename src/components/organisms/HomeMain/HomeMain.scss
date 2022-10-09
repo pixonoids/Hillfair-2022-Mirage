@@ -1,0 +1,39 @@
+.homeMain{
+    background-image: url('/public/images/hillffair\ home\ main.png');
+    background-color: #156ed3;
+    height: 110vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    .text{
+        span{
+            font-size: 5rem;
+            font-family: Egyptian-Theme;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        p{
+            font-size: 1.5rem;
+            font-family: Fino-Sans-Regular;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+        .theme{
+            padding-top: 0.7rem;
+        }
+        .dates{
+            padding-bottom: 1rem;
+        }
+    }
+    .mainImg{
+        width: 100%;
+        height: auto;
+    }
+}

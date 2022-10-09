@@ -1,13 +1,17 @@
 .Newsletter {
-  padding: 2rem;
+  padding: 2rem 0 2rem 2rem;
+  width: 40%;
   .Heading {
     text-transform: uppercase;
     letter-spacing: 2px;
     padding-bottom: 1rem;
+    font-size: 2.5rem;
+    font-family: Fino-Sans-Regular;
   }
   .Subheading {
-    color: yellow;
+    color: rgba(255, 255, 255, 0.62);
     padding-bottom: 1rem;
+    width: 80%;
   }
   .Subscribe {
     padding: 0.5rem;

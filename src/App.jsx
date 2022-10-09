@@ -27,7 +27,7 @@ export default function App() {
        
        
 
-      {/* {navVisible && <Menu />} */}
+      {navVisible && <Menu />}
 
       <Routes>
          <Route path="/" element={< LandingPage />} /> 

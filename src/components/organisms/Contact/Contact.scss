@@ -1,5 +1,5 @@
 .contact {
-    height: 100vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,7 +18,7 @@
         padding: 1rem;
       }
       input::placeholder {
-        color: rgb(101, 101, 101);
+        color: rgba(255, 255, 255, 0.732);
       }
       .form-first {
         display: flex;
@@ -36,7 +36,7 @@
           width: 100%;
         }
         &::placeholder {
-          color: rgb(101, 101, 101);
+          color: rgba(255, 255, 255, 0.732);
         }
       }
     }
