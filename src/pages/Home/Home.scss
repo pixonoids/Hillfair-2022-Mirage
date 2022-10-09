@@ -12,7 +12,8 @@
     margin: 2rem;
     @media (max-width:700px) {
       flex-direction: column;
-      width: 100%;
+      width: 90%;
+      padding: 2rem;
     }
   }
 }
