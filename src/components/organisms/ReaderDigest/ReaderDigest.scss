@@ -14,4 +14,8 @@
   .quote {
     color: rgba(255, 255, 255, 0.668);
   }
+  @media (max-width:700px) {
+    width: 100%;
+    padding: 2rem;
+  }
 }

@@ -7,7 +7,7 @@ const HomeMain = () => {
         <span>Hill'ffair 2K22</span>
         <p className="theme">Mirage: Oasis of Mystique</p>
         <p className="dates">11 Nov - 13 Nov</p>
-        <button>Register</button>
+        <button>Register Now</button>
       </div>
       {/* <img
         src="/public/images/hillffair home main.png"

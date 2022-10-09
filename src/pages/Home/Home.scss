@@ -10,5 +10,9 @@
     justify-content:space-around;
     align-items: center;
     margin: 2rem;
+    @media (max-width:700px) {
+      flex-direction: column;
+      width: 100%;
+    }
   }
 }
