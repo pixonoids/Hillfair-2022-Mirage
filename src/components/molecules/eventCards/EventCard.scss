@@ -1,0 +1,58 @@
+$borderRadius: 0 0 1rem 0;
+
+@mixin textGradient {
+  background: linear-gradient(
+    90deg,
+    rgb(4, 57, 117) 0%,
+    rgba(141, 14, 100, 0.802) 49%,
+    rgb(11, 54, 124) 89%
+  );
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.eventCard {
+  background: rgba(114, 91, 91, 0.93);
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  margin: 1rem 0;
+  width: 50%;
+  //   position: relative;
+  //   text-align: center;
+  border-radius: $borderRadius;
+  &:nth-child(odd) {
+    align-self: flex-end;
+    justify-content: flex-start;
+    padding: 0 0 30px 0;
+  }
+  h1:nth-child(1) {
+    @include textGradient();
+    padding: 1rem 0 0 0;
+  }
+  h2 {
+    @include textGradient();
+    font-size: 1.2rem;
+  }
+  h1:nth-child(3) {
+    @include textGradient();
+    // position: absolute;
+    // bottom: 1rem;
+    // left: 0.5rem;
+  }
+  p {
+    // position: absolute;
+    // right: 0;
+    // bottom: 0;
+    // color: black;
+    // border-radius: 0.3rem 0 1rem 0;
+    // width: 5rem;
+    // height: 2rem;
+    // background-color: rgb(187, 207, 115);
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+  }
+}

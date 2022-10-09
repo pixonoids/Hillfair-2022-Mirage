@@ -1,0 +1,31 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timelineContainer {
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 2rem;
+}
+
+.eventPage {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(21, 26, 26);
+    border: 2px solid red;
+    position: relative;
+    width: calc(70vw + 5rem);
+}
+.eventPage::after {
+    content: '';
+    position: absolute;
+    background-color: #e17;
+    left: calc(50% - 2px);
+    width: 4px;
+    height: 100%;
+}
