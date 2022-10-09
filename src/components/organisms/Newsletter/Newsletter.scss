@@ -1,0 +1,37 @@
+.Newsletter {
+  padding: 2rem;
+  .Heading {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 1rem;
+  }
+  .Subheading {
+    color: yellow;
+    padding-bottom: 1rem;
+  }
+  .Subscribe {
+    padding: 0.5rem;
+    display: inline-block;
+    background-color: white;
+    border-radius: 1rem;
+    .inputNewsletter {
+        border: hidden;
+        padding-left:1rem;
+    }
+    .inputNewsletter:focus{
+        outline: none;
+    }
+    button {
+      background: #fdbd1f;
+      border: 0.2rem solid #fdbd1f;
+      border-radius: 0.8rem;
+      cursor: pointer;
+      padding: 0.5rem 1rem 0.5rem;
+      span {
+        color: #002a76;
+        font-weight: 800;
+        line-height: 1.5;
+      }
+    }
+  }
+}
