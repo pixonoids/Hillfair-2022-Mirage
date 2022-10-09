@@ -10,7 +10,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* font-family: Gilroy-Light; */
-  background: black;
+  background: #c0ae90;
+  /* background: rgba(65,17,101,1); */
   color: #fff;
 }
 
