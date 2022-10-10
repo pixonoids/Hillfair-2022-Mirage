@@ -31,7 +31,6 @@ const Navbar = () => {
           </div>
           {menuState && (
             <div onClick={menuToggelHandler}>
-              <h1 className="heading">Hill'ffair 2K22</h1>
               <div className="list">
                 {/* <img className="arrow" src={arrow} alt="arrow-img"></img>
                 <img className="arrow" src={arrow} alt="arrow-img"></img>
