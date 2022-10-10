@@ -24,8 +24,9 @@
         margin-top: 5.5em;
         text-align: center;
         white-space: nowrap;
-        font-family: Egyptian-theme;
         text-align: center;
+        font-family: Egyptian-Theme;
+        font-weight: bolder;
         @media screen and (max-width: 430px) {
           position: fixed;
           z-index: -95;
@@ -41,6 +42,7 @@
         h3 {
           font-size: 2rem;
           letter-spacing: 5px;
+          font-family: Al-Andalus;
           @media screen and (max-width: 430px) {
             font-size: 1.5rem;
             letter-spacing: 2px;
@@ -73,7 +75,7 @@
         left: 50%;
         top: 47%;
         padding-top: 8em;
-        font-family: Fino-Sans-Regular;
+        font-family: Al-Andalus;
         font-size: 1.2rem;
         letter-spacing: 5px;
         letter-spacing: 6px;
