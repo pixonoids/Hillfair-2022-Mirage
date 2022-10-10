@@ -6,3 +6,15 @@
     font-family: Egyptian-Theme;
     src: url(/public/fonts/AlmalikRegular-1Gr1Z.woff);
   }
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #735e4c;
+}
+::-webkit-scrollbar-thumb {
+  background: #dfa875;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3e2917;
+}

@@ -15,7 +15,7 @@
       width: 80%;
       padding: 3rem 4rem;
       border-radius: 2.5rem;
-      background-color: #3a342e;
+      background-color: #956c4d;
       text-align: justify;
       display: flex;
       flex-direction: column;
@@ -33,7 +33,7 @@
       button {
         align-items: center;
         background-color: transparent;
-        border: 0.1rem solid #fdbd1f;
+        border: 0.1rem solid #ffb85c;
         border-radius: 2rem;
         box-sizing: border-box;
         color: #fff;
@@ -46,7 +46,7 @@
         text-align: center;
         margin: 0.5rem 0 1rem;
         &:hover {
-          background-color: #fdbd1f;
+          background-color: #ca8f3b;
           transition: 0.5s ease-out, color 0.2s ease-out, border 0.2s ease-out;
         }
        @media (max-width:600px) {
