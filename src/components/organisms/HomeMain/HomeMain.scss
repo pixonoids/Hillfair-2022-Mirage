@@ -30,19 +30,21 @@
         text-align: center;
         white-space: nowrap;
         text-align: center;
+        font-family: Egyptian-Theme;
         @media screen and (max-width: 450px) {
          margin-top: -1.5rem;
-        font-family: Egyptian-Theme;
         font-weight: bolder;
-          position: fixed;
-          z-index: -95;
+          font-weight: 3rem;
         }
         h1 {
           letter-spacing: 8px;
           font-size: 6rem;
           @media screen and (max-width: 450px) {
-            font-size: 3.5rem;
+            font-size: 2.2rem;
             letter-spacing: 4px;
+          }
+          @media (min-width:450px) and (max-width:900px) {
+            font-size: 3.7rem;
           }
         }
         h3 {
@@ -50,7 +52,7 @@
           letter-spacing: 5px;
           @media screen and (max-width: 450px) {
           font-family: Al-Andalus;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             letter-spacing: 2px;
           }
         }
