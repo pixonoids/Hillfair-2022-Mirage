@@ -4,10 +4,11 @@ import { Route, Routes } from 'react-router-dom';
 import { Menu } from './components/organisms/';
 import { useSelector } from 'react-redux';
 import {LandingPage,Home} from './pages';
+import MenuBar from './pages/MenuBar/MenuBar';
 
 export default function App() {
   //STATES
-
+  const [isPhone, setISPhone] = useState(false);
     // useHideNavigation();
   const navVisible = useSelector((state) => state.ui.navVisible);
   const [enteringState, setEnteringState] = useState(
@@ -19,19 +20,18 @@ export default function App() {
     sessionStorage.setItem('enteringState', false);
   }, []);
 
-  //FUNCTIONS
+  //FUNCTIONS 
 
   //RENDER
   return (
     <div>
        
-       
 
-      {/* {navVisible && <Menu />} */}
+      {/* {navVisible && (isPhone ? <MenuBar/> : <Menu/>)} */}
 
       <Routes>
-         <Route path="/" element={< LandingPage />} /> 
-         <Route path="/home" element={< Home />} /> 
+         {/* <Route path="/" element={< LandingPage />} />  */}
+         {/* <Route path="/home" element={< Home />} />  */}
         {/* <Route path="about" element={<About />} />
         <Route path="gallery" element={<Gallery />} />
         <Route path="sponsors" element={<Sponsors />} />
@@ -41,6 +41,7 @@ export default function App() {
         <Route path="admin" element={<Admin />} />
         <Route path="events" element={<Event/>} />
         <Route path="" element={<ErrorPage />} /> */}
+        <Route path="menubar" element={<MenuBar/>} />
       </Routes> 
       
         
