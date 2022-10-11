@@ -12,6 +12,11 @@
     height: 100%;
     object-fit: cover;
     pointer-events: none;
+    @media (min-width:500px) and (max-width:1024px) {
+      // object-fit:inherit;
+      // height: 100%;
+      width: fit-content;
+    }
   }
   .header-text{
     height: 100vh;
@@ -20,20 +25,19 @@
         position: absolute;
         transform: translate(-50%, -50%);
         left: 50%;
-        top: 30%;
+        top: 25%;
         margin-top: 5.5em;
         text-align: center;
         white-space: nowrap;
         font-family: Egyptian-theme;
         text-align: center;
-        @media screen and (max-width: 430px) {
-          position: fixed;
-          z-index: -95;
+        @media screen and (max-width: 450px) {
+         margin-top: -1.5rem;
         }
         h1 {
           letter-spacing: 8px;
           font-size: 6rem;
-          @media screen and (max-width: 430px) {
+          @media screen and (max-width: 450px) {
             font-size: 3.5rem;
             letter-spacing: 4px;
           }
@@ -41,7 +45,7 @@
         h3 {
           font-size: 2rem;
           letter-spacing: 5px;
-          @media screen and (max-width: 430px) {
+          @media screen and (max-width: 450px) {
             font-size: 1.5rem;
             letter-spacing: 2px;
           }
@@ -60,7 +64,7 @@
           &:hover {
             transition: 0.3s;
           }
-          @media screen and (max-width: 430px) {
+          @media screen and (max-width: 450px) {
             font-size: 1em;
             opacity: 0.8;
           }
@@ -77,10 +81,10 @@
         font-size: 1.2rem;
         letter-spacing: 5px;
         letter-spacing: 6px;
-        @media screen and (max-width: 430px) {
+        @media screen and (max-width: 450px) {
           left: 50%;
-          padding-top: 60%;
-          top: 62%;
+          font-size: 0.8rem;
+          margin-top: -4rem;
         }
       }
     }
