@@ -21,6 +21,8 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      font-family: Regular-Text;
+      font-size: 1.5rem;
       p {
         margin-bottom: 1rem;
       }
@@ -39,14 +41,15 @@
         color: #fff;
         cursor: pointer;
         display: flex;
-        font-family: Sofia Pro, Helvetica, Arial, sans-serif;
+        font-family: Al-Andalus;
+        font-weight: bolder;
         font-size: 1.2rem;
         justify-content: center;
         padding: 0.6rem 1.4rem;
         text-align: center;
         margin: 0.5rem 0 1rem;
         &:hover {
-          background-color: #ca8f3b;
+          background-color: #7c4730;
           transition: 0.5s ease-out, color 0.2s ease-out, border 0.2s ease-out;
         }
        @media (max-width:600px) {

@@ -1,6 +1,5 @@
 import React from 'react'
-import './AboutMini.scss'
-import {AiOutlineArrowRight } from 'react-icons/ai'
+import './AboutMini.scss' 
 export default function AboutMini() {
   return (
     <div className='aboutmini'>
