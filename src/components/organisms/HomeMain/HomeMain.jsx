@@ -10,20 +10,20 @@ const HomeMain = () => {
     <div className="homeMain">
       <img
         className="layers"
-        src="/public/images/sunlayer-01.png"
-        style={{ transform: `translateY(${-valueScn * 0.3}px)` }}
+        src="/public/images/finalsunlayer.png"
+        style={{ transform: `translateY(${-valueScn * 0.04}px)` }}
         alt="hello"
       ></img>
       <img
         className="layers"
-        src="/public/images/cloudslayer.png"
-        style={{ transform: `translateY(${-valueScn * 0.2}px)` }}
+        src="/public/images/cloudslayerfinal-01.png"
+        style={{ transform: `translateY(${-valueScn * 0.04}px)` }}
         alt="hello"
       ></img>
       <img
         className="layers"
         src="/public/images/sandlayer-01.png"
-        style={{ transform: `translateY(${-valueScn * 0.1}px)` }}
+        style={{ transform: `translateY(${-valueScn * 0.02}px)` }}
         alt="hello"
       ></img>
       <div className="header-text">
