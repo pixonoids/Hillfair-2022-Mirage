@@ -1,5 +1,14 @@
-$borderRadius: 0 0 1rem 0;
+$borderRadius: 1rem;
 
+@mixin pointer {
+  background-color: red;
+  transform: rotate(45deg);
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 7.5rem;
+  right: -0.5rem;
+}
 @mixin textGradient {
   background: linear-gradient(
     90deg,
@@ -14,34 +23,53 @@ $borderRadius: 0 0 1rem 0;
 }
 
 .eventCard {
-  background: rgba(114, 91, 91, 0.93);
+  background: rgb(223, 222, 222);
   display: flex;
   justify-content: flex-end;
   padding-right: 2rem;
-  margin: 1rem 0;
-  width: 50%;
-  //   position: relative;
-  //   text-align: center;
+  margin: 1rem 1rem;
+  min-height: 15rem;
   border-radius: $borderRadius;
-  &:nth-child(odd) {
+  width: 40%;
+  position: relative;
+  //   text-align: center;
+
+  &:nth-child(even) {
     align-self: flex-end;
     justify-content: flex-start;
     padding: 0 0 30px 0;
   }
+
+  
+
+  &:nth-child(even)::after {
+    content: "";
+    @include pointer();
+    // position: absolute;
+    left: -0.5rem;
+  }
+
+
   h1:nth-child(1) {
     @include textGradient();
     padding: 1rem 0 0 0;
   }
+
+
   h2 {
     @include textGradient();
     font-size: 1.2rem;
   }
+
+
   h1:nth-child(3) {
     @include textGradient();
     // position: absolute;
     // bottom: 1rem;
     // left: 0.5rem;
   }
+
+
   p {
     // position: absolute;
     // right: 0;
@@ -55,4 +83,7 @@ $borderRadius: 0 0 1rem 0;
     // align-items: center;
     // justify-content: center;
   }
+
+
+  
 }
