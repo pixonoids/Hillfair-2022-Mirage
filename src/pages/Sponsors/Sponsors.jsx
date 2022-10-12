@@ -42,7 +42,9 @@ const Sponsors = () => {
             <img className='pharo-img-right' src="/images/guarding_pharo.png" alt="" />
         
             </div>
+
         </div>
+        
     )
 }
 
