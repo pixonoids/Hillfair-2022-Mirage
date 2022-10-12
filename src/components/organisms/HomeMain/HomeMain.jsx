@@ -38,13 +38,20 @@ const HomeMain = () => {
           <h1>11-13</h1>
           <h3>November 2022</h3>
         </div>
+        <div className="logos">
+          <div className="img-div">
+            <a href="https://nith.ac.in/" target="_blank">
+              <img src="/public/images/nith.png" className="nithlogo"></img>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/pixonoids/" target="_blank">
+              <img src="/public/images/pixonoids_logo_color.png" className="pixologo"></img>
+            </a>
+          </div>
+        </div>
       </div>
-      {/* <div className="text">
-        <span>Hill'ffair 2K22</span>
-        <p className="theme">Mirage: Oasis of Mystique</p>
-        <p className="dates">11 Nov - 13 Nov</p>
-        <button>Register Now</button>
-      </div> */}
+     
     </div>
   );
 };

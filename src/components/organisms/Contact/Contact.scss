@@ -40,19 +40,32 @@
         }
       }
     }
-    .contactbtn{
-      background: #3D3731;
-    border: .2rem solid #3D3731;
-    border-radius:1rem;
-    cursor: pointer;
-    padding: 0.8rem 2.5rem;
-    transition: background-color .2s ease-out;
-    font-size: 1.2rem;
-    color: #CBC3AC;
-    margin:2rem 0;
-    @media (max-width:450px) {
-      width: 100%;
+      .contactbtn {
+        align-items: center;
+        background-color: transparent;
+        border: 0.1rem solid #ffb85c;
+        border-radius: 2rem;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        font-family: Al-Andalus;
+        letter-spacing: 3px;
+        font-weight: bolder;
+        font-size: 1.2rem;
+        justify-content: center;
+        padding: 0.6rem 1.4rem;
+        text-align: center;
+        margin: 0.5rem 0 1rem;
+        &:hover {
+          background-color: #7c4730;
+          transition: 0.5s ease-out, color 0.2s ease-out, border 0.2s ease-out;
+        }
+       @media (max-width:600px) {
+        width: 90%;
+       }
+      }
     }
-    }
-  }
+  
+  
   
