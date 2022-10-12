@@ -8,7 +8,13 @@ import MenuBar from './pages/MenuBar/MenuBar';
 
 export default function App() {
   //STATES
-  const [isPhone, setISPhone] = useState(false);
+  const [isPhone, setIsPhone] = useState(window.matchMedia("max-width:600px").matches);
+  useEffect(()=> {
+    window.matchMedia("(max-width: 600px)")
+    .addEventListener('change', e => setIsPhone( e.matches));
+  }, [])
+
+
     // useHideNavigation();
   const navVisible = useSelector((state) => state.ui.navVisible);
   const [enteringState, setEnteringState] = useState(
@@ -27,7 +33,7 @@ export default function App() {
     <div>
        
 
-      {/* {navVisible && (isPhone ? <MenuBar/> : <Menu/>)} */}
+      {navVisible && (isPhone ? <MenuBar/> : <Menu/>)}
 
       <Routes>
          {/* <Route path="/" element={< LandingPage />} />  */}
@@ -41,7 +47,7 @@ export default function App() {
         <Route path="admin" element={<Admin />} />
         <Route path="events" element={<Event/>} />
         <Route path="" element={<ErrorPage />} /> */}
-        <Route path="menubar" element={<MenuBar/>} />
+        {/* <Route path="menubar" element={<MenuBar/>} /> */}
       </Routes> 
       
         

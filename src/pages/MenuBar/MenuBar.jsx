@@ -6,14 +6,13 @@ export default function MenuBar() {
     
     const [isDropped, setIsDropped] = useState(false);
     const handleChange = ()=> {
-        console.log('handlechanged');
         setIsDropped(!isDropped);
     }
 
     return (
-        <div classNameName='menubar'>
+        <div className='menubar'>
             <input type="checkbox" id="menuButton" onClick={handleChange}/>
-            <label for="menuButton" className='menu-button-label'>
+            <label htmlFor="menuButton" className='menu-button-label'>
                 <div className="whiteBar"></div>
                 <div className="whiteBar"></div>
                 <div className="whiteBar"></div>
