@@ -47,7 +47,6 @@ export default function App() {
         <Route path="admin" element={<Admin />} />
         <Route path="events" element={<Event/>} />
         <Route path="" element={<ErrorPage />} /> */}
-        {/* <Route path="menubar" element={<MenuBar/>} /> */}
       </Routes> 
       
         
