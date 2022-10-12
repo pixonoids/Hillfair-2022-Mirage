@@ -16,14 +16,13 @@
 .eventPage {
     display: flex;
     flex-direction: column;
-    background-color: rgb(21, 26, 26);
     position: relative;
     width: calc(70vw + 5rem);
 }
 .eventPage::after {
     content: '';
     position: absolute;
-    background-color: #e17;
+    background-color: rgb(255, 255, 255);
     left: calc(50% - 2px);
     width: 4px;
     height: 100%;
