@@ -9,7 +9,7 @@ const EventCard = ({ data }) => {
                 <h1>{data.date}</h1>
                 <p>{data.tag}</p>
             </div>
-            <span className='circle'></span>
+            <span className='moon'>{data.moon}</span>
         </div>
     );
 }

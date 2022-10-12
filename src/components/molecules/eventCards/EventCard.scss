@@ -86,7 +86,11 @@ $borderRadius: 1rem;
     align-items: center;
     justify-content: center;
   }
-
-
   
+}
+
+.moon svg {
+  width: 5rem;
+  height: 5rem;
+  z-index: 2;
 }
