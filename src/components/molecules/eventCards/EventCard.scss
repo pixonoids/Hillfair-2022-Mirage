@@ -10,11 +10,7 @@ $borderRadius: 1rem;
   right: -0.8rem;
 }
 @mixin textGradient {
-    background: linear-gradient(
-      90deg,
-      #522828 0%,
-      #503908cd 49%,
-    );  
+  background: linear-gradient(90deg, #522828 0%, #503908cd 49%);
   background-size: 100%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -22,8 +18,8 @@ $borderRadius: 1rem;
 }
 
 @mixin svgSettings {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   z-index: 2;
   border: 2px solid rgba(241, 196, 14);
   border-radius: 50%;
@@ -44,8 +40,12 @@ $borderRadius: 1rem;
 
   .moon svg {
     @include svgSettings();
-    top: 5rem;
-    right: -28%;
+    top: 6rem;
+    right: -27%;
+    @media (max-width: 669px) {
+      left: -70px;
+      top: 5.6rem;
+    }
   }
   &:nth-child(odd) {
     background: linear-gradient(45deg, #af844c 10%, #e0c384 80%);
@@ -56,27 +56,36 @@ $borderRadius: 1rem;
     padding: 0 2rem;
     .moon svg {
       @include svgSettings();
-      top: 5rem;
+      top: 6rem;
       left: -28%;
     }
   }
-  &::after {
-    content: "";
-    @include pointer();
-    @media (max-width: 1100px) {
-      top: 4rem;
-    }
-  }
+  // &::after {
+  //   content: "";
+  //   @include pointer();
+  //   @media (max-width: 1100px) {
+  //     top: 4rem;
+  //   }
+  //   @media (max-width: 669px) {
+  //     transform: scaleX(-1);
+  //     left: -0.8rem;
+  //     top: 6rem;
+  //     color: #af844c;
+  //   }
+  // }
 
-  &:nth-child(even)::after {
-    content: "";
-    @include pointer();
-    left: -0.8rem;
-    transform: scaleX(-1);
-    @media (max-width: 1100px) {
-      top: 4rem;
-    }
-  }
+  // &:nth-child(even)::after {
+  //   content: "";
+  //   @include pointer();
+  //   left: -0.8rem;
+  //   transform: scaleX(-1);
+  //   @media (max-width: 1100px) {
+  //     top: 4rem;
+  //   }
+  //   @media (max-width: 669px) {
+  //     top: 6rem;
+  //   }
+  // }
 
   h1:nth-child(1) {
     @include textGradient();
@@ -118,9 +127,9 @@ $borderRadius: 1rem;
   .eventCard {
     width: 35%;
     height: 10rem;
-    .moon svg {
+    .moon svg:nth-child(odd) {
       top: 3rem;
-      right: -49%;
+      right: -46%;
     }
     h1 {
       font-size: 1.5rem;
@@ -131,8 +140,23 @@ $borderRadius: 1rem;
   }
   .eventCard:nth-child(even) {
     .moon svg {
-      left: -49%;
+      left: -48%;
       top: 3rem;
     }
+  }
+}
+@media (max-width: 669px) {
+  .eventCard:nth-child(even) {
+    align-self: flex-start;
+    .moon svg {
+      top: 5.5rem;
+      left: -70px;
+    }
+  }
+  .eventCard {
+    left: 4rem;
+    margin: 0.5rem 0;
+    width: 70vw;
+    height: 12rem;
   }
 }

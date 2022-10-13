@@ -19,14 +19,20 @@
     position: relative;
     width: calc(70vw + 5rem);
 }
+
+
+
+
 .eventPage::after {
     content: '';
     position: absolute;
     background: linear-gradient(45deg, #e0c384 10%, #af844c 80%);
     left: calc(50% - 2px);
     width: 3px;
-    border-bottom: red;
-    border-top: red;
     border-radius: 5rem;
     height: 100%;
+    @media (max-width: 669px) {
+        left: 1rem;
+    }
 }
+

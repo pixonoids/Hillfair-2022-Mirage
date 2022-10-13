@@ -1,7 +1,20 @@
-import './EventCard.scss';  
-const EventCard = ({ data }) => {
+import './EventCard.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+let currentTime = new Date();
+let hour = currentTime.getHours();
+
+const EventCard = ({ data, anim }) => {
+    console.log(anim);
+    useEffect(() => {
+        AOS.init();
+    })
     return (
-        <div className='eventCard'>
+        <div className={`eventCard`} data-aos={`${anim}`} style={{
+            backgroundImage: (hour >= 6 && hour <= 17) ? 'linear-gradient(45deg, #e0c384 10%, #af844c 80%)' : 'linear-gradient(45deg, #723b99 10%, #a697e8 80%)'
+        }
+        }>
             <div className='eventCardItem'>
                 <h1>{data.event}</h1>
                 <h2>{data.club}</h2>
