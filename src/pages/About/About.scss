@@ -1,20 +1,22 @@
 .about-container {
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   // justify-content: center;
-  position: fixed;
+  // position: fixed;
   translate: 0 6rem;
-  background: linear-gradient(#c0ae90, #695430);
+//   background: linear-gradient(#c0ae90, #695430);
+background: linear-gradient(rgba(115,63,164,1), rgba(65,17,101,1) );
   color: black;
+  overflow: hidden;
 
   h1 {
     // position: absolute;
     font-weight: 500;
     letter-spacing: 4px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -41,14 +43,19 @@
 
   p {
     font-weight: 600;
+    font-size: 21px;
     letter-spacing: 1px;
-    line-height: 25px;
+    line-height: 26px;
     z-index: 100;
     text-align: justify;
   }
 }
 
 @media (max-width: 600px) {
+
+}
+
+@media (max-width: 1000px) {
   .scroll {
     rotate: 90deg;
     width: 280vw;
@@ -64,7 +71,7 @@
     width: 60vw;
     height: 150vw;
     position: absolute;
-    top: 9%;
+    top: 15%;
     translate: 20%;
     overflow: hidden;
 
@@ -73,6 +80,7 @@
         font-weight: 500;
         letter-spacing: 4px;
         margin-bottom: 1rem;
+        font-size: 2rem;
       }
 
     p {

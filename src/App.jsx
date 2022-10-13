@@ -3,7 +3,7 @@ import './App.scss';
 import { Route, Routes } from 'react-router-dom';
 import { Menu } from './components/organisms/';
 import { useSelector } from 'react-redux';
-import {LandingPage,Sponsors,About} from './pages';
+import {LandingPage,Sponsors,About,ComingSoon} from './pages';
 
 export default function App() {
   //STATES
@@ -26,13 +26,12 @@ export default function App() {
     <div>
        
        
-
       {navVisible && <Menu />}
-      {/* <Sponsors></Sponsors> */}
-      {/* <About></About> */}
+      
 
       <Routes>
         <Route path="about" element={<About />} />
+        <Route path="soon" element={<ComingSoon />} />
          {/* <Route path="/" element={< LandingPage />} /> 
         <Route path="gallery" element={<Gallery />} /> */}
         <Route path="sponsors" element={<Sponsors />} />

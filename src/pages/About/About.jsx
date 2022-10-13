@@ -23,7 +23,7 @@ const About = () => {
             sure to leave fond memories to 8000 plus students for years to
             cherish. The weary creative brains and logic-driven geeks look
             forward to these three days of Hill'ffair, filled with liveliness,
-            energy, and excitement
+            energy, and excitement.
           </p>
         </div>
       </div>
