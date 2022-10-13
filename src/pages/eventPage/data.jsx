@@ -1,4 +1,3 @@
-import './Mediamodifier-Design.svg';
 const Data = [
     {
         event: "Music Night",
