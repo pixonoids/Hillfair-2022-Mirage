@@ -1,9 +1,12 @@
 import './EventPage.scss';
 import Data from './data';
 import EventCard from '../../components/molecules/eventCards/EventCard';
+// import AOS from 'aos';       
+// import 'aos/dist/aos.css';    
 
 
 const Event = () => {
+    
     return (
         <div className='timelineContainer'>
             <h1>Events</h1>

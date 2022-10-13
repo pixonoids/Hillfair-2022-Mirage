@@ -4,13 +4,13 @@
     align-items: center;
 }
 .timelineContainer {
-    border: 2px solid blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem 0;
     gap: 2rem;
+    margin-top: 3rem;
 }
 
 .eventPage {
@@ -22,8 +22,11 @@
 .eventPage::after {
     content: '';
     position: absolute;
-    background-color: rgb(255, 255, 255);
+    background: linear-gradient(45deg, #e0c384 10%, #af844c 80%);
     left: calc(50% - 2px);
-    width: 4px;
+    width: 3px;
+    border-bottom: red;
+    border-top: red;
+    border-radius: 5rem;
     height: 100%;
 }
