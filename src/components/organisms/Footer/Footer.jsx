@@ -2,6 +2,8 @@ import React from "react";
 import "./Footer.scss";
 import { SocialIcons } from "../../atoms";
 import { AiOutlineCopyright } from "react-icons/ai";
+import palm1 from '../../../../public/images/elements/palm1.png'
+import palm2 from '../../../../public/images/elements/palm2.png'
 
 export default function Footer() {
   return (
@@ -14,6 +16,8 @@ export default function Footer() {
       </div>
       <SocialIcons/>
       <span className="Copyright">Copyright Hillffair 2022</span>
+      <img src={palm1} alt=""className="palm"/>
+      <img src={palm2} alt=""className="palm1"/>
     </div>
   );
 }

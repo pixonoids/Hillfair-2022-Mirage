@@ -10,7 +10,7 @@ const HomeMain = () => {
     <div className="homeMain">
       <img
         className="layers"
-        src="/public/images/finalsunlayer.png"
+        src="/public/images/sunlayerfinal-01.png"
         style={{ transform: `translateY(${-valueScn * 0.04}px)` }}
         alt="hello"
       ></img>
@@ -46,7 +46,7 @@ const HomeMain = () => {
           </div>
           <div>
             <a href="https://www.instagram.com/pixonoids/" target="_blank">
-              <img src="/public/images/pixonoids_logo_color.png" className="pixologo"></img>
+              <img src="/public/images/pixonoids_logo.png" className="pixologo"></img>
             </a>
           </div>
         </div>

@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: #613d2d9d;
+  background-color: #6c3e2b;
   padding: 1.5rem 1rem;
   position: relative;
   margin-top: 5rem;
@@ -20,28 +20,28 @@
   }
 
   .wave#wave1 {
-    z-index: 1000;
+    z-index: 99;
     opacity: 1;
     bottom: 0;
     animation: animateWaves 4s linear infinite;
   }
 
   .wave#wave2 {
-    z-index: 999;
+    z-index: 99;
     opacity: 0.5;
     bottom: 10px;
     animation: animate 4s linear infinite !important;
   }
 
   .wave#wave3 {
-    z-index: 1000;
+    z-index: 99;
     opacity: 0.2;
     bottom: 15px;
     animation: animateWaves 3s linear infinite;
   }
 
   .wave#wave4 {
-    z-index: 999;
+    z-index: 99;
     opacity: 0.7;
     bottom: 20px;
     animation: animate 3s linear infinite;
@@ -85,6 +85,28 @@
   // @media (max-width:900px) {
   //   flex-direction: column;
   // }
+  .palm{
+    width:250px;
+    position:absolute;
+    bottom:0%;
+    right: 5%;
+    @media (max-width:700px) {
+      width: 150px;
+      right: 0%;
+      opacity: 0.5;
+    }
+  }
+  .palm1{
+    width:250px;
+    position:absolute;
+    bottom:0%;
+    left: 5%;
+    @media (max-width:700px) {
+      width: 150px;
+      left: 0%;
+         opacity: 0.5;
+    }
+  }
 }
 @keyframes animateWaves {
   0% {
@@ -102,4 +124,5 @@
   100% {
     background-positon-x: 0px;
   }
+  
 }

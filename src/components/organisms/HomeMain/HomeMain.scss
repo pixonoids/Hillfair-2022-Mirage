@@ -37,8 +37,8 @@
         }
         h1 {
           letter-spacing: 8px;
-          font-size: 6rem;
-          font-family: Egyptian-Theme;
+          font-size: 5.5rem;
+          font-family:PF-MomentaPro;
           @media screen and (max-width: 450px) {
             font-size: 2.2rem;
             letter-spacing: 4px;
@@ -107,7 +107,7 @@
         justify-content: space-between;
         .pixologo{
           width: 125px;
-          margin-top: -1rem;
+          margin-top: -4rem;
         }
         .nithlogo{
           width: 50px;
@@ -123,9 +123,9 @@
         }
         .img-div::before {
           content: '';
-          height: 95%;
+          height: 50%;
           width: 2px;
-          background-color: rgb(78, 37, 5);
+          background-color: #fff;
           position: absolute;
           top: 0;
           left: 135%;
