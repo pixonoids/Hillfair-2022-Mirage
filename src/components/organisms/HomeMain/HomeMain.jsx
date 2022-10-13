@@ -1,28 +1,43 @@
 import React,{useState} from "react";
 import "./HomeMain.scss";
+import ParticlesBackground from "../../../pages/landingPage/ParticlesBackground";
+
+
+
 const HomeMain = () => {
   const [valueScn, setValueScn] = useState('0');
   window.addEventListener('scroll', () => {
     setValueScn(window.scrollY);
   });
   const [offset, setOffset] = useState('0');
+  let currentTime = new Date();
+  let hour = currentTime.getHours();
+  const [hours,setHours]=useState(hour)
+
   return (
-    <div className="homeMain">
+    <div className="homeMain"
+    style={{
+      backgroundImage:(hours>=9&&hours<=16)?'linear-gradient(180deg,#40291c 17.15%,#522822 120.7%)':' linear-gradient(180deg,#151539 17.15%,#331e66 120.7%)'   
+       }}
+    >
+     <ParticlesBackground
+    className="stars"
+      />
       <img
         className="layers"
-        src="/public/images/sunlayerfinal-01.png"
+        src={(hours>=6&& hours<=16)?"/public/images/sunlayerfinal-01.png":"/public/images/darkmodesunlayer.png"}
         style={{ transform: `translateY(${-valueScn * 0.04}px)` }}
         alt="hello"
       ></img>
       <img
         className="layers"
-        src="/public/images/cloudslayerfinal-01.png"
-        style={{ transform: `translateY(${-valueScn * 0.04}px)` }}
+        src={(hours>=6&& hours<=16)?"/public/images/cloudslayerfinal-01.png":"/public/images/darkmodecloudlayer.png"}
+        style={{ transform: `translateY(${-valueScn * 0.04}px)`}}
         alt="hello"
       ></img>
       <img
         className="layers"
-        src="/public/images/sandlayer-01.png"
+        src={(hours>=6&& hours<=16)?"/public/images/sandlayer-01.png":"/public/images/darkmodesand.png"}
         style={{ transform: `translateY(${-valueScn * 0.02}px)` }}
         alt="hello"
       ></img>

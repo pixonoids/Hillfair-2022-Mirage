@@ -16,8 +16,8 @@ export default function Footer() {
       </div>
       <SocialIcons/>
       <span className="Copyright">Copyright Hillffair 2022</span>
-      <img src={palm1} alt=""className="palm"/>
-      <img src={palm2} alt=""className="palm1"/>
+      <img src={palm1} alt="" className="palm"/>
+      <img src={palm2} alt="" className="palm1"/>
     </div>
   );
 }

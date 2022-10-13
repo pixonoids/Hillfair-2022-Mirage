@@ -14,7 +14,7 @@
     width: 80%;
     font-family: Regular-Text;
     font-size: 1.4rem;
-    @media (max-width:700px) {
+    @media (max-width: 700px) {
       width: 100%;
     }
   }
@@ -24,18 +24,18 @@
     background-color: white;
     border-radius: 1rem;
     .inputNewsletter {
-        border: hidden;
-        padding:1rem;
-        margin: auto;
-        font-family: Regular-Text;
-        font-size: 1.1rem;
+      border: hidden;
+      padding: 1rem;
+      margin: auto;
+      font-family: Regular-Text;
+      font-size: 1.1rem;
     }
-    .inputNewsletter:focus{
-        outline: none;
+    .inputNewsletter:focus {
+      outline: none;
     }
     button {
       background: #7c4730;
-      border: 0.2rem solid #7c4730;
+      border: 0.2rem solid transparent;
       border-radius: 0.8rem;
       cursor: pointer;
       padding: 0.5rem 1rem 0.5rem;
@@ -46,16 +46,16 @@
         font-weight: 800;
         line-height: 1.5;
       }
-      @media (max-width:700px) {
+      @media (max-width: 700px) {
         width: 100%;
         margin-top: 1rem;
       }
     }
   }
-  @media (max-width:700px) {
+  @media (max-width: 700px) {
     width: 100%;
   }
-  @media (max-width:700px) {
-    padding: 2rem 0;;
+  @media (max-width: 700px) {
+    padding: 2rem 0;
   }
 }

@@ -1,4 +1,6 @@
 import "./Newsletter.scss";
+let currentTime = new Date();
+let hour = currentTime.getHours();
 
 const Newsletter = () => {
   return (
@@ -19,6 +21,9 @@ const Newsletter = () => {
         />
         <button
           type="submit"
+          style={{
+            backgroundColor: hour >= 9 && hour <= 17 ? "#7c4730" : "#080648",
+          }}
         >
           <span>Subscribe</span>
         </button>
