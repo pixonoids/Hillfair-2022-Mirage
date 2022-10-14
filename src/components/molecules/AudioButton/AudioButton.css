@@ -1,0 +1,25 @@
+.audio-button {
+  font-size: 1.25rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  padding-top: 0.25rem;
+  z-index: 100;
+  position: absolute;
+  right: 1%;
+  top: 2.5%;
+  position: fixed;
+  cursor: pointer;
+  background: linear-gradient(rgba(229, 223, 213, 0.8196078431), rgba(210, 186, 145, 0.8196078431));
+  border: none;
+}
+@media (max-width: 400px) {
+  .audio-button {
+    transform: scale(0.8);
+  }
+}
+
+.audio-button:hover {
+  scale: 1.1;
+  background-color: #d1b688;
+}/*# sourceMappingURL=AudioButton.css.map */
