@@ -1,0 +1,175 @@
+.homeMain {
+  // background-image: linear-gradient(180deg,#151539 17.15%,#331e66 120.7%);
+  height: 105vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  .layers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    @media (min-width:500px) and (max-width:1024px) {
+      // object-fit:inherit;
+      // height: 100%;
+      width: fit-content;
+    }
+  }
+  .header-text{
+    height: 100vh;
+      overflow: hidden;
+      .heading {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 25%;
+        margin-top: 5.5em;
+        text-align: center;
+        white-space: nowrap;
+        text-align: center;
+        @media screen and (max-width: 450px) {
+         margin-top: -1.5rem;
+        font-weight: bolder;
+          font-weight: 3rem;
+        }
+        h1 {
+          letter-spacing: 8px;
+          font-size: 5.5rem;
+          font-family:PF-MomentaPro;
+          @media screen and (max-width: 450px) {
+            font-size: 2.2rem;
+            letter-spacing: 4px;
+          }
+          @media (min-width:450px) and (max-width:900px) {
+            font-size: 3.7rem;
+          }
+        }
+        h3 {
+          font-size: 2rem;
+          letter-spacing: 5px;
+          font-family: Al-Andalus,sans-serif;
+          @media screen and (max-width: 450px) {
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+          }
+        }
+        button {
+          background-color: #1328b2;
+          color: rgb(243, 243, 243);
+          padding: 0.8rem;
+          font-family: Egyptian-theme, sans-serif;
+          font-weight: 900;
+          font-size: 1.3rem;
+          border-radius: 5px;
+          letter-spacing: 3px;
+          
+          margin-top: 1em;
+          z-index: -90;
+          &:hover {
+            transition: 0.3s;
+          }
+          @media screen and (max-width: 450px) {
+            font-size: 1em;
+            opacity: 0.8;
+          }
+        }
+      }
+      .dates {
+        text-align: center;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 47%;
+        padding-top: 8em;
+        font-family: Al-Andalus,sans-serif;
+        font-size: 1.2rem;
+        letter-spacing: 5px;
+        letter-spacing: 6px;
+        @media screen and (max-width: 450px) {
+          left: 50%;
+          font-size: 0.8rem;
+          margin-top: -4rem;
+        }
+      }
+      .logos {
+        display: flex;
+        margin: auto;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 90%;
+        width: 10%;
+        margin-top: 1em;
+        z-index: 100;
+        justify-content: space-between;
+        .pixologo{
+          width: 125px;
+          margin-top: -4rem;
+          &:hover{
+            animation:animatepixo 0.4s ease-in-out;
+          }
+        }
+        .nithlogo{
+          width: 50px;
+        }
+        @media screen and (max-width: 430px) {
+          // left: 50%;
+          // top: 85%;
+          width: 35%;
+        }
+
+        .img-div {
+          position: relative;
+        }
+        .img-div::before {
+          content: '';
+          height: 50%;
+          width: 2px;
+          background-color: #fff;
+          position: absolute;
+          top: 0;
+          left: 135%;
+          @media screen and (max-width: 430px) {
+            top: 0;
+            left: 130%;
+          }
+        }
+        img {
+          // width: 50px;
+          cursor: pointer;
+          @media screen and (max-width: 430px) {
+            width: 50px;
+          }
+        }
+      }
+    }
+  }
+@keyframes animatepixo {
+  0%{
+    transform: rotate(45deg);
+  }
+  25%{
+    transform: rotate(90deg);
+  }
+  50%{
+    transform: rotate(135deg);
+  }
+  75%{
+    transform: rotate(180deg);
+  }
+  80%{
+    transform: rotate(225deg);
+  }
+  85%{
+    transform: rotate(270deg);
+  }
+  90%{
+transform: rotate(315deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}

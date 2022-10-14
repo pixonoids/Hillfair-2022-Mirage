@@ -24,14 +24,14 @@ const Navbar = () => {
           <div className='img-div'>
             <img
               className={menuState ? 'slide' : 'logo'}
-              src="./../../../../public/images/hillfair-logo-light.png"
+
+              src="images/hillfair-logo-light.png"
               alt="hillfair-logo"
               onClick={menuToggelHandler}
             ></img>
           </div>
           {menuState && (
             <div onClick={menuToggelHandler}>
-              <h1 className="heading">Hill'ffair 2K22</h1>
               <div className="list">
                 {/* <img className="arrow" src={arrow} alt="arrow-img"></img>
                 <img className="arrow" src={arrow} alt="arrow-img"></img>
