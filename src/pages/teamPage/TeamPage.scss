@@ -1,0 +1,16 @@
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+.team-container {
+    background:linear-gradient(#c0ae90, #695430);
+    @include flexCenter(row);
+    gap: 5rem;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 6.5rem 0;
+    min-height: 100vh;
+}
