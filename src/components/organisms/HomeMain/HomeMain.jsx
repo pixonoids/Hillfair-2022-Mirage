@@ -1,6 +1,5 @@
 import React,{useState} from "react";
 import "./HomeMain.scss";
-import ParticlesBackground from "../../../pages/landingPage/ParticlesBackground";
 
 
 
@@ -20,24 +19,22 @@ const HomeMain = () => {
       backgroundImage:(hours>=9&&hours<=16)?'linear-gradient(180deg,#40291c 17.15%,#522822 120.7%)':' linear-gradient(180deg,#151539 17.15%,#331e66 120.7%)'   
        }}
     >
-     <ParticlesBackground
-    className="stars"
-      />
+   
       <img
         className="layers"
-        src={(hours>=6&& hours<=16)?"/public/images/sunlayerfinal-01.png":"/public/images/darkmodesunlayer.png"}
+        src={(hours>=6&& hours<=16)?"images/sunlayerfinal-01.png":"images/darkmodesunlayer.png"}
         style={{ transform: `translateY(${-valueScn * 0.04}px)` }}
         alt="hello"
       ></img>
       <img
         className="layers"
-        src={(hours>=6&& hours<=16)?"/public/images/cloudslayerfinal-01.png":"/public/images/darkmodecloudlayer.png"}
+        src={(hours>=6&& hours<=16)?"images/cloudslayerfinal-01.png":"images/darkmodecloudlayer.png"}
         style={{ transform: `translateY(${-valueScn * 0.04}px)`}}
         alt="hello"
       ></img>
       <img
         className="layers"
-        src={(hours>=6&& hours<=16)?"/public/images/sandlayer-01.png":"/public/images/darkmodesand.png"}
+        src={(hours>=6&& hours<=16)?"images/sandlayer-01.png":"images/darkmodesand.png"}
         style={{ transform: `translateY(${-valueScn * 0.02}px)` }}
         alt="hello"
       ></img>
@@ -56,12 +53,12 @@ const HomeMain = () => {
         <div className="logos">
           <div className="img-div">
             <a href="https://nith.ac.in/" target="_blank">
-              <img src="/public/images/nith.png" className="nithlogo"></img>
+              <img src="images/nith.png" className="nithlogo"></img>
             </a>
           </div>
           <div>
             <a href="https://www.instagram.com/pixonoids/" target="_blank">
-              <img src="/public/images/pixonoids_logo.png" className="pixologo"></img>
+              <img src="images/pixonoids_logo.png" className="pixologo"></img>
             </a>
           </div>
         </div>

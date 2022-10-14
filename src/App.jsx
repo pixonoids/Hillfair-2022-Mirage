@@ -5,6 +5,9 @@ import { Menu } from './components/organisms/';
 import { useSelector } from 'react-redux';
 import {LandingPage,Home} from './pages';
 import AudioButton from './components/molecules/AudioButton/AudioButton';
+import ParticlesBackground from './pages/landingPage/ParticlesBackground';
+let currentTime = new Date();
+let hour = currentTime.getHours();
 
 export default function App() {
   //STATES
@@ -24,10 +27,12 @@ export default function App() {
 
   //RENDER
   return (
-    <div>
+    <div 
+   style={{
+          backgroundImage:(hour>=6&&hour<=16)?'linear-gradient(180deg,#3a1c1b 17.15%,#b5874c 120.7%)':'linear-gradient(180deg,#151539 17.15%,#331e66 120.7%)'
+        }}
+    >
        
-       
-
       {navVisible && <Menu />}
 
       <Routes>

@@ -1,5 +1,9 @@
 import React, { useState, useEffect, useCallback } from "react";
 import "./ReaderDigest.scss";
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+// AOS.init();
+
 
 const ReaderDigest = () => {
   const [newQuote, setnewQuote] = useState("");

@@ -24,7 +24,7 @@ const Navbar = () => {
           <div className='img-div'>
             <img
               className={menuState ? 'slide' : 'logo'}
-              src="/public/images/hillfair-logo-light.png"
+              src="images/hillfair-logo-light.png"
               alt="hillfair-logo"
               onClick={menuToggelHandler}
             ></img>

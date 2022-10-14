@@ -1,4 +1,7 @@
 import "./Newsletter.scss";
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+// AOS.init();
 let currentTime = new Date();
 let hour = currentTime.getHours();
 

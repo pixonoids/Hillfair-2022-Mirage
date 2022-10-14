@@ -1,6 +1,9 @@
 import React from "react";
 import "./AboutMini.scss";
 import { AiOutlineArrowRight } from "react-icons/ai";
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+// AOS.init();
 
 let currentTime = new Date();
 let hour = currentTime.getHours();
@@ -8,6 +11,7 @@ let hour = currentTime.getHours();
 export default function AboutMini() {
   return (
     <div className="aboutmini">
+    <img src="/images/elements/tutankhamen.png" alt="tutankhamen" className="tutankhamen"/>
       <div className="aboutmini-container">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -61,6 +65,7 @@ export default function AboutMini() {
           ></path>
         </svg>
       </div>
+      <img src="images/elements/tutankhamen.png" alt="tutankhamen" className="tutankhamen"/>
     </div>
   );
 }

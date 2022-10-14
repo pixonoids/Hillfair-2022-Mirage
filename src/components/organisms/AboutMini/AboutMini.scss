@@ -5,6 +5,12 @@
   height: fit-content;
   color: #cbc3ac;
   padding: 4rem 0;
+  .tutankhamen{
+    width: 150px;
+    @media (max-width:600px) {
+      display: none;
+    }
+  }
   .aboutmini-container {
     display: flex;
     align-items: center;

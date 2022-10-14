@@ -2,6 +2,10 @@ import React from "react";
 import { Formik, Form } from "formik";
 import FormField from "../../molecules/FormField/FormField";
 import "./Contact.scss";
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+// AOS.init();
+
 let currentTime = new Date();
 let hour = currentTime.getHours();
 
