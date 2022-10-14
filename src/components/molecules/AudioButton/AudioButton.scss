@@ -4,15 +4,17 @@
   height: 2rem;
   border-radius: 50%;
   padding-top: .25rem;
-  z-index: 100;
+  z-index: 140;
   position: absolute;
-  right: 1%;
-  top: 2.5%;
+  left: 1%;
+  bottom: 2.5%;
   position: fixed;
   cursor: pointer;
+  border: 2px solid white;
+  border-radius: 100%;
+  color: white;
   // background-color: #cdc2afd1;
-  background: linear-gradient(#e5dfd5d1,#d2ba91d1);
-  border: none;
+  background: transparent;
   // scale: 0.9;
   @media (max-width:400px) {
     transform: scale(0.8);

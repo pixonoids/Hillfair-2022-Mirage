@@ -1,0 +1,72 @@
+.contact {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 89;
+    .contactlogo{
+        width: 200px;
+    }
+    Form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem;
+      input{
+        color: white;
+        padding: 1rem;
+      }
+      input::placeholder {
+        color: rgba(255, 255, 255, 0.732);
+      }
+      .form-first {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+      }
+      .form-second {
+        padding: 1rem;
+      }
+      textarea {
+        width: 23rem;
+        color: white;
+        @media (max-width:450px){
+          width: 100%;
+        }
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.732);
+        }
+      }
+    }
+      .contactbtn {
+        align-items: center;
+        background-color: transparent;
+        border: 0.1rem solid #ffb85c;
+        border-radius: 2rem;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        font-family: Al-Andalus;
+        letter-spacing: 3px;
+        font-weight: bolder;
+        font-size: 1.2rem;
+        justify-content: center;
+        padding: 0.6rem 1.4rem;
+        text-align: center;
+        margin: 0.5rem 0 1rem;
+        &:hover {
+          background-color: #7c4730;
+          transition: 0.5s ease-out, color 0.2s ease-out, border 0.2s ease-out;
+        }
+       @media (max-width:600px) {
+        width: 90%;
+       }
+      }
+    }
+  
+  
+  
