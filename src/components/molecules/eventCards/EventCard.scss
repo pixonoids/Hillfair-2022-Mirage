@@ -1,0 +1,162 @@
+$borderRadius: 1rem;
+
+@mixin pointer {
+  background-color: #e0c384;
+  clip-path: polygon(100% 50%, 0 0, 0 100%);
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+  top: 6.3rem;
+  right: -0.8rem;
+}
+@mixin textGradient {
+  background: linear-gradient(90deg, #522828 0%, #503908cd 49%);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin svgSettings {
+  width: 3rem;
+  height: 3rem;
+  z-index: 2;
+  border: 2px solid rgba(241, 196, 14);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.eventCard {
+  background: linear-gradient(45deg, #e0c384 10%, #af844c 80%);
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 2rem;
+  margin: 0 1rem;
+  height: 15rem;
+  border-radius: $borderRadius;
+  width: 40%;
+  position: relative;
+  //   text-align: center;
+
+  .moon svg {
+    @include svgSettings();
+    top: 6rem;
+    right: -27%;
+    @media (max-width: 669px) {
+      left: -70px;
+      top: 5.6rem;
+    }
+  }
+  &:nth-child(odd) {
+    background: linear-gradient(45deg, #af844c 10%, #e0c384 80%);
+  }
+  &:nth-child(even) {
+    justify-content: flex-start;
+    align-self: flex-end;
+    padding: 0 2rem;
+    .moon svg {
+      @include svgSettings();
+      top: 6rem;
+      left: -28%;
+    }
+  }
+  // &::after {
+  //   content: "";
+  //   @include pointer();
+  //   @media (max-width: 1100px) {
+  //     top: 4rem;
+  //   }
+  //   @media (max-width: 669px) {
+  //     transform: scaleX(-1);
+  //     left: -0.8rem;
+  //     top: 6rem;
+  //     color: #af844c;
+  //   }
+  // }
+
+  // &:nth-child(even)::after {
+  //   content: "";
+  //   @include pointer();
+  //   left: -0.8rem;
+  //   transform: scaleX(-1);
+  //   @media (max-width: 1100px) {
+  //     top: 4rem;
+  //   }
+  //   @media (max-width: 669px) {
+  //     top: 6rem;
+  //   }
+  // }
+
+  h1:nth-child(1) {
+    @include textGradient();
+    padding: 1rem 0 0 0;
+  }
+
+  h2 {
+    @include textGradient();
+    font-size: 1.2rem;
+  }
+
+  h1:nth-child(3) {
+    @include textGradient();
+    position: absolute;
+    bottom: 1rem;
+    left: 0.5rem;
+  }
+  p:nth-child(3) {
+    position: absolute;
+    bottom: 0.5rem;
+    @include textGradient();
+    left: 0.5rem;
+  }
+  p:nth-child(4) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: black;
+    border-radius: 0.3rem 0 1rem 0;
+    width: 5rem;
+    height: 2rem;
+    background-color: #d2a84bcd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 1100px) {
+  .eventCard {
+    width: 35%;
+    height: 10rem;
+    .moon svg:nth-child(odd) {
+      top: 3rem;
+      right: -46%;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+  }
+  .eventCard:nth-child(even) {
+    .moon svg {
+      left: -48%;
+      top: 3rem;
+    }
+  }
+}
+@media (max-width: 669px) {
+  .eventCard:nth-child(even) {
+    align-self: flex-start;
+    .moon svg {
+      top: 5.5rem;
+      left: -70px;
+    }
+  }
+  .eventCard {
+    left: 4rem;
+    margin: 0.5rem 0;
+    width: 70vw;
+    height: 12rem;
+  }
+}

@@ -18,7 +18,10 @@
         7% 15%
       );
       transition: 1s;
-      background-color: #053874;
+
+      background-color: #94939334;
+      backdrop-filter: blur(8px);
+
       // background-color: transparent;
       backdrop-filter: blur(6px);
       @media screen and (max-width: 430px) {
@@ -50,7 +53,7 @@
       );
       height: 100vh;
       transition: 1s;
-      background-color: #0034565b;
+      background-color: #29404f5b;
   
       backdrop-filter: blur(8px);
     }
@@ -89,6 +92,7 @@
       margin: auto;
       width: 60vw;
       position: relative;
+      font-family: Al-Andalus;
       a{
         text-decoration: none;
         color: #fff;
@@ -163,7 +167,6 @@
   
     .item:hover:before {
       background: #fff;
-      width: 25%;
       transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
     }
   
