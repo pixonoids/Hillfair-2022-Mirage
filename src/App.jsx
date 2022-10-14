@@ -4,11 +4,13 @@ import { Route, Routes } from 'react-router-dom';
 import { Menu } from './components/organisms/';
 import { useSelector } from 'react-redux';
 
+
 import {LandingPage,Home} from './pages';
 import AudioButton from './components/molecules/AudioButton/AudioButton';
 import ParticlesBackground from './pages/landingPage/ParticlesBackground';
 let currentTime = new Date();
 let hour = currentTime.getHours();
+
 
 
 export default function App() {
@@ -36,6 +38,7 @@ export default function App() {
     >
        
 
+
       {navVisible && <Menu />}
 
       <Routes>
@@ -49,6 +52,7 @@ export default function App() {
         <Route path="admin" element={<LandingPage />} />
         <Route path="events" element={<LandingPage/>} />
         {/* <Route path="" element={<ErrorPage />} /> */}
+
       </Routes> 
         <AudioButton/>
       

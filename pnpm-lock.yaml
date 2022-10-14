@@ -23,9 +23,11 @@ specifiers:
 
 dependencies:
 
+
   '@reduxjs/toolkit': 1.8.5_react-redux@8.0.4+react@18.2.0
   aos: 3.0.0-beta.6
   formik: 2.2.9_react@18.2.0
+
 
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -459,6 +461,7 @@ packages:
       normalize-path: 3.0.0
       picomatch: 2.3.1
 
+
   /aos/2.3.4:
     resolution: {integrity: sha512-zh/ahtR2yME4I51z8IttIt4lC1Nw0ktsFtmeDzID1m9naJnWXhCoARaCgNOGXb5CLy3zm+wqmRAEgMYB5E2HUw==}
     dependencies:
@@ -474,6 +477,7 @@ packages:
       lodash.debounce: 4.0.8
       lodash.throttle: 4.1.1
     dev: false
+
 
   /binary-extensions/2.2.0:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
@@ -801,6 +805,7 @@ packages:
     dependencies:
       to-regex-range: 5.0.1
 
+
   /formik/2.2.9_react@18.2.0:
     resolution: {integrity: sha512-LQLcISMmf1r5at4/gyJigGn0gOwFbeEAlji+N9InZF6LIMXnFNkO42sCI8Jt84YZggpD4cPWObAZaxpEFtSzNA==}
     peerDependencies:
@@ -815,6 +820,7 @@ packages:
       tiny-warning: 1.0.3
       tslib: 1.14.1
     dev: false
+
 
   /fsevents/2.3.2:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
@@ -1193,9 +1199,11 @@ packages:
     dependencies:
       is-number: 7.0.0
 
+
   /tslib/1.14.1:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
     dev: false
+
 
   /tsparticles-engine/2.3.3:
     resolution: {integrity: sha512-OryoHLPwMRRj+P8eC17fCi1a+KAMZM8iayystk+Xbe/QGzJ45rptvcbzKwRGkxyuLorVqfbhqLhS5Aeglx/vzQ==}
