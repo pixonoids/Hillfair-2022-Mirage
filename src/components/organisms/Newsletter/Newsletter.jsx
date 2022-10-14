@@ -1,4 +1,9 @@
 import "./Newsletter.scss";
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+// AOS.init();
+let currentTime = new Date();
+let hour = currentTime.getHours();
 
 const Newsletter = () => {
   return (
@@ -19,6 +24,9 @@ const Newsletter = () => {
         />
         <button
           type="submit"
+          style={{
+            backgroundColor: hour >= 9 && hour <= 17 ? "#7c4730" : "#080648",
+          }}
         >
           <span>Subscribe</span>
         </button>

@@ -5,3 +5,4 @@ export {  SocialIcons } from './atoms';
 export { Footer } from './organisms';
 export { Newsletter } from './organisms';
 export { ReaderDigest } from './organisms';
+export { HomeMain } from './organisms';
