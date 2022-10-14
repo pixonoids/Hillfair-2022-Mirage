@@ -4,8 +4,8 @@ const About = () => {
   return (
     <div className="about-container">
       {/* <h1>About</h1> */}
-      <div className="about-inner-container">
-        <img className="scroll" src="/images/scroll.png" alt="" />
+      <div className="about-inner-container center">
+        <div className="center-image"><img className="scroll" src="/images/scroll.png" alt="" /></div>
         <div className="about-text-container">
         <h1>About</h1>
           <p className="about-text">
@@ -26,6 +26,15 @@ const About = () => {
             energy, and excitement.
           </p>
         </div>
+      </div>
+      <div className="video-preview">
+        <iframe
+          src="https://www.youtube.com/embed/a54iX0QUZQs"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
       </div>
     </div>
   );
