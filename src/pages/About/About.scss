@@ -101,7 +101,6 @@ background: linear-gradient(rgba(115,63,164,1), rgba(65,17,101,1) );
 .video-preview {
   margin: 0 0 3rem 0;
   iframe {
-    border-radius: 1rem;
     width:60vw;
     height: 35vw;
     @media screen and (max-width: 430px) {
@@ -128,7 +127,11 @@ background: linear-gradient(rgba(115,63,164,1), rgba(65,17,101,1) );
       line-height: calc(1rem + 1vw);
       font-size: calc(0.8rem);
     }
-
+    
+  }
+  .video-preview iframe {
+    margin: -10rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -173,7 +176,7 @@ background: linear-gradient(rgba(115,63,164,1), rgba(65,17,101,1) );
     transform: translate(11%, 61%);
   }
   .video-preview iframe {
-    margin:12rem 0 1rem 0;
+    margin:15rem 0 1rem 0;
   }
 }
 @media (max-width:370px) {
@@ -182,6 +185,7 @@ background: linear-gradient(rgba(115,63,164,1), rgba(65,17,101,1) );
     transform: translate(13%, 66%);
   }
   .video-preview iframe {
-    margin:12rem 0 1rem 0;
+    margin:14rem 0 1rem 0;
+    border-radius: 0;
   }
 }
