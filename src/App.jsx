@@ -5,7 +5,7 @@ import { Menu } from './components/organisms/';
 import { useSelector } from 'react-redux';
 
 
-import {LandingPage,Home} from './pages';
+import {LandingPage,Home,Sponsors,About} from './pages';
 import AudioButton from './components/molecules/AudioButton/AudioButton';
 import ParticlesBackground from './pages/landingPage/ParticlesBackground';
 let currentTime = new Date();
@@ -43,7 +43,7 @@ export default function App() {
 
       <Routes>
          <Route path="/" element={<Home />} /> 
-        <Route path="about" element={<LandingPage />} />
+        <Route path="about" element={<About />} />
         <Route path="gallery" element={<LandingPage />} />
         <Route path="sponsors" element={<LandingPage/>} />
         <Route path="team" element={<LandingPage />} />
