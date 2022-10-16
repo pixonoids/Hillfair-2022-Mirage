@@ -1,13 +1,17 @@
 .aboutmini {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content:space-around;
   height: fit-content;
   color: #cbc3ac;
   padding: 4rem 0;
   .tutankhamen{
     width: 150px;
-    @media (max-width:600px) {
+    &:hover{
+      transform: translateY(-10px) scale(1.1);
+      transition: 0.4s ease-in-out;
+    }
+    @media (max-width:800px) {
       display: none;
     }
   }
@@ -16,7 +20,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     .abouttext {
       width: 80%;
       padding: 3rem 4rem;
@@ -42,6 +46,7 @@
         align-items: center;
         background-color: transparent;
         border: 0.1rem solid #ffb85c;
+        text-decoration: none;
         border-radius: 2rem;
         box-sizing: border-box;
         color: #fff;
@@ -56,7 +61,7 @@
         text-align: center;
         margin: 0.5rem 0 1rem;
         &:hover {
-          background-color: #7c4730;
+          background-color: #130f3b;
           transition: 0.5s ease-out, color 0.2s ease-out, border 0.2s ease-out;
         }
        @media (max-width:600px) {

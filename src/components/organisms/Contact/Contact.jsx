@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import { Formik, Form } from "formik";
 import FormField from "../../molecules/FormField/FormField";
 import "./Contact.scss";
@@ -10,6 +10,14 @@ let currentTime = new Date();
 let hour = currentTime.getHours();
 
 export default function Contact() {
+  const [isHovering, setIsHovering] = useState(false);
+  const handleMouseEnter = () => {
+    setIsHovering(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovering(false);
+  };
   return (
     <div className="contact">
       <img
@@ -45,7 +53,10 @@ export default function Contact() {
               className="contactbtn"
               style={{
                 borderColor: hour >= 9 && hour <= 16 ? "#ffb85c" : "#fff",
+                backgroundColor:(hour>=9 && hour<=16 && isHovering)?'#7c4730':''
               }}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
             >
               Submit
             </button>

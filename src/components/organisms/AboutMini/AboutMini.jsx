@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "./AboutMini.scss";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { Link } from "react-router-dom";
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
 // AOS.init();
@@ -9,9 +10,21 @@ let currentTime = new Date();
 let hour = currentTime.getHours();
 
 export default function AboutMini() {
+  const [isHovering, setIsHovering] = useState(false);
+  const handleMouseEnter = () => {
+    setIsHovering(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovering(false);
+  };
   return (
     <div className="aboutmini">
-    <img src="/images/elements/tutankhamen.png" alt="tutankhamen" className="tutankhamen"/>
+      <img
+        src="/images/elements/tutankhamenleft.png"
+        alt="tutankhamen"
+        className="tutankhamen"
+      />
       <div className="aboutmini-container">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -42,13 +55,18 @@ export default function AboutMini() {
             from creative skills to singing, dancing, acting, and finally
             rocking up the stage with band music and fashion show.{" "}
           </p>
-          <button
-            style={{
-              borderColor: hour >= 9 && hour <= 16 ? "#ffb85c" : "#fff",
-            }}
-          >
-            View More <AiOutlineArrowRight className="icon" />
-          </button>
+          <Link key="/about" to="/about" style={{ textDecoration: "none" }}>
+            <button
+              style={{
+                borderColor: hour >= 9 && hour <= 16 ? "#ffb85c" : "#fff",
+                backgroundColor:(hour>=9 && hour<=16 && isHovering)?'#7c4730':''
+              }}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              View More <AiOutlineArrowRight className="icon" />
+            </button>
+          </Link>
         </div>
 
         <svg
@@ -65,7 +83,11 @@ export default function AboutMini() {
           ></path>
         </svg>
       </div>
-      <img src="images/elements/tutankhamen.png" alt="tutankhamen" className="tutankhamen"/>
+      <img
+        src="images/elements/tutankhamen.png"
+        alt="tutankhamen"
+        className="tutankhamen"
+      />
     </div>
   );
 }
