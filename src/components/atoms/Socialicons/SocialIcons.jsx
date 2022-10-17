@@ -5,7 +5,7 @@ import "./SocialIcons.scss";
 export default function () {
   return (
     <div className="socialicons">
-      <ul class="glowingIcons">
+      <ul className="glowingIcons">
         <li>
           <a href="https://www.instagram.com/hillffair_nith/" target="_blank">
             <BsInstagram />
