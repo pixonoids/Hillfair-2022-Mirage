@@ -58,8 +58,8 @@ export default function AboutMini() {
           <Link key="/about" to="/about" style={{ textDecoration: "none" }}>
             <button
               style={{
-                borderColor: hour >= 9 && hour <= 16 ? "#ffb85c" : "#fff",
-                backgroundColor:(hour>=9 && hour<=16 && isHovering)?'#7c4730':''
+                borderColor: hour >= 6 && hour <= 16 ? "#ffb85c" : "#fff",
+                backgroundColor:(hour>=6 && hour<=16 && isHovering)?'#7c4730':''
               }}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
