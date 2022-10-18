@@ -20,6 +20,7 @@ export default function Contact() {
   };
   return (
     <div className="contact">
+    <h1>Contact Us</h1>
       <img
         src="/images/hillfair-logo-light.png"
         alt="hillffair logo"
@@ -36,9 +37,9 @@ export default function Contact() {
           <Form>
             <div className="form-first">
               <label htmlFor=""></label>
-              <FormField name="name" placeholder="Your Name" />
+              <FormField name="name" placeholder="Your Name" autoComplete='off'/>
               <label htmlFor=""></label>
-              <FormField name="email" placeholder="Your Email" />
+              <FormField name="email" placeholder="Your Email" autoComplete='off' />
             </div>
             <div className="form-second">
               <label htmlFor=""></label>
@@ -46,6 +47,9 @@ export default function Contact() {
                 component="textarea"
                 name="message"
                 placeholder="Your message"
+                style={{
+                  resize:'none'
+                }}
               />
             </div>
             <button
@@ -66,3 +70,4 @@ export default function Contact() {
     </div>
   );
 }
+

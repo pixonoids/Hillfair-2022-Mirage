@@ -114,7 +114,7 @@
           width: 125px;
           margin-top: -4rem;
           &:hover{
-            animation:animatepixo s ease-in-out;
+            animation:animatepixo 0.5s ease-in-out;
           }
         }
         .nithlogo{
@@ -153,28 +153,7 @@
     }
   }
 @keyframes animatepixo {
-  0%{
-    transform: rotate(45deg);
-  }
-  25%{
-    transform: rotate(90deg);
-  }
-  50%{
-    transform: rotate(135deg);
-  }
-  75%{
-    transform: rotate(180deg);
-  }
-  80%{
-    transform: rotate(225deg);
-  }
-  85%{
-    transform: rotate(270deg);
-  }
-  90%{
-transform: rotate(315deg);
-  }
-  100%{
-    transform: rotate(360deg);
+  to {
+    rotate: 135deg;
   }
 }
