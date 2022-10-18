@@ -62,6 +62,7 @@ subscribed--> 1
           style={{
             backgroundColor:(subscribe!==null&&subscribe!=="subscribing")?subscribe === "subscribed" && "green"|| subscribe ==="failed" && "red": hour >= 9 && hour <= 17 ? "#7c4730" : "#080648",
             
+
           }}
           disabled={subscribe === "subscribing" || subscribe === "subscribed"}
         >

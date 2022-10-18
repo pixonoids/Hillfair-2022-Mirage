@@ -1,19 +1,24 @@
 .aboutmini {
   display: flex;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
   height: fit-content;
   color: #cbc3ac;
   padding: 4rem 0;
-  .tutankhamen{
-    width: 150px;
-    &:hover{
+  .tutankhamen {
+    width: 180px;
+    animation: float 2s ease-in-out infinite;
+    margin-left: 2rem;
+    &:hover {
       transform: translateY(-10px) scale(1.1);
       transition: 0.4s ease-in-out;
     }
-    @media (max-width:800px) {
+    @media (max-width: 800px) {
       display: none;
     }
+  }
+  .tutankhamen2 {
+    margin-right: 2rem;
   }
   .aboutmini-container {
     display: flex;
@@ -35,6 +40,7 @@
       font-size: 1.5rem;
       p {
         margin-bottom: 1rem;
+        font-family: Regular-Text,sans-serif;
       }
       h1 {
         text-transform: uppercase;
@@ -64,9 +70,9 @@
           background-color: #130f3b;
           transition: 0.5s ease-out, color 0.2s ease-out, border 0.2s ease-out;
         }
-       @media (max-width:600px) {
-        width: 90%;
-       }
+        @media (max-width: 600px) {
+          width: 90%;
+        }
       }
       @media (max-width: 600px) {
         width: 100%;
@@ -83,5 +89,17 @@
     @media (max-width: 600px) {
       width: 100%;
     }
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
   }
 }

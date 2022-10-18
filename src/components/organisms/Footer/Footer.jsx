@@ -7,16 +7,21 @@ let hour = currentTime.getHours();
 
 export default function Footer() {
   return (
-    <div className="footer">
+    <div className="footer" style={{
+      background:
+              (hour >= 6 && hour <= 17)
+                ? '#6c3e2b'
+                : '#A697E8',
+    }}>
       <div className="waves">
         <div
           className="wave"
           id="wave1"
           style={{
             backgroundImage:
-            (  hour >= 6 && hour <= 17)
-                ? "images/wave.png"
-                : "images/elements/wavepurple.png",
+              (hour >= 6 && hour <= 17)
+                ? "url(/images/wave.png)"
+                : "url(/images/elements/wavepurple.png)",
           }}
         ></div>
         <div
@@ -24,9 +29,9 @@ export default function Footer() {
           id="wave2"
           style={{
             backgroundImage:
-              hour >= 6 && hour <= 17
-                ? "images/wave.png"
-                : "images/elements/wavepurple.png",
+              (hour >= 6 && hour <= 17)
+                ? "url(/images/wave.png)"
+                : "url(/images/elements/wavepurple.png)",
           }}
         ></div>
         <div
@@ -34,9 +39,9 @@ export default function Footer() {
           id="wave3"
           style={{
             backgroundImage:
-              hour >= 6 && hour <= 17
-                ? "images/wave.png"
-                : "images/elements/wavepurple.png",
+              (hour >= 6 && hour <= 17)
+                ? "url(/images/wave.png)"
+                : "url(/images/elements/wavepurple.png)",
           }}
         ></div>
         <div
@@ -44,9 +49,9 @@ export default function Footer() {
           id="wave4"
           style={{
             backgroundImage:
-              hour >= 6 && hour <= 17
-                ? "images/wave.png"
-                : "images/elements/wavepurple.png",
+              (hour >= 6 && hour <= 17)
+                ? "url(/images/wave.png)"
+                : "url(/images/elements/wavepurple.png)",
           }}
         ></div>
       </div>

@@ -11,6 +11,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: left center;
     pointer-events: none;
     @media (min-width:500px) and (max-width:1024px) {
       // object-fit:inherit;
@@ -39,14 +40,14 @@
         }
         h1 {
           letter-spacing: 8px;
-          font-size: 5.5rem;
+          font-size: 5.2rem;
           font-family:PF-MomentaPro;
          
-          @media screen and (max-width: 450px) {
-            font-size: 2rem;
+          @media screen and (max-width: 566px) {
+            font-size: 1.9rem;
             letter-spacing: 2px;
           }
-          @media (min-width:450px) and (max-width:900px) {
+          @media (min-width:566px) and (max-width:900px) {
             font-size: 3.5rem;
             letter-spacing: 2px;
           }
@@ -56,7 +57,7 @@
           font-size: 2rem;
           letter-spacing: 5px;
           font-family: Al-Andalus,sans-serif;
-          @media screen and (max-width: 450px) {
+          @media screen and (max-width: 500px) {
             font-size: 1.2rem;
             letter-spacing: 2px;
           }
@@ -93,6 +94,12 @@
         font-size: 1.2rem;
         letter-spacing: 5px;
         letter-spacing: 6px;
+        .registerHere {
+          margin-top: 3rem; 
+          @media (max-width:448px) {
+            width: 18rem;
+          }
+        }
         @media screen and (max-width: 450px) {
           left: 50%;
           font-size: 0.8rem;
@@ -114,7 +121,7 @@
           width: 125px;
           margin-top: -4rem;
           &:hover{
-            animation:animatepixo s ease-in-out;
+            animation:animatepixo 0.5s ease-in-out;
           }
         }
         .nithlogo{
@@ -153,28 +160,7 @@
     }
   }
 @keyframes animatepixo {
-  0%{
-    transform: rotate(45deg);
-  }
-  25%{
-    transform: rotate(90deg);
-  }
-  50%{
-    transform: rotate(135deg);
-  }
-  75%{
-    transform: rotate(180deg);
-  }
-  80%{
-    transform: rotate(225deg);
-  }
-  85%{
-    transform: rotate(270deg);
-  }
-  90%{
-transform: rotate(315deg);
-  }
-  100%{
-    transform: rotate(360deg);
+  to {
+    rotate: 135deg;
   }
 }
