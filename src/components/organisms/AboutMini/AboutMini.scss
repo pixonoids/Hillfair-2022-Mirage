@@ -8,7 +8,7 @@
   .tutankhamen {
     width: 180px;
     animation: float 2s ease-in-out infinite;
-    margin-left: 2.5rem;
+    margin-left: 2rem;
     &:hover {
       transform: translateY(-10px) scale(1.1);
       transition: 0.4s ease-in-out;
@@ -18,7 +18,7 @@
     }
   }
   .tutankhamen2 {
-    margin-right: 2.5rem;
+    margin-right: 2rem;
   }
   .aboutmini-container {
     display: flex;
