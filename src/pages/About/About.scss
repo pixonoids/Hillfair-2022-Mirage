@@ -1,110 +1,121 @@
-.about-container {
-  display: flex;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about-wrapper{
+  margin: 0 2em;
+  font-family: Fino-Sans-Regular;
+}
+
+.about-outer-container{
   min-height: 100vh;
-  flex-direction: column;
-  align-items: center;
-  // justify-content: center;
-  // position: fixed;
-  // translate: 0 6rem;
-//   background: linear-gradient(#c0ae90, #695430);
-  color: black;
-  overflow: hidden;
-  position: relative;
-
-  h1 {
-    // position: absolute;
-    text-transform: uppercase;
-    font-family: Fino-Sans-Regular;
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-  }
-}
-
-.about-inner-container {
-  width: 80vw;
-  position: relative;
-  margin-top: 6rem;
-}
-
-.scroll {
-  width: 90vw;
-  transform: translate(-5%, -5%);
-}
-
-.about-text-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: transparent;
-  width: 50vw;
-  height: 30vw;
-  position: absolute;
-  top:15%;
-  translate: 30%;
-  
-  font-family: Regular-Text;
-        letter-spacing: 3px;
-        font-weight: bolder;
-        font-size: 2rem;
-  h1{
-    font-size: 3rem;
-  }
+  justify-content: space-between;
+  text-align: justify;
+  overflow: hidden;
+}
 
-  p {
-    font-weight: 600;
-    letter-spacing: 1px;
-    line-height: 26px;
-    z-index: 100;
-    text-align: justify;
-    @media (max-width:1488px) {
-      font-size:1vw;
-    }
+.page-heading{
+  text-align: center;
+  margin-top: 1.5em;
+  letter-spacing: 3px;
+  font-family: PF-MomentaPro;
+  font-size: 5em;
+}
+
+h1{
+  letter-spacing: 2px;
+}
+p{
+  font-family: sans-serif;
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.803);
+}
+.quote-text{
+  font-family: Regular-Text;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.905);
+}
+
+.about-left-container{
+  padding: 2em;
+  padding-bottom: 0;
+  margin-top: 2em;
+  // translate: 0 4em;
+
+  h1{
+    margin-bottom: 0.5em;
+  }
+  p{
+
   }
 }
 
+.about-right-container{
+  padding: 2em;
+  padding-bottom: 0;
+  margin-top: 2em;
+  // translate: 0 4em;
 
-// @media (max-width: 1000px) {
-//   .scroll {
-//     rotate: 90deg;
-//     // width: 280vw;
-//     // height: 90vh;
-//     // translate: -35% 35%;
-//   }
+  h1{
+    margin-bottom: 0.5em;
+  }
+  p{
 
-//   .about-text-container {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     background-color: transparent;
-//     width: 60vw;
-//     height: 150vw;
-//     position: absolute;
-//     top: 15%;
-//     translate: 20%;
-//     overflow: hidden;
+  }
+}
+.event-images-container{
+  display: flex;
+  justify-content: center;
 
-//     h1 {
-//         // position: absolute;
-//         font-weight: 500;
-//         letter-spacing: 4px;
-//         margin-bottom: 1rem;
-//         font-size: 2rem;
-//       }
+  .event-images{
+    width: 10em;
+    margin: .3em;
+    margin-top: 6em;
+  }
 
-//     p {
-//         font-weight: 600;
-//         // letter-spacing: 1px;
-//         line-height: 25px;
-//         z-index: 100;
-//         // text-align: justify;
-//         font-size: 15px;
-//       }
-//   }
-  
-// }
+  .localTrain{
+    rotate: -20deg;
+    z-index: 1;
+  }
+  .naalayak{
+    translate: 0 -2em;
+    z-index: 2;
+  }
+  .vipulGoyal{
+    rotate: 20deg;
+    z-index: 1;
+  }
+}
 
+// about team
+
+.about-team-outer-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  // margin-top: 5em;
+}
+
+.about-team{
+  padding: 2em;
+
+  h1{
+    margin-bottom: 0.5em;
+  }
+  p{
+    text-align: justify;
+  }
+}
+
+// video player
 .video-preview {
-  margin: 0 0 3rem 0;
+  padding: 3em 0;
+  display: flex;
+  justify-content: center;
+
   iframe {
     width:60vw;
     height: 35vw;
@@ -114,83 +125,59 @@
     }
   }
 }
-.center-image {
-  text-align: center;
+
+
+@media (max-width: 1052px){
+  .about-outer-container{
+    flex-direction: column;
+  }
+
+  .about-hillfair{
+    margin-right: 3em;
+  }
+  .about-left-container{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .page-heading{
+    font-size: 4em;
+  }
+  .quote-text{
+    font-size: 1em;
+  }
+  p{
+    font-size: 0.75em;
+  }
 }
 
-@media (max-width:1230px) {
-  .scroll {
-    rotate: 90deg;
-    width: 90vw;
-    height: 95vw;
-    transform: translate(-15%, 5%);
+@media (max-width: 780px) {
+
+  .about-hillfair{
+    margin-right: 0em;
   }
-  .about-text-container {
-    top: 10%;
-    height: 35rem;
-    p {
-      line-height: calc(1rem + 1vw);
-      font-size: calc(0.8rem);
+
+  .about-left-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-team-outer-container{
+    flex-direction: column;
+  }
+
+  .event-images-container{
+    .event-images{
+      width: 8em;
     }
-    
   }
-  .video-preview iframe {
-    margin: -10rem;
-    margin-bottom: 3rem;
-  }
+  
 }
 
-@media (max-width:916px) {
-  .about-text-container {
-    height: 55vw;
-    h1 {
-      font-size: calc(1rem + 2vw);
+@media (max-width: 400px) {
+  .event-images-container{
+    .event-images{
+      width: 5em;
     }
-    p{
-      font-size: calc(0.5rem + 1vw);
-      line-height: 1rem;
-    }
-  }
-}
-@media (max-width:828px) {
-  .scroll {
-    width: 150vw;
-    transform: translate(5%, 37%);
-  }
-  .about-text-container {
-    top: 15%;
-  }
-  .video-preview iframe {
-    margin:8rem 0 1rem 0;
-  }
-}
-@media (max-width:588px) {
-  .scroll {
-    height: 100vw;
-  }
-  .about-text-container {
-    p {
-      font-size: calc(0.5rem + 0.5vw);
-      line-height: 0.7rem;
-    }
-  }
-}
-@media (max-width:440px) {
-  .scroll {
-    width: 200vw;
-    transform: translate(11%, 61%);
-  }
-  .video-preview iframe {
-    margin:15rem 0 1rem 0;
-  }
-}
-@media (max-width:370px) {
-  .scroll {
-    width: 210vw;
-    transform: translate(13%, 66%);
-  }
-  .video-preview iframe {
-    margin:14rem 0 1rem 0;
-    border-radius: 0;
   }
 }
