@@ -3,7 +3,7 @@ import './BirdAnimation.scss';
 
 const BirdAnimation =() => {
   return (
-    <div class="container">
+    <div class="Birdcontainer">
 		
         <div class="bird-container bird-container--one">
             <div class="bird bird--one"></div>
