@@ -86,7 +86,7 @@ export default function AboutMini() {
       <img
         src="images/elements/tutankhamen.png"
         alt="tutankhamen"
-        className="tutankhamen"
+        className="tutankhamen tutankhamen2"
       />
     </div>
   );

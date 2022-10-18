@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import GeneralButton from "../../molecules/GeneralButton/GeneralButton";
 import "./HomeMain.scss";
 
 const HomeMain = () => {
@@ -63,6 +64,9 @@ const HomeMain = () => {
         <div className="dates">
           <h1>11-13</h1>
           <h3>November 2022</h3>
+          <div className="registerHere">
+            <GeneralButton text="Register Here"/>
+          </div>
         </div>
         <div className="logos">
           <div className="img-div">
