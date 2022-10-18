@@ -1,5 +1,9 @@
 import React, { useState, useEffect, useCallback } from "react";
 import "./ReaderDigest.scss";
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+// AOS.init();
+
 
 const ReaderDigest = () => {
   const [newQuote, setnewQuote] = useState("");
@@ -19,13 +23,13 @@ const ReaderDigest = () => {
   );
 };
 const quote = [
-  "Lorem Ipsum 1",
-  "Lorem Ipsum 2",
-  "Lorem Ipsum 3",
-  "Lorem Ipsum 4",
-  "Lorem Ipsum 5",
-  "Lorem Ipsum 6",
-  "Lorem Ipsum 7",
-  "Lorem Ipsum 8",
+  "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, reprehenderit.",
+  // "Lorem Ipsum 2",
+  // "Lorem Ipsum 3",
+  // "Lorem Ipsum 4",
+  // "Lorem Ipsum 5",
+  // "Lorem Ipsum 6",
+  // "Lorem Ipsum 7",
+  // "Lorem Ipsum 8",
 ];
 export default ReaderDigest;
