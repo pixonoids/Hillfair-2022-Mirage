@@ -7,6 +7,7 @@ import {
   ReaderDigest,
   Newsletter,
 } from "../../components/organisms";
+import {BirdAnimation} from '../../components/molecules'
 import "./Home.scss";
 
 // const [hours,setHours]=useState(hour)
@@ -16,6 +17,7 @@ export default function Home() {
 
     <div className="home"
     >
+      <BirdAnimation />
       <HomeMain />
       <AboutMini />
       <div className="funFactNewsletter">

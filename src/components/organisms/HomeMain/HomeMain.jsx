@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import GeneralButton from "../../molecules/GeneralButton/GeneralButton";
 import "./HomeMain.scss";
 
 const HomeMain = () => {
@@ -16,7 +17,7 @@ const HomeMain = () => {
       className="homeMain"
       style={{
         backgroundImage:
-          hours >= 9 && hours <= 16
+          hours >= 6 && hours <= 16
             ? "linear-gradient(180deg,#40291c 17.15%,#522822 120.7%)"
             : " linear-gradient(180deg,#151539 17.15%,#331e66 120.7%)",
       }}
@@ -63,6 +64,10 @@ const HomeMain = () => {
         <div className="dates">
           <h1>11-13</h1>
           <h3>November 2022</h3>
+          <div className="registerHere">
+          {/* <Route path="register" element={<GeneralButton text="Register Here"/>} /> */}
+          <GeneralButton text="Register Here"/>
+          </div>
         </div>
         <div className="logos">
           <div className="img-div">

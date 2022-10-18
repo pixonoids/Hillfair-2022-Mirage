@@ -25,7 +25,7 @@ const Newsletter = () => {
         <button
           type="submit"
           style={{
-            backgroundColor: hour >= 9 && hour <= 17 ? "#7c4730" : "#080648",
+            backgroundColor: hour >= 6 && hour <= 16 ? "#7c4730" : "#080648",
           }}
         >
           <span>Subscribe</span>
