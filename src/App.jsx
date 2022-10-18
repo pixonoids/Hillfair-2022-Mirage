@@ -3,8 +3,6 @@ import './App.scss';
 import { Route, Routes } from 'react-router-dom';
 import { Menu } from './components/organisms/';
 import { useSelector } from 'react-redux';
-
-import {LandingPage,Home} from './pages';
 import MenuBar from './pages/MenuBar/MenuBar';
 
 
@@ -55,7 +53,7 @@ export default function App() {
        
 
 
-      {navVisible && <Menu />}
+      {/* {navVisible && <Menu />} */}
 
 
       <Routes>
@@ -75,5 +73,6 @@ export default function App() {
       
         
      </div> 
+     </div>
   );
 }
