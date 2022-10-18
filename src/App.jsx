@@ -4,6 +4,10 @@ import { Route, Routes } from 'react-router-dom';
 import { Menu } from './components/organisms/';
 import { useSelector } from 'react-redux';
 
+import {LandingPage,Home} from './pages';
+import MenuBar from './pages/MenuBar/MenuBar';
+
+
 
 import {LandingPage,Home,Sponsors,About} from './pages';
 import AudioButton from './components/molecules/AudioButton/AudioButton';
@@ -13,8 +17,15 @@ let hour = currentTime.getHours();
 
 
 
+
 export default function App() {
   //STATES
+  const [isPhone, setIsPhone] = useState(window.matchMedia("max-width:600px").matches);
+  useEffect(()=> {
+    window.matchMedia("(max-width: 600px)")
+    .addEventListener('change', e => setIsPhone( e.matches));
+  }, [])
+
 
     // useHideNavigation();
   const navVisible = useSelector((state) => state.ui.navVisible);
@@ -27,10 +38,15 @@ export default function App() {
     sessionStorage.setItem('enteringState', false);
   }, []);
 
-  //FUNCTIONS
+  //FUNCTIONS 
 
   //RENDER
   return (
+    <div>
+       
+
+      {navVisible && (isPhone ? <MenuBar/> : <Menu/>)}
+
     <div 
    style={{
           backgroundImage:(hour>=6 &&hour<=16)?'linear-gradient(180deg,#3a1c1b 17.15%,#b5874c 120.7%)':'linear-gradient(180deg,#151539 17.15%,#331e66 120.7%)'
@@ -40,6 +56,7 @@ export default function App() {
 
 
       {navVisible && <Menu />}
+
 
       <Routes>
          <Route path="/" element={<Home />} /> 
