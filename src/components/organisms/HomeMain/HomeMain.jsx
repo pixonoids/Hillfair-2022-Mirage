@@ -65,7 +65,8 @@ const HomeMain = () => {
           <h1>11-13</h1>
           <h3>November 2022</h3>
           <div className="registerHere">
-            <GeneralButton text="Register Here"/>
+          {/* <Route path="register" element={<GeneralButton text="Register Here"/>} /> */}
+          <GeneralButton text="Register Here"/>
           </div>
         </div>
         <div className="logos">

@@ -14,6 +14,7 @@
   justify-content: center;
   padding: 1rem 2rem;
   text-align: center;
+  z-index:99;
   &:hover {
     background-color: #130f3b;
     transition: 0.5s ease-out, color 0.2s ease-out, border 0.2s ease-out;

@@ -13,20 +13,19 @@ const GeneralButton = ({text}) => {
         setIsHovering(false);
     };
     return (
-        <div>
         <button 
         className='btn'
-          style={{
-            borderColor: hour >= 9 && hour <= 16 ? "#ffb85c" : "#fff",
-            backgroundColor:(hour>=6 && hour<=24 && isHovering)?'#7c4730':'transparent'
-          }}
+        style={{
+                borderColor: hour >= 9 && hour <= 16 ? "#ffb85c" : "#fff",
+                backgroundColor:(hour>=9 && hour<=16 && isHovering)?'#7c4730':''
+              }}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
           {text}
         </button>
-      </div>
     )
 }
 
 export default GeneralButton;
+
