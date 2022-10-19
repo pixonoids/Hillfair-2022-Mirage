@@ -1,6 +1,14 @@
 .guest {
     text-align: center;
     padding-bottom: 3rem;
+    background-color: rgba(0, 0, 0, 0.11);
+    width: 60%;
+    margin: auto;
+    border-radius: 1rem;
+    @media (max-width:600px) {
+        width: 100% !important;
+        background-color: transparent;
+    }
     h1{
         text-align: center;
     }
@@ -12,10 +20,10 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        .wrapper {
+        .wrapperGuest {
             display: flex;
             flex-direction: column;
-            gap: 3rem;
+            gap: 2rem;
             label {
                 display: flex;
                 flex-direction: column;

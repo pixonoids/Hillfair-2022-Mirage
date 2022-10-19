@@ -1,8 +1,6 @@
-.sponsors {
+.participant {
     text-align: center;
     padding-bottom: 3rem;
-    padding-top: 1rem;
-
     background-color: rgba(0, 0, 0, 0.11);
     width: 60%;
     margin: auto;
@@ -22,7 +20,7 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        .wrapperSponsor {
+        .wrapperParticipant {
             display: flex;
             flex-direction: column;
             gap: 2rem;

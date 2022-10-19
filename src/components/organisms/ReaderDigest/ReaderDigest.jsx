@@ -4,8 +4,8 @@ import "./ReaderDigest.scss";
 // import 'aos/dist/aos.css';
 // AOS.init();
 import { SquareAnimation } from "../../atoms";
-import ReactAnime from 'react-animejs'
-const { Anime, stagger } = ReactAnime
+// import ReactAnime from 'react-animejs'
+// const { Anime, stagger } = ReactAnime
 const ReaderDigest = () => {
   const [newQuote, setnewQuote] = useState("");
   const shuffle = useCallback(() => {
@@ -23,19 +23,19 @@ const ReaderDigest = () => {
           <SquareAnimation />
         </div>
         Fun Fact</div>
-      <Anime
+        <div className="quote">{newQuote}</div>
+      {/* <Anime
         initial={[
           {
             targets: ".quote",
-            opacity: [0, 1],
+            opacitm Ipsum y: [0, 1],
             scale: [0.2, 1],
             duration: 4000,
             loop: true
           },
         ]}
       >
-        <div className="quote">{newQuote}</div>
-      </Anime>
+      </Anime> */}
     </div>
   );
 };

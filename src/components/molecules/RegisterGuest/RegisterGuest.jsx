@@ -9,7 +9,7 @@ const RegisterGuest = () => {
       <h1 className='guestHeading'>Guest Register</h1>
         <img src={logo} alt="logo" />
       <div className='registerGuest'>
-        <div className='wrapper'>
+        <div className='wrapperGuest'>
           <label>Designation: <input type="text" name="designation" /></label>
           <label>Social Profile: <input type="text" name="social" /></label>
           <label>Address No: <input type="text" name="address" /></label>

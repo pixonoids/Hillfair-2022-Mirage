@@ -1,9 +1,14 @@
 .readerDigest {
   width: 50%;
+  height: 100%;
   padding: 4rem;
   display: flex;
-  justify-content: center;
+  justify-content:flex-start;
   flex-direction: column;
+  // background-color: rgba(0, 0, 0, 0.103);
+  animation: colorChange 10s linear infinite;
+  border-radius: 3rem;
+
   .heading {
     padding-bottom: 1rem;
     text-transform: uppercase;
@@ -14,19 +19,48 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+
   }
   .quote {
     color: rgba(255, 255, 255, 0.668);
     font-family: Regular-Text;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-top:8rem;
     transform-origin:left;
+    animation: scaleText 4s ease-in-out infinite;
   }
   @media (max-width:700px) {
     width: 100%;
     padding: 2rem;
+
   }
   @media (max-width:700px) {
-    padding: 2rem 0;
+    padding-left: 3rem;
+  }
+}
+
+@keyframes scaleText {
+  0% {
+    scale: 0.1;
+    opacity: 0.1;
+  }
+  10% {
+    scale: 1.2;
+    opacity: 1;
+  }
+  20%,100% {
+    scale: 1;
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.1);
   }
 }
