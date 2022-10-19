@@ -60,7 +60,7 @@ const RegisterPage= function () {
                   className="invalid-feedback"
 
                   />
-                  value.email
+                 
                   </div>
                   <div className="fieldWrapper">
                             <label className="placeholder" htmlFor="category">Last Name:</label>
@@ -97,8 +97,8 @@ const RegisterPage= function () {
                           name="address"
                           className="invalid-feedback"
                             /></div> 
-                                <label className='placeholder'> who are you</label>
                             <div className='radio-container'>
+                                <label className='placeholder'> who are you</label>
                             <label>
               <Field type="radio" name="category" value="audience" />
               Audience
