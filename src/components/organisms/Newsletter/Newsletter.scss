@@ -121,6 +121,7 @@
 
 #svg-spinner {
   -webkit-transition-property: -webkit-transform;
+  transition-duration: 1.2s;
   -webkit-transition-duration: 1.2s;
   -webkit-animation-name: rotate;
   -webkit-animation-iteration-count: infinite;

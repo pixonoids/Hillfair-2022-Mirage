@@ -1,0 +1,27 @@
+.guest {
+    text-align: center;
+    padding-bottom: 3rem;
+    h1{
+        text-align: center;
+    }
+    img{
+        width: 20rem;
+    }
+    .registerGuest{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            label {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+        }
+    }
+}

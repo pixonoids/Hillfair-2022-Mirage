@@ -10,6 +10,7 @@ import MenuBar from './pages/MenuBar/MenuBar';
 import {LandingPage,Home,Sponsors,About} from './pages';
 import AudioButton from './components/molecules/AudioButton/AudioButton';
 import ParticlesBackground from './pages/landingPage/ParticlesBackground';
+import { RegisterGuest, RegisterSponsors } from './components/molecules';
 let currentTime = new Date();
 let hour = currentTime.getHours();
 
@@ -66,6 +67,8 @@ export default function App() {
         <Route path="Footer" element={<LandingPage/>} />
         <Route path="admin" element={<LandingPage />} />
         <Route path="events" element={<LandingPage/>} />
+        <Route path="registerSponsors" element={<RegisterSponsors/>} />
+        <Route path="registerGuest" element={<RegisterGuest/>} />
         {/* <Route path="" element={<ErrorPage />} /> */}
 
       </Routes> 
