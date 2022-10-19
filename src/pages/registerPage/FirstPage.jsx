@@ -6,11 +6,8 @@ import validateSchema from '../../services/validation/firstPage'
 import { useNavigate } from "react-router-dom"
 import { Field, Form, Formik, ErrorMessage  } from 'formik';
 
-
 const RegisterPage= function () {
 
-
-    
   const navigate = useNavigate();
   const pdf = (values) => {
     navigate('/download', { state: values })
@@ -42,24 +39,28 @@ const RegisterPage= function () {
 
       <div className='registerContainer'>
         <div className='formContainer'>
-          <Formik
-            initialValues={initialValues}
-            validationSchema={validateSchema}
-            onSubmit={(values) => {
-              console.log(values)
-             }}
-         
-      >
-        {({ values , errors, touched }) => (
-              <Form className="formWrapper"  >
-                <div className="fieldWrapper">
+        <Formik
+       initialValues={{ email: '', color: 'red', firstName: '', lastName: '' }}
+       onSubmit={(values, actions) => {
+         setTimeout(() => {
+           alert(JSON.stringify(values, null, 2));
+           actions.setSubmitting(false);
+         }, 1000);
+       }}
+     >
+       {(values) => (
+         <Form className='formWrapper'>
+          
+           <div className="fieldWrapper">
           <label  className="placeholder" htmlFor="email">First Name:</label>
                             <Field className="input-text"  type="firstName" name="firstName" placeholder="First Name" /> 
                     <ErrorMessage
                           component="div"
                           name="firstName"
                   className="invalid-feedback"
+
                   />
+                  value.email
                   </div>
                   <div className="fieldWrapper">
                             <label className="placeholder" htmlFor="category">Last Name:</label>
@@ -79,8 +80,7 @@ const RegisterPage= function () {
                           name="email"
                           className="invalid-feedback"
                   />
-                </div>
-                
+                  </div>
                   <div className="fieldWrapper"> <label className="placeholder" htmlFor="contact">Contact No.</label>
                     <Field className="input-text" type="firstName" name="contact" placeholder="Contact No" /> 
             
@@ -126,13 +126,12 @@ const RegisterPage= function () {
                           className="invalid-feedback"
                                 />
                                 </div>
-                       {/* <GeneralButton text="submit" type={"submit"} />   
-                          */}
-                          <button type="submit" className="btn">Submit</button>
-          </Form>
-        )}
-               
-          </Formik>
+                       <GeneralButton text="submit" type={"submit"} /> 
+          
+        
+         </Form>
+       )}
+     </Formik>
           
     </div>    
     </div>    )
