@@ -1,0 +1,77 @@
+.registerContainer{
+    width: 100%;
+    display: flex;
+// background-color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  
+    .formContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:50%;
+        margin-top: 15rem;
+  
+      
+        .formWrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+  
+            .placeholder{
+  
+               color: white;
+                margin: 0.2rem 0rem;
+                font-family:sans-serif ;
+                font-size: 1.2rem;
+                font-weight: 600;
+            
+              
+              }
+              
+  
+              
+        }
+  
+    }
+  }
+  
+  .input-text {
+    color: darkblue;
+    margin: 0.2rem 0rem;
+    padding: 0.5rem;
+    outline: none;
+    border:none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white   ;
+  }
+  
+  .invalid-feedback{
+    visibility: inherit;
+    height: 1rem;
+    color: red;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  
+  }
+  
+  .radio-container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    label{
+      margin: 0.5rem 0rem;
+    }
+  }
+
+  .fieldWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0.5rem 0rem;
+  }
