@@ -79,7 +79,7 @@
           width: 100%;
         }
       }
-      @media (max-width: 1200px) {
+      @media (max-width: 1235px) {
         width: 100%;
         margin-top: 1rem;
         button{
@@ -178,5 +178,22 @@
   width: 50%;
   height: 50%;
 
+  @media (max-width: 1235px) {
+ width: fit-content;
+    height: 30%;
+  }
 
+
+}
+
+
+.error{
+color: red;
+font-size: 0.8rem;
+height: 1rem;
+}
+.no-error{
+  visibility: hidden;
+font-size: 0.8rem;
+height: 1rem;
 }

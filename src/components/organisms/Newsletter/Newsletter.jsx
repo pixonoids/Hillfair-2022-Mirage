@@ -6,6 +6,14 @@ import React, { useEffect,useState }  from 'react';
 // AOS.init();
 let currentTime = new Date();
 let hour = currentTime.getHours();
+const validEmailRegex = RegExp(
+  /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
+);
+const validateForm = errors => {
+  let valid = true;
+  Object.values(errors).forEach(val => val.length > 0 && (valid = false));
+  return valid;
+};
 
 const Newsletter = () => {
 /*
@@ -17,20 +25,48 @@ subscribed--> 1
 
  */
   const [subscribe, setSubscribe] = useState(null);
+  const [error, setError] = useState('');
+  const [email, setEmail] = useState('');
 
   useEffect(() => {
     // subscribeHandler()
     
   }, [subscribe]);
 
-  const subscribeHandler = () => {
-    setSubscribe("subscribing");
+ 
+
+
+  const handleChange = (event) => {
+    event.preventDefault();
+    const { name, value } = event.target;
+    const err=validEmailRegex.test(value)? ''
+      : 'Email is not valid!';
+    setError(err)
+    setEmail(value)
+
+    // setTimeout(() => {
+    //   setError('');
+    // },2000)
+
+    
+        
+  }
+  
+  const subscribeHandler = (event) => {
+    event.preventDefault();
+    if(validateForm(error)) {
+      console.info('Valid Form')
+      setSubscribe("subscribing");
     setTimeout(() => {
       setSubscribe("subscribed");
+      setEmail('');
     }, 2000);
-  };
-
-  
+    
+    }else{
+      console.error('Invalid Form')
+    }
+    
+  }
   
 
 
@@ -49,14 +85,19 @@ subscribed--> 1
         we will not spam you!{" "}
       </div>
       <div className="Subscribe">
+        
         <input
           type="text"
           id="email"
           name="email"
           placeholder="Enter your email"
           required=""
+          onChange={handleChange}
           className="inputNewsletter"
+          noValidate 
+          value={email}
         />
+        
         <button onClick={subscribeHandler}
           type="submit"
           style={{
@@ -65,6 +106,7 @@ subscribed--> 1
           }}
           disabled={subscribe === "subscribing" || subscribe === "subscribed"}
         >
+          
            {(subscribe===null)&&<span>Subscribe</span>}
           {(subscribe==="subscribed")&&<span className="subscribed">Subscribed</span>}
           {(subscribe==="failed")&&<span className="failed">Try again</span>}
@@ -82,8 +124,13 @@ subscribed--> 1
   <circle cx="42.98" cy="17.68" r="1.6" fill="#fddf94"/>
   <circle cx="35.81" cy="7.86" r="1.3" fill="#fcdb86"/>
 </svg>}
+      
         </button>
+        
       </div>
+      <div className={error.length&&subscribe!=="subscribed"?"error":'no-error'}>
+        {error}
+        </div>
     </div>
   );
 };
