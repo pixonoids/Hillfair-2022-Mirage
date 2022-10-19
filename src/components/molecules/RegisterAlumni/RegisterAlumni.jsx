@@ -21,18 +21,24 @@ onSubmit={(values, actions) => {
         <img src={logo} alt="logo" />
       <div className='registerGuest'>
           <Form className='wrapperAlumni'>
-          
+          <div className="fieldWrapper">
             <label>Roll No:</label>
             <Field type="text" name="roll" placeholder="Roll no" />
-            <ErrorMessage name='roll' />
+              <ErrorMessage name='roll' />
+              </div>
             
+            
+          <div className="fieldWrapper">
             <label>Batch:</label>
             <Field type="text" name="batch" placeholder="Batch" />
-            <ErrorMessage name='batch' />
+              <ErrorMessage name='batch' />
+              </div>
            
+          <div className="fieldWrapper">
             <label>Department:</label> 
              <Field type="text" name="department" placeholder="Department" />
-            <ErrorMessage name='department' />
+              <ErrorMessage name='department' />
+              </div>
           <GeneralButton text="Submit" />
         </Form>
       </div>
@@ -42,41 +48,3 @@ onSubmit={(values, actions) => {
 }
 export default RegisterAlumni;
 
-
-// <Formik
-// initialValues={{ email: '', color: 'red', firstName: '', lastName: '' }}
-// onSubmit={(values, actions) => {
-//   setTimeout(() => {
-//     alert(JSON.stringify(values, null, 2));
-//     actions.setSubmitting(false);
-//   }, 1000);
-// }}
-// >
-// {(values) => (
-//     <Form className={"wrapperAlumni"}>
-//     <Field type="email" name="email" placeholder="Email" />
-//     <Field as="select" name="color">
-//       <option value="red">Red</option>
-//       <option value="green">Green</option>
-//       <option value="blue">Blue</option>
-//     </Field>
-
-//     <Field name="lastName">
-//       {({
-//         field, // { name, value, onChange, onBlur }
-//         form: { touched, errors }, // also values, setXXXX, handleXXXX, dirty, isValid, status, etc.
-//         meta,
-//       }) => (
-//         <div>
-//           <input type="text" placeholder="Email" {...field} />
-//           {meta.touched && meta.error && (
-//             <div className="error">{meta.error}</div>
-//           )}
-//         </div>
-//       )}
-//     </Field>
- 
-//     <button type="submit">Submit</button>
-//   </Form>
-// )}
-// </Formik>
