@@ -71,11 +71,11 @@
           transition: 0.5s ease-out, color 0.2s ease-out, border 0.2s ease-out;
         }
         @media (max-width: 600px) {
-          width: 90%;
+          width: 100%;
         }
       }
       @media (max-width: 600px) {
-        width: 100%;
+        width: 90%;
         padding: 4rem 1rem;
       }
     }
