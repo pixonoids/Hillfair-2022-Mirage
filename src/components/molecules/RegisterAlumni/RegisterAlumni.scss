@@ -27,7 +27,9 @@
             .fieldWrapper{
                 display: flex;
                 flex-direction: column;
-            }
+                width: 100%;
+                margin: 0.5rem 0rem;
+              }
             label {
                 display: flex;
                 flex-direction: column;
@@ -36,4 +38,15 @@
             }
         }
     }
+}
+
+
+.invalid-feedback{
+    visibility: inherit;
+    height: 1rem;
+    color: red;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  
 }
