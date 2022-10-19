@@ -30,7 +30,8 @@ onSubmit={(values, actions) => {
             <Field type="text" name="batch" placeholder="Batch" />
             <ErrorMessage name='batch' />
            
-            <label>Department:</label>  <Field type="text" name="department" placeholder="Department" />
+            <label>Department:</label> 
+             <Field type="text" name="department" placeholder="Department" />
             <ErrorMessage name='department' />
           <GeneralButton text="Submit" />
         </Form>
