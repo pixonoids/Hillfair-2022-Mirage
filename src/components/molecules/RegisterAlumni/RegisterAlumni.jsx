@@ -24,20 +24,20 @@ onSubmit={(values, actions) => {
           <div className="fieldWrapper">
             <label>Roll No:</label>
             <Field type="text" name="roll" placeholder="Roll no" />
-              <ErrorMessage className='invalid-feedback' name='roll' />
+              <ErrorMessage component="div" className='invalid-feedback' name='roll' />
               </div>
             
             
           <div className="fieldWrapper">
             <label>Batch:</label>
             <Field type="text" name="batch" placeholder="Batch" />
-              <ErrorMessage className='invalid-feedback' name='batch' />
+              <ErrorMessage component="div" className='invalid-feedback' name='batch' />
               </div>
            
           <div className="fieldWrapper">
             <label>Department:</label> 
              <Field type="text" name="department" placeholder="Department" />
-              <ErrorMessage className='invalid-feedback' name='department' />
+              <ErrorMessage component="div"  className='invalid-feedback' name='department' />
               </div>
           <GeneralButton text="Submit" />
         </Form>
