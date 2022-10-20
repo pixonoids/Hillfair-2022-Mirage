@@ -1,9 +1,9 @@
 import * as yup from 'yup';
 
 const participantValidation = yup.object().shape({
-    college: yup.string().required('College is required'),
-    website: yup.string().required('Category contact is required'),
-    category: yup.string().required('category is required'),
+    college: yup.string().required('Required'),
+    website: yup.string().required('Required'),
+    category: yup.string().required('Required')
 
 });
 

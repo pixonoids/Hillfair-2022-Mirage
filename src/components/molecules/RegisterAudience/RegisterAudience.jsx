@@ -36,8 +36,8 @@ const RegisterAudience = () => {
             </div>
             
             <div className="fieldWrapper">
-            <label>Pay 500 Rs.</label>
-            <Field type="checkbox" id="entrancePay" name="entrancePay" value="500"/>
+            <label><Field type="checkbox" id="entrancePay" name="entrancePay" value="500"/>Pay 500 Rs.</label>
+            
               <ErrorMessage component="div" name="entrancePay" className='invalid-feedback' />
             </div>
             
