@@ -17,19 +17,7 @@ const RegisterPage = function () {
     navigate('/download', { state: values })
   }
 
- const initialValues= { 
-    
-    firstName: '',
-    lastName: '',
-    email: '',
-    city: '',
-    id: '',
-    phone: '',
-    college: '',
-     address: '',
-     contact: '',
-     category:''
-          }
+ 
 
   const handleSubmit = (values) => {
     alert(values)
@@ -51,7 +39,8 @@ const RegisterPage = function () {
            alert(JSON.stringify(values, null, 2));
            actions.setSubmitting(false);
          }, 1000);
-       }}
+            }}
+            validationSchema={validateSchema}
      >
        {(values) => (
          <Form className='formWrapper'>
