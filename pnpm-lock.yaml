@@ -18,10 +18,12 @@ specifiers:
   sass: ^1.55.0
   tsparticles: ^2.3.4
   vite: ^3.1.0
+  yup: ^0.32.11
 
 dependencies:
   '@reduxjs/toolkit': 1.8.5_kuo2ie247izvzll3jejufdtq3q
   aos: 3.0.0-beta.6
+
   formik: 2.2.9_react@18.2.0
   react: 18.2.0
   react-animejs: 0.5.6_tlhpcpohfs2n5whetkhuun7dyy
@@ -33,6 +35,7 @@ dependencies:
   react-tsparticles: 2.3.3_react@18.2.0
   sass: 1.55.0
   tsparticles: 2.3.4
+  yup: 0.32.11
 
 devDependencies:
   '@types/react': 18.0.21
@@ -3142,6 +3145,7 @@ packages:
       normalize-path: 3.0.0
       picomatch: 2.3.1
 
+
   /aos/3.0.0-beta.6:
     resolution: {integrity: sha512-VLWrpq8bfAWcetynVHMMrqdC+89Qq/Ym6UBJbHB4crIwp3RR8uq1dNGgsFzoDl03S43rlVMK+na3r5+oUCZsYw==}
     dependencies:
@@ -4191,7 +4195,6 @@ packages:
       map-visit: 1.0.0
       object-visit: 1.0.1
     dev: false
-
   /color-convert/1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}
     dependencies:
@@ -8619,6 +8622,10 @@ packages:
     dev: false
     optional: true
 
+  /nanoclone/0.2.1:
+    resolution: {integrity: sha512-wynEP02LmIbLpcYw8uBKpcfF6dmg2vcpKqxeH5UcoKEYdExslsdUA4ugFauuaeYdTB76ez6gJW8XAZ6CgkXYxA==}
+    dev: false
+
   /nanoid/3.3.4:
     resolution: {integrity: sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -10276,6 +10283,10 @@ packages:
       - eslint
       - supports-color
       - vue-template-compiler
+    dev: false
+
+  /property-expr/2.0.5:
+    resolution: {integrity: sha512-IJUkICM5dP5znhCckHSv30Q4b5/JA5enCtkRHYaOVOAocnH/1BQEYTC5NMfT3AVl/iXKdr3aqQbQn9DxyWknwA==}
     dev: false
 
   /react-dom/18.2.0_react@18.2.0:
@@ -13066,4 +13077,17 @@ packages:
       which-module: 2.0.0
       y18n: 4.0.3
       yargs-parser: 13.1.2
+    dev: false
+
+  /yup/0.32.11:
+    resolution: {integrity: sha512-Z2Fe1bn+eLstG8DRR6FTavGD+MeAwyfmouhHsIUgaADz8jvFKbO/fXc2trJKZg+5EBjh4gGm3iU/t3onKlXHIg==}
+    engines: {node: '>=10'}
+    dependencies:
+      '@babel/runtime': 7.19.0
+      '@types/lodash': 4.14.186
+      lodash: 4.17.21
+      lodash-es: 4.17.21
+      nanoclone: 0.2.1
+      property-expr: 2.0.5
+      toposort: 2.0.2
     dev: false

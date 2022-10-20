@@ -21,7 +21,8 @@
     "react-scripts": "^3.x",
     "react-tsparticles": "^2.3.3",
     "sass": "^1.55.0",
-    "tsparticles": "^2.3.4"
+    "tsparticles": "^2.3.4",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",

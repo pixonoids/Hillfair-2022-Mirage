@@ -7,7 +7,7 @@ import MenuBar from './pages/MenuBar/MenuBar';
 
 
 
-import {LandingPage,Home,Sponsors,About} from './pages';
+import {LandingPage,Home,Sponsors,About,RegisterPage} from './pages';
 import AudioButton from './components/molecules/AudioButton/AudioButton';
 import ParticlesBackground from './pages/landingPage/ParticlesBackground';
 import { RegisterGuest, RegisterParticipants, RegisterSponsors } from './components/molecules';
@@ -65,7 +65,7 @@ export default function App() {
         <Route path="gallery" element={<LandingPage />} />
         <Route path="sponsors" element={<LandingPage/>} />
         <Route path="team" element={<LandingPage />} />
-        <Route path="register" element={<LandingPage />} />
+        <Route path="register" element={<RegisterPage />} />
         <Route path="Footer" element={<LandingPage/>} />
         <Route path="admin" element={<LandingPage />} />
         <Route path="events" element={<LandingPage/>} />
