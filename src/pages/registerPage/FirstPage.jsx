@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style.scss'
 import { default as GeneralButton } from '../../components/molecules/GeneralButton/GeneralButton'
 import validateSchema from '../../services/validation/firstPage'
 // import addUser from '../../services/firebase'
 import { useNavigate } from "react-router-dom"
-import { Field, Form, Formik, ErrorMessage  } from 'formik';
+import { Field, Form, Formik, ErrorMessage } from 'formik';
+import {RegisterSponsors,RegisterAudience,RegisterParticipants,RegisterGuest, RegisterAlumni} from '../../components/molecules'
+import RegisterPartipants from '../../components/molecules/RegisterParticipants/RegisterParticipants'
 
-const RegisterPage= function () {
+const RegisterPage = function () {
+  
+  const [category,setCategory]=useState(null)
 
   const navigate = useNavigate();
   const pdf = (values) => {
@@ -38,10 +42,11 @@ const RegisterPage= function () {
     return (
 
       <div className='registerContainer'>
-        <div className='formContainer'>
+       {(category==null)&&<div className='formContainer'>
         <Formik
        initialValues={{ email: '', color: 'red', firstName: '', lastName: '' }}
-       onSubmit={(values, actions) => {
+            onSubmit={(values, actions) => {
+         setCategory(values.category)
          setTimeout(() => {
            alert(JSON.stringify(values, null, 2));
            actions.setSubmitting(false);
@@ -105,7 +110,7 @@ const RegisterPage= function () {
             </label>    
                            
                             <label>
-              <Field type="radio" name="category" value="partcipant" />
+              <Field type="radio" name="category" value="participant" />
               partcipant/Performer
                                 </label>    
                                 <label>
@@ -126,14 +131,20 @@ const RegisterPage= function () {
                           className="invalid-feedback"
                                 />
                                 </div>
-                       <GeneralButton text="submit" type={"submit"} /> 
+                       <GeneralButton text="next" type={"submit"} /> 
           
         
          </Form>
        )}
      </Formik>
           
-    </div>    
+        </div>  }  
+        
+       { (category=="audience")&&<RegisterAudience />}
+       {(category=="guest")&& <RegisterGuest />}
+        {(category=="alumni")&&<RegisterAlumni />}
+        {(category=="participant")&&<RegisterPartipants/>}
+        {(category=="sponsor")&&<RegisterSponsors/>}
     </div>    )
 }
 
