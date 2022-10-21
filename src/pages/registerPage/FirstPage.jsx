@@ -32,7 +32,7 @@ const RegisterPage = function () {
       <div className='registerContainer'>
        {(category==null)&&<div className='formContainer'>
         <Formik
-       initialValues={{ email: '', color: 'red', firstName: '', lastName: '' }}
+       initialValues={{ email: '',contact:'',address:'' ,category:'', firstName: '', lastName: '' }}
             onSubmit={(values, actions) => {
          setCategory(values.category)
          setTimeout(() => {
