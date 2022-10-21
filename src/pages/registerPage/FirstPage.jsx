@@ -7,10 +7,12 @@ import { useNavigate } from "react-router-dom"
 import { Field, Form, Formik, ErrorMessage } from 'formik';
 import {RegisterSponsors,RegisterAudience,RegisterParticipants,RegisterGuest, RegisterAlumni} from '../../components/molecules'
 import RegisterPartipants from '../../components/molecules/RegisterParticipants/RegisterParticipants'
+import { useRef } from 'react'
 
 const RegisterPage = function () {
   
-  const [category,setCategory]=useState(null)
+  const [category, setCategory] = useState(null)
+  const firstPageValue = useRef({});
 
   const navigate = useNavigate();
   const pdf = (values) => {
@@ -34,7 +36,8 @@ const RegisterPage = function () {
         <Formik
        initialValues={{ email: '',contact:'',address:'' ,category:'', firstName: '', lastName: '' }}
             onSubmit={(values, actions) => {
-         setCategory(values.category)
+              setCategory(values.category)
+              firstPageValue.current = values;
          setTimeout(() => {
            alert(JSON.stringify(values, null, 2));
            actions.setSubmitting(false);
@@ -129,11 +132,11 @@ const RegisterPage = function () {
           
         </div>  }  
         
-       { (category=="audience")&&<RegisterAudience />}
-       {(category=="guest")&& <RegisterGuest />}
-        {(category=="alumni")&&<RegisterAlumni />}
-        {(category=="participant")&&<RegisterPartipants/>}
-        {(category=="sponsor")&&<RegisterSponsors/>}
+       { (category=="audience")&&<RegisterAudience previousvalue={firstPageValue.current} />}
+       {(category=="guest")&& <RegisterGuest previousvalue={firstPageValue.current} />}
+        {(category=="alumni")&&<RegisterAlumni previousvalue={firstPageValue.current} />}
+        {(category=="participant")&&<RegisterPartipants previousvalue={firstPageValue.current}/>}
+        {(category=="sponsor")&&<RegisterSponsors previousvalue={firstPageValue.current}/>}
     </div>    )
 }
 

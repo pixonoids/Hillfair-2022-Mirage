@@ -1,15 +1,29 @@
 import { Field,Form,Formik ,ErrorMessage} from 'formik';
-import React from 'react'
+import React, {useNavigate} from 'react'
 import GeneralButton from '../GeneralButton/GeneralButton';
 import './RegisterAudience.scss'
 import audienceValidation from '../../../services/validation/audienceValidation';
 import logo from '/images/hillfair-logo-light.png'
+import addUser from '../../../services/firebase/firebase'
 
-const RegisterAudience = () => {
+const RegisterAudience = ({ previousvalue }) => {
+
+   const navigate = useNavigate();
+  const pdf = (values) => {
+    navigate('/download', { state: values })
+  }
+  
+  const handleSubmit = (values) => {
+  
+    addUser(values)
+    pdf(values)
+  }
   return (
     <Formik
     initialValues={{ address: '', emergency: '',  entrancePay: '' }}
-    onSubmit={(values, actions) => {
+      onSubmit={(values, actions) => {
+        Object.assign(values, previousvalue);
+        handleSubmit(values)
       setTimeout(() => {
         alert(JSON.stringify(values, null, 2));
         actions.setSubmitting(false);

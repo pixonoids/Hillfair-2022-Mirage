@@ -1,16 +1,30 @@
-import React from 'react'
+import React,{useNavigate} from 'react'
 import GeneralButton from '../GeneralButton/GeneralButton';
 import './RegisterParticipants.scss'
 import logo from '/images/hillfair-logo-light.png'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import participantValidation from '../../../services/validation/participantvalidation';
+import addUser from '../../../services/firebase/firebase'
 
 
-const RegisterPartipants = () => {
+const RegisterPartipants = ({ previousvalue }) => {
+
+  const navigate = useNavigate();
+  const pdf = (values) => {
+    navigate('/download', { state: values })
+  }
+  
+  const handleSubmit = (values) => {
+    alert(values)/
+    addUser(values)
+    pdf(values)
+  }
   return (
     <Formik
       initialValues={{ college: '', website: '', category: '' }}
       onSubmit={(values, actions) => {
+        Object.assign(values, previousvalue);
+        handleSubmit(values)
         setTimeout(() => {
           alert(JSON.stringify(values, null, 2));
           actions.setSubmitting(false);

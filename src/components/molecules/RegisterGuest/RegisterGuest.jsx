@@ -1,18 +1,31 @@
 import { Form ,Field,Formik,ErrorMessage} from 'formik';
-import React from 'react'
+import React,{useNavigate} from 'react'
 import GeneralButton from '../GeneralButton/GeneralButton';
 import './RegisterGuest.scss'
 import logo from '/images/hillfair-logo-light.png'
 import guestValidation from '../../../services/validation/guestValidation';
+import addUser from '../../../services/firebase/firebase'
 
-const RegisterGuest = () => {
+const RegisterGuest = ({ previousvalue }) => {
+  
+  const navigate = useNavigate();
+  const pdf = (values) => {
+    navigate('/download', { state: values })
+  }
+  
+  const handleSubmit = (values) => {
+    // alert(values)
+    addUser(values)
+    pdf(values)
+  }
   return (
     <Formik
      
 initialValues={ {designation: "", social: "", address: ""} }
 onSubmit={(values, actions) => {
   setTimeout(() => {
-    console.log(values)
+    Object.assign(values, previousvalue);
+    handleSubmit(values)
     alert(JSON.stringify(values, null, 2));
     actions.setSubmitting(false);
   }, 1000);
