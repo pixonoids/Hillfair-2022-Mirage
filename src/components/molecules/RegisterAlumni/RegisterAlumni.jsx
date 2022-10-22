@@ -1,4 +1,6 @@
-import React,{useNavigate} from 'react'
+import React from 'react'
+import { useNavigate } from "react-router-dom";
+
 import GeneralButton from '../GeneralButton/GeneralButton';
 import './RegisterAlumni.scss'
 import alumuniValidation from '../../../services/validation/alumuniValidation';

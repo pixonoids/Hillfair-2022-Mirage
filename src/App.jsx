@@ -4,15 +4,13 @@ import { Route, Routes } from 'react-router-dom';
 import { Menu } from './components/organisms/';
 import { useSelector } from 'react-redux';
 import MenuBar from './pages/MenuBar/MenuBar';
+import {PdfPage} from './pages';
 
 
 
 import {LandingPage,Home,Sponsors,About,RegisterPage} from './pages';
 import AudioButton from './components/molecules/AudioButton/AudioButton';
 import ParticlesBackground from './pages/landingPage/ParticlesBackground';
-import { RegisterGuest, RegisterParticipants, RegisterSponsors } from './components/molecules';
-import RegisterAlumni from './components/molecules/RegisterAlumni/RegisterAlumni';
-import RegisterAudience from './components/molecules/RegisterAudience/RegisterAudience';
 let currentTime = new Date();
 let hour = currentTime.getHours();
 
@@ -69,11 +67,8 @@ export default function App() {
         <Route path="Footer" element={<LandingPage/>} />
         <Route path="admin" element={<LandingPage />} />
         <Route path="events" element={<LandingPage/>} />
-        <Route path="registerSponsors" element={<RegisterSponsors/>} />
-        <Route path="registerGuest" element={<RegisterGuest/>} />
-        <Route path="registerAlumni" element={<RegisterAlumni/>} />
-        <Route path="registerAudience" element={<RegisterAudience/>} />
-        <Route path="registerParticipants" element={<RegisterParticipants/>} />
+        <Route path="download" element={<PdfPage/>} />
+     
         {/* <Route path="" element={<ErrorPage />} /> */}
 
       </Routes> 

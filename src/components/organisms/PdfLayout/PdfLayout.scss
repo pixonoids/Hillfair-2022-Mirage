@@ -1,0 +1,21 @@
+
+.pdf{
+    margin: 10rem;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+
+    .pdf-content{
+        color: blue;
+        display: flex;
+            width: 80%;
+        justify-content: center;
+        align-items: center;
+        p{
+            color:red;
+        }
+    }
+}

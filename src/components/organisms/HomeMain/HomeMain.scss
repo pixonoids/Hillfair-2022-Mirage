@@ -97,6 +97,14 @@
         letter-spacing: 6px;
         .registerHere {
           margin-top: 1.5rem; 
+          a{
+            color: #1328b2;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 900;
+            letter-spacing: 3px;
+            }
+          
           @media (max-width:448px) {
             width: 15rem;
           }
