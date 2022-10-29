@@ -1,48 +1,96 @@
-.audience {
-    text-align: center;
-    padding-bottom: 3rem;
-    background-color: rgba(0, 0, 0, 0.11);
-    width: 60%;
-    margin: auto;
-    border-radius: 1rem;
-    @media (max-width:600px) {
-        width: 100% !important;
-        background-color: transparent;
-    }
-    h1{
-        text-align: center;
-    }
-    img{
-        width: 20rem;
-    }
-    .registerGuest{
+.invalid-feedback {
+    font-size: 0.6em;
+    font-family: monospace;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: #e91e63;
+    padding: 0.1em 0.4em;
+    background: #0007;
+  
+  }
+  [type="text"] {
+    color: white;
+    margin: 0.2rem 0rem;
+    padding: 0.1em 0.2em;
+    outline: none;
+    border: none;
+    background: none;
+    font-family: sans-serif;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.467);
+  }
+
+
+
+.registerContainer {
+    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgb(21, 21, 57) 17.15%, rgb(51, 30, 102) 120.7%);
+  
+  
+    .formContainer{
         display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        .wrapperAudience {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    margin: 15rem 0rem;
+    background-color: rgba(0, 0, 0, 0.23);
+    border-radius: 2rem;
+
+    h1 {
+        font-family: Fino-Sans-Regular;
+        font-weight: 400;
+        letter-spacing: 0.15rem;
+        line-height: 0.2rem;
+        font-size: 3rem;
+      }
+    
+        img{
+            width: 20rem;
+        }
+        .formWrapper {
             display: flex;
-            flex-direction: column;
-            gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 18rem;
+      margin: 4rem 0rem;
             label {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 0.5rem;
-                &:nth-child(1) {
-                    flex-direction: row;
-                    align-items: center;
-                }
+                color: white;
+        margin: 0.2rem 0rem;
+        font-family: sans-serif;
+        font-size: 1.0rem;
+        font-weight: 400;
+        letter-spacing: 0.15rem;
+        line-height: 0.4rem;
             }
+            button {
+                margin: 1rem 0.5rem;
+              }
         }
     }
 }
-.invalid-feedback{
-    visibility: inherit;
-    height: 1rem;
-    color: red;
-    font-size: 10px;
-    font-weight: bold;
-    letter-spacing: 1px;
+
+
+.fieldWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0.5rem 0rem;
+    padding: 0.2em;
+    label {
+      width: 100%;
+      padding: 0.1em 0.2em;
+      background: none;
+      font-family: sans-serif;
+      border: none;
+      border-bottom: 0rem;
+      outline: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.467);
+
+    }
   
-}
+  }

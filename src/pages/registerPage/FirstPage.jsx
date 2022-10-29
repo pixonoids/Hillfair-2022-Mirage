@@ -1,13 +1,14 @@
-import React, { useState } from 'react'
-import './style.scss'
-import { default as GeneralButton } from '../../components/molecules/GeneralButton/GeneralButton'
-import validateSchema from '../../services/validation/firstPage'
-// import addUser from '../../services/firebase'
+import React, { useState,useRef } from 'react'
 import { useNavigate } from "react-router-dom"
+import './FirstPage.scss'
 import { Field, Form, Formik, ErrorMessage } from 'formik';
+import { default as GeneralButton } from '../../components/molecules/GeneralButton/GeneralButton'
 import {RegisterSponsors,RegisterAudience,RegisterParticipants,RegisterGuest, RegisterAlumni} from '../../components/molecules'
+import validateSchema from '../../services/validation/firstPage'
 import RegisterPartipants from '../../components/molecules/RegisterParticipants/RegisterParticipants'
-import { useRef } from 'react'
+import logo from '/images/hillfair-logo-light.png'
+
+
 
 const RegisterPage = function () {
   
@@ -32,7 +33,9 @@ const RegisterPage = function () {
     return (
 
       <div className='registerContainer'>
-       {(category==null)&&<div className='formContainer'>
+        {(category == null) && <div className='formContainer'>
+        <h1 className='guestHeading'>Register</h1>
+        <img src={logo} alt="logo" />
         <Formik
        initialValues={{ email: '',contact:'',address:'' ,category:'', firstName: '', lastName: '' }}
             onSubmit={(values, actions) => {
@@ -69,7 +72,7 @@ const RegisterPage = function () {
                   />
                 </div>
                 <div className="fieldWrapper">
-                    <label className="placeholder" htmlFor="email">Email</label>
+                    <label className="placeholder" htmlFor="email">Email:</label>
                     <Field className="input-text" type="firstName" name="email" placeholder="Email" /> 
             
                     <ErrorMessage
@@ -78,7 +81,7 @@ const RegisterPage = function () {
                           className="invalid-feedback"
                   />
                   </div>
-                  <div className="fieldWrapper"> <label className="placeholder" htmlFor="contact">Contact No.</label>
+                  <div className="fieldWrapper"> <label className="placeholder" htmlFor="contact">Contact No:</label>
                     <Field className="input-text" type="firstName" name="contact" placeholder="Contact No" /> 
             
                     <ErrorMessage
@@ -86,43 +89,46 @@ const RegisterPage = function () {
                           name="contact"
                           className="invalid-feedback"
                             /></div> 
-                   <div className="fieldWrapper"> <label className="placeholder" htmlFor="address">Address</label>
+                   <div className="fieldWrapper"> <label className="placeholder" htmlFor="address">Address:</label>
                     <Field className="input-text"  type="firstName" name="address" placeholder="Contact No" /> 
             
                     <ErrorMessage
                           component="div"
                           name="address"
                           className="invalid-feedback"
-                            /></div> 
-                            <div className='radio-container'>
-                                <label className='placeholder'> who are you</label>
+                  /></div> 
+                 <div className="fieldWrapper">
+                <div className='radio-container'>
+                  
+                                <span className='placeholder'> Who are you</span>
                             <label>
               <Field type="radio" name="category" value="audience" />
-              Audience
+              <span> Audience</span> 
             </label>    
                            
                             <label>
               <Field type="radio" name="category" value="participant" />
-              partcipant/Performer
+              <span> Partcipant/Performer</span>
                                 </label>    
                                 <label>
               <Field type="radio" name="category" value="guest" />
-              Guest
+            <span> Guest</span> 
                             </label>    
                                 <label>
               <Field type="radio" name="category" value="sponsor" />
-              Sponsor
+               <span>Sponsor</span> 
                             </label>    
                                 <label>
               <Field type="radio" name="category" value="alumini" />
-              Alumini
+               <span>Alumini</span> 
                             </label>    
                             <ErrorMessage
                           component="div"
                           name="category"
                           className="invalid-feedback"
                                 />
-                                </div>
+                  </div>
+                  </div>
                        <GeneralButton text="next" type={"submit"} /> 
           
         
@@ -134,7 +140,7 @@ const RegisterPage = function () {
         
        { (category=="audience")&&<RegisterAudience previousvalue={firstPageValue.current} />}
        {(category=="guest")&& <RegisterGuest previousvalue={firstPageValue.current} />}
-        {(category=="alumni")&&<RegisterAlumni previousvalue={firstPageValue.current} />}
+        {(category=="alumini")&&<RegisterAlumni previousvalue={firstPageValue.current} />}
         {(category=="participant")&&<RegisterPartipants previousvalue={firstPageValue.current}/>}
         {(category=="sponsor")&&<RegisterSponsors previousvalue={firstPageValue.current}/>}
     </div>    )

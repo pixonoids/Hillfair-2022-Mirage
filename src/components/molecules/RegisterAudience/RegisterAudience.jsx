@@ -1,12 +1,11 @@
-import { Field,Form,Formik ,ErrorMessage} from 'formik';
 import React from 'react'
 import { useNavigate } from "react-router-dom";
-
-import GeneralButton from '../GeneralButton/GeneralButton';
 import './RegisterAudience.scss'
+import { Field,Form,Formik ,ErrorMessage} from 'formik';
+import addUser from '../../../services/firebase/firebase'
+import GeneralButton from '../GeneralButton/GeneralButton';
 import audienceValidation from '../../../services/validation/audienceValidation';
 import logo from '/images/hillfair-logo-light.png'
-import addUser from '../../../services/firebase/firebase'
 
 const RegisterAudience = ({ previousvalue }) => {
 
@@ -33,21 +32,27 @@ const RegisterAudience = ({ previousvalue }) => {
           }}
           validationSchema={audienceValidation}
     >
-    <div className='audience'>
-      <h1 className='guestHeading'>Audience Register</h1>
+    <div className='registerContainer'>
+     
+        <div className='formContainer'>
+        <h1 className='guestHeading'>Audience Register</h1>
         <img src={logo} alt="logo" />
-      <div className='registerGuest'>
-          <Form className='wrapperAudience'>
+          <Form className='formWrapper'>
             
           <div className="fieldWrapper">
             <label>Address: </label>
-            <Field type="text" name="address" />
+            <Field type="text" name="address" placeholder="Address" />
             <ErrorMessage component="div" name="address" className='invalid-feedback'/>
             </div>
             
             <div className="fieldWrapper">
             <label>Emergency Contact No: </label>
             <Field type="text" name="emergency" placeholder="Emergency contact" />
+            <ErrorMessage component="div" name="emergency" className='invalid-feedback' />
+            </div>
+            <div className="fieldWrapper">
+            <label>Adhaar No: </label>
+            <Field type="text" name="adhaar" placeholder="Adhaar no" />
             <ErrorMessage component="div" name="emergency" className='invalid-feedback' />
             </div>
             

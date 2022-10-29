@@ -32,11 +32,12 @@ initialValues={{ roll: '', batch: '',  department: '' }}
       }}
       validationSchema={alumuniValidation}
 >
-    <div className='alumni'>
-      <h1 className='guestHeading'>Audience Register</h1>
+    <div className='registerContainer'>
+     
+        <div className='formContainer'>
+        <h1 className='guestHeading'>Audience Register</h1>
         <img src={logo} alt="logo" />
-      <div className='registerGuest'>
-          <Form className='wrapperAlumni'>
+          <Form className='formWrapper'>
           <div className="fieldWrapper">
             <label>Roll No:</label>
             <Field type="text" name="roll" placeholder="Roll no" />

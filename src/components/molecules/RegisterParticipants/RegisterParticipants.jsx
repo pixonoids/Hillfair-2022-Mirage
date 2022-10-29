@@ -34,11 +34,12 @@ const RegisterPartipants = ({ previousvalue }) => {
       }}
       validationSchema={participantValidation}
     >
-      <div className='participant'>
+      <div className='registerContainer'>
+        
+        <div className='formContainer'>
         <h1 className='guestHeading'>Participant Register</h1>
         <img src={logo} alt="logo" />
-        <Form className='registerGuest'>
-          <div className='wrapperParticipant'>
+          <Form className='formWrapper'>
 
             <div className="fieldWrapper">
               <label>College : </label>
@@ -53,12 +54,13 @@ const RegisterPartipants = ({ previousvalue }) => {
             </div>
 
             <div className="fieldWrapper">
-              <label>Address: </label>
-              <Field type="text" name="address" />
-              <ErrorMessage component="div" name="address" className='invalid-feedback' />
+              <label>Aadhaar No: </label>
+              <Field type="text" name="aadhaar" />
+              <ErrorMessage component="div" name="aadhaar" className='invalid-feedback' />
             </div>
 
             <div className="fieldWrapper">
+            <label>Category:</label>
               <Field as="select" id="category" name="category">
                 <option value="english">English Story/Poem</option>
                 <option value="hindi">English Story/Poem</option>
@@ -71,8 +73,8 @@ const RegisterPartipants = ({ previousvalue }) => {
 
 
             <GeneralButton text="Submit" />
-          </div>
         </Form>
+          </div>
       </div>
     </Formik>
   )

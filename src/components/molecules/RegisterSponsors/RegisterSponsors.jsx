@@ -33,12 +33,13 @@ initialValues={{ company: '', gst: ''}}
       }}
       validationSchema={sponsorValidation}
 >
-    <div className='sponsors'>
-      <h1 className='guestHeading'>Sponsor Register</h1>
-      <img src={logo} alt="logo" />
+    <div className='registerContainer'>
+     
       
-      <Form className='registerGuest'>
-        <div className='wrapperSponsor'>
+        <div className='formContainer'>
+        <h1 className='guestHeading'>Sponsor Register</h1>
+      <img src={logo} alt="logo" />
+        <Form className='formWrapper'>
            
           <div className="fieldWrapper">
             <label>Company:</label>
@@ -53,8 +54,8 @@ initialValues={{ company: '', gst: ''}}
           </div>
             <GeneralButton text="Submit" />
             
-        </div>
       </Form>
+        </div>
       </div>
       </Formik>
   )

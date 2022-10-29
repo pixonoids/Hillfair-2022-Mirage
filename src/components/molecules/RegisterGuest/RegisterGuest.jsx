@@ -23,7 +23,7 @@ const RegisterGuest = ({ previousvalue }) => {
   return (
     <Formik
      
-initialValues={ {designation: "", social: "", address: ""} }
+initialValues={ {designation: "", social: "", aadhaar: ""} }
 onSubmit={(values, actions) => {
   setTimeout(() => {
     Object.assign(values, previousvalue);
@@ -34,14 +34,15 @@ onSubmit={(values, actions) => {
       }}
       validationSchema={guestValidation}
 >
-    <div className='guest'>
-      <h1 className='guestHeading'>Guest Register</h1>
+    <div className='registerContainer'>
+   
+        <div className='formContainer'>
+        <h1 >Guest Register</h1>
         <img src={logo} alt="logo" />
-      <Form className='registerGuest'>
-        <div className='wrapperGuest'>
+        <Form className='formWrapper'>
           
         <div className="fieldWrapper">
-        <label>Designation: </label>
+        <label>Designation:</label>
             <Field type="text" name="designation" />
             <ErrorMessage component="div" name="designation" className='invalid-feedback'/>
             </div>
@@ -51,13 +52,13 @@ onSubmit={(values, actions) => {
             <ErrorMessage component="div" name="social" className='invalid-feedback'/>
             </div>
         <div className="fieldWrapper">
-        <label>Address No: </label>
-            <Field type="text" name="address" />
-            <ErrorMessage component="div" name="address" className='invalid-feedback'/>
+        <label>Aadhaar No:</label>
+            <Field type="text" name="adhaar" />
+            <ErrorMessage component="div" name="aadhaar" className='invalid-feedback'/>
             </div>
           <GeneralButton text="Submit" />
-        </div>
       </Form>
+        </div>
       </div>
       </Formik>
   )
