@@ -7,6 +7,8 @@ import alumuniValidation from '../../../services/validation/alumuniValidation';
 import logo from '/images/hillfair-logo-light.png'
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import addUser from '../../../services/firebase/firebase'
+let currentTime = new Date();
+let hour = currentTime.getHours();
 const RegisterAlumni = ({ previousvalue }) => {
   
   const navigate = useNavigate();
@@ -32,7 +34,10 @@ initialValues={{ roll: '', batch: '',  department: '' }}
       }}
       validationSchema={alumuniValidation}
 >
-    <div className='registerContainer'>
+    <div className='registerContainerAlumini'
+  style={{
+    backgroundImage: (hour >= 6 && hour <= 16) ? 'linear-gradient(180deg,#3a1c1b 17.15%,#b5874c 120.7%)' : 'linear-gradient(180deg,#151539 17.15%,#331e66 120.7%)'
+  }}>
      
         <div className='formContainer'>
         <h1 className='guestHeading'>Audience Register</h1>

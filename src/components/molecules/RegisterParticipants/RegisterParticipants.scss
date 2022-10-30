@@ -25,7 +25,7 @@ $text-color: mix(#000, $primary-color, 64%);
 
 
 
-.registerContainer {
+.registerContainerParticipants {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -38,16 +38,16 @@ $text-color: mix(#000, $primary-color, 64%);
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 3rem;
     width: 35rem;
     margin: 15rem 0rem;
-    background-color: rgba(0, 0, 0, 0.23);
+    // background-color: rgba(0, 0, 0, 0.23);
     border-radius: 2rem;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     h1 {
       font-family: Fino-Sans-Regular;
       font-weight: 400;
-      letter-spacing: 0.15rem;
-      line-height: 0.2rem;
+      margin-top: 3rem;
       font-size: 3rem;
     }
 

@@ -16,7 +16,6 @@ let hour = currentTime.getHours();
 
 
 
-
 export default function App() {
   //STATES
   const [isPhone, setIsPhone] = useState(window.matchMedia("max-width:600px").matches);

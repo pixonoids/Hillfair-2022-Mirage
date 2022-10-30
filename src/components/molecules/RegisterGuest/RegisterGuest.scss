@@ -21,7 +21,7 @@
 
   }
   
-  .registerContainer {
+  .registerContainerGuest {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -36,14 +36,14 @@
       align-items: center;
       width: 25rem;
       margin: 15rem 0rem;
-      background-color: rgba(0, 0, 0, 0.23);
+      padding-bottom: 3rem;
+      // background-color: rgba(0, 0, 0, 0.23);
       border-radius: 2rem;
   
       h1 {
         font-family: Fino-Sans-Regular;
         font-weight: 400;
-        letter-spacing: 0.15rem;
-        line-height: 0.2rem;
+        margin-top: 3rem;
         font-size: 3rem;
       }
   

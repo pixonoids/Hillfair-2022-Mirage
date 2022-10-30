@@ -23,7 +23,7 @@ $text-color: mix(#000, $primary-color, 64%);
  
 }
 
-.registerContainer {
+.registerContainerSponsors {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -38,14 +38,14 @@ $text-color: mix(#000, $primary-color, 64%);
     align-items: center;
     width: 35rem;
     margin: 15rem 0rem;
-    background-color: rgba(0, 0, 0, 0.23);
+    padding-bottom: 3rem;
+    // background-color: rgba(0, 0, 0, 0.23);
     border-radius: 2rem;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     h1 {
       font-family: Fino-Sans-Regular;
       font-weight: 400;
-      letter-spacing: 0.15rem;
-      line-height: 0.2rem;
+      margin-top: 3rem;
       font-size: 3rem;
     }
 
@@ -105,28 +105,3 @@ $text-color: mix(#000, $primary-color, 64%);
 
   }
 }
-
-
-.radio-container {
-  color: white;
-  display: flex;
-  width: 100%;
-
-  flex-direction: column;
-
-  label {
-    margin: 0.5rem 0rem;
-    font-family: sans-serif;
-    font-size: 0.9rem;
-    font-weight: 400;
-    letter-spacing: 0.12rem;
-    line-height: 0.2rem;
-
-
-    input {
-      margin: 0rem 1rem;
-    }
-  }
-}
-
-
