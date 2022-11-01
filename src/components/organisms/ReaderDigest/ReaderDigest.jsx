@@ -4,6 +4,10 @@ import "./ReaderDigest.scss";
 // import 'aos/dist/aos.css';
 // AOS.init();
 import { SquareAnimation } from "../../atoms";
+
+// import ReactAnime from 'react-animejs'
+// const { Anime, stagger } = ReactAnime
+
 const ReaderDigest = () => {
   const [newQuote, setnewQuote] = useState("");
   const shuffle = useCallback(() => {
@@ -11,18 +15,52 @@ const ReaderDigest = () => {
     setnewQuote(quote[index]);
   }, []);
   useEffect(() => {
+
+    const intervalID = setInterval(shuffle, 4000);
+
     const intervalID = setInterval(shuffle, 10000);
+
     return () => clearInterval(intervalID);
   }, [shuffle]);
   return (
     <div className="readerDigest">
       <div className="heading">
+
+        <div className="squareAnimation">
+          <SquareAnimation />
+        </div>
+        Fun Fact</div>
+        <div className="quote">{newQuote}</div>
+      {/* <Anime
+        initial={[
+          {
+            targets: ".quote",
+            opacitm Ipsum y: [0, 1],
+            scale: [0.2, 1],
+            duration: 4000,
+            loop: true
+          },
+        ]}
+      >
+      </Anime> */}
+
         <div className="squareAnimation"><SquareAnimation /></div>Fun Fact</div>
         <div className="quote">{newQuote}</div>
+
     </div>
   );
 };
 const quote = [
+
+  "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, reprehenderit.",
+  "Lorem Ipsum 2",
+  "Lorem Ipsum 3",
+  "Lorem Ipsum 4",
+  "Lorem Ipsum 5",
+  "Lorem Ipsum 6",
+  "Lorem Ipsum 7",
+  "Lorem Ipsum 8",
+
   "Clouds at the centre of the Milky Way smell of rum, taste of raspberries and are packed with booze",
   "Neptune has only completed one orbit around the Sun since its discovery",
   "Pluto is smaller than the United States",
@@ -41,5 +79,6 @@ const quote = [
   "Humans have explored outer space more than the ocean: only 5% of the ocean has been discovered",
   "The magnificent Sultan's Palace in Aladdin was inspired by the Taj Mahal in Agra, India",
   "The original story of ‘Aladdin’ is set in China. In the earliest versions of the story, Aladdin is Chinese. He’s also not an orphaned street urchin but a lazy boy living at home with his mother. All the characters in the tale are also Chinese apart from the wicked magician who is from North Africa",
+
 ];
 export default ReaderDigest;

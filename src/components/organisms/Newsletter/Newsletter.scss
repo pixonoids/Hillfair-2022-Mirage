@@ -79,7 +79,7 @@
           width: 100%;
         }
       }
-      @media (max-width: 1200px) {
+      @media (max-width: 1235px) {
         width: 100%;
         margin-top: 1rem;
         button{
@@ -122,6 +122,7 @@
 
 #svg-spinner {
   -webkit-transition-property: -webkit-transform;
+  transition-duration: 1.2s;
   -webkit-transition-duration: 1.2s;
   -webkit-animation-name: rotate;
   -webkit-animation-iteration-count: infinite;
@@ -178,5 +179,22 @@
   width: 50%;
   height: 50%;
 
+  @media (max-width: 1235px) {
+ width: fit-content;
+    height: 1.5rem;
+  }
 
+
+}
+
+
+.error{
+color: red;
+font-size: 0.8rem;
+height: 1rem;
+}
+.no-error{
+  visibility: hidden;
+font-size: 0.8rem;
+height: 1rem;
 }

@@ -6,3 +6,4 @@ export { Footer } from './organisms';
 export { Newsletter } from './organisms';
 export { ReaderDigest } from './organisms';
 export { HomeMain } from './organisms';
+export { PdfLayout} from './organisms';
