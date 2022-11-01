@@ -35,6 +35,7 @@
         text-align: center;
         @media screen and (max-width: 450px) {
          margin-top: -1.5rem;
+         top: 35%;
         font-weight: bolder;
           font-weight: 3rem;
         }
@@ -88,16 +89,16 @@
         position: absolute;
         transform: translate(-50%, -50%);
         left: 50%;
-        top: 47%;
+        top: 53%;
         padding-top: 8em;
         font-family: Al-Andalus,sans-serif;
         font-size: 1.2rem;
         letter-spacing: 5px;
         letter-spacing: 6px;
         .registerHere {
-          margin-top: 3rem; 
+          margin-top: 1.5rem; 
           @media (max-width:448px) {
-            width: 18rem;
+            width: 15rem;
           }
         }
         @media screen and (max-width: 450px) {
