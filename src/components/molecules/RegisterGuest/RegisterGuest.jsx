@@ -59,7 +59,7 @@ onSubmit={(values, actions) => {
             </div>
         <div className="fieldWrapper">
         <label>Aadhaar No:</label>
-            <Field type="text" name="adhaar" />
+            <Field type="text" name="aadhaar" />
             <ErrorMessage component="div" name="aadhaar" className='invalid-feedback'/>
             </div>
           <GeneralButton text="Submit" />

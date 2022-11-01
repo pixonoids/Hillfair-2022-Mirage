@@ -1,39 +1,65 @@
-
-.pdfWrapper{
-    display:flex;
+.pdfWrapper {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:100%;
-    margin-top:10rem;
-    background-color:aliceblue;
-    .hillfareLogo{
-        img{
-            width:9rem;
+    width: 100%;
+    margin-top: 10rem;
+    background-color: #e8b46b;
+
+    .hillfareLogo {
+        img {
+            width: 9rem;
         }
-    }
-    .pageWrapper{
-       
-       width: 100%;
-       .firstPageInfo{
-margin-left:20%;
-p{
-    color:black;
-    margin:0.5rem;
-}
-       }
-.secondPageInfo{
-    margin-left:20%;
-    p{
-        color:black;
-        margin:0.5rem;
-    }
-}
     }
 
-    .footer{
-        img{
-            width: 6rem;
+    .pageWrapper {
+        width: 100%;
+        .firstPageInfo {
+            margin-left: 20%;
+            section {
+                display: flex;
+
+                p {
+                    color: black;
+                    margin: 0.5rem;
+                    font-family: sans-serif;
+                }
+            }
+
+           
+        }
+
+        .secondPageInfo {
+            margin-left: 20%;
+
+            p {
+                color: black;
+                margin: 0.5rem;
+                font-family: sans-serif;
+            }
         }
     }
+
+    .pdfFooter {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+
+        span {
+            height: fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: black;
+        }
+
+        img {
+            width: 6rem;
+            filter: invert(100%)
+        }
+    }
+
 }
