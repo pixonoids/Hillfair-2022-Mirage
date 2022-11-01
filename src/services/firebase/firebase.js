@@ -1,16 +1,14 @@
-import db from "../../../config/firebase-config";
-import { collection, addDoc } from "firebase/firestore"; 
+import axios from '../../../config/firebase-realtime';
+
 
 
 const addUSer = async (user) => {
-     
-        try {
-            const docRef = await addDoc(collection(db, "users"), user);
-            console.log("Document written with ID: ", docRef.id);
-        } catch (e) {
-            console.error("Error adding document: ", e);
-        }
-
+user.date = new Date().toLocaleDateString();
+    axios.post('/users.json', user).then(res => {
+        console.log("added user to database");
+    }).catch(err => {
+        console.log(err);
+    })
 }
 
 export default addUSer;

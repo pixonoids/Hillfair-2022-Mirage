@@ -22,13 +22,6 @@ const RegisterPage = function () {
 
 
 
-  const handleSubmit = (values) => {
-    alert(values)
-    // addUser(values)
-    // pdf(values)
-  }
-
-
 
   return (
 
@@ -50,6 +43,7 @@ const RegisterPage = function () {
           }}
           validationSchema={validateSchema}
         >
+
           {(values) => (
             <Form className='formWrapper'>
 
@@ -132,8 +126,6 @@ const RegisterPage = function () {
                 </div>
               </div>
               <GeneralButton text="next" type={"submit"} />
-
-
             </Form>
           )}
         </Formik>
