@@ -26,7 +26,7 @@ const RegisterPartipants = ({ previousvalue }) => {
   }
   return (
     <Formik
-      initialValues={{ college: '', website: '', category: '' }}
+      initialValues={{ college: '', website: '', participationIn: '' }}
       onSubmit={(values, actions) => {
         Object.assign(values, previousvalue);
         handleSubmit(values)
@@ -67,14 +67,14 @@ const RegisterPartipants = ({ previousvalue }) => {
 
             <div className="fieldWrapper">
             <label>Category:</label>
-              <Field as="select" id="category" name="category">
-                <option value="english">English Story/Poem</option>
-                <option value="hindi">English Story/Poem</option>
-                <option value="bands">Battle of Bands</option>
-                <option value="music">Music & Singing</option>
-                <option value="dance">Cultural Dance</option>
+              <Field as="select" id="participationIn" name="participationIn">
+                <option value="English Story/Poem">English Story/Poem</option>
+                <option value="Hindi Story/Poem">Hindi Story/Poem</option>
+                <option value="Battle of Bands">Battle of Bands</option>
+                <option value="Music & Singing">Music & Singing</option>
+                <option value="Cultural Dance">Cultural Dance</option>
               </Field>
-              <ErrorMessage component="div" name="category" className='invalid-feedback' />
+              <ErrorMessage component="div" name="participationIn" className='invalid-feedback' />
             </div>
 
 
