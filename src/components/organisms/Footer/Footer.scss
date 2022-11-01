@@ -1,14 +1,14 @@
 .footer {
   width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
   background-color: #6c3e2b;
   padding: 1.5rem 1rem;
   position: relative;
   margin-top: 5rem;
-  height: 150px;
+  height: 180px;
   z-index: 89;
   .wave {
     position:absolute;
@@ -19,33 +19,52 @@
     background: url(/public//images/wave.png);
     background-size: 1000px 100px;
   }
+  .footer-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .query {
+    text-align: center;
+    margin-right: 2rem;
+    h3 {
+      margin-bottom: 0.5rem;
+      // font-weight: 500;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    p{
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 5;
+    
+  }
+}
 
   .wave#wave1 {
     z-index: 99;
     opacity: 1;
     bottom: 0;
-    animation: animateWaves 4s linear infinite;
+    animation: animateWaves 8s linear infinite;
   }
 
   .wave#wave2 {
     z-index: 99;
     opacity: 0.5;
     bottom: 10px;
-    animation: animate 4s linear infinite !important;
+    animation: animate 8s linear infinite !important;
   }
 
   .wave#wave3 {
     z-index: 99;
     opacity: 0.2;
     bottom: 15px;
-    animation: animateWaves 3s linear infinite;
+    animation: animateWaves 6s linear infinite;
   }
 
   .wave#wave4 {
     z-index: 99;
     opacity: 0.7;
     bottom: 20px;
-    animation: animate 3s linear infinite;
+    animation: animate 6s linear infinite;
   }
   .Copyright{
     font-family: Al-Andalus;
@@ -89,6 +108,7 @@
   .palm{
     width:250px;
     position:absolute;
+    z-index:-1;
     bottom:0%;
     right: 5%;
     @media (max-width:950px) {

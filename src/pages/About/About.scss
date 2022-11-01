@@ -7,10 +7,11 @@
 .about-wrapper{
   margin: 0 2em;
   font-family: Fino-Sans-Regular;
+  padding-top: 7rem;
 }
 
 .about-outer-container{
-  min-height: 100vh;
+  // min-height: 100vh;
   display: flex;
   justify-content: space-between;
   text-align: justify;
@@ -19,7 +20,6 @@
 
 .page-heading{
   text-align: center;
-  margin-top: 1.5em;
   letter-spacing: 3px;
   font-family: PF-MomentaPro;
   font-size: 4rem;

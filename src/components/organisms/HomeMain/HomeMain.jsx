@@ -62,7 +62,7 @@ const HomeMain = () => {
           </Link> */}
         </div>
         <div className="dates">
-          <h1>11-13</h1>
+          <h1>18-20</h1>
           <h3>November 2022</h3>
           <div className="registerHere">
           {/* <Route path="register" element={<GeneralButton text="Register Here"/>} /> */}
