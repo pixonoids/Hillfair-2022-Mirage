@@ -22,7 +22,7 @@
     font-size: 1.4rem;
     transform-origin: top left;
     height: 12rem;
-    animation: pop 4s ease-in-out infinite;
+    // animation: pop 4s ease-in-out infinite;
     translate: 0 6rem;
   }
   @media (max-width:700px) {
@@ -34,16 +34,16 @@
   }
 }
 
-@keyframes pop {
-  0% {
-    opacity: 0.2;
-    scale: 0.2;
-  }
-  20% {
-    opacity: 1;
-    scale: 1.1;
-  }
-  30% {
-    scale: 1;
-  }
-}
+// @keyframes pop {
+//   0% {
+//     opacity: 0.2;
+//     scale: 0.2;
+//   }
+//   20% {
+//     opacity: 1;
+//     scale: 1.1;
+//   }
+//   30% {
+//     scale: 1;
+//   }
+// }
