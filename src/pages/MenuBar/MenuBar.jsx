@@ -2,7 +2,7 @@ import React from 'react'
 import './MenuBar.scss'
 import {useState} from 'react';
 
-export default function MenuBar() {
+const MenuBar = () => {
     
     const [isDropped, setIsDropped] = useState(false);
     const handleChange = ()=> {
@@ -41,3 +41,4 @@ export default function MenuBar() {
         </div>
     )
 }
+export default MenuBar;

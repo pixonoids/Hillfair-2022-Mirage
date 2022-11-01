@@ -3,11 +3,10 @@ import './App.scss';
 import { Route, Routes } from 'react-router-dom';
 import { Menu } from './components/organisms/';
 import { useSelector } from 'react-redux';
-import MenuBar from './pages/MenuBar/MenuBar';
 
 
 
-import {LandingPage,Home,Sponsors,About} from './pages';
+import {LandingPage,Home,Sponsors,About, MenuBar} from './pages';
 import AudioButton from './components/molecules/AudioButton/AudioButton';
 import ParticlesBackground from './pages/landingPage/ParticlesBackground';
 let currentTime = new Date();
@@ -43,6 +42,7 @@ export default function App() {
     <div>
        
 
+      {/* {navVisible && <MenuBar/>} */}
       {navVisible && (isPhone ? <MenuBar/> : <Menu/>)}
 
     <div 

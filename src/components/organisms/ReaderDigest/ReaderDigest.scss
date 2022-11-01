@@ -1,5 +1,6 @@
 .readerDigest {
   width: 50%;
+  max-height: 10rem;
   padding: 4rem;
   display: flex;
   justify-content: center;
@@ -19,8 +20,10 @@
     color: rgba(255, 255, 255, 0.668);
     font-family: Regular-Text;
     font-size: 1.4rem;
-    margin-top:8rem;
-    transform-origin:left;
+    transform-origin: top left;
+    height: 12rem;
+    animation: pop 4s ease-in-out infinite;
+    translate: 0 6rem;
   }
   @media (max-width:700px) {
     width: 100%;
@@ -28,5 +31,19 @@
   }
   @media (max-width:700px) {
     padding: 2rem 0;
+  }
+}
+
+@keyframes pop {
+  0% {
+    opacity: 0.2;
+    scale: 0.2;
+  }
+  20% {
+    opacity: 1;
+    scale: 1.1;
+  }
+  30% {
+    scale: 1;
   }
 }
