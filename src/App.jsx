@@ -5,9 +5,8 @@ import { Menu } from './components/organisms/';
 import { useSelector } from 'react-redux';
 
 import MenuBar from './pages/MenuBar/MenuBar';
-import {PdfPage} from './pages';
 
-import {LandingPage,Home,Sponsors,About,RegisterPage} from './pages';
+import {LandingPage,Home,Sponsors,About,RegisterPage,Events, PdfPage} from './pages';
 
 import AudioButton from './components/molecules/AudioButton/AudioButton';
 import ParticlesBackground from './pages/landingPage/ParticlesBackground';
@@ -66,7 +65,7 @@ export default function App() {
         <Route path="register" element={<RegisterPage />} />
         <Route path="Footer" element={<LandingPage/>} />
         <Route path="admin" element={<LandingPage />} />
-        <Route path="events" element={<LandingPage/>} />
+        <Route path="events" element={<Events/>} />
         <Route path="download" element={<PdfPage/>} />
      
         {/* <Route path="" element={<ErrorPage />} /> */}

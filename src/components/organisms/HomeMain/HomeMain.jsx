@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import GeneralButton from "../../molecules/GeneralButton/GeneralButton";
 import "./HomeMain.scss";
 
@@ -65,8 +66,9 @@ const HomeMain = () => {
           <h1>18-20</h1>
           <h3>November 2022</h3>
           <div className="registerHere">
-          {/* <Route path="register" element={<GeneralButton text="Register Here"/>} /> */}
-          <a href="/register"><GeneralButton text="Register Here"/></a>
+        <Link key="/register" to="/register">
+          <GeneralButton text="Register Here"/>
+          </Link>
           </div>
         </div>
         <div className="logos">
