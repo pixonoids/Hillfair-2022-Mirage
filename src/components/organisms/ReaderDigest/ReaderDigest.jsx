@@ -16,7 +16,7 @@ const ReaderDigest = () => {
   }, []);
   useEffect(() => {
 
-    const intervalID = setInterval(shuffle, 4000);
+    // const intervalID = setInterval(shuffle, 4000);
 
     const intervalID = setInterval(shuffle, 10000);
 
@@ -26,11 +26,11 @@ const ReaderDigest = () => {
     <div className="readerDigest">
       <div className="heading">
 
-        <div className="squareAnimation">
+        {/* <div className="squareAnimation">
           <SquareAnimation />
         </div>
-        Fun Fact</div>
-        <div className="quote">{newQuote}</div>
+        Fun Fact</div> */}
+        {/* <div className="quote">{newQuote}</div> */}
       {/* <Anime
         initial={[
           {
@@ -48,18 +48,11 @@ const ReaderDigest = () => {
         <div className="quote">{newQuote}</div>
 
     </div>
+   
   );
 };
 const quote = [
 
-  "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, reprehenderit.",
-  "Lorem Ipsum 2",
-  "Lorem Ipsum 3",
-  "Lorem Ipsum 4",
-  "Lorem Ipsum 5",
-  "Lorem Ipsum 6",
-  "Lorem Ipsum 7",
-  "Lorem Ipsum 8",
 
   "Clouds at the centre of the Milky Way smell of rum, taste of raspberries and are packed with booze",
   "Neptune has only completed one orbit around the Sun since its discovery",

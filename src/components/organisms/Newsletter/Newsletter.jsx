@@ -67,7 +67,7 @@ const Newsletter = () => {
   }
  
 
-  };
+  
 
 
 
@@ -158,6 +158,6 @@ const Newsletter = () => {
         </div>
     </div>
   );
-};
+        };
 
 export default Newsletter;

@@ -7,14 +7,7 @@ import { useSelector } from 'react-redux';
 import MenuBar from './pages/MenuBar/MenuBar';
 import {PdfPage} from './pages';
 
-
-
 import {LandingPage,Home,Sponsors,About,RegisterPage} from './pages';
-
-
-
-
-import {LandingPage,Home,Sponsors,About, MenuBar} from './pages';
 
 import AudioButton from './components/molecules/AudioButton/AudioButton';
 import ParticlesBackground from './pages/landingPage/ParticlesBackground';
