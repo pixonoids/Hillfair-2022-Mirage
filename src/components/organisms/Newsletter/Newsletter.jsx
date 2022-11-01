@@ -1,9 +1,6 @@
 import "./Newsletter.scss";
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
 import React, { useEffect, useState } from 'react';
 
-// AOS.init();
 let currentTime = new Date();
 let hour = currentTime.getHours();
 const validEmailRegex = RegExp(
@@ -16,24 +13,10 @@ const validateForm = errors => {
 };
 
 const Newsletter = () => {
-  /*
-  State for the subscribe button
-  failed--> -1
-  not subscribed--> null
-  subscribing--> 0
-  subscribed--> 1
-  
-   */
   const [subscribe, setSubscribe] = useState(null);
   const [error, setError] = useState('');
   const [email, setEmail] = useState('');
 
-  useEffect(() => {
-    // subscribeHandler()
-
-  }, [subscribe]);
-
- 
 
 
   const handleChange = (event) => {
@@ -43,12 +26,6 @@ const Newsletter = () => {
       : 'Email is not valid!';
     setError(err)
     setEmail(value)
-
-    // setTimeout(() => {
-    //   setError('');
-    // },2000)
-
-    
         
   }
   
@@ -67,16 +44,7 @@ const Newsletter = () => {
     }
     
   }
-  
-
-
-
-
-
-
-
-
-
+ 
   return (
     <div className="Newsletter">
       <div className="Heading">Get the latest news abOut HILLFFAIR</div>

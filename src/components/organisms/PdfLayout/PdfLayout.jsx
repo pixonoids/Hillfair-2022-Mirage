@@ -1,7 +1,8 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import './PdfLayout.scss';
-import logo from '/images/hillfair-logo-light.png'
+import logo from '/images/hillfair-logo-dark.png'
+import nithlogo from '/images/nith.png'
 
 // import logo from 'images/hillfair-logo-light.png'
 
@@ -38,7 +39,10 @@ const PdfLayout =function () {
                         <p className='social'>Social Profile :user[{'social'}]</p>
             </div>  
         </div>
-                    
+            <div className='footer'>
+                <Date/>
+                <img src={nithlogo}/>
+            </div>      
         </div>
          )
 }

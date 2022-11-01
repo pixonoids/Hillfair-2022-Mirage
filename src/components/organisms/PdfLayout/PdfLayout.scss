@@ -5,9 +5,11 @@
     justify-content: center;
     align-items: center;
     width:100%;
+    margin-top:10rem;
+    background-color:aliceblue;
     .hillfareLogo{
         img{
-            width:25rem;
+            width:9rem;
         }
     }
     .pageWrapper{
@@ -27,5 +29,11 @@ p{
         margin:0.5rem;
     }
 }
+    }
+
+    .footer{
+        img{
+            width: 6rem;
+        }
     }
 }

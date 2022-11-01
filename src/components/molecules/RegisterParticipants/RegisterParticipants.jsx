@@ -60,12 +60,6 @@ const RegisterPartipants = ({ previousvalue }) => {
             </div>
 
             <div className="fieldWrapper">
-              <label>Aadhaar No: </label>
-              <Field type="text" name="aadhaar" />
-              <ErrorMessage component="div" name="aadhaar" className='invalid-feedback' />
-            </div>
-
-            <div className="fieldWrapper">
             <label>Category:</label>
               <Field as="select" id="participationIn" name="participationIn">
                 <option value="English Story/Poem">English Story/Poem</option>
