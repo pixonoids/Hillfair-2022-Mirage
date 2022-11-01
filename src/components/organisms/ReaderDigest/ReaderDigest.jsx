@@ -11,7 +11,7 @@ const ReaderDigest = () => {
     setnewQuote(quote[index]);
   }, []);
   useEffect(() => {
-    const intervalID = setInterval(shuffle, 4000);
+    const intervalID = setInterval(shuffle, 600000);
     return () => clearInterval(intervalID);
   }, [shuffle]);
   return (
