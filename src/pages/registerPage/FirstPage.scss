@@ -29,20 +29,17 @@ $text-color: mix(#000, $primary-color, 64%);
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  // background-image: linear-gradient(rgb(21, 21, 57) 17.15%, rgb(51, 30, 102) 120.7%);
-
   .formContainer {
     display: flex;
     flex-direction: column;
     padding-bottom: 3rem;
     justify-content: center;
     align-items: center;
-    width: 30rem;
-    margin: 13rem 0rem;
+    width: 60%;
+    margin: 12rem 0rem;
     // background-color: rgba(0, 0, 0, 0.23);
     backdrop-filter: blur(20px);
     border-radius: 2rem;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     @media (max-width: 510px) {
       width:25rem;
   }
@@ -118,11 +115,6 @@ $text-color: mix(#000, $primary-color, 64%);
 
   }
 }
-
-
-.radio-container {}
-
-
 
 .radio-container {
   color: white;

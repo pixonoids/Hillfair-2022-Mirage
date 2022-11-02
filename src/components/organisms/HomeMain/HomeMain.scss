@@ -127,13 +127,10 @@
         width: 10%;
         margin-top: 1em;
         z-index: 100;
-        justify-content: space-between;
+        justify-content: center;
         .pixologo{
           width: 125px;
           margin-top: -4rem;
-          &:hover{
-            animation:animatepixo 0.5s ease-in-out;
-          }
         }
         .nithlogo{
           width: 50px;
@@ -170,8 +167,3 @@
       }
     }
   }
-@keyframes animatepixo {
-  to {
-    rotate: 135deg;
-  }
-}

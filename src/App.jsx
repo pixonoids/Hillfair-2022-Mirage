@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 import { useMediaQuery } from 'react-responsive';
 import MenuBar from './pages/MenuBar/MenuBar';
 
-import {LandingPage,Home,Sponsors,About,RegisterPage,Events, PdfPage} from './pages';
+import {LandingPage,Home,Sponsors,About,RegisterPage,Events, PdfPage, Team} from './pages';
 
 import AudioButton from './components/molecules/AudioButton/AudioButton';
 import ParticlesBackground from './pages/landingPage/ParticlesBackground';
@@ -62,8 +62,8 @@ export default function App() {
          <Route path="/" element={<Home />} /> 
         <Route path="about" element={<About />} />
         <Route path="gallery" element={<LandingPage />} />
-        <Route path="sponsors" element={<LandingPage/>} />
-        <Route path="team" element={<LandingPage />} />
+        <Route path="sponsors" element={<Sponsors/>} />
+        <Route path="team" element={<Team />} />
         <Route path="register" element={<RegisterPage />} />
         <Route path="Footer" element={<LandingPage/>} />
         <Route path="admin" element={<LandingPage />} />
