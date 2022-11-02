@@ -6,10 +6,6 @@ import { useLocation } from 'react-router-dom';
 import './PdfPage.scss';
 import {PdfLayout} from '../../components/organisms';
 
-
-
-
-
 const PdfPage =()=>{
   
   const location=useLocation();
