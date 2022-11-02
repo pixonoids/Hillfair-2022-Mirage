@@ -78,7 +78,7 @@ const Newsletter = () => {
           {(subscribe === "failed") && <span className="failed">Try again</span>}
           {(subscribe === "subscribing") && <svg style={{
             backgroundColor: hour >= 9 && hour <= 17 ? "#7c4730" : "#080648",
-          }} id="svg-spinner" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+          }} id="svg-spinner" xmlns="http://www.w3.org/2000/svg" width="52" height="48" viewBox="0 0 48 48">
             <circle cx="24" cy="4" r="4" fill="#fff" />
             <circle cx="12.19" cy="7.86" r="3.7" fill="#fffbf2" />
             <circle cx="5.02" cy="17.68" r="3.4" fill="#fef7e4" />

@@ -40,13 +40,6 @@
       font-family: Regular-Text;
       font-size: 1.1rem;
       transition: all 1s ease-in;
-
-      // @media screen and (min-width: 1424px) {
-      //   padding: 1rem 0rem;
-      //   width: 0;
-      // }
-
-     
     }
 
     .inputNewsletter:focus {
@@ -98,25 +91,6 @@
     padding: 2rem 0;
   }
 }
-
-// @media only screen and (min-width: 1024px) {
-//   .Subscribe {
-
-//     &:hover,
-//     &:focus,
-//     &:active,
-//     &:focus-within {
-//       .inputNewsletter {
-//         padding: 1rem 0;
-//         width: fit-content;
-//       }
-//     }
-
-
-//   }
-// }
-
-
 
 
 
