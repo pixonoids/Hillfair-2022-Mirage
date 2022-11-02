@@ -3,7 +3,7 @@ import './App.scss';
 import { Route, Routes } from 'react-router-dom';
 import { Menu } from './components/organisms/';
 import { useSelector } from 'react-redux';
-
+import { useMediaQuery } from 'react-responsive';
 import MenuBar from './pages/MenuBar/MenuBar';
 
 import {LandingPage,Home,Sponsors,About,RegisterPage,Events, PdfPage} from './pages';
@@ -14,14 +14,16 @@ let currentTime = new Date();
 let hour = currentTime.getHours();
 
 
-
 export default function App() {
   //STATES
-  const [isPhone, setIsPhone] = useState(window.matchMedia("max-width:600px").matches);
-  useEffect(()=> {
-    window.matchMedia("(max-width: 600px)")
-    .addEventListener('change', e => setIsPhone( e.matches));
-  }, [])
+  // const [isPhone, setIsPhone] = useState(window.matchMedia("max-width:600px").matches);
+  // useEffect(()=> {
+  //   window.matchMedia("(max-width: 600px)")
+  //   .addEventListener('change', e => setIsPhone( e.matches));
+  // }, [])
+  const isPhone = useMediaQuery({
+    query: "(max-width: 600px)"
+  });
 
 
     // useHideNavigation();
