@@ -24,7 +24,7 @@ const RegisterAudience = ({ previousvalue }) => {
   }
   return (
     <Formik
-    initialValues={{ address: '', emergency: '',  entrancePay: '' }}
+    initialValues={{  emergency: '',  aadhaar: '' }}
       onSubmit={(values, actions) => {
         Object.assign(values, previousvalue);
         handleSubmit(values)
@@ -44,30 +44,16 @@ const RegisterAudience = ({ previousvalue }) => {
         <h1 className='guestHeading'>Audience Register</h1>
         <img src={logo} alt="logo" />
           <Form className='formWrapper'>
-            
-          <div className="fieldWrapper">
-            <label>Address: </label>
-            <Field type="text" name="address" placeholder="Address" />
-            <ErrorMessage component="div" name="address" className='invalid-feedback'/>
-            </div>
-            
             <div className="fieldWrapper">
             <label>Emergency Contact No: </label>
-            <Field type="text" name="emergency" placeholder="Emergency contact" />
+            <Field type="text" name="emergency" placeholder="91XXXXXXXXX" />
             <ErrorMessage component="div" name="emergency" className='invalid-feedback' />
             </div>
             <div className="fieldWrapper">
             <label>Adhaar No: </label>
-            <Field type="text" name="adhaar" placeholder="Adhaar no" />
-            <ErrorMessage component="div" name="emergency" className='invalid-feedback' />
+            <Field type="text" name="aadhaar" placeholder="xxxx-xxxx-xxxx" />
+            <ErrorMessage component="div" name="aadhaar" className='invalid-feedback' />
             </div>
-            
-            <div className="fieldWrapper">
-            <label><Field type="checkbox" id="entrancePay" name="entrancePay" value="500"/>Pay 500 Rs.</label>
-            
-              <ErrorMessage component="div" name="entrancePay" className='invalid-feedback' />
-            </div>
-            
           <GeneralButton text="Submit" />
         </Form>
       </div>
