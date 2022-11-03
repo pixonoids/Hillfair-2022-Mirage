@@ -79,9 +79,9 @@ export default function Footer() {
         className="palm1"
       />
       <div className="query">
-        <h3>For Any Query</h3>
-        <p>+918929467816</p>
-        <p>+918219189292</p>
+        <h3>For Any Queries Contact</h3>
+        <p>Divyam Garg : +918219189292</p>
+        <p>Pranjal Goyal : +918929467816</p>
       </div>
 
     </div>
