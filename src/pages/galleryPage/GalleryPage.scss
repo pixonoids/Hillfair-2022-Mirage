@@ -12,13 +12,16 @@ padding: 2rem 0;
 
 }
 .row {
-  display: -ms-flexbox; /* IE10 */
+  display: -ms-flexbox; /* IE10 */ 
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 0 5px;
+  margin-left: 2rem;
+  @media (max-width:784px) {
+    margin: 1.5rem;
+  }
 }
-
 /* Create four equal columns that sits next to each other */
 .column {
   -ms-flex: 25%; /* IE10 */
@@ -35,7 +38,7 @@ padding: 2rem 0;
   padding: 0.3rem;
   border: 2px dashed #cbc3ac;
   &:hover {
-    scale: 1.01;
+    scale: 1.04;
     cursor: pointer;
   }
 }
