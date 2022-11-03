@@ -84,7 +84,7 @@ const Newsletter = () => {
               subscribe !== null && subscribe !== "subscribing"
                 ? (subscribe === "subscribed" && "green") ||
                   (subscribe === "failed" && "red")
-                : hour >= 9 && hour <= 17
+                : hour >= 6 && hour <= 17
                 ? "#7c4730"
                 : "#080648",
           }}
