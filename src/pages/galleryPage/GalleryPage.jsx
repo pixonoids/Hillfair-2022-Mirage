@@ -14,6 +14,8 @@ const GalleryPage = () => {
 
 
   return (
+    <div className='gallery'>
+    <div className="heading">OUR GALLERY</div>
     <div className="row"> 
     <div className={Model ? "model open" : "model"}>
         <img src={TempImgSrc}/>
@@ -42,6 +44,7 @@ const GalleryPage = () => {
                    return (<img src={data.src} style={{width:"100%"}} onClick={() => getImg(data.src)}/>)
                 })}
         </div>
+    </div>
     </div>
   )
 }

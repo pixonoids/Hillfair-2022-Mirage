@@ -1,3 +1,16 @@
+.gallery{
+padding: 2rem 0;
+.heading{
+  font-family: Fino-Sans-Regular,sans-serif;
+  color: #CBC3AC;
+  font-size: 4rem;
+  margin-top: 4rem;
+  text-align: center;
+  @media (max-width:500px) {
+    font-size: 2.5rem;
+  }
+
+}
 .row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
@@ -19,6 +32,8 @@
   vertical-align: middle;
   width: 100%;
   transition: all 0.3s;
+  padding: 0.3rem;
+  border: 2px dashed #cbc3ac;
   &:hover {
     scale: 1.01;
     cursor: pointer;
@@ -88,4 +103,5 @@
   color: white;
   cursor:pointer;
   z-index: 2;
+}
 }
