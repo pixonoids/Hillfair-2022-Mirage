@@ -45,6 +45,5 @@ const quote = [
   "The Arabian Nights aren't just from Arabia.Dating back as far as the 10th century A.D., these tales have origins in North African, Arabic, Turkish, Persian, Indian, and East Asian cultures",
   "Humans have explored outer space more than the ocean: only 5% of the ocean has been discovered",
   "The magnificent Sultan's Palace in Aladdin was inspired by the Taj Mahal in Agra, India",
-  "The original story of 'Aladdin' is set in China. In the earliest versions of the story, Aladdin is Chinese. He's also not an orphaned street urchin but a lazy boy living at home with his mother. All the characters in the tale are also Chinese apart from the wicked magician who is from North Africa",
 ];
 export default ReaderDigest;

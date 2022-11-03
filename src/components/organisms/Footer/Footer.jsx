@@ -57,7 +57,7 @@ export default function Footer() {
       </div>
       <div className="footer-center">
         <SocialIcons />
-        <span className="Copyright">Copyright Hillffair 2022</span>
+        <span className="Copyright">Copyright Hill'ffair 2022</span>
       </div>
       
       <img

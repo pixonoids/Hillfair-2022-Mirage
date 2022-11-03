@@ -33,7 +33,7 @@ const MenuBar = () => {
         className={isDropped ? "the-bass dropped" : "the-bass"}
       // style={{
       //     backgroundImage:
-      //         hour >= 6 && hour <= 16
+      //         hour >= 6 && hour <= 17
       //             ? "linear-gradient(180deg,#40291c 17.15%,#522822 120.7%)"
       //             : " linear-gradient(180deg,#151539 17.15%,#331e66 120.7%)",
       // }}
@@ -45,7 +45,7 @@ const MenuBar = () => {
               onClick={handleInput}
               style={{
                 backgroundImage:
-                  hour >= 6 && hour <= 16
+                  hour >= 6 && hour <= 17
                     ? "linear-gradient(180deg,#40291c 17.15%,#522822 120.7%)"
                     : " linear-gradient(180deg,#151539 17.15%,#331e66 120.7%)",
               }}
@@ -61,7 +61,7 @@ const MenuBar = () => {
               onClick={handleInput}
               style={{
                 backgroundImage:
-                  hour >= 6 && hour <= 16
+                  hour >= 6 && hour <= 17
                     ? "linear-gradient(180deg,#40291c 17.15%,#522822 120.7%)"
                     : " linear-gradient(180deg,#151539 17.15%,#331e66 120.7%)",
               }}
@@ -77,7 +77,7 @@ const MenuBar = () => {
               onClick={handleInput}
               style={{
                 backgroundImage:
-                  hour >= 6 && hour <= 16
+                  hour >= 6 && hour <= 17
                     ? "linear-gradient(180deg,#40291c 17.15%,#522822 120.7%)"
                     : " linear-gradient(180deg,#151539 17.15%,#331e66 120.7%)",
               }}
@@ -93,7 +93,7 @@ const MenuBar = () => {
               onClick={handleInput}
               style={{
                 backgroundImage:
-                  hour >= 6 && hour <= 16
+                  hour >= 6 && hour <= 17
                     ? "linear-gradient(180deg,#40291c 17.15%,#522822 120.7%)"
                     : " linear-gradient(180deg,#151539 17.15%,#331e66 120.7%)",
               }}
@@ -109,7 +109,7 @@ const MenuBar = () => {
               onClick={handleInput}
               style={{
                 backgroundImage:
-                  hour >= 6 && hour <= 16
+                  hour >= 6 && hour <= 17
                     ? "linear-gradient(180deg,#40291c 17.15%,#522822 120.7%)"
                     : " linear-gradient(180deg,#151539 17.15%,#331e66 120.7%)",
               }}
@@ -125,7 +125,7 @@ const MenuBar = () => {
               onClick={handleInput}
               style={{
                 backgroundImage:
-                  hour >= 6 && hour <= 16
+                  hour >= 6 && hour <= 17
                     ? "linear-gradient(180deg,#40291c 17.15%,#522822 120.7%)"
                     : " linear-gradient(180deg,#151539 17.15%,#331e66 120.7%)",
               }}

@@ -14,9 +14,7 @@
   padding: 1rem 2rem;
   text-align: center;
   z-index:99;
-  background-color: #151539c5;
   &:hover {
-    background-color: #130f3be5;
     transition: 0.5s ease-out, color 0.2s ease-out, border 0.2s ease-out;
   }
  @media (max-width:600px) {
