@@ -106,6 +106,17 @@ $text-color: mix(#000, $primary-color, 64%);
     border-bottom: 0rem;
 
   }
+  #participationIn, option {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    outline: none;
+    background:transparent;
+    option {
+      background-color: rgb(51, 30, 102);
+      height: 2rem;
+    }
+    
+  }
 }
 
 

@@ -16,8 +16,9 @@ const GeneralButton = ({text,type}) => {
         <button  type={type}
         className='btn'
         style={{
-                borderColor: hour >= 6 && hour <= 16 ? "#ffb85c" : "#fff",
-                backgroundColor:(hour>=6 && hour<=16 && isHovering)?'#7c4730':'',
+                backgroundColor:(hour>=6 && hour<=17)?'#7c4730':'#331e66',
+                // backgroundColor:(hour>=6 && hour<=17 && isHovering)?'#3f1e10':'#17073c',
+                borderColor: hour >= 6 && hour <= 17 ? "#ffb85c" : "#fff",
                 backdropFilter: 'blur(20px)'
               }}
           onMouseEnter={handleMouseEnter}

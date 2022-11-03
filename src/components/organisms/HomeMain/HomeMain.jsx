@@ -18,7 +18,7 @@ const HomeMain = () => {
       className="homeMain"
       style={{
         backgroundImage:
-          hours >= 6 && hours <= 16
+          hours >= 6 && hours <= 17
             ? "linear-gradient(180deg,#40291c 17.15%,#522822 120.7%)"
             : " linear-gradient(180deg,#151539 17.15%,#331e66 120.7%)",
       }}
@@ -27,7 +27,7 @@ const HomeMain = () => {
       <img
         className="layers"
         src={
-          hours >= 6 && hours <= 16
+          hours >= 6 && hours <= 17
             ? "images/sunlayerfinal-01.png"
             : "images/darkmodesunlayer.png"
         }
@@ -37,7 +37,7 @@ const HomeMain = () => {
       <img
         className="layers"
         src={
-          hours >= 6 && hours <= 16
+          hours >= 6 && hours <= 17
             ? "images/cloudslayerfinal-01.png"
             : "images/darkmodecloudlayer.png"
         }
@@ -47,7 +47,7 @@ const HomeMain = () => {
       <img
         className="layers"
         src={
-          hours >= 6 && hours <= 16
+          hours >= 6 && hours <= 17
             ? "images/sandlayer-01.png"
             : "images/darkmodesand.png"
         }
