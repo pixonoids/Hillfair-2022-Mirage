@@ -86,11 +86,27 @@ const RegisterPage = function () {
                   className="invalid-feedback"
                 /></div>
               <div className="fieldWrapper"> <label className="placeholder" htmlFor="address">Address:</label>
-                <Field className="input-text" type="firstName" name="address" placeholder="Contact No" />
+                <Field className="input-text" type="firstName" name="address" placeholder="Address" />
 
                 <ErrorMessage
                   component="div"
                   name="address"
+                  className="invalid-feedback"
+                /></div>
+              <div className="fieldWrapper"> <label className="placeholder" htmlFor="checkin">Check in:</label>
+                <Field className="input-text" type="datetime-local" name="checkIn" placeholder="Contact No" />
+
+                <ErrorMessage
+                  component="div"
+                  name="checkin"
+                  className="invalid-feedback"
+                /></div>
+              <div className="fieldWrapper"> <label className="placeholder" htmlFor="checkout">Check out:</label>
+                <Field className="input-text" type="checkout" name="checkout" placeholder="Contact No" />
+
+                <ErrorMessage
+                  component="div"
+                  name="checkout"
                   className="invalid-feedback"
                 /></div>
               <div className="fieldWrapper">
