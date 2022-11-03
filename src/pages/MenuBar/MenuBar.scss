@@ -1,3 +1,7 @@
+.menubar{
+font-family: Regular-Text,sans-serif;
+
+
 .drop-down-container {
     height: 15%;
     width: 90%;
@@ -5,6 +9,10 @@
     margin-top: 5px;
     transform: translateX(-50%);
     transition: 0.3s ease;
+    z-index: 1000;
+    a{
+      color: white;
+    }
   }
   .drop-down-item {
     position: absolute;
@@ -12,12 +20,12 @@
     left: 0;
     right: 8px;
     bottom: 0;
-    background-color: #222;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0.5rem;
-    border-radius: 0.5rem 0 0 0.5rem;
+    width: 100%;
+  
 }
 .drop-down-item:before {  
     content: "";
@@ -26,7 +34,7 @@
     height: 100%;
     width: 8px;
     transition: 0.25s ease;
-    background: linear-gradient(to left, #e78533 50%, #222 50%);
+    // background: linear-gradient(to left, #e78533 50%,'transparent' 50%);
     background-size: 200% 100%;
     background-position: left;
     border-radius:0 0.5rem 0.5rem 0;
@@ -40,9 +48,9 @@
     width: 360px;
     right: 0;
     top: 50px;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(14, 14, 14, 0.437);
     transition: 0.35s ease, height 0.35s 0.3s ease;
-    z-index: 90;
+    z-index: 1000;
   }
 
   .the-bass.dropped, .dropped {
@@ -72,7 +80,7 @@
     transition: 0.3s ease, left 0.4s 0.7s ease;
   }
   .menu-button-label {
-    position: absolute;
+    position: fixed;
     height: 48px;
     width: 48px;
     top: 2rem;
@@ -121,7 +129,8 @@
   }
   @media screen and (max-width: 370px)  {
     .drop-down-container {
-      width:70%;
+      width:50%;
       margin-left: 3rem;
     }
   }
+}
