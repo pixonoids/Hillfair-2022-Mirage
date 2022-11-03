@@ -7,13 +7,13 @@ import './PdfPage.scss';
 import {PdfLayout} from '../../components/organisms';
 
 
-
+ 
 
 
 const PdfPage =()=>{
   
   const location=useLocation();
-console.log(location.state)
+  console.log(location.state)
 
 
 
@@ -38,59 +38,20 @@ console.log(location.state)
     <div>
      
       <div className='full-page' ref={printRef}>
-<PdfLayout/>
-        
+         <PdfLayout/>
       </div>
 
-      <button type="button" onClick={handleDownloadPdf}>
-        Download as PDF
-      </button>
+      <div className='pdfDownloadBtn'>
+        <button type="button" onClick={handleDownloadPdf}>
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          </span>
+          <span className='download'>Download as PDF</span>
+        </button>
+      </div>
 
-     
-    </div>
+    </div> 
   );
-
-//  function printDocument() {
-//     const input = document.getElementById('divToPrint');
-//     html2canvas(input)
-//       .then((canvas) => {
-//         const imgData = canvas.toDataURL('image/png');
-//         const pdf = new jsPDF({
-//             orientation: '    ',
-//             unit: 'mm',
-//             format: 'a4',
-//             putOnlyUsedFonts:true
-//            });
-//         pdf.addImage(imgData, 'JPEG', 0, 0);
-//         // pdf.output('dataurlnewwindow');
-//         pdf.save("your-certifcate.pdf");
-//       })
-//     ;
-//   }
-
-  
-  // return (
-    
-    
-    
-    // <div>
-    //   <div className="mb5">
-    //     <button onClick={printDocument}>Print</button>
-    //     </div>
-        
-    //     <div id="divToPrint" className="mt4" style={{
-    //     overflow: 'auto',
-    //         width: '220mm',
-    //         minHeight: '600mm',
-    //         marginLeft: 'auto',
-    //         marginRight: 'auto'
-            
-
-    //     }} 
-    //     >
-    //         <LandingPage/>
-    //   </div>
-    // </div>);
   
 }
 

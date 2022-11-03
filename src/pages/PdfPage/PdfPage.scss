@@ -1,0 +1,33 @@
+// dimensions of pdf : 8.26 × 11.69 in ( 1in = 6rem)
+.full-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // width: 8.26in;
+    // height: 11.69in;
+}
+.pdfDownloadBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 4em;
+    right: 3em;
+
+    button{
+        border: none;
+        padding: .75em;
+        border-radius: .6em;
+        background-color: rgb(105, 71, 22);
+        color: white;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: rgb(143, 94, 26);
+    }
+    
+
+    .download{
+        padding: 0 .5em;
+    }
+}
