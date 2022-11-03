@@ -21,12 +21,14 @@
 .eventPage::after {
     content: '';
     position: absolute;
-    background: linear-gradient(45deg, #e0c384 10%, #af844c 80%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 30%, rgba(255,255,255,0.21612394957983194) 0%);
     z-index: 1;
+    transform-origin: top;
     left: calc(50% - 2px);
     width: 3px;
     border-radius: 5rem;
     height: 100%;
+    transition: all 4s;
     @media (max-width: 669px) {
         left: 1rem;
     }
