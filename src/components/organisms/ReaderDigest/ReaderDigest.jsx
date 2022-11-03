@@ -10,8 +10,7 @@ const ReaderDigest = () => {
   }, []);
   useEffect(() => {
     // const intervalID = setInterval(shuffle, 4000);
-
-    const intervalID = setInterval(shuffle, 10000);
+    const intervalID = setInterval(shuffle, 60000);
 
     return () => clearInterval(intervalID);
   }, [shuffle]);
