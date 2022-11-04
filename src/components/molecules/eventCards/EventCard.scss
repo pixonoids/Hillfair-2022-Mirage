@@ -23,7 +23,7 @@ $borderRadius: 1rem;
   z-index: 2;
   scale: -1;
   rotate: -45deg;
-  border: 1px solid white;
+  // border: 1px solid white;
   border-radius: 50%;
   position: absolute;
   animation: glow 2s ease-in-out infinite ;
@@ -45,7 +45,7 @@ $borderRadius: 1rem;
   .moon svg {
     @include svgSettings();
     top: 6rem;
-    right: -26.4%;
+    right: -26.8%;
     @media (max-width: 669px) {
       left: -70px;
       top: 5.6rem;
