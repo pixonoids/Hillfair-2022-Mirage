@@ -41,7 +41,7 @@ const GalleryPage = () => {
       <div className="heading">OUR GALLERY</div>
       <div className="row" onMouseMove={handleMouseMove}
       style={{
-        translate: `-${globalCoords.x / 50}px -${globalCoords.y / 50}px`,
+        translate: `-${globalCoords.x / 50 - 10}px -${globalCoords.y / 50}px`,
         transition:"translate 0.1s"
       }}>
         <div className={Model ? "model open" : "model"}>
