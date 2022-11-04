@@ -50,7 +50,7 @@ const RegisterAudience = ({ previousvalue }) => {
             <ErrorMessage component="div" name="emergency" className='invalid-feedback' />
             </div>
             <div className="fieldWrapper">
-            <label>Adhaar No: </label>
+            <label>Aadhaar No: </label>
             <Field type="text" name="aadhaar" placeholder="xxxx-xxxx-xxxx" />
             <ErrorMessage component="div" name="aadhaar" className='invalid-feedback' />
             </div>

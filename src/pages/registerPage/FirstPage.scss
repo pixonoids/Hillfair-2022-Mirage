@@ -2,13 +2,14 @@ $primary-color: #00005c; // Change color here. C'mon, try it!
 $text-color: mix(#000, $primary-color, 64%);
 
 .invalid-feedback {
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-family: monospace;
   font-weight: bold;
   letter-spacing: 0.1em;
   color: #e91e63;
   padding: 0.1em 0.4em;
-  background: #0007;
+  background: rgb(0, 0, 0.467,0.4);
+  opacity: 0.6;
 
 }
 
@@ -42,10 +43,11 @@ $text-color: mix(#000, $primary-color, 64%);
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     @media (max-width: 510px) {
       width:25rem;
+      margin: 8rem 0rem;
   }
     @media (max-width: 420px) {
       width: 100%;
-      padding: 1rem;
+      padding: 0  1rem  1rem 1rem;
       
   }
 

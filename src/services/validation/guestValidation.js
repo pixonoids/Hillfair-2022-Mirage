@@ -6,7 +6,7 @@ yup.addMethod(yup.string, "aadhaarValidate", function (errorMessage) {
       const { path, createError } = this;
 
       return (
-        value.length==12&&aadhaarValidate(value)||
+       aadhaarValidate(value)||
         createError({ path, message: errorMessage })
       );
     });
@@ -16,6 +16,5 @@ const guestValidation = yup.object().shape({
     social: yup.string().required('Required'),
     aadhaar: yup.string().aadhaarValidate('aadhar is not valid').required('Required')
 });
-
 
 export default guestValidation;

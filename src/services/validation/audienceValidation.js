@@ -2,10 +2,10 @@ import * as yup from 'yup';
 import aadhaarValidate from '../../utils/aadhaarValidationAlgorithm';
 
 
-const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
+const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 const audienceValidation = yup.object().shape({
-    aadhaar: yup.string().required('Required').aadhaarValidate('aadhar is not valid bro'),
-    emergency: yup.string().matches(phoneRegExp, 'Phone number is not valid').min(10, "too short").max(12, "too long").required('Required')
+  emergency: yup.string().matches(phoneRegExp, 'Phone number is not valid').min(10, "too short").max(12, "too long").required('Required'),
+    aadhaar: yup.string().required('Required').aadhaarValidate('aadhar is not valid')
 });
 
 
