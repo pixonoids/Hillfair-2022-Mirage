@@ -49,27 +49,19 @@ const RegisterPage = function () {
 
               <div className="fieldWrapper">
                 <label className="placeholder" htmlFor="email">Name:</label>
-                <Field className="input-text" type="Name" name="name" placeholder=" Name" />
+                <Field className="input-text" type="Name" name="name" placeholder="Your name here" />
                 <ErrorMessage
                   component="div"
-                  name="firstName"
+                  name="name"
                   className="invalid-feedback"
 
                 />
 
               </div>
-              {/* <div className="fieldWrapper">
-                <label className="placeholder" htmlFor="category">Last Name:</label>
-                <Field className="input-text" type="lastName" name="lastName" placeholder="Last Name" />
-                <ErrorMessage
-                  component="div"
-                  name="lastName"
-                  className="invalid-feedback"
-                />
-              </div> */}
+           
               <div className="fieldWrapper">
                 <label className="placeholder" htmlFor="email">Email:</label>
-                <Field className="input-text" type="firstName" name="email" placeholder="Email" />
+                <Field className="input-text" type="firstName" name="email" placeholder="abc@gmail.com" />
 
                 <ErrorMessage
                   component="div"
@@ -78,7 +70,7 @@ const RegisterPage = function () {
                 />
               </div>
               <div className="fieldWrapper"> <label className="placeholder" htmlFor="contact">Contact No:</label>
-                <Field className="input-text" type="firstName" name="contact" placeholder="Contact No" />
+                <Field className="input-text" type="firstName" name="contact" placeholder="91XXXXXXXXXX" />
 
                 <ErrorMessage
                   component="div"
@@ -86,17 +78,32 @@ const RegisterPage = function () {
                   className="invalid-feedback"
                 /></div>
               <div className="fieldWrapper"> <label className="placeholder" htmlFor="address">Address:</label>
-                <Field className="input-text" type="firstName" name="address" placeholder="Contact No" />
+                <Field className="input-text" type="firstName" name="address" placeholder="Address" />
 
                 <ErrorMessage
                   component="div"
                   name="address"
                   className="invalid-feedback"
                 /></div>
+              <div className="fieldWrapper"> <label className="placeholder" htmlFor="checkin">Check in:</label>
+                <Field className="input-text calender" type="datetime-local" value="2021-09-10T08:30" name="checkIn"/>
+                <ErrorMessage
+                  component="div"
+                  name="checkin"
+                  className="invalid-feedback"
+                /></div>
+              
+              <div className="fieldWrapper"> <label className="placeholder" htmlFor="checkout">Check out:</label>
+                <Field className="input-text calender" type="datetime-local" value="2021-09-10T08:30" name="checkout"/>
+                <ErrorMessage
+                  component="div"
+                  name="checkout"
+                  className="invalid-feedback"
+                /></div>
               <div className="fieldWrapper">
                 <div className='radio-container'>
 
-                  <span className='placeholder'> Who are you</span>
+                  <span className='radio-heading'> Who are you</span>
                   <label>
                     <Field type="radio" name="category" value="audience" />
                     <span> Audience</span>
@@ -124,6 +131,15 @@ const RegisterPage = function () {
                     className="invalid-feedback"
                   />
                 </div>
+              </div>
+              <div className="fieldWrapper">
+               <label> <Field className="input-text" title="Please tick" name="accept_terms" type="checkbox" value="2021-09-10T08:30" style={{translate:'-10% 20%',scale:"1.25"}}/>
+                <span className='acknowledgement'>I accept the <a href="/pdf/stayingCharges.pdf" target={'_blank'}>terms and conditions</a></span></label>
+                <ErrorMessage
+                  component="div"
+                  name="accept_terms"
+                  className="invalid-feedback"
+                />
               </div>
               <GeneralButton text="Next" type={"submit"} />
             </Form>
