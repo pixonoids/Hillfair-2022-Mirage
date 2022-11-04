@@ -81,7 +81,7 @@ const RegisterPage = function () {
                   className="invalid-feedback"
                 /></div>
               <div className="fieldWrapper"> <label className="placeholder" htmlFor="checkin">Check in:</label>
-                <Field autocomplete="off" className="input-text" type="datetime-local"  value="2022-11-04T18:08" name="checkin" />
+                <Field className="input-text calender" type="datetime-local" value="2021-09-10T08:30" name="checkIn"/>
                 <ErrorMessage
                   component="div"
                   name="checkin"
@@ -89,7 +89,7 @@ const RegisterPage = function () {
                 /></div>
               
               <div className="fieldWrapper"> <label className="placeholder" htmlFor="checkout">Check out:</label>
-                <Field autocomplete="off" className="input-text" type="datetime-local" name="checkout" value="2022-11-04T18:08"/>
+                <Field className="input-text calender" type="datetime-local" value="2021-09-10T08:30" name="checkout"/>
                 <ErrorMessage
                   component="div"
                   name="checkout"
@@ -98,7 +98,7 @@ const RegisterPage = function () {
               <div className="fieldWrapper">
                 <div className='radio-container'>
 
-                  <span className='placeholder'> Who are you</span>
+                  <span className='radio-heading'> Who are you</span>
                   <label>
                     <Field  type="radio" name="category" value="audience" />
                     <span> Audience</span>
@@ -128,13 +128,14 @@ const RegisterPage = function () {
                 </div>
               </div>
               <div className="fieldWrapper">
-               <label> <Field autocomplete="off" className="input-text" title="Please tick" name="accept_terms" type="checkbox" value="true" placeholder="" />
-                <span className='placeholder'>I accept the terms and conditions</span></label>
+               <label> <Field className="input-text" title="Please tick" name="accept_terms" type="checkbox" value="2021-09-10T08:30" style={{translate:'-10% 20%',scale:"1.25"}}/>
+                <span className='acknowledgement'>I accept the <a href="/pdf/stayingCharges.pdf" target={'_blank'}>terms and conditions</a></span></label>
                 <ErrorMessage
                   component="div"
                   name="accept_terms"
                   className="invalid-feedback"
-                /></div>
+                />
+              </div>
               <GeneralButton text="Next" type={"submit"} />
             </Form>
           )}
