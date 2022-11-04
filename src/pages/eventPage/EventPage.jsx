@@ -13,7 +13,7 @@ const Event = () => {
             <div className='eventPage'>
                 {Data.map((data, id) => {
                     console.log(id)
-                   return (<EventCard data={data} key={id} anim={id&1 ? "fade-left":"fade-right"}/>)
+                   return (<EventCard data={data} key={id} anim={id&1 ? "fade-up":"fade-up"}/>)
                 })}
             </div>
         </div>
