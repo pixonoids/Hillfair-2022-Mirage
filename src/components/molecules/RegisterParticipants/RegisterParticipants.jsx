@@ -21,7 +21,7 @@ const RegisterParticipants = ({ previousvalue }) => {
 
   const handleSubmit = (values) => {
 
-      addUser(values)
+    addUser(values)
     pdf(values)
   }
   return (
@@ -38,7 +38,7 @@ const RegisterParticipants = ({ previousvalue }) => {
     >
       <div className='registerContainerParticipants'
         style={{
-          backgroundImage:(hour>=6 &&hour<=17)?'linear-gradient(180deg,#3a1c1b 17.15%,#b5874c 120.7%)':'linear-gradient(180deg,#151539 17.15%,#331e66 120.7%)'
+          backgroundImage: (hour >= 6 && hour <= 17) ? 'linear-gradient(180deg,#3a1c1b 17.15%,#b5874c 120.7%)' : 'linear-gradient(180deg,#151539 17.15%,#331e66 120.7%)'
         }}>
 
         <div className='formContainer'>
@@ -48,13 +48,13 @@ const RegisterParticipants = ({ previousvalue }) => {
 
             <div className="fieldWrapper">
               <label>College : </label>
-              <Field autocomplete="off" type="text" name="college" />
+              <Field autoComplete="off" type="text" name="college" />
               <ErrorMessage component="div" name="college" className='invalid-feedback' />
             </div>
 
             <div className="fieldWrapper">
               <label>Institute Official Site:</label>
-              <Field autocomplete="off" type="text" name="website" />
+              <Field autoComplete="off" type="text" name="website" />
               <ErrorMessage component="div" name="website" className='invalid-feedback' />
             </div>
 

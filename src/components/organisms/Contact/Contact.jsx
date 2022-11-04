@@ -35,7 +35,7 @@ export default function Contact() {
       <Formik
         initialValues={{ name: "", email: "", message: "" }}
         onSubmit={(values, actions) => {
-           handleSubmit(values)
+          handleSubmit(values)
         }}
         validationSchema={contactValidation}
       >
