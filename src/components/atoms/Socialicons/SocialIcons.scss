@@ -1,0 +1,35 @@
+.socialicons{
+.glowingIcons {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    transform: scale(0.6);
+  }
+  
+  ul.glowingIcons li {
+    list-style: none;
+    margin: 0 15px;
+  }
+  
+  ul.glowingIcons li a {
+    border: 2px solid white;
+    border-radius: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-decoration: none;
+    width: fit-content!important;
+    font-size: 1.5rem;
+  }
+  ul.glowingIcons li:hover{
+    transform: scale(1.2);
+    transition: .3s;  
+  }
+  ul.glowingIcons li a:hover {
+    // border: 2px solid #251A51;
+    // color: #251A51;
+  } 
+
+}

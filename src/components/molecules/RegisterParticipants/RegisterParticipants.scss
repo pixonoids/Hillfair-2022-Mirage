@@ -1,0 +1,167 @@
+$primary-color: #00005c; // Change color here. C'mon, try it! 
+$text-color: mix(#000, $primary-color, 64%);
+
+.invalid-feedback {
+  font-size: 0.8em;
+  font-family: monospace;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: #e91e63;
+  padding: 0.1em 0.4em;
+  background: #0007;
+
+}
+
+.input-text {
+  color: white;
+  margin: 0.2rem 0rem;
+  padding: 0.3rem 0.3rem;
+  outline: none;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid white;
+
+}
+
+
+
+.registerContainerParticipants {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgb(21, 21, 57) 17.15%, rgb(51, 30, 102) 120.7%);
+
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+    width: 35rem;
+    margin: 15rem 0rem;
+    // background-color: rgba(0, 0, 0, 0.23);
+    border-radius: 2rem;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+    h1 {
+      font-family: Fino-Sans-Regular;
+      font-weight: 400;
+      margin-top: 3rem;
+      font-size: 3rem;
+    }
+
+    img {
+      width: 10rem;
+    }
+
+    .formWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 18rem;
+      margin: 0rem;
+
+      .placeholder {
+
+        color: white;
+        margin: 0.2rem 0rem;
+        font-family: sans-serif;
+        font-size: 1.0rem;
+        font-weight: 400;
+        letter-spacing: 0.15rem;
+        line-height: 0.4rem;
+
+      }
+
+      button {
+        margin: 1rem 0.5rem;
+      }
+
+    }
+
+  }
+}
+
+
+.fieldWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0.5rem 0rem;
+  padding: 0.2em;
+
+
+  label {
+    padding: 0.1em 0.2em;
+    background: none;
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.467);
+  }
+
+  label {
+    border-bottom: 0rem;
+
+  }
+
+  #participationIn,
+  option {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    outline: none;
+    background: transparent;
+    
+    option {
+      background-color: rgb(30, 31, 31);
+      height: 2rem;
+
+    }
+
+  }
+}
+
+
+.radio-container {
+  color: white;
+  display: flex;
+  width: 100%;
+
+  flex-direction: column;
+
+  label {
+    margin: 0.5rem 0rem;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.12rem;
+    line-height: 0.2rem;
+
+
+    input {
+      margin: 0rem 1rem;
+    }
+  }
+}
+
+
+#category {
+
+  background-color: inherit;
+  color: white;
+  letter-spacing: 0.12rem;
+
+  border: none;
+  outline: none;
+
+
+}
+
+option {
+  background-color: rgba(21, 21, 57, 0.7725490196);
+  color: white;
+  letter-spacing: 0.12rem;
+}

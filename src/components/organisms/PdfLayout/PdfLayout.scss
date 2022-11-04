@@ -1,0 +1,76 @@
+.pdfWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10em;
+    width: 40em;
+    height: 100vh;
+    background-color: #e8b46bad;
+
+    .pdfHeader{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-bottom: 2em;
+
+        .headerText{
+            display: flex;
+            flex-direction: column;
+            max-width: 60%;
+            text-align: center;
+            font-size: .75em;
+            color: darkblue;
+        }
+    }
+
+    .NITHLogo{
+        height: fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: black;
+
+            img {
+                width: 4.5rem;
+                // filter: invert(100%)
+            }
+
+    }
+
+    .hillfareLogo {
+        img {
+            width: 4rem;
+        }
+    }
+
+    .pageWrapper {
+        width: 75%;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        .firstPageInfo {
+            section {
+
+                p {
+                    color: black;
+                    margin: 1rem 0.5rem;
+                    font-family: sans-serif;
+                }
+            }
+
+           
+        }
+
+        .secondPageInfo {
+
+            p {
+                color: black;
+                margin: 0.5rem;
+                font-family: sans-serif;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.audio-button {
+  font-size: 1.25rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  padding-top: .25rem;
+  z-index: 140;
+  position: absolute;
+  left: 1%;
+  bottom: 2.5%;
+  position: fixed;
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 100%;
+  color: white;
+  // background-color: #cdc2afd1;
+  background: transparent;
+  // scale: 0.9;
+  @media (max-width:400px) {
+    transform: scale(0.8);
+  }
+}
+.audio-button:hover{
+  scale: 1.1;
+  background-color: #d1b688;
+}

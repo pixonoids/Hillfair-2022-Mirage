@@ -1,0 +1,59 @@
+.readerDigest {
+  width: 50%;
+  display: flex;
+  padding-bottom: 10rem;
+  justify-content:center;
+  flex-direction: column;
+  @media (max-width:700px) {
+    padding-bottom: 2rem;
+    margin-left: -5rem;
+    margin-top: -3rem;
+    height: fit-content;
+  }
+  .heading {
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    position: absolute;
+    font-family: Fino-Sans-Regular;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+  }
+  .quote {
+    color: rgba(255, 255, 255, 0.668);
+    font-family: Regular-Text;
+    font-size: 1.4rem;
+    transform-origin: top left;
+    height: 12rem;
+    animation: pop 60s ease-in-out infinite;
+    translate: 0 8rem;
+
+  }
+  @media (max-width:700px) {
+    width: 100%;
+    padding-left: 3rem;
+    height: 15rem;
+  }
+}
+
+
+@keyframes pop {
+  0%  {
+    opacity: 0;
+    scale: 0;
+  }
+  0.3% {
+    opacity: 0.2;
+    scale: 0.2;
+  }
+  1.5% {
+    opacity: 1;
+    scale: 1.1;
+  }
+  4%, 100% {
+    scale: 1;
+  }
+}
