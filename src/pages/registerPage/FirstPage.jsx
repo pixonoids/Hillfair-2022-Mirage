@@ -103,7 +103,7 @@ const RegisterPage = function () {
               <div className="fieldWrapper">
                 <div className='radio-container'>
 
-                  <span className='placeholder'> Who are you</span>
+                  <span className='radio-heading'> Who are you</span>
                   <label>
                     <Field type="radio" name="category" value="audience" />
                     <span> Audience</span>
@@ -133,13 +133,14 @@ const RegisterPage = function () {
                 </div>
               </div>
               <div className="fieldWrapper">
-               <label> <Field className="input-text" title="Please tick" name="accept_terms" type="checkbox" value="2021-09-10T08:30" placeholder="" />
-                <span className='placeholder acknowledgement'>I accept the terms and conditions</span></label>
+               <label> <Field className="input-text" title="Please tick" name="accept_terms" type="checkbox" value="2021-09-10T08:30" style={{translate:'-10% 20%',scale:"1.25"}}/>
+                <span className='acknowledgement'>I accept the <a href="/pdf/stayingCharges.pdf" target={'_blank'}>terms and conditions</a></span></label>
                 <ErrorMessage
                   component="div"
                   name="accept_terms"
                   className="invalid-feedback"
-                /></div>
+                />
+              </div>
               <GeneralButton text="Next" type={"submit"} />
             </Form>
           )}

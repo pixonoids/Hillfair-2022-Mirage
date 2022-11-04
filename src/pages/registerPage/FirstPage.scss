@@ -2,13 +2,13 @@ $primary-color: #00005c; // Change color here. C'mon, try it!
 $text-color: mix(#000, $primary-color, 64%);
 
 .invalid-feedback {
-  font-size: 0.9em;
+  font-size: 0.95em;
   font-family: monospace;
   font-weight: bold;
   letter-spacing: 0.1em;
   color: #e91e63;
   padding: 0.1em 0.4em;
-  background: rgb(0, 0, 0.467,0.4);
+  background: rgba(0, 0, 0, 0.396);
   opacity: 0.6;
 
 }
@@ -160,14 +160,14 @@ $text-color: mix(#000, $primary-color, 64%);
     }
 
     span {
-      font-family: Fino-Sans-Regular;
+      font-family: 'Al-Andalus';
       font-size: 0.9rem;
       font-weight: 400;
       letter-spacing: 0.2rem;
       line-height: 0.2rem;
       display: flex;
       align-items: center;
-      padding: 0.375em 0.75em 0.375em 0.375em;
+      padding: 0.175em 0.75em 0 0.375em;
       border-radius: 99em; // or something higher...
       transition: 0.25s ease;
 
@@ -197,5 +197,18 @@ $text-color: mix(#000, $primary-color, 64%);
 }
 
 .acknowledgement{
-  font-size: 1em;
+  font-size: .9rem;
+  margin-left: .5em;
+  
+  a{
+    color: rgb(6, 2, 16);
+    // text-decoration: none;
+  }
+}
+
+.radio-heading{
+  font-family: Fino-Sans-Regular;
+  letter-spacing: 2px;
+  font-size: 1.3em;
+  margin-bottom: .5em;
 }
