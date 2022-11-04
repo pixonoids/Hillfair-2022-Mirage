@@ -58,7 +58,7 @@ const PdfLayout = function () {
         {category=== 'participant' && 
            <div className="secondPageInfo">
            <p className="college">College Name : {user["college"]}</p>
-           </div>
+          </div>
         }
         {/* alumini */}
         {category=== 'alumini' && 

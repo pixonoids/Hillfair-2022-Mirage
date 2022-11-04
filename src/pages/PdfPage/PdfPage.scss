@@ -1,11 +1,12 @@
 // dimensions of pdf : 8.26 × 11.69 in ( 1in = 6rem)
-.full-page{
+.full-page {
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 }
-.pdfDownloadBtn{
+
+.pdfDownloadBtn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,43 +14,73 @@
     top: 4em;
     right: 3em;
 
-    button{
+    button {
         border: none;
         padding: .75em;
         border-radius: .6em;
         background-color: rgb(105, 71, 22);
         color: white;
         cursor: pointer;
+        display: flex;
+        align-items: center;
     }
-    button:hover{
+
+    button:hover {
         background-color: rgb(143, 94, 26);
     }
-    
 
-    .download{
+
+    .download {
         padding: 0 .5em;
     }
 }
 
-.pdfpage{
-    overflow: hidden;
-    width:100vw;
+.pdfpage {
+    // overflow: hidden;
+    width: 100vw;
     height: 100vh;
 }
 
-.print-page{
-position: absolute;
-top: 0;
-left: 0;
-width: 8.26in;
-height: 11.69in;
-z-index: -100;
-margin: auto;
-transform: translateY(-10000px);
-.pdfWrapper{
-margin: auto;
+.print-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 9in;
+    height: 11.69in;
+    z-index: 100;
+    margin: auto;
+    transform: translateY(-10000px);
 
-}
+    .headerText {
 
-  
+        h3 {
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        h4 {
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        h6 {
+            font-weight: 600;
+            font-size: 10px;
+        }
+
+    }
+
+    .firstPageInfo section p {
+        font-family: 'regular';
+        font-weight: 400;
+        font-size: 13px;
+
+    }
+
+    .pdfWrapper {
+        margin: auto;
+
+    }
+
+
 }

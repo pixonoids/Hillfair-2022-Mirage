@@ -25,15 +25,13 @@ const PdfPage =()=>{
     const data = canvas.toDataURL('image/png');
 
     const pdf = new jsPDF({
-      orientation: 'landscape',
       unit: 'in',
-      format: [11, 8.5]
+      format: [11, 8]
     });
     const imgProperties = pdf.getImageProperties(data);
     const pdfWidth = pdf.internal.pageSize.getWidth();
     const pdfHeight =
       (imgProperties.height * pdfWidth) / imgProperties.width;
-
     pdf.addImage(data, 'JPG', 0, 0, pdfWidth, pdfHeight);
     pdf.save('print.pdf');
   };
