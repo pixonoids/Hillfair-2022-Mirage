@@ -114,6 +114,9 @@
   &:hover {
     scale: 1.1;
   }
+  @media (max-width:600px) {
+    width: 100vw;
+  }
 }
 
 .model.open svg {
