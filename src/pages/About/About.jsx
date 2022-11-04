@@ -20,7 +20,7 @@ const About = () => {
               rocking up the stage with band music and fashion show. The event is
               sure to leave fond memories for years to cherish. The weary creative
               brains and logic-driven geeks look forward to these three days of
-              Hillffair, filled with liveliness, energy, and excitement, to sneak
+              Hill'ffair, filled with liveliness, energy, and excitement, to sneak
               them from the monotonous routine and enjoy a little R and R.
             </p>
           </div>

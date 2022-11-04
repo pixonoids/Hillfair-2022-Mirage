@@ -1,59 +1,32 @@
 import React, { useState, useEffect, useCallback } from "react";
 import "./ReaderDigest.scss";
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
-// AOS.init();
 import { SquareAnimation } from "../../atoms";
 
-// import ReactAnime from 'react-animejs'
-// const { Anime, stagger } = ReactAnime
-
 const ReaderDigest = () => {
-  const [newQuote, setnewQuote] = useState("");
+  const [newQuote, setnewQuote] = useState("Coca-Cola was the first soft drink consumed in space");
   const shuffle = useCallback(() => {
     const index = Math.floor(Math.random() * quote.length);
     setnewQuote(quote[index]);
   }, []);
   useEffect(() => {
-
     // const intervalID = setInterval(shuffle, 4000);
-
-    const intervalID = setInterval(shuffle, 10000);
+    const intervalID = setInterval(shuffle, 60000);
 
     return () => clearInterval(intervalID);
   }, [shuffle]);
   return (
     <div className="readerDigest">
       <div className="heading">
-
-        {/* <div className="squareAnimation">
+        <div className="squareAnimation">
           <SquareAnimation />
         </div>
-        Fun Fact</div> */}
-        {/* <div className="quote">{newQuote}</div> */}
-      {/* <Anime
-        initial={[
-          {
-            targets: ".quote",
-            opacitm Ipsum y: [0, 1],
-            scale: [0.2, 1],
-            duration: 4000,
-            loop: true
-          },
-        ]}
-      >
-      </Anime> */}
-
-        <div className="squareAnimation"><SquareAnimation /></div>Fun Fact</div>
-        <div className="quote">{newQuote}</div>
-
+        Fun Fact
+      </div>
+      <div className="quote">{newQuote}</div>
     </div>
-   
   );
 };
 const quote = [
-
-
   "Clouds at the centre of the Milky Way smell of rum, taste of raspberries and are packed with booze",
   "Neptune has only completed one orbit around the Sun since its discovery",
   "Pluto is smaller than the United States",
@@ -67,11 +40,9 @@ const quote = [
   "The centre of our galaxy contains a super massive black hole, which is responsible for holding the galaxy together.",
   "Arabian Nights is also known as One Thousand and One Nights",
   "A pulsar star has such a high density   that one spoon of its surface weighs about 100 times the weight of the earth",
-  "The first printed Arabic-language edition of the One Thousand and One Nights was published in 1775. It contained an Egyptian version of The Nights known as \"ZER\" (Zotenberg's Egyptian Recension) and 200 tales.",
-  "The Arabian Nights aren’t just from Arabia.Dating back as far as the 10th century A.D., these tales have origins in North African, Arabic, Turkish, Persian, Indian, and East Asian cultures",
+  'The first printed Arabic-language edition of the One Thousand and One Nights was published in 1775. It contained an Egyptian version of The Nights known as "ZER" (Zotenberg\'s Egyptian Recension) and 200 tales.',
+  "The Arabian Nights aren't just from Arabia.Dating back as far as the 10th century A.D., these tales have origins in North African, Arabic, Turkish, Persian, Indian, and East Asian cultures",
   "Humans have explored outer space more than the ocean: only 5% of the ocean has been discovered",
   "The magnificent Sultan's Palace in Aladdin was inspired by the Taj Mahal in Agra, India",
-  "The original story of ‘Aladdin’ is set in China. In the earliest versions of the story, Aladdin is Chinese. He’s also not an orphaned street urchin but a lazy boy living at home with his mother. All the characters in the tale are also Chinese apart from the wicked magician who is from North Africa",
-
 ];
 export default ReaderDigest;
