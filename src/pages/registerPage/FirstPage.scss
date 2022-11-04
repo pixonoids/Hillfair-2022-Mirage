@@ -188,3 +188,14 @@ $text-color: mix(#000, $primary-color, 64%);
   }
 
 }
+
+.calender::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+.calender::-webkit-calendar-picker-indicator:hover {
+  cursor: pointer;
+}
+
+.acknowledgement{
+  font-size: 1em;
+}

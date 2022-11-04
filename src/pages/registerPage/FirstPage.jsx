@@ -86,7 +86,7 @@ const RegisterPage = function () {
                   className="invalid-feedback"
                 /></div>
               <div className="fieldWrapper"> <label className="placeholder" htmlFor="checkin">Check in:</label>
-                <Field className="input-text" type="datetime-local" value="2021-09-10T08:30" name="checkIn" placeholder="Contact No" />
+                <Field className="input-text calender" type="datetime-local" value="2021-09-10T08:30" name="checkIn"/>
                 <ErrorMessage
                   component="div"
                   name="checkin"
@@ -94,7 +94,7 @@ const RegisterPage = function () {
                 /></div>
               
               <div className="fieldWrapper"> <label className="placeholder" htmlFor="checkout">Check out:</label>
-                <Field className="input-text" type="datetime-local" value="2021-09-10T08:30" name="checkout" placeholder="Contact No" />
+                <Field className="input-text calender" type="datetime-local" value="2021-09-10T08:30" name="checkout"/>
                 <ErrorMessage
                   component="div"
                   name="checkout"
@@ -134,7 +134,7 @@ const RegisterPage = function () {
               </div>
               <div className="fieldWrapper">
                <label> <Field className="input-text" title="Please tick" name="accept_terms" type="checkbox" value="2021-09-10T08:30" placeholder="" />
-                <span className='placeholder'>I accept the terms and conditions</span></label>
+                <span className='placeholder acknowledgement'>I accept the terms and conditions</span></label>
                 <ErrorMessage
                   component="div"
                   name="accept_terms"
