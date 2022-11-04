@@ -72,6 +72,23 @@
        }
       }
     }
+
+
+    .form-field {
+      width: 100%;
+      padding: 0.2em;
+   
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.1em 0.15em;
+        background: none;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.467);
+      }
+    }
+    
   
   
   

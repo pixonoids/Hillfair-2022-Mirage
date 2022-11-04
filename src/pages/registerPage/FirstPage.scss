@@ -2,13 +2,14 @@ $primary-color: #00005c; // Change color here. C'mon, try it!
 $text-color: mix(#000, $primary-color, 64%);
 
 .invalid-feedback {
-  font-size: 0.6em;
+  font-size: 0.95em;
   font-family: monospace;
   font-weight: bold;
   letter-spacing: 0.1em;
   color: #e91e63;
   padding: 0.1em 0.4em;
-  background: #0007;
+  background: rgba(0, 0, 0, 0.396);
+  opacity: 0.6;
 
 }
 
@@ -29,24 +30,36 @@ $text-color: mix(#000, $primary-color, 64%);
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  // background-image: linear-gradient(rgb(97, 188, 40) 17.15%, rgb(255, 255, 255) 120.7%);
+  background-color: white;
+  
   .formContainer {
     display: flex;
     flex-direction: column;
     padding-bottom: 3rem;
     justify-content: center;
     align-items: center;
-    width: 60%;
-    margin: 12rem 0rem;
+
+    width: 70vw;
+    margin: 13rem 0rem;
+
     // background-color: rgba(0, 0, 0, 0.23);
     border-radius: 2rem;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  // box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     @media (max-width: 510px) {
       width:25rem;
+      margin: 8rem 0rem;
   }
     @media (max-width: 420px) {
       width: 100%;
-      padding: 1rem;
+
+      padding: 0  1rem  1rem 1rem;
       
+
+      box-shadow: none;
+      backdrop-filter: none;
+
   }
 
     h1 {
@@ -158,14 +171,14 @@ $text-color: mix(#000, $primary-color, 64%);
     }
 
     span {
-      font-family: Fino-Sans-Regular;
+      font-family: 'Al-Andalus';
       font-size: 0.9rem;
       font-weight: 400;
       letter-spacing: 0.2rem;
       line-height: 0.2rem;
       display: flex;
       align-items: center;
-      padding: 0.375em 0.75em 0.375em 0.375em;
+      padding: 0.175em 0.75em 0 0.375em;
       border-radius: 99em; // or something higher...
       transition: 0.25s ease;
 
@@ -185,4 +198,30 @@ $text-color: mix(#000, $primary-color, 64%);
     }
   }
 
+}
+
+.calender::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+.calender::-webkit-calendar-picker-indicator:hover {
+  cursor: pointer;
+}
+
+.acknowledgement{
+  font-size: .9rem;
+  margin-left: .5em;
+  font-weight: 200;
+  
+  a{
+    color: white;
+    // text-decoration: none;
+    // font-weight: 1000;
+  }
+}
+
+.radio-heading{
+  font-family: Fino-Sans-Regular;
+  letter-spacing: 2px;
+  font-size: 1.3em;
+  margin-bottom: .5em;
 }
