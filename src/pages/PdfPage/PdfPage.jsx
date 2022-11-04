@@ -25,8 +25,9 @@ const PdfPage =()=>{
     const data = canvas.toDataURL('image/png');
 
     const pdf = new jsPDF({
+      orientation: 'landscape',
       unit: 'in',
-      format: [11, 8]
+      format: [11, 8.5]
     });
     const imgProperties = pdf.getImageProperties(data);
     const pdfWidth = pdf.internal.pageSize.getWidth();
