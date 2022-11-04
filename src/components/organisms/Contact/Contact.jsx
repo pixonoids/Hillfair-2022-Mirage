@@ -46,7 +46,7 @@ export default function Contact() {
               <FormField
                 component="textarea"
                 name="message"
-                placeholder="Your message"
+                placeholder="Your message here"
                 style={{
                   resize:'none'
                 }}
