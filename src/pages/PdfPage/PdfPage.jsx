@@ -24,7 +24,11 @@ const PdfPage =()=>{
     const canvas = await html2canvas(element);
     const data = canvas.toDataURL('image/png');
 
-    const pdf = new jsPDF();
+    const pdf = new jsPDF({
+      orientation: 'landscape',
+      unit: 'in',
+      format: [11, 8.5]
+    });
     const imgProperties = pdf.getImageProperties(data);
     const pdfWidth = pdf.internal.pageSize.getWidth();
     const pdfHeight =
@@ -35,12 +39,14 @@ const PdfPage =()=>{
   };
 
   return (
-    <div>
+    <div className='pdfpage' >
      
-      <div className='full-page' ref={printRef}>
+      <div className='full-page'>
          <PdfLayout/>
       </div>
-
+      <div className='print-page' ref={printRef}>
+         <PdfLayout/>
+      </div>
       <div className='pdfDownloadBtn'>
         <button type="button" onClick={handleDownloadPdf}>
           <span>

@@ -3,8 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // width: 8.26in;
-    // height: 11.69in;
+    overflow: hidden;
 }
 .pdfDownloadBtn{
     display: flex;
@@ -30,4 +29,27 @@
     .download{
         padding: 0 .5em;
     }
+}
+
+.pdfpage{
+    overflow: hidden;
+    width:100vw;
+    height: 100vh;
+}
+
+.print-page{
+position: absolute;
+top: 0;
+left: 0;
+width: 8.26in;
+height: 11.69in;
+z-index: -100;
+margin: auto;
+transform: translateY(-10000px);
+.pdfWrapper{
+margin: auto;
+
+}
+
+  
 }
