@@ -45,16 +45,10 @@ dependencies:
   react-animejs: 0.5.6_tlhpcpohfs2n5whetkhuun7dyy
   react-dom: 18.2.0_react@18.2.0
   react-icons: 4.4.0_react@18.2.0
-
   react-redux: 8.0.4_5uumaiclxbdbzaqafclbf6maf4
+  react-responsive: 9.0.0_react@18.2.0
   react-router-dom: 6.4.1_biqbaboplfbrettd7655fr4n2y
   react-scripts: 3.4.4_react@18.2.0+sass@1.55.0
-
-  react-redux: 8.0.4_ed28c0204bb8461c8200289612f9802f
-  react-responsive: 9.0.0_react@18.2.0
-  react-router-dom: 6.4.1_react-dom@18.2.0+react@18.2.0
-  react-scripts: 3.4.4_sass@1.55.0
-
   react-tsparticles: 2.3.3_react@18.2.0
   sass: 1.55.0
   tsparticles: 2.3.4
@@ -11582,9 +11576,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-
-  /react-router-dom/6.4.1_biqbaboplfbrettd7655fr4n2y:
-
   /react-responsive/9.0.0_react@18.2.0:
     resolution: {integrity: sha512-hyJmKpAglo1AdZsGmu1sab0VInEGzUTXT3nJ3Cl7cMDjR0ffV30lOM3N1xag456OsCGAgqRIkgloLy6tHaqZ2w==}
     engines: {node: '>=0.10'}
@@ -11598,8 +11589,7 @@ packages:
       shallow-equal: 1.2.1
     dev: false
 
-  /react-router-dom/6.4.1_react-dom@18.2.0+react@18.2.0:
-
+  /react-router-dom/6.4.1_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-MY7NJCrGNVJtGp8ODMOBHu20UaIkmwD2V3YsAOUQoCXFk7Ppdwf55RdcGyrSj+ycSL9Uiwrb3gTLYSnzcRoXww==}
     engines: {node: '>=14'}
     peerDependencies:
