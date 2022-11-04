@@ -1,6 +1,7 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { Formik, Form } from "formik";
-import FormField from "../../molecules/FormField/FormField";
+import contactValidation from "../../../services/validation/contact";
+import { ErrorMessage, Field } from "formik";
 import "./Contact.scss";
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
@@ -10,9 +11,14 @@ let currentTime = new Date();
 let hour = currentTime.getHours();
 
 export default function Contact() {
+  const [submit, setSubmit] = useState("Submit");
   const [isHovering, setIsHovering] = useState(false);
   const handleMouseEnter = () => {
     setIsHovering(true);
+  };
+  const handleSubmit = (values) => {
+    setSubmit("Submitted");
+    console.log(values);
   };
 
   const handleMouseLeave = () => {
@@ -20,49 +26,70 @@ export default function Contact() {
   };
   return (
     <div className="contact">
-    <h1>Contact Us</h1>
+      <h1>Contact Us</h1>
       <img
         src="/images/hillfair-logo-light.png"
         alt="hillffair logo"
         className="contactlogo"
       ></img>
       <Formik
-        initialValues={{
-          name: "",
-          email: "",
-          message: "",
+        initialValues={{ name: "", email: "", message: "" }}
+        onSubmit={(values, actions) => {
+           handleSubmit(values)
         }}
+        validationSchema={contactValidation}
       >
         {() => (
           <Form>
             <div className="form-first">
               <label htmlFor=""></label>
-              <FormField name="name" placeholder="Your Name" autoComplete='off'/>
-              <label htmlFor=""></label>
-              <FormField name="email" placeholder="Your Email" autoComplete='off' />
+              <div className="form-field">
+                <Field name="name" placeholder="Your Name" autoComplete='off' />
+                <label htmlFor=""></label>
+                <ErrorMessage
+                  component="div"
+                  name="name"
+                  className="invalid-feedback"
+                />
+              </div>
+              <div className="form-field">
+                <Field name="email" placeholder="Your Email" autoComplete='off' />
+
+                <ErrorMessage
+                  component="div"
+                  name="email"
+                  className="invalid-feedback" />
+              </div>
             </div>
             <div className="form-second">
               <label htmlFor=""></label>
-              <FormField
-                component="textarea"
-                name="message"
-                placeholder="Your message here"
-                style={{
-                  resize:'none'
-                }}
-              />
+              <div className="form-field">
+                <Field
+                  component="textarea"
+                  name="message"
+                  placeholder="Your message here"
+                  style={{
+                    resize: 'none'
+                  }}
+                />
+                <ErrorMessage
+                  component="div"
+                  name="message"
+                  className="invalid-feedback"
+                />
+              </div>
             </div>
             <button
               type="submit"
               className="contactbtn"
               style={{
                 borderColor: hour >= 6 && hour <= 17 ? "#ffb85c" : "#fff",
-                backgroundColor:(hour>=6 && hour<=17 && isHovering)?'#7c4730':''
+                backgroundColor: (hour >= 6 && hour <= 17 && isHovering) ? '#7c4730' : ''
               }}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              Submit
+              {submit}
             </button>
           </Form>
         )}

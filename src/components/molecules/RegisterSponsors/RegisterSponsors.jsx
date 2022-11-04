@@ -17,7 +17,6 @@ const RegisterSponsors = ({ previousvalue }) => {
   }
   
   const handleSubmit = (values) => {
-    // alert(values)
     addUser(values)
     pdf(values)
   }
@@ -29,7 +28,6 @@ initialValues={{ company: '', gst: ''}}
         Object.assign(values, previousvalue);
         handleSubmit(values)
   setTimeout(() => {
-    alert(JSON.stringify(values, null, 2));
     actions.setSubmitting(false);
   }, 1000);
       }}
@@ -48,13 +46,13 @@ initialValues={{ company: '', gst: ''}}
            
           <div className="fieldWrapper">
             <label>Company:</label>
-            <Field type="text" name="company" />
+            <Field autocomplete="off" type="text" name="company" />
             <ErrorMessage component="div" name="company" className='invalid-feedback'/>
           </div>
 
           <div className="fieldWrapper">
               <label>GST No.</label>
-              <Field type="text" name="gst" />
+              <Field autocomplete="off" type="text" name="gst" />
             <ErrorMessage component="div" name="gst" className='invalid-feedback' />
           </div>
             <GeneralButton text="Submit" />

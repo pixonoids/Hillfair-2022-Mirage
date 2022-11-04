@@ -6,6 +6,7 @@ import addUser from '../../../services/firebase/firebase'
 import GeneralButton from '../GeneralButton/GeneralButton';
 import audienceValidation from '../../../services/validation/audienceValidation';
 import logo from '/images/hillfair-logo-light.png'
+import { number } from 'yup';
 let currentTime = new Date();
 let hour = currentTime.getHours();
 
@@ -31,12 +32,11 @@ const RegisterAudience = ({ previousvalue }) => {
       onSubmit={(values, actions) => {
         Object.assign(values, previousvalue);
         handleSubmit(values)
-        setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
-          actions.setSubmitting(false);
-        }, 1000);
-      }}
-      validationSchema={audienceValidation}
+      setTimeout(() => {
+        actions.setSubmitting(false);
+      }, 1000);
+          }}
+          validationSchema={audienceValidation}
     >
 
       <div className='registerContainerAudience'
@@ -52,12 +52,12 @@ const RegisterAudience = ({ previousvalue }) => {
 
             <div className="fieldWrapper">
             <label>Emergency Contact No: </label>
-            <Field type="text" name="emergency" placeholder="91XXXXXXXXX" />
+            <Field autocomplete="off" type="text" name="emergency" placeholder="91XXXXXXXXX" />
             <ErrorMessage component="div" name="emergency" className='invalid-feedback' />
             </div>
             <div className="fieldWrapper">
             <label>Aadhaar No: </label>
-            <Field type="text" name="aadhaar" placeholder="xxxx-xxxx-xxxx" />
+            <Field autocomplete="off" type="text" name="aadhaar" placeholder="xxxx-xxxx-xxxx" />
             <ErrorMessage component="div" name="aadhaar" className='invalid-feedback' />
             </div>
           <GeneralButton text="Submit" />

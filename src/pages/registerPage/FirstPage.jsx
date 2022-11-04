@@ -5,7 +5,6 @@ import { Field, Form, Formik, ErrorMessage } from 'formik';
 import { default as GeneralButton } from '../../components/molecules/GeneralButton/GeneralButton'
 import { RegisterSponsors, RegisterAudience, RegisterParticipants, RegisterGuest, RegisterAlumni } from '../../components/molecules'
 import validateSchema from '../../services/validation/firstPage'
-import RegisterPartipants from '../../components/molecules/RegisterParticipants/RegisterParticipants'
 import logo from '/images/hillfair-logo-light.png'
 
 let currentTime = new Date();
@@ -20,9 +19,6 @@ const RegisterPage = function () {
     navigate('/download', { state: values })
   }
 
-
-
-
   return (
 
     <div className='registerContainer' style={{
@@ -32,12 +28,13 @@ const RegisterPage = function () {
         <h1 className='guestHeading'>Register</h1>
         <img src={logo} alt="logo" />
         <Formik
-          initialValues={{ email: '', contact: '', address: '', category: '', name: '' }}
+          initialValues={{ email: '', contact: '', address: '',checkin:'2022-11-04T18:08',checkout:'2022-11-04T18:08', category: '', name: '',accept_terms:[] }}
           onSubmit={(values, actions) => {
+            alert(JSON.stringify(values, null, 2));
+            console.log(values)
             setCategory(values.category)
             firstPageValue.current = values;
             setTimeout(() => {
-              alert(JSON.stringify(values, null, 2));
               actions.setSubmitting(false);
             }, 1000);
           }}
@@ -49,19 +46,17 @@ const RegisterPage = function () {
 
               <div className="fieldWrapper">
                 <label className="placeholder" htmlFor="email">Name:</label>
-                <Field className="input-text" type="Name" name="name" placeholder="Your name here" />
+                <Field autocomplete="off" className="input-text" type="Name" name="name" placeholder="Your name here" />
                 <ErrorMessage
                   component="div"
                   name="name"
                   className="invalid-feedback"
-
                 />
-
               </div>
            
               <div className="fieldWrapper">
                 <label className="placeholder" htmlFor="email">Email:</label>
-                <Field className="input-text" type="firstName" name="email" placeholder="abc@gmail.com" />
+                <Field autocomplete="off" className="input-text" type="firstName" name="email" placeholder="abc@xyz.com" />
 
                 <ErrorMessage
                   component="div"
@@ -70,7 +65,7 @@ const RegisterPage = function () {
                 />
               </div>
               <div className="fieldWrapper"> <label className="placeholder" htmlFor="contact">Contact No:</label>
-                <Field className="input-text" type="firstName" name="contact" placeholder="91XXXXXXXXXX" />
+                <Field autocomplete="off" className="input-text" type="firstName" name="contact" placeholder="XXXXXXXXXXXX" />
 
                 <ErrorMessage
                   component="div"
@@ -78,7 +73,7 @@ const RegisterPage = function () {
                   className="invalid-feedback"
                 /></div>
               <div className="fieldWrapper"> <label className="placeholder" htmlFor="address">Address:</label>
-                <Field className="input-text" type="firstName" name="address" placeholder="Address" />
+                <Field autocomplete="off" className="input-text" type="firstName" name="address" placeholder="Address" />
 
                 <ErrorMessage
                   component="div"
@@ -86,7 +81,7 @@ const RegisterPage = function () {
                   className="invalid-feedback"
                 /></div>
               <div className="fieldWrapper"> <label className="placeholder" htmlFor="checkin">Check in:</label>
-                <Field className="input-text calender" type="datetime-local" value="2021-09-10T08:30" name="checkIn"/>
+                <Field className="input-text calender" type="datetime-local"  name="checkIn"/>
                 <ErrorMessage
                   component="div"
                   name="checkin"
@@ -94,7 +89,7 @@ const RegisterPage = function () {
                 /></div>
               
               <div className="fieldWrapper"> <label className="placeholder" htmlFor="checkout">Check out:</label>
-                <Field className="input-text calender" type="datetime-local" value="2021-09-10T08:30" name="checkout"/>
+                <Field className="input-text calender" type="datetime-local"  name="checkout"/>
                 <ErrorMessage
                   component="div"
                   name="checkout"
@@ -105,16 +100,16 @@ const RegisterPage = function () {
 
                   <span className='radio-heading'> Who are you</span>
                   <label>
-                    <Field type="radio" name="category" value="audience" />
+                    <Field  type="radio" name="category" value="audience" />
                     <span> Audience</span>
                   </label>
 
                   <label>
-                    <Field type="radio" name="category" value="participant" />
+                    <Field  type="radio" name="category" value="participant" />
                     <span> Partcipant/Performer</span>
                   </label>
                   <label>
-                    <Field type="radio" name="category" value="guest" />
+                    <Field  type="radio" name="category" value="guest" />
                     <span> Guest</span>
                   </label>
                   <label>
@@ -133,7 +128,7 @@ const RegisterPage = function () {
                 </div>
               </div>
               <div className="fieldWrapper">
-               <label> <Field className="input-text" title="Please tick" name="accept_terms" type="checkbox" value="2021-09-10T08:30" style={{translate:'-10% 20%',scale:"1.25"}}/>
+               <label> <Field className="input-text" title="Please tick" name="accept_terms" type="checkbox" value="true" style={{translate:'-10% 20%',scale:"1.25"}}/>
                 <span className='acknowledgement'>I accept the <a href="/pdf/stayingCharges.pdf" target={'_blank'}>terms and conditions</a></span></label>
                 <ErrorMessage
                   component="div"
@@ -151,7 +146,7 @@ const RegisterPage = function () {
       {(category == "audience") && <RegisterAudience previousvalue={firstPageValue.current} />}
       {(category == "guest") && <RegisterGuest previousvalue={firstPageValue.current} />}
       {(category == "alumini") && <RegisterAlumni previousvalue={firstPageValue.current} />}
-      {(category == "participant") && <RegisterPartipants previousvalue={firstPageValue.current} />}
+      {(category == "participant") && <RegisterParticipants previousvalue={firstPageValue.current} />}
       {(category == "sponsor") && <RegisterSponsors previousvalue={firstPageValue.current} />}
     </div>)
 }

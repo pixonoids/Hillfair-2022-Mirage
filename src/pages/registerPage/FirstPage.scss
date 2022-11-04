@@ -210,10 +210,12 @@ $text-color: mix(#000, $primary-color, 64%);
 .acknowledgement{
   font-size: .9rem;
   margin-left: .5em;
+  font-weight: 200;
   
   a{
-    color: rgb(6, 2, 16);
+    color: white;
     // text-decoration: none;
+    // font-weight: 1000;
   }
 }
 

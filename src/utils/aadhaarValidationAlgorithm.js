@@ -56,7 +56,6 @@ function generate(array){
 
 // validates checksum
 function validate(array) {
-if(array.length!==12) return false;
     var c = 0;
     var invertedArray = invArray(array);
 

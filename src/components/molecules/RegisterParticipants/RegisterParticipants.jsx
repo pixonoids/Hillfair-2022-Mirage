@@ -12,7 +12,7 @@ let hour = currentTime.getHours();
 
 
 
-const RegisterPartipants = ({ previousvalue }) => {
+const RegisterParticipants = ({ previousvalue }) => {
 
   const navigate = useNavigate();
   const pdf = (values) => {
@@ -20,7 +20,7 @@ const RegisterPartipants = ({ previousvalue }) => {
   }
 
   const handleSubmit = (values) => {
-    alert(values) /
+
       addUser(values)
     pdf(values)
   }
@@ -31,7 +31,6 @@ const RegisterPartipants = ({ previousvalue }) => {
         Object.assign(values, previousvalue);
         handleSubmit(values)
         setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
           actions.setSubmitting(false);
         }, 1000);
       }}
@@ -49,13 +48,13 @@ const RegisterPartipants = ({ previousvalue }) => {
 
             <div className="fieldWrapper">
               <label>College : </label>
-              <Field type="text" name="college" />
+              <Field autocomplete="off" type="text" name="college" />
               <ErrorMessage component="div" name="college" className='invalid-feedback' />
             </div>
 
             <div className="fieldWrapper">
               <label>Institute Official Site:</label>
-              <Field type="text" name="website" />
+              <Field autocomplete="off" type="text" name="website" />
               <ErrorMessage component="div" name="website" className='invalid-feedback' />
             </div>
 
@@ -79,7 +78,7 @@ const RegisterPartipants = ({ previousvalue }) => {
     </Formik>
   )
 }
-export default RegisterPartipants;
+export default RegisterParticipants;
 
 
 
