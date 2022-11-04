@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.scss';
 import { Route, Routes } from 'react-router-dom';
 import { Menu } from './components/organisms/';
+import { Error } from './components/molecules/';
 import { useSelector } from 'react-redux';
 
 import MenuBar from './pages/MenuBar/MenuBar';
@@ -57,6 +58,7 @@ export default function App() {
 
 
       <Routes>
+       <Route path='*' element={<Error />}/>
          <Route path="/" element={<Home />} /> 
         <Route path="about" element={<About />} />
         <Route path="gallery" element={<GalleryPage />} />
