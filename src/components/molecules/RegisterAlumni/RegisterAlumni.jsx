@@ -17,7 +17,7 @@ const RegisterAlumni = ({ previousvalue }) => {
   }
   
   const handleSubmit = (values) => {
-    // alert(values)
+   
     addUser(values)
     pdf(values)
   }
@@ -28,7 +28,6 @@ initialValues={{ roll: '', batch: '',  department: '' }}
         Object.assign(values, previousvalue);
         handleSubmit(values)
   setTimeout(() => {
-    alert(JSON.stringify(values, null, 2));
     actions.setSubmitting(false);
   }, 1000);
       }}
@@ -45,20 +44,20 @@ initialValues={{ roll: '', batch: '',  department: '' }}
           <Form className='formWrapper'>
           <div className="fieldWrapper">
             <label>Roll No:</label>
-            <Field type="text" name="roll" placeholder="Roll no" />
+            <Field autocomplete="off" type="text" name="roll" placeholder="Roll no" />
               <ErrorMessage component="div" className='invalid-feedback' name='roll' />
               </div>
             
             
           <div className="fieldWrapper">
             <label>Batch:</label>
-            <Field type="text" name="batch" placeholder="Batch" />
+            <Field autocomplete="off" type="text" name="batch" placeholder="Batch" />
               <ErrorMessage component="div" className='invalid-feedback' name='batch' />
               </div>
            
           <div className="fieldWrapper">
             <label>Department:</label> 
-             <Field type="text" name="department" placeholder="Department" />
+             <Field autocomplete="off" type="text" name="department" placeholder="Department" />
               <ErrorMessage component="div"  className='invalid-feedback' name='department' />
               </div>
           <GeneralButton text="Submit" />

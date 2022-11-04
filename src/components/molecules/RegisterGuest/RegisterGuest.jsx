@@ -19,7 +19,6 @@ const RegisterGuest = ({ previousvalue }) => {
   }
   
   const handleSubmit = (values) => {
-    // alert(values)
     addUser(values)
     pdf(values)
   }
@@ -31,7 +30,6 @@ onSubmit={(values, actions) => {
   setTimeout(() => {
     Object.assign(values, previousvalue);
     handleSubmit(values)
-    alert(JSON.stringify(values, null, 2));
     actions.setSubmitting(false);
   }, 1000);
       }}
@@ -49,17 +47,17 @@ onSubmit={(values, actions) => {
           
         <div className="fieldWrapper">
         <label>Designation:</label>
-            <Field type="text" name="designation" />
+            <Field autocomplete="off" type="text" name="designation" />
             <ErrorMessage component="div" name="designation" className='invalid-feedback'/>
             </div>
         <div className="fieldWrapper">
         <label>Social Profile: </label>
-            <Field type="text" name="social" />
+            <Field autocomplete="off" type="text" name="social" />
             <ErrorMessage component="div" name="social" className='invalid-feedback'/>
             </div>
         <div className="fieldWrapper">
         <label>Aadhaar No:</label>
-            <Field type="text" name="aadhaar" placeholder="xxxx-xxxx-xxxx"/>
+            <Field autocomplete="off" type="text" name="aadhaar" placeholder="xxxx-xxxx-xxxx"/>
             <ErrorMessage component="div" name="aadhaar" className='invalid-feedback'/>
             </div>
           <GeneralButton text="Submit" />
