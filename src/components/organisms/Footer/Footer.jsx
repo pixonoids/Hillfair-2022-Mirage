@@ -55,8 +55,11 @@ export default function Footer() {
           }}
         ></div>
       </div>
-      <SocialIcons />
-      <span className="Copyright">Copyright Hillffair 2022</span>
+      <div className="footer-center">
+        <SocialIcons />
+        <span className="Copyright">Copyright Hill'ffair 2022</span>
+      </div>
+      
       <img
         src={
           hour >= 6 && hour <= 17
@@ -75,6 +78,12 @@ export default function Footer() {
         alt=""
         className="palm1"
       />
+      <div className="query">
+        <h3>For Any Queries Contact :</h3>
+        <p>Divyam Garg : +918219189292</p>
+        <p>Pranjal Goyal : +918929467816</p>
+      </div>
+
     </div>
   );
 }

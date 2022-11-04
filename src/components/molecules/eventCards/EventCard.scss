@@ -21,9 +21,12 @@ $borderRadius: 1rem;
   width: 3rem;
   height: 3rem;
   z-index: 2;
-  border: 2px solid rgba(241, 196, 14);
+  scale: -1;
+  rotate: -45deg;
+  // border: 1px solid white;
   border-radius: 50%;
   position: absolute;
+  animation: glow 2s ease-in-out infinite ;
 }
 
 .eventCard {
@@ -37,19 +40,18 @@ $borderRadius: 1rem;
   width: 40%;
   position: relative;
   //   text-align: center;
+  animation: glow 2s ease-in-out infinite ;
 
   .moon svg {
     @include svgSettings();
     top: 6rem;
-    right: -27%;
+    right: -26.8%;
     @media (max-width: 669px) {
       left: -70px;
       top: 5.6rem;
     }
   }
-  &:nth-child(odd) {
-    background: linear-gradient(45deg, #af844c 10%, #e0c384 80%);
-  }
+
   &:nth-child(even) {
     justify-content: flex-start;
     align-self: flex-end;
@@ -57,7 +59,7 @@ $borderRadius: 1rem;
     .moon svg {
       @include svgSettings();
       top: 6rem;
-      left: -28%;
+      left: -26.5%;
     }
   }
   // &::after {
@@ -90,13 +92,19 @@ $borderRadius: 1rem;
   h1:nth-child(1) {
     @include textGradient();
     padding: 1rem 0 0 0;
+    font-family: fino-sans-regular, sans-serif;
+    letter-spacing: 0.3rem;
+    font-weight: 800;
+    font-size: 2.5rem
   }
-
+  
   h2 {
     @include textGradient();
     font-size: 1.2rem;
+    font-family: fino-sans-regular, sans-serif;
+    letter-spacing: 0.2rem;
   }
-
+  
   h1:nth-child(3) {
     @include textGradient();
     position: absolute;
@@ -105,9 +113,12 @@ $borderRadius: 1rem;
   }
   p:nth-child(3) {
     position: absolute;
-    bottom: 0.5rem;
+    bottom: 2rem;
+    left: 2rem;
     @include textGradient();
-    left: 0.5rem;
+    font-family: fino-sans-regular, sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
   }
   p:nth-child(4) {
     position: absolute;
@@ -121,6 +132,7 @@ $borderRadius: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    // font-family: fino-sans-regular, sans-serif;
   }
 }
 @media (max-width: 1100px) {
@@ -128,14 +140,19 @@ $borderRadius: 1rem;
     width: 35%;
     height: 10rem;
     .moon svg:nth-child(odd) {
-      top: 3rem;
+      top: 5rem;
       right: -46%;
     }
-    h1 {
+    h1:nth-child(1) {
       font-size: 1.5rem;
     }
     h2 {
-      font-size: 1rem;
+      font-size: 0.8rem;
+    }
+    p:nth-child(3) {
+      bottom: 0.5rem;
+      right: 1rem;
+      font-size: 1.5rem;
     }
   }
   .eventCard:nth-child(even) {
@@ -158,5 +175,19 @@ $borderRadius: 1rem;
     margin: 0.5rem 0;
     width: 70vw;
     height: 12rem;
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: none;
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(255,255,255,0.69);
+    -moz-box-shadow: 0px 0px 15px 1px rgba(255,255,255,0.69);
+    box-shadow: 0px 0px 15px 1px rgba(255,255,255,0.69);
+  }
+  100% {
+    box-shadow: none;
   }
 }

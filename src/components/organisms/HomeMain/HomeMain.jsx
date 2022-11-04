@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import GeneralButton from "../../molecules/GeneralButton/GeneralButton";
 import "./HomeMain.scss";
 
@@ -17,7 +18,7 @@ const HomeMain = () => {
       className="homeMain"
       style={{
         backgroundImage:
-          hours >= 6 && hours <= 16
+          hours >= 6 && hours <= 17
             ? "linear-gradient(180deg,#40291c 17.15%,#522822 120.7%)"
             : " linear-gradient(180deg,#151539 17.15%,#331e66 120.7%)",
       }}
@@ -26,7 +27,7 @@ const HomeMain = () => {
       <img
         className="layers"
         src={
-          hours >= 6 && hours <= 16
+          hours >= 6 && hours <= 17
             ? "images/sunlayerfinal-01.png"
             : "images/darkmodesunlayer.png"
         }
@@ -36,7 +37,7 @@ const HomeMain = () => {
       <img
         className="layers"
         src={
-          hours >= 6 && hours <= 16
+          hours >= 6 && hours <= 17
             ? "images/cloudslayerfinal-01.png"
             : "images/darkmodecloudlayer.png"
         }
@@ -46,7 +47,7 @@ const HomeMain = () => {
       <img
         className="layers"
         src={
-          hours >= 6 && hours <= 16
+          hours >= 6 && hours <= 17
             ? "images/sandlayer-01.png"
             : "images/darkmodesand.png"
         }
@@ -62,11 +63,12 @@ const HomeMain = () => {
           </Link> */}
         </div>
         <div className="dates">
-          <h1>11-13</h1>
+          <h1>18-20</h1>
           <h3>November 2022</h3>
           <div className="registerHere">
-          {/* <Route path="register" element={<GeneralButton text="Register Here"/>} /> */}
-          <a href="/register"><GeneralButton text="Register Here"/></a>
+        <Link key="/register" to="/register">
+          <GeneralButton text="Register Here"/>
+          </Link>
           </div>
         </div>
         <div className="logos">
