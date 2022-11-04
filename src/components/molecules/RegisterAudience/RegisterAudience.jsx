@@ -26,17 +26,17 @@ const RegisterAudience = ({ previousvalue }) => {
   return (
     <Formik
 
-    initialValues={{  emergency: '',  aadhaar: '' }}
+      initialValues={{ emergency: '', aadhaar: '' }}
 
 
       onSubmit={(values, actions) => {
         Object.assign(values, previousvalue);
         handleSubmit(values)
-      setTimeout(() => {
-        actions.setSubmitting(false);
-      }, 1000);
-          }}
-          validationSchema={audienceValidation}
+        setTimeout(() => {
+          actions.setSubmitting(false);
+        }, 1000);
+      }}
+      validationSchema={audienceValidation}
     >
 
       <div className='registerContainerAudience'
@@ -51,20 +51,20 @@ const RegisterAudience = ({ previousvalue }) => {
           <Form className='formWrapper'>
 
             <div className="fieldWrapper">
-            <label>Emergency Contact No: </label>
-            <Field autocomplete="off" type="text" name="emergency" placeholder="91XXXXXXXXX" />
-            <ErrorMessage component="div" name="emergency" className='invalid-feedback' />
+              <label>Emergency Contact No: </label>
+              <Field autoComplete="off" type="text" name="emergency" placeholder="91XXXXXXXXX" />
+              <ErrorMessage component="div" name="emergency" className='invalid-feedback' />
             </div>
             <div className="fieldWrapper">
-            <label>Aadhaar No: </label>
-            <Field autocomplete="off" type="text" name="aadhaar" placeholder="xxxx-xxxx-xxxx" />
-            <ErrorMessage component="div" name="aadhaar" className='invalid-feedback' />
+              <label>Aadhaar No: </label>
+              <Field autoComplete="off" type="text" name="aadhaar" placeholder="xxxx-xxxx-xxxx" />
+              <ErrorMessage component="div" name="aadhaar" className='invalid-feedback' />
             </div>
-          <GeneralButton text="Submit" />
-        </Form>
-      </div>
+            <GeneralButton text="Submit" />
+          </Form>
+        </div>
 
-          
+
       </div>
     </Formik>
   )

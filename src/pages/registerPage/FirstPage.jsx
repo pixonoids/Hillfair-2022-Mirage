@@ -22,13 +22,13 @@ const RegisterPage = function () {
   return (
 
     <div className='registerContainer' style={{
-      backgroundImage:(hour>=6 &&hour<=17)?'linear-gradient(180deg,#3a1c1b 17.15%,#b5874c 120.7%)':'linear-gradient(180deg,#151539 17.15%,#331e66 120.7%)'
+      backgroundImage: (hour >= 6 && hour <= 17) ? 'linear-gradient(180deg,#3a1c1b 17.15%,#b5874c 120.7%)' : 'linear-gradient(180deg,#151539 17.15%,#331e66 120.7%)'
     }}>
       {(category == null) && <div className='formContainer'>
         <h1 className='guestHeading'>Register</h1>
         <img src={logo} alt="logo" />
         <Formik
-          initialValues={{ email: '', contact: '', address: '',checkin:'2022-11-04T18:08',checkout:'2022-11-04T18:08', category: '', name: '',accept_terms:[] }}
+          initialValues={{ email: '', contact: '', address: '', checkin: '2022-11-04T18:08', checkout: '2022-11-04T18:08', category: '', name: '', accept_terms: [] }}
           onSubmit={(values, actions) => {
             alert(JSON.stringify(values, null, 2));
             console.log(values)
@@ -46,17 +46,17 @@ const RegisterPage = function () {
 
               <div className="fieldWrapper">
                 <label className="placeholder" htmlFor="email">Name:</label>
-                <Field autocomplete="off" className="input-text" type="Name" name="name" placeholder="Your name here" />
+                <Field autoComplete="off" className="input-text" type="Name" name="name" placeholder="Your name here" />
                 <ErrorMessage
                   component="div"
                   name="name"
                   className="invalid-feedback"
                 />
               </div>
-           
+
               <div className="fieldWrapper">
                 <label className="placeholder" htmlFor="email">Email:</label>
-                <Field autocomplete="off" className="input-text" type="firstName" name="email" placeholder="abc@xyz.com" />
+                <Field autoComplete="off" className="input-text" type="firstName" name="email" placeholder="abc@xyz.com" />
 
                 <ErrorMessage
                   component="div"
@@ -65,7 +65,7 @@ const RegisterPage = function () {
                 />
               </div>
               <div className="fieldWrapper"> <label className="placeholder" htmlFor="contact">Contact No:</label>
-                <Field autocomplete="off" className="input-text" type="firstName" name="contact" placeholder="XXXXXXXXXXXX" />
+                <Field autoComplete="off" className="input-text" type="firstName" name="contact" placeholder="XXXXXXXXXXXX" />
 
                 <ErrorMessage
                   component="div"
@@ -73,7 +73,7 @@ const RegisterPage = function () {
                   className="invalid-feedback"
                 /></div>
               <div className="fieldWrapper"> <label className="placeholder" htmlFor="address">Address:</label>
-                <Field autocomplete="off" className="input-text" type="firstName" name="address" placeholder="Address" />
+                <Field autoComplete="off" className="input-text" type="firstName" name="address" placeholder="Address" />
 
                 <ErrorMessage
                   component="div"
@@ -81,15 +81,15 @@ const RegisterPage = function () {
                   className="invalid-feedback"
                 /></div>
               <div className="fieldWrapper"> <label className="placeholder" htmlFor="checkin">Check in:</label>
-                <Field className="input-text calender" type="datetime-local"  name="checkIn"/>
+                <Field className="input-text calender" type="datetime-local" name="checkin" />
                 <ErrorMessage
                   component="div"
                   name="checkin"
                   className="invalid-feedback"
                 /></div>
-              
+
               <div className="fieldWrapper"> <label className="placeholder" htmlFor="checkout">Check out:</label>
-                <Field className="input-text calender" type="datetime-local"  name="checkout"/>
+                <Field className="input-text calender" type="datetime-local" name="checkout" />
                 <ErrorMessage
                   component="div"
                   name="checkout"
@@ -100,16 +100,16 @@ const RegisterPage = function () {
 
                   <span className='radio-heading'> Who are you</span>
                   <label>
-                    <Field  type="radio" name="category" value="audience" />
+                    <Field type="radio" name="category" value="audience" />
                     <span> Audience</span>
                   </label>
 
                   <label>
-                    <Field  type="radio" name="category" value="participant" />
+                    <Field type="radio" name="category" value="participant" />
                     <span> Partcipant/Performer</span>
                   </label>
                   <label>
-                    <Field  type="radio" name="category" value="guest" />
+                    <Field type="radio" name="category" value="guest" />
                     <span> Guest</span>
                   </label>
                   <label>
@@ -128,8 +128,8 @@ const RegisterPage = function () {
                 </div>
               </div>
               <div className="fieldWrapper">
-               <label> <Field className="input-text" title="Please tick" name="accept_terms" type="checkbox" value="true" style={{translate:'-10% 20%',scale:"1.25"}}/>
-                <span className='acknowledgement'>I accept the <a href="/pdf/stayingCharges.pdf" target={'_blank'}>terms and conditions</a></span></label>
+                <label> <Field className="input-text" title="Please tick" name="accept_terms" type="checkbox" value="true" style={{ translate: '-10% 20%', scale: "1.25" }} />
+                  <span className='acknowledgement'>I accept the <a href="/pdf/stayingCharges.pdf" target={'_blank'}>terms and conditions</a></span></label>
                 <ErrorMessage
                   component="div"
                   name="accept_terms"
