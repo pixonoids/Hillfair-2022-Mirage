@@ -50,25 +50,25 @@ const GalleryPage = () => {
       }}>
         <div className="column">
           {galleryData.map((data, id) => {
-            return (<img src={data.src} style={{ width: "100%" }} onClick={() => getImg(data.src)} />)
+            return (data.src1) ? (<img src={data.src1} style={{ width: "100%" }} onClick={() => getImg(data.src1)} />) : '';
           })}
         </div>
 
         <div className="column">
           {galleryData.map((data, id) => {
-            return (<img src={data.src} style={{ width: "100%" }} onClick={() => getImg(data.src)} />)
+            return (data.src2) ? (<img src={data.src2} style={{ width: "100%" }} onClick={() => getImg(data.src2)} />) : '';
           })}
         </div>
 
         <div className="column">
           {galleryData.map((data, id) => {
-            return (<img src={data.src} style={{ width: "100%" }} onClick={() => getImg(data.src)} />)
+            return (data.src3) ? (<img src={data.src3} style={{ width: "100%" }} onClick={() => getImg(data.src3)} />) : '';
           })}
         </div>
 
         <div className="column">
           {galleryData.map((data, id) => {
-            return (<img src={data.src} style={{ width: "100%" }} onClick={() => getImg(data.src)} />)
+            return (data.src4) ? (<img src={data.src4} style={{ width: "100%" }} onClick={() => getImg(data.src4)} />) : '';
           })}
         </div>
       </div>

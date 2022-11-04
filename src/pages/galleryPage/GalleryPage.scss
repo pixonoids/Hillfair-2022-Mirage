@@ -30,13 +30,13 @@
   max-width: 25%;
   padding: 0 4px;
   
-  &:nth-child(even) {
+  &:nth-child(odd) {
     animation: moveup 8s ease-in-out infinite alternate;
     @media (max-width:900px) {
       animation:none;
     }
   }
-  &:nth-child(odd) {
+  &:nth-child(even) {
     animation: movedown 8s ease-in-out infinite alternate;
     @media (max-width:900px) {
       animation:none;
