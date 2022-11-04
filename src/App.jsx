@@ -2,11 +2,15 @@ import React, { useEffect, useState } from 'react';
 import './App.scss';
 import { Route, Routes } from 'react-router-dom';
 import { Menu } from './components/organisms/';
+import { Error } from './components/molecules/';
 import { useSelector } from 'react-redux';
 import { useMediaQuery } from 'react-responsive';
 import MenuBar from './pages/MenuBar/MenuBar';
 
-import {LandingPage,Home,Sponsors,About,RegisterPage,Events, PdfPage, Team} from './pages';
+
+import {LandingPage,Home,Sponsors,About,RegisterPage,Events, PdfPage, GalleryPage} from './pages';
+
+
 
 import AudioButton from './components/molecules/AudioButton/AudioButton';
 import ParticlesBackground from './pages/landingPage/ParticlesBackground';
@@ -59,9 +63,10 @@ export default function App() {
 
 
       <Routes>
+       <Route path='*' element={<Error />}/>
          <Route path="/" element={<Home />} /> 
         <Route path="about" element={<About />} />
-        <Route path="gallery" element={<LandingPage />} />
+        <Route path="gallery" element={<GalleryPage />} />
         <Route path="sponsors" element={<LandingPage/>} />
         <Route path="team" element={<LandingPage />} />
         <Route path="register" element={<RegisterPage />} />

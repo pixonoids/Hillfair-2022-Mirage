@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.error-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    overflow: hidden;
+
+    #logo{
+        width: 25rem;
+        translate: 0 -10%;
+        @media (max-width: 300px) {
+            transform: scale(0.7);
+        }
+    }
+
+    .coming-soon{
+        font-weight: 300;
+        color: #e8dbc5;
+        letter-spacing: 5px;
+        translate: 0 -100%;
+        margin-top: -2.5rem;
+        @media (max-width: 500px){
+            transform: scale(0.7);
+        }
+    }
+
+    .pixonoids_logo{
+        width: 5.25rem;
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+        @media (max-width: 500px){
+            transform: scale(0.7) translateX(20%);
+        }
+    }
+}
