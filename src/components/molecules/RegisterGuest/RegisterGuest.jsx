@@ -39,8 +39,8 @@ onSubmit={(values, actions) => {
 >
     <div className='registerContainerGuest'
     style={{
-      backgroundImage:(hour>=6 &&hour<=16)?'linear-gradient(180deg,#3a1c1b 17.15%,#b5874c 120.7%)':'linear-gradient(180deg,#151539 17.15%,#331e66 120.7%)'
-    }}>
+          backgroundImage:(hour>=6 &&hour<=17)?'linear-gradient(180deg,#3a1c1b 17.15%,#b5874c 120.7%)':'linear-gradient(180deg,#151539 17.15%,#331e66 120.7%)'
+        }}>
    
         <div className='formContainer'>
         <h1 >Guest Register</h1>
@@ -59,7 +59,7 @@ onSubmit={(values, actions) => {
             </div>
         <div className="fieldWrapper">
         <label>Aadhaar No:</label>
-            <Field type="text" name="aadhaar" />
+            <Field type="text" name="aadhaar" placeholder="xxxx-xxxx-xxxx"/>
             <ErrorMessage component="div" name="aadhaar" className='invalid-feedback'/>
             </div>
           <GeneralButton text="Submit" />

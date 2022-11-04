@@ -2,7 +2,7 @@ $primary-color: #00005c; // Change color here. C'mon, try it!
 $text-color: mix(#000, $primary-color, 64%);
 
 .invalid-feedback {
-  font-size: 0.6em;
+  font-size: 0.8em;
   font-family: monospace;
   font-weight: bold;
   letter-spacing: 0.1em;
@@ -105,6 +105,17 @@ $text-color: mix(#000, $primary-color, 64%);
   label {
     border-bottom: 0rem;
 
+  }
+  #participationIn, option {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    outline: none;
+    background:transparent;
+    option {
+      background-color: rgb(51, 30, 102);
+      height: 2rem;
+    }
+    
   }
 }
 

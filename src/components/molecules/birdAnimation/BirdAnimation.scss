@@ -10,7 +10,7 @@
 	background-blend-mode: soft-light;
 	background-size: cover;
 	background-position: center center;
-	padding: 2rem;
+	padding: 6rem 0;
     position:absolute;
     top: 3rem;
 }
@@ -51,11 +51,11 @@
 
 .bird-container {
 	position: absolute;
+	height: 3rem;
 	top: 20%;
 	left: -10%;
 	transform: scale(0) translateX(-10vw);
 	will-change: transform;
-	
 	animation-name: fly-right-one;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;

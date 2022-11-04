@@ -1,5 +1,5 @@
 .Newsletter {
-  padding: 2rem 0 2rem 2rem;
+  padding: 2rem 0 2rem 0;
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -39,6 +39,7 @@
       font-family: Regular-Text;
       font-size: 1.1rem;
       transition: all 1s ease-in;
+      color: black;
 
       // @media screen and (min-width: 1424px) {
       //   padding: 1rem 0rem;
