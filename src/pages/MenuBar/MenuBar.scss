@@ -1,7 +1,6 @@
 .menubar{
 font-family: Regular-Text,sans-serif;
 
-
 .drop-down-container {
     height: 15%;
     width: 90%;
@@ -48,8 +47,10 @@ font-family: Regular-Text,sans-serif;
     height: 60vh;
     padding: 5px 0;
     transition: 0.35s ease;
+    border-radius: 0.6rem;
     @media (max-width: 370px) {
-      height: 40vh;
+      height: 23rem;
+      padding: 0.8rem;
      }
   }
 
@@ -124,7 +125,7 @@ font-family: Regular-Text,sans-serif;
   }
   @media screen and (max-width: 370px)  {
     .drop-down-container {
-      width:80%;
+      width:100%;
     }
     .the-bass.dropped {
       width: 180px;
