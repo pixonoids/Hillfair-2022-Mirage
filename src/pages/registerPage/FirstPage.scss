@@ -29,18 +29,15 @@ $text-color: mix(#000, $primary-color, 64%);
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  // background-image: linear-gradient(rgb(21, 21, 57) 17.15%, rgb(51, 30, 102) 120.7%);
-
   .formContainer {
     display: flex;
     flex-direction: column;
     padding-bottom: 3rem;
     justify-content: center;
     align-items: center;
-    width: 30rem;
-    margin: 13rem 0rem;
+    width: 60%;
+    margin: 12rem 0rem;
     // background-color: rgba(0, 0, 0, 0.23);
-    backdrop-filter: blur(20px);
     border-radius: 2rem;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     @media (max-width: 510px) {
@@ -79,9 +76,9 @@ $text-color: mix(#000, $primary-color, 64%);
       .placeholder {
         color: white;
         margin: 0.2rem 0rem;
-        font-family: sans-serif;
+        font-family: Fino-Sans-Regular;
         font-size: 1.0rem;
-        font-weight: 400;
+        font-weight: 700;
         letter-spacing: 0.15rem;
         line-height: 0.4rem;
       }
@@ -119,11 +116,6 @@ $text-color: mix(#000, $primary-color, 64%);
   }
 }
 
-
-.radio-container {}
-
-
-
 .radio-container {
   color: white;
   display: flex;
@@ -131,6 +123,7 @@ $text-color: mix(#000, $primary-color, 64%);
   flex-direction: column;
 
   label {
+    margin: 0.3rem 0 !important;
     display: flex;
     cursor: pointer;
     font-weight: 500;
@@ -165,10 +158,10 @@ $text-color: mix(#000, $primary-color, 64%);
     }
 
     span {
-      font-family: sans-serif;
+      font-family: Fino-Sans-Regular;
       font-size: 0.9rem;
       font-weight: 400;
-      letter-spacing: 0.10rem;
+      letter-spacing: 0.2rem;
       line-height: 0.2rem;
       display: flex;
       align-items: center;

@@ -56,8 +56,8 @@ export default function Contact() {
               type="submit"
               className="contactbtn"
               style={{
-                borderColor: hour >= 6 && hour <= 16 ? "#ffb85c" : "#fff",
-                backgroundColor:(hour>=6 && hour<=16 && isHovering)?'#7c4730':''
+                borderColor: hour >= 6 && hour <= 17 ? "#ffb85c" : "#fff",
+                backgroundColor:(hour>=6 && hour<=17 && isHovering)?'#7c4730':''
               }}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
