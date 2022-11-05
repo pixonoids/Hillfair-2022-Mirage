@@ -118,7 +118,7 @@ const RegisterPage = function () {
                   </label>
                   <label>
                     <Field type="radio" name="category" value="alumini" />
-                    <span>Alumini</span>
+                    <span>Alumni</span>
                   </label>
                   <ErrorMessage
                     component="div"
