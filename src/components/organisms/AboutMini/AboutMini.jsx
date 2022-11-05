@@ -34,7 +34,7 @@ export default function AboutMini() {
         >
           <path
 
-            fill={hour >= 9 && hour <= 17 ? "#956c4d" : "#723B99"}
+            fill={hour >= 6 && hour <= 17 ? "#956c4d" : "#723B99"}
 
             
 
