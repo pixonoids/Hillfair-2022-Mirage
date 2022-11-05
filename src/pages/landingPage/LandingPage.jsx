@@ -2,6 +2,7 @@ import './LandingPage.scss';
 import CountdownTimer from '../../components/molecules/countdown/CountdownTimer';
 import ParticlesBackground from './ParticlesBackground';
 import AudioButton from '../../components/molecules/AudioButton/AudioButton';
+import { PalmRegister } from '../../components/molecules';
 
 const LandingPage = () => {
 
@@ -16,6 +17,7 @@ const LandingPage = () => {
             <h1 className='coming-soon'>COMING SOON</h1>
 
             {/* < CountdownTimer /> */}
+            <PalmRegister/>
         </div>
     );
 }

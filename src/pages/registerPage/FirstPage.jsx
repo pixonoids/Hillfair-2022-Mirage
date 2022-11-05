@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"
 import './FirstPage.scss'
 import { Field, Form, Formik, ErrorMessage } from 'formik';
 import { default as GeneralButton } from '../../components/molecules/GeneralButton/GeneralButton'
-import { RegisterSponsors, RegisterAudience, RegisterParticipants, RegisterGuest, RegisterAlumni } from '../../components/molecules'
+import { RegisterSponsors, RegisterAudience, RegisterParticipants, RegisterGuest, RegisterAlumni, PalmRegister } from '../../components/molecules'
 import validateSchema from '../../services/validation/firstPage'
 import logo from '/images/hillfair-logo-light.png'
 
@@ -24,13 +24,14 @@ const RegisterPage = function () {
     <div className='registerContainer' style={{
       backgroundImage: (hour >= 6 && hour <= 17) ? 'linear-gradient(180deg,#3a1c1b 17.15%,#b5874c 120.7%)' : 'linear-gradient(180deg,#151539 17.15%,#331e66 120.7%)'
     }}>
+    <PalmRegister/>
+
       {(category == null) && <div className='formContainer'>
         <h1 className='guestHeading'>Register</h1>
         <img src={logo} alt="logo" />
         <Formik
           initialValues={{ email: '', contact: '', address: '', checkin: '2022-11-04T18:08', checkout: '2022-11-04T18:08', category: '', name: '', accept_terms: [] }}
           onSubmit={(values, actions) => {
-            alert(JSON.stringify(values, null, 2));
             setCategory(values.category)
             firstPageValue.current = values;
             setTimeout(() => {
@@ -139,7 +140,6 @@ const RegisterPage = function () {
             </Form>
           )}
         </Formik>
-
       </div>
       }
       {(category == "audience") && <RegisterAudience previousvalue={firstPageValue.current} />}

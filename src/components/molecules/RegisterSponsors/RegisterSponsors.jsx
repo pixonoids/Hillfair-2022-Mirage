@@ -6,6 +6,7 @@ import './RegisterSponsors.scss'
 import logo from '/images/hillfair-logo-light.png'
 import sponsorValidation from '../../../services/validation/sponsorValidation';
 import addUser from '../../../services/firebase/firebase'
+import PalmRegister from '../PalmRegister/PalmRegister';
 let currentTime = new Date();
 let hour = currentTime.getHours();
 
@@ -37,6 +38,7 @@ const RegisterSponsors = ({ previousvalue }) => {
         style={{
           backgroundImage: (hour >= 6 && hour <= 17) ? 'linear-gradient(180deg,#3a1c1b 17.15%,#b5874c 120.7%)' : 'linear-gradient(180deg,#151539 17.15%,#331e66 120.7%)'
         }}>
+        <PalmRegister/>
 
 
         <div className='formContainer'>
