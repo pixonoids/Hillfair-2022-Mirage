@@ -5,14 +5,6 @@ import "./SocialIcons.scss";
 let currentTime = new Date();
 let hour = currentTime.getHours();
 export default function () {
-  const [isHovering, setIsHovering] = useState(false);
-    const handleMouseEnter = () => {
-        setIsHovering(true);
-    };
-
-    const handleMouseLeave = () => {
-        setIsHovering(false);
-    };
   return (
     <div className="socialicons">
       <ul className="glowingIcons">
