@@ -43,7 +43,6 @@ const Newsletter = () => {
   const subscribeHandler = (event) => {
     event.preventDefault();
     if (validateForm(error)) {
-      console.info("Valid Form");
       setSubscribe("subscribing");
       setTimeout(() => {
         setSubscribe("subscribed");

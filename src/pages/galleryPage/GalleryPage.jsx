@@ -13,6 +13,7 @@ const GalleryPage = () => {
   }
 
   const [globalCoords, setGlobalCoords] = useState({x: 0, y: 0});
+  const [Coords, setCoords] = useState({x: 0, y: 0});
 
   useEffect(() => {
     const handleWindowMouseMove = event => {
