@@ -34,16 +34,19 @@
     border-radius: 1rem;
     display: flex;
     align-items: center;
+    margin-left: calc(-1.3rem + 1vw);
+    @media (max-width:1600px) {
+      margin-left: calc(-1rem + 3vw);
+    }
     .inputNewsletter {
       border: hidden;
       padding: 1rem;
-      width: calc(2rem + 10vw);
-      margin: auto;
+      width: calc(3rem + 12vw);
       font-family: Regular-Text;
       font-size: 1.1rem;
       color: black;
       @media (min-width:1200px) {
-        width: 18vw;
+        width: 20vw;
       }
       @media (max-width:700px) {
         width: 50vw;

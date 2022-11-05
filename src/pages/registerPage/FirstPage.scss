@@ -111,20 +111,13 @@ $text-color: mix(#000, $primary-color, 64%);
   margin: 0.5rem 0rem;
   padding: 0.2em;
 
-
   label {
-    padding: 0.1em 0.2em;
     background: none;
     font-family: sans-serif;
     border: none;
     outline: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.467);
   }
 
-  label {
-    border-bottom: 0rem;
-
-  }
 }
 @keyframes fadeInRight {
   0% {
@@ -203,7 +196,6 @@ $text-color: mix(#000, $primary-color, 64%);
   }
 
 }
-
 .calender::-webkit-calendar-picker-indicator {
   filter: invert(1);
 }
@@ -212,8 +204,8 @@ $text-color: mix(#000, $primary-color, 64%);
 }
 
 .acknowledgement{
-  font-size: .9rem;
-  margin-left: .5em;
+  font-size: 1rem;
+  margin-left: 0.5em;
   font-weight: 200;
   
   a{

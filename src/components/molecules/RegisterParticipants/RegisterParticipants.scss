@@ -117,7 +117,7 @@ $text-color: mix(#000, $primary-color, 64%);
     option {
       background-color: rgb(30, 31, 31);
       height: 2rem;
-
+      color: white;
     }
 
   }
@@ -128,7 +128,6 @@ $text-color: mix(#000, $primary-color, 64%);
   color: white;
   display: flex;
   width: 100%;
-
   flex-direction: column;
 
   label {
@@ -152,11 +151,8 @@ $text-color: mix(#000, $primary-color, 64%);
   background-color: inherit;
   color: white;
   letter-spacing: 0.12rem;
-
   border: none;
   outline: none;
-
-
 }
 
 option {
