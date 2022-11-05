@@ -34,8 +34,9 @@ export default function Contact() {
       ></img>
       <Formik
         initialValues={{ name: "", email: "", message: "" }}
-        onSubmit={(values, actions) => {
+        onSubmit={(values, {resetForm}) => {
           handleSubmit(values)
+          resetForm({values:''})
         }}
         validationSchema={contactValidation}
       >
