@@ -121,18 +121,18 @@
         display: flex;
         margin: auto;
         position: absolute;
+        width: 130px;
         transform: translate(-50%, -50%);
         left: 50%;
         top: 90%;
         z-index: 100;
-        justify-content: center;
+        justify-content: space-between;
         .pixologo{
-          width: 47px;
-          margin-left: 2rem;
+          width: 46px;
+          margin: 0.1rem 0 0 2.3rem;
         }
         .nithlogo{
           width: 50px;
-          margin-top: -0.2rem;
         }
         @media screen and (max-width: 430px) {
           // left: 50%;

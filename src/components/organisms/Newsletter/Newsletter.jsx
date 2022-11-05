@@ -99,7 +99,7 @@ const Newsletter = () => {
             <svg
               style={{
                 backgroundColor:
-                  hour >= 9 && hour <= 17 ? "#7c4730" : "#080648",
+                  hour >= 6 && hour <= 17 ? "#7c4730" : "#080648",
               }}
               id="svg-spinner"
               xmlns="http://www.w3.org/2000/svg"
