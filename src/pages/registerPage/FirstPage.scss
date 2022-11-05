@@ -25,13 +25,17 @@ $text-color: mix(#000, $primary-color, 64%);
 }
 
 .registerContainer {
+  animation-name: fadeInRight;
+  animation-duration: 0.5s;
+  transition-timing-function: ease-in;
+  // animation-fill-mode: both;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
   background-color: white;
+  overflow: hidden;
   
   .formContainer {
     display: flex;
@@ -61,7 +65,6 @@ $text-color: mix(#000, $primary-color, 64%);
       font-family: Fino-Sans-Regular;
       font-weight: 400;
       margin-top: -6rem;
-      margin-bottom: 3rem;
       font-size: 3rem;
     }
 
@@ -74,7 +77,7 @@ $text-color: mix(#000, $primary-color, 64%);
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      width: 18rem;
+      width: calc(18rem + 10vw);
       margin: 0rem;
       @media (max-width: 669px) {
         width: 100%;
@@ -123,7 +126,17 @@ $text-color: mix(#000, $primary-color, 64%);
 
   }
 }
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
 
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
 .radio-container {
   color: white;
   display: flex;

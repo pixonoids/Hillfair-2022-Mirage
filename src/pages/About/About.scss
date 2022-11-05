@@ -8,6 +8,21 @@
   margin: 0 2em;
   font-family: Fino-Sans-Regular;
   padding-top: 7rem;
+  animation-duration: 1s;
+  transition-timing-function: ease-in;
+  animation-fill-mode:forwards;
+  animation-name: fadeInDown;
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .about-outer-container{

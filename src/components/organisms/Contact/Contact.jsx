@@ -3,6 +3,7 @@ import { Formik, Form } from "formik";
 import contactValidation from "../../../services/validation/contact";
 import { ErrorMessage, Field } from "formik";
 import "./Contact.scss";
+import GeneralButton from "../../molecules/GeneralButton/GeneralButton";
 
 let currentTime = new Date();
 let hour = currentTime.getHours();
@@ -88,6 +89,7 @@ export default function Contact() {
             >
               {submit}
             </button>
+            <a className="download-app" href="#"><GeneralButton text="Download App" /></a>
           </Form>
         )}
       </Formik>

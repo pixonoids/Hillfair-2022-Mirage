@@ -3,7 +3,11 @@ import './GalleryPage.scss';
 import galleryData from './galleryData.jsx';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { useMediaQuery } from 'react-responsive';
 const GalleryPage = () => {
+  const isPhone = useMediaQuery({
+    query: "(max-width: 600px)"
+  });
 
   const [Model, setModel] = useState(false);
   const [TempImgSrc, setTempImgSrc] = useState('');
@@ -49,25 +53,33 @@ const GalleryPage = () => {
         translate: `-${globalCoords.x / 50 - 10}px -${globalCoords.y / 50}px`,
         transition:"translate 0.1s"
       }}>
-        <div className="column">
+        <div className="column" style={{
+          animation: Model || isPhone ? "none" : "moveup 8s ease-in-out infinite alternate",
+        }}>
           {galleryData.map((data, id) => {
             return (data.src1) ? (<img src={data.src1} key = {id} style={{ width: "100%" }} onClick={() => getImg(data.src1)} />) : '';
           })}
         </div>
 
-        <div className="column">
+        <div className="column" style={{
+          animation: Model || isPhone ? "none" : "movedown 8s ease-in-out infinite alternate"
+        }}>
           {galleryData.map((data, id) => {
-            return (data.src2) ? (<img src={data.src2} key={id} style={{ width: "100%" }} onClick={() => getImg(data.src2)} />) : '';
+            return (data.src2) || isPhone ? (<img src={data.src2} key={id} style={{ width: "100%" }} onClick={() => getImg(data.src2)} />) : '';
           })}
         </div>
 
-        <div className="column">
+        <div className="column" style={{
+          animation: Model || isPhone ? "none" : "moveup 8s ease-in-out infinite alternate"
+        }}>
           {galleryData.map((data, id) => {
             return (data.src3) ? (<img src={data.src3} key = {id} style={{ width: "100%" }} onClick={() => getImg(data.src3)} />) : '';
           })}
         </div>
 
-        <div className="column">
+        <div className="column" style={{
+          animation: Model || isPhone? "none" : "movedown 8s ease-in-out infinite alternate"
+        }}>
           {galleryData.map((data, id) => {
             return (data.src4) ? (<img src={data.src4} key = {id} style={{ width: "100%" }} onClick={() => getImg(data.src4)} />) : '';
           })}

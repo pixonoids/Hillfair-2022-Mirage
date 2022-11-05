@@ -15,7 +15,8 @@
   text-align: center;
   z-index:99;
   &:hover {
-    transition: 0.5s ease-out, color 0.2s ease-out, border 0.2s ease-out;
+    transition: 0.5s ease-out, color 0.2s ease-out, border 0.2s ease-out scale 0s;
+    scale: 1.02;
   }
  @media (max-width:600px) {
   width: 100%;
