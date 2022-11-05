@@ -57,7 +57,7 @@ const GalleryPage = () => {
           animation: Model || isPhone ? "none" : "moveup 8s ease-in-out infinite alternate",
         }}>
           {galleryData.map((data, id) => {
-            return (data.src1) ? (<img src={data.src1} key = {id} style={{ width: "100%" }} onClick={() => getImg(data.src1)} />) : '';
+            return (data.src1) ? (<img src={data.src1} key = {id} style={{ width: "100%" }} onClick={() => getImg(data.src1)} />) : (<img style={{display:"none"}}/>);
           })}
         </div>
 
@@ -65,7 +65,7 @@ const GalleryPage = () => {
           animation: Model || isPhone ? "none" : "movedown 8s ease-in-out infinite alternate"
         }}>
           {galleryData.map((data, id) => {
-            return (data.src2) || isPhone ? (<img src={data.src2} key={id} style={{ width: "100%" }} onClick={() => getImg(data.src2)} />) : '';
+            return (data.src2)  ? (<img src={data.src2} key = {id} style={{ width: "100%" }} onClick={() => getImg(data.src2)} />) : (<img style={{display:"none"}}/>);
           })}
         </div>
 
@@ -73,7 +73,7 @@ const GalleryPage = () => {
           animation: Model || isPhone ? "none" : "moveup 8s ease-in-out infinite alternate"
         }}>
           {galleryData.map((data, id) => {
-            return (data.src3) ? (<img src={data.src3} key = {id} style={{ width: "100%" }} onClick={() => getImg(data.src3)} />) : '';
+            return (data.src3) ? (<img src={data.src3} key = {id} style={{ width: "100%" }} onClick={() => getImg(data.src3)} />) : (<img style={{display:"none"}}/>);
           })}
         </div>
 
@@ -81,7 +81,7 @@ const GalleryPage = () => {
           animation: Model || isPhone? "none" : "movedown 8s ease-in-out infinite alternate"
         }}>
           {galleryData.map((data, id) => {
-            return (data.src4) ? (<img src={data.src4} key = {id} style={{ width: "100%" }} onClick={() => getImg(data.src4)} />) : '';
+            return (data.src4) ? (<img src={data.src4} key = {id} style={{ width: "100%" }} onClick={() => getImg(data.src4)} />) : (<img style={{display:"none"}}/>);
           })}
         </div>
       </div>
