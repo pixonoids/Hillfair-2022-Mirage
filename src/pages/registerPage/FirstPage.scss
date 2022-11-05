@@ -39,10 +39,8 @@ $text-color: mix(#000, $primary-color, 64%);
     padding-bottom: 3rem;
     justify-content: center;
     align-items: center;
-
-    width: 70vw;
-    margin: 13rem 0rem;
-
+    padding-top: 12rem;
+    width: 70vw; 
     border-radius: 2rem;
     @media (max-width: 510px) {
       width:25rem;
