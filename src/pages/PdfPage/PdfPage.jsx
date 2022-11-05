@@ -2,7 +2,6 @@ import React, { Component, PropTypes } from 'react';
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import { useLocation } from 'react-router-dom';
-// import LandingPage from '../landingPage/LandingPage';
 import './PdfPage.scss';
 import {PdfLayout} from '../../components/organisms';
 
@@ -13,7 +12,6 @@ import {PdfLayout} from '../../components/organisms';
 const PdfPage =()=>{
   
   const location=useLocation();
-  console.log(location.state)
 
 
 

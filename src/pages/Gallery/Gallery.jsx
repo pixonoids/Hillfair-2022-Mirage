@@ -13,7 +13,6 @@ const containerVarientsUp = {
     transition: {
       duration: 3,
       type: 'tween',
-      // repeat: Infinity,
     },
   },
 };
@@ -51,8 +50,6 @@ const containerVarientsDown = {
     y: '-50%',
     transition: {
       duration: 3,
-      // repeat: Infinity,
-
       type: 'tween',
     },
   },
@@ -62,7 +59,6 @@ export default function Gallery() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const { data } = useGetGallery();
   const images = data?.reduce((acc, cur) => [...acc, ...cur.urls], []);
-  //console.log(images , 'images');
   const [img1, setImg1] = useState([]);
   const [img2, setImg2] = useState([]);
   const [img3, setImg3] = useState([]);

@@ -31,7 +31,6 @@ $text-color: mix(#000, $primary-color, 64%);
   align-items: center;
   flex-direction: column;
 
-  // background-image: linear-gradient(rgb(97, 188, 40) 17.15%, rgb(255, 255, 255) 120.7%);
   background-color: white;
   
   .formContainer {
@@ -44,9 +43,7 @@ $text-color: mix(#000, $primary-color, 64%);
     width: 70vw;
     margin: 13rem 0rem;
 
-    // background-color: rgba(0, 0, 0, 0.23);
     border-radius: 2rem;
-  // box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     @media (max-width: 510px) {
       width:25rem;
       margin: 8rem 0rem;
@@ -151,10 +148,6 @@ $text-color: mix(#000, $primary-color, 64%);
     /* Accessible outline */
     /* Remove comment to use */
 
-    // &:focus-within {
-    //     outline: .125em solid $primary-color;
-    // }
-
     input {
       position: absolute;
       left: -9999px;
@@ -214,8 +207,6 @@ $text-color: mix(#000, $primary-color, 64%);
   
   a{
     color: white;
-    // text-decoration: none;
-    // font-weight: 1000;
   }
 }
 

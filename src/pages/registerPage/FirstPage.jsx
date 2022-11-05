@@ -31,7 +31,6 @@ const RegisterPage = function () {
           initialValues={{ email: '', contact: '', address: '', checkin: '2022-11-04T18:08', checkout: '2022-11-04T18:08', category: '', name: '', accept_terms: [] }}
           onSubmit={(values, actions) => {
             alert(JSON.stringify(values, null, 2));
-            console.log(values)
             setCategory(values.category)
             firstPageValue.current = values;
             setTimeout(() => {

@@ -6,7 +6,6 @@ let currentTime = new Date();
 let hour = currentTime.getHours();
 
 const EventCard = ({ data, anim }) => {
-    console.log(anim);
     useEffect(() => {
         AOS.init();
     })

@@ -21,10 +21,6 @@ const Sponsors = () => {
 
     let [sponsors, setSponsors] = useState(DEFAULT);
     
-    // sponsors.map(sponsor =>{
-    //     console.log(sponsor.img);
-    // })
-
     return (
         <div className="sponsors-container">
 

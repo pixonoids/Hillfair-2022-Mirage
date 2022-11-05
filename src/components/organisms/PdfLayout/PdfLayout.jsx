@@ -4,18 +4,12 @@ import "./PdfLayout.scss";
 import logo from "/images/hillfair-logo-dark.png";
 import nithlogo from "/images/nith-black.png";
 
-// import logo from 'images/hillfair-logo-light.png'
-
 const PdfLayout = function () {
   const location = useLocation();
   const user = location.state;
 
   const { category } = user;
 
-  // use this logic to print dynamic fields
-  for (const [key, value] of Object.entries(user)) {
-    console.log(`${key}: ${value}`);
-  }
   return (
     <div className="pdfWrapper">
       <div className="pdfHeader">

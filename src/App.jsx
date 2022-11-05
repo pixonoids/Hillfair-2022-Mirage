@@ -19,12 +19,6 @@ let hour = currentTime.getHours();
 
 
 export default function App() {
-  //STATES
-  // const [isPhone, setIsPhone] = useState(window.matchMedia("max-width:600px").matches);
-  // useEffect(()=> {
-  //   window.matchMedia("(max-width: 600px)")
-  //   .addEventListener('change', e => setIsPhone( e.matches));
-  // }, [])
   const isPhone = useMediaQuery({
     query: "(max-width: 600px)"
   });
@@ -41,7 +35,6 @@ export default function App() {
     sessionStorage.setItem('enteringState', false);
   }, []);
 
-  //FUNCTIONS 
 
   //RENDER
   return (

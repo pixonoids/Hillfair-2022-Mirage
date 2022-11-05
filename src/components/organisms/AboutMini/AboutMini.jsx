@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import "./AboutMini.scss";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { Link } from "react-router-dom";
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
-// AOS.init();
 
 let currentTime = new Date();
 let hour = currentTime.getHours();

@@ -10,7 +10,6 @@ import {
 import {BirdAnimation} from '../../components/molecules'
 import "./Home.scss";
 
-// const [hours,setHours]=useState(hour)
 
 export default function Home() {
   return (

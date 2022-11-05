@@ -17,7 +17,6 @@ const GeneralButton = ({text,type}) => {
         className='btn'
         style={{
                 backgroundColor:(hour>=6 && hour<=17)?'#7c4730':'#331e66',
-                // backgroundColor:(hour>=6 && hour<=17 && isHovering)?'#3f1e10':'#17073c',
                 borderColor: hour >= 6 && hour <= 17 ? "#ffb85c" : "#fff",
                 backdropFilter: 'blur(20px)'
               }}

@@ -19,16 +19,6 @@ const useAudio = () => {
     };
   }, []);
 
-  // use m to mute and unmute // :: functionality :: ONLY WORKING ONCE
-  // useEffect(() =>{
-  //   document.addEventListener('keydown', detectKey, true)
-  // }, []);
-
-  // const detectKey = (e)=>{
-  //   if(e.key === 'm'){
-  //     setPlaying(!playing);
-  //   }
-  // }
 
   return [playing, toggle];
 };

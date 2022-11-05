@@ -23,7 +23,6 @@ $borderRadius: 1rem;
   z-index: 2;
   scale: -1;
   rotate: -45deg;
-  // border: 1px solid white;
   border-radius: 50%;
   position: absolute;
   animation: glow 2s ease-in-out infinite ;
@@ -39,7 +38,6 @@ $borderRadius: 1rem;
   border-radius: $borderRadius;
   width: 40%;
   position: relative;
-  //   text-align: center;
   animation: glow 2s ease-in-out infinite ;
 
   .moon svg {
@@ -62,32 +60,6 @@ $borderRadius: 1rem;
       left: -26.5%;
     }
   }
-  // &::after {
-  //   content: "";
-  //   @include pointer();
-  //   @media (max-width: 1100px) {
-  //     top: 4rem;
-  //   }
-  //   @media (max-width: 669px) {
-  //     transform: scaleX(-1);
-  //     left: -0.8rem;
-  //     top: 6rem;
-  //     color: #af844c;
-  //   }
-  // }
-
-  // &:nth-child(even)::after {
-  //   content: "";
-  //   @include pointer();
-  //   left: -0.8rem;
-  //   transform: scaleX(-1);
-  //   @media (max-width: 1100px) {
-  //     top: 4rem;
-  //   }
-  //   @media (max-width: 669px) {
-  //     top: 6rem;
-  //   }
-  // }
 
   h1:nth-child(1) {
     @include textGradient();
@@ -132,7 +104,6 @@ $borderRadius: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    // font-family: fino-sans-regular, sans-serif;
   }
 }
 @media (max-width: 1100px) {

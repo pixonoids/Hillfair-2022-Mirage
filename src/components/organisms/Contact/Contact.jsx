@@ -3,9 +3,6 @@ import { Formik, Form } from "formik";
 import contactValidation from "../../../services/validation/contact";
 import { ErrorMessage, Field } from "formik";
 import "./Contact.scss";
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
-// AOS.init();
 
 let currentTime = new Date();
 let hour = currentTime.getHours();
@@ -18,7 +15,6 @@ export default function Contact() {
   };
   const handleSubmit = (values) => {
     setSubmit("Submitted");
-    console.log(values);
   };
 
   const handleMouseLeave = () => {
