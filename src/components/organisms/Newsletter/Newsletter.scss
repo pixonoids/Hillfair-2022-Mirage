@@ -32,14 +32,23 @@
     display: inline-block;
     background-color: white;
     border-radius: 1rem;
+    display: flex;
+    align-items: center;
     .inputNewsletter {
       border: hidden;
       padding: 1rem;
+      width: calc(2rem + 10vw);
       margin: auto;
       font-family: Regular-Text;
       font-size: 1.1rem;
-      transition: all 1s ease-in;
       color: black;
+      @media (min-width:1200px) {
+        width: 18vw;
+      }
+      @media (max-width:700px) {
+        width: 50vw;
+      }
+
      
     }
 
@@ -64,31 +73,11 @@
         line-height: 1.5;
 
       }
-
-
-
-      @media (max-width: 700px) {
-        width: 100%;
-        margin-top: 1rem;
-        button{
-          width: 100%;
-        }
-      }
-      @media (max-width: 1235px) {
-        width: 100%;
-        margin-top: 1rem;
-        button{
-          width: 100%;
-        }
-      }
     }
   }
 
   @media (max-width: 700px) {
     width: 100%;
-  }
-
-  @media (max-width: 700px) {
     padding: 2rem 0;
   }
 }

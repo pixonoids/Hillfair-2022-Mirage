@@ -42,7 +42,10 @@ const Newsletter = () => {
 
   const subscribeHandler = (event) => {
     event.preventDefault();
-    if (validateForm(error)) {
+    if (!email.length>0) {
+      setError("Email cannot be empty");
+    } 
+    else if (validateForm(error)) {
       setSubscribe("subscribing");
       setTimeout(() => {
         setSubscribe("subscribed");
@@ -55,7 +58,7 @@ const Newsletter = () => {
 
   return (
     <div className="Newsletter">
-      <div className="Heading">Get the latest news abOut HILL'FFAIR</div>
+      <div className="Heading">Get the latest news about HILL'FFAIR</div>
       <div className="Subheading">
         Register to our newsletter and don't miss anything anymore. We promise
         we will not spam you!{" "}
