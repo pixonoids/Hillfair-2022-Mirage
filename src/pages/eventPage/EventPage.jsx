@@ -12,7 +12,6 @@ const Event = () => {
             <h1>Events</h1>
             <div className='eventPage'>
                 {Data.map((data, id) => {
-                    console.log(id)
                    return (<EventCard data={data} key={id} anim={id&1 ? "fade-up":"fade-up"}/>)
                 })}
             </div>

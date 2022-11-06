@@ -1,9 +1,12 @@
 .home {
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   align-items: center;
-  // background-image: linear-gradient(180deg,#14112f 17.15%,#192270 120.7%);
+  animation-duration: 0.5s;
+  transition-timing-function: ease-in;
+  animation-fill-mode:forwards;
+  animation-name: fadeInDown;
+
   .funFactNewsletter {
     display: flex;
     width: 70%;
@@ -15,5 +18,16 @@
       width: 90%;
       padding: 2rem 0;
     }
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
   }
 }

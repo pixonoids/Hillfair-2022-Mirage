@@ -1,0 +1,36 @@
+.loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    h1 {
+        // font-family: Al-Andalus, sans-serif;
+        color: #e8dbc5;
+    }
+    img {
+        width: 25rem;
+        animation: load 3s ease-in-out infinite;
+    }
+}
+
+@keyframes load {
+    0% {
+        scale: 1;
+    }
+    20% {
+        scale: 1.01;
+    }
+    40% {
+        scale: 1;
+    }
+    60% {
+        scale: 1.01;
+    }
+    80% {
+        scale: 1;
+    }
+    100% {
+        scale: 1.01;
+    }
+}

@@ -32,19 +32,25 @@
     display: inline-block;
     background-color: white;
     border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    margin-left: calc(-1.3rem + 1vw);
+    @media (max-width:1600px) {
+      margin-left: calc(-1rem + 3vw);
+    }
     .inputNewsletter {
       border: hidden;
       padding: 1rem;
-      margin: auto;
+      width: calc(3rem + 12vw);
       font-family: Regular-Text;
       font-size: 1.1rem;
-      transition: all 1s ease-in;
       color: black;
-
-      // @media screen and (min-width: 1424px) {
-      //   padding: 1rem 0rem;
-      //   width: 0;
-      // }
+      @media (min-width:1200px) {
+        width: 20vw;
+      }
+      @media (max-width:700px) {
+        width: 50vw;
+      }
 
      
     }
@@ -70,54 +76,14 @@
         line-height: 1.5;
 
       }
-
-
-
-      @media (max-width: 700px) {
-        width: 100%;
-        margin-top: 1rem;
-        button{
-          width: 100%;
-        }
-      }
-      @media (max-width: 1235px) {
-        width: 100%;
-        margin-top: 1rem;
-        button{
-          width: 100%;
-        }
-      }
     }
   }
 
   @media (max-width: 700px) {
     width: 100%;
-  }
-
-  @media (max-width: 700px) {
     padding: 2rem 0;
   }
 }
-
-// @media only screen and (min-width: 1024px) {
-//   .Subscribe {
-
-//     &:hover,
-//     &:focus,
-//     &:active,
-//     &:focus-within {
-//       .inputNewsletter {
-//         padding: 1rem 0;
-//         width: fit-content;
-//       }
-//     }
-
-
-//   }
-// }
-
-
-
 
 
 

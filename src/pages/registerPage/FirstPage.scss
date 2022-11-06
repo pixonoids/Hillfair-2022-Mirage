@@ -25,14 +25,17 @@ $text-color: mix(#000, $primary-color, 64%);
 }
 
 .registerContainer {
+  animation-name: fadeInRight;
+  animation-duration: 0.5s;
+  transition-timing-function: ease-in;
+  // animation-fill-mode: both;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  // background-image: linear-gradient(rgb(97, 188, 40) 17.15%, rgb(255, 255, 255) 120.7%);
   background-color: white;
+  overflow: hidden;
   
   .formContainer {
     display: flex;
@@ -40,13 +43,9 @@ $text-color: mix(#000, $primary-color, 64%);
     padding-bottom: 3rem;
     justify-content: center;
     align-items: center;
-
-    width: 70vw;
-    margin: 13rem 0rem;
-
-    // background-color: rgba(0, 0, 0, 0.23);
+    padding-top: 12rem;
+    width: 70vw; 
     border-radius: 2rem;
-  // box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     @media (max-width: 510px) {
       width:25rem;
       margin: 8rem 0rem;
@@ -66,7 +65,6 @@ $text-color: mix(#000, $primary-color, 64%);
       font-family: Fino-Sans-Regular;
       font-weight: 400;
       margin-top: -6rem;
-      margin-bottom: 3rem;
       font-size: 3rem;
     }
 
@@ -79,7 +77,7 @@ $text-color: mix(#000, $primary-color, 64%);
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      width: 18rem;
+      width: calc(18rem + 10vw);
       margin: 0rem;
       @media (max-width: 669px) {
         width: 100%;
@@ -113,22 +111,25 @@ $text-color: mix(#000, $primary-color, 64%);
   margin: 0.5rem 0rem;
   padding: 0.2em;
 
-
   label {
-    padding: 0.1em 0.2em;
     background: none;
     font-family: sans-serif;
     border: none;
     outline: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.467);
   }
 
-  label {
-    border-bottom: 0rem;
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
 
+  100% {
+    opacity: 1;
+    transform: none;
   }
 }
-
 .radio-container {
   color: white;
   display: flex;
@@ -150,10 +151,6 @@ $text-color: mix(#000, $primary-color, 64%);
     line-height: 0.2rem;
     /* Accessible outline */
     /* Remove comment to use */
-
-    // &:focus-within {
-    //     outline: .125em solid $primary-color;
-    // }
 
     input {
       position: absolute;
@@ -199,7 +196,6 @@ $text-color: mix(#000, $primary-color, 64%);
   }
 
 }
-
 .calender::-webkit-calendar-picker-indicator {
   filter: invert(1);
 }
@@ -208,14 +204,12 @@ $text-color: mix(#000, $primary-color, 64%);
 }
 
 .acknowledgement{
-  font-size: .9rem;
-  margin-left: .5em;
+  font-size: 1rem;
+  margin-left: 0.5em;
   font-weight: 200;
   
   a{
     color: white;
-    // text-decoration: none;
-    // font-weight: 1000;
   }
 }
 

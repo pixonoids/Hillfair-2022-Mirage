@@ -5,25 +5,11 @@ import "./SocialIcons.scss";
 let currentTime = new Date();
 let hour = currentTime.getHours();
 export default function () {
-  const [isHovering, setIsHovering] = useState(false);
-    const handleMouseEnter = () => {
-        setIsHovering(true);
-    };
-
-    const handleMouseLeave = () => {
-        setIsHovering(false);
-    };
   return (
     <div className="socialicons">
       <ul className="glowingIcons">
         <li>
           <a href="https://www.instagram.com/hillffair_nith/" target="_blank"
-          // style={{
-          //       border: (hour>=9 && hour<=16 && isHovering)? "2px solid #8F663C" : "",
-          //       color:((hour>=9 && hour<=16) && isHovering)?"#8F663C":"",
-          //     }}
-          // onMouseEnter={handleMouseEnter}
-          // onMouseLeave={handleMouseLeave}
           >
         
             <BsInstagram />
@@ -31,12 +17,6 @@ export default function () {
         </li>
         <li>
           <a href="https://www.facebook.com/hillffair" target="_blank"
-          // style={{
-          //       border: (hour>=9 && hour<=16 && isHovering)? "2px solid #7c4730" : "",
-          //       color:((hour>=9 && hour<=16) && isHovering)?"#7c4730":"",
-          //     }}
-          // onMouseEnter={handleMouseEnter}
-          // onMouseLeave={handleMouseLeave}
           >
             <BsFacebook />
           </a>
@@ -45,12 +25,6 @@ export default function () {
           <a
             href="https://www.youtube.com/channel/UC1Dui20MXzSfiyFB97yCElQ"
             target="_blank"
-          //   style={{
-          //       border: (hour>=9 && hour<=16 && isHovering)? "2px solid #7c4730" : "",
-          //       color:((hour>=9 && hour<=16) && isHovering)?"#7c4730":"",
-          //     }}
-          // onMouseEnter={handleMouseEnter}
-          // onMouseLeave={handleMouseLeave}
           >
             <BsYoutube />
           </a>

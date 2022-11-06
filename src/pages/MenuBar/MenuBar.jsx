@@ -17,12 +17,11 @@ const MenuBar = () => {
   const handleInput = () => {
     handleChange();
     handleCheck();
-    console.log(isChecked)
   }
 
   return (
     <div className="menubar">
-      <input type="checkbox" id="menuButton" onClick={handleInput} checked={isChecked}/>
+      <input type="checkbox" id="menuButton" onChange={handleInput} checked={isChecked}/>
       <label htmlFor="menuButton" className="menu-button-label">
         <div className="whiteBar"></div>
         <div className="whiteBar"></div>
@@ -31,12 +30,6 @@ const MenuBar = () => {
       </label>
       <div
         className={isDropped ? "the-bass dropped" : "the-bass"}
-      // style={{
-      //     backgroundImage:
-      //         hour >= 6 && hour <= 17
-      //             ? "linear-gradient(180deg,#40291c 17.15%,#522822 120.7%)"
-      //             : " linear-gradient(180deg,#151539 17.15%,#331e66 120.7%)",
-      // }}
       >
         <div className="rela-block drop-down-container">
           <Link key="/" to="/">

@@ -1,5 +1,4 @@
 .homeMain {
-  // background-image: linear-gradient(180deg,#151539 17.15%,#331e66 120.7%);
   height: 105vh;
   width: 100%;
   position: relative;
@@ -14,8 +13,6 @@
     object-position: left center;
     pointer-events: none;
     @media (min-width:500px) and (max-width:1024px) {
-      // object-fit:inherit;
-      // height: 100%;
       width: fit-content;
     }
   }
@@ -135,8 +132,6 @@
           width: 50px;
         }
         @media screen and (max-width: 430px) {
-          // left: 50%;
-          // top: 85%;
           width: 35%;
         }
 
@@ -157,7 +152,6 @@
           }
         }
         img {
-          // width: 50px;
           cursor: pointer;
           @media screen and (max-width: 430px) {
             width: 50px;

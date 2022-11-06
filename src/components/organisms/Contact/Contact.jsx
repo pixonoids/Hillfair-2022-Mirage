@@ -3,9 +3,7 @@ import { Formik, Form } from "formik";
 import contactValidation from "../../../services/validation/contact";
 import { ErrorMessage, Field } from "formik";
 import "./Contact.scss";
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
-// AOS.init();
+import GeneralButton from "../../molecules/GeneralButton/GeneralButton";
 
 let currentTime = new Date();
 let hour = currentTime.getHours();
@@ -18,7 +16,6 @@ export default function Contact() {
   };
   const handleSubmit = (values) => {
     setSubmit("Submitted");
-    console.log(values);
   };
 
   const handleMouseLeave = () => {
@@ -95,6 +92,7 @@ export default function Contact() {
           </Form>
         )}
       </Formik>
+      <a className="download-app" href="app/app-release.apk" target="_blank" download="hillffair-app.apk"><GeneralButton text="Download App" /></a>
     </div>
   );
 }
