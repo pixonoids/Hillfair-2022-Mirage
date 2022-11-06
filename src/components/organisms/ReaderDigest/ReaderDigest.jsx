@@ -3,7 +3,9 @@ import "./ReaderDigest.scss";
 import { SquareAnimation } from "../../atoms";
 
 const ReaderDigest = () => {
-  const [newQuote, setnewQuote] = useState("Coca-Cola was the first soft drink consumed in space");
+  const [newQuote, setnewQuote] = useState(
+    "Coca-Cola was the first soft drink consumed in space"
+  );
   const shuffle = useCallback(() => {
     const index = Math.floor(Math.random() * quote.length);
     setnewQuote(quote[index]);
