@@ -40,47 +40,48 @@ const PdfLayout = function () {
         </div>
 
         {/* audience */}
-        {category === 'audience' &&
+        {category === "audience" && (
           <div className="secondPageInfo">
             <section>
               <p className="address">Address : {user["address"]}</p>
-              <p className="emergency">Emergency Contact No.: {user["emergency"]}</p>
+              <p className="emergency">
+                Emergency Contact No.: {user["emergency"]}
+              </p>
               <p className="adhaar">Adhaar No.: {user["adhaar"]}</p>
             </section>
           </div>
-        }
+        )}
         {/* sponsors */}
-        {category === 'sponsors' &&
+        {category === "sponsors" && (
           <div className="secondPageInfo">
             <section>
               <p className="company">Company : {user["company"]}</p>
               <p className="gst">GST No.: {user["gst"]}</p>
             </section>
           </div>
-        }
+        )}
         {/* participant */}
-        {category === 'participant' &&
+        {category === "participant" && (
           <div className="secondPageInfo">
             <p className="college">College Name : {user["college"]}</p>
           </div>
-        }
+        )}
         {/* alumini */}
-        {category === 'alumini' &&
+        {category === "alumini" && (
           <div className="secondPageInfo">
             <p className="roll">Roll No : {user["roll"]}</p>
             <p className="batch">Batch : {user["batch"]}</p>
             <p className="department">Department : {user["department"]}</p>
           </div>
-        }
+        )}
         {/* guest */}
-        {category === 'guest' &&
+        {category === "guest" && (
           <div className="secondPageInfo">
             <p className="designation">Designation : {user["designation"]}</p>
             <p className="social">Social Profile : {user["social"]}</p>
           </div>
-        }
+        )}
       </div>
-
     </div>
   );
 };

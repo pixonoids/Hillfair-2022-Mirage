@@ -66,9 +66,9 @@ const HomeMain = () => {
           <h1>18-20</h1>
           <h3>November 2022</h3>
           <div className="registerHere">
-        <Link key="/register" to="/register">
-          <GeneralButton text="Register Here"/>
-          </Link>
+            <Link key="/register" to="/register">
+              <GeneralButton text="Register Here" />
+            </Link>
           </div>
         </div>
         <div className="logos">

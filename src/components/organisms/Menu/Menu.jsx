@@ -1,7 +1,7 @@
-import './Menu.scss';
-import { useState } from 'react';
+import "./Menu.scss";
+import { useState } from "react";
 
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menuState, setMenuState] = useState(false);
@@ -12,22 +12,19 @@ const Navbar = () => {
     <>
       <div className="menu">
         <div
-          className={menuState ? 'expand' : 'nav'}
+          className={menuState ? "expand" : "nav"}
           style={{
             clipPath: `${
               menuState
-                ? 'polygon(0% 0%,100% 0,100% 19%,100% 93%,93% 100%,9% 100%,0 93%,0 33%)'
-                : 'polygon(0% 0%,100% 0,93% 15%,60% 15%,55% 30%,45% 30%,40% 15%,7% 15%)'
+                ? "polygon(0% 0%,100% 0,100% 19%,100% 93%,93% 100%,9% 100%,0 93%,0 33%)"
+                : "polygon(0% 0%,100% 0,93% 15%,60% 15%,55% 30%,45% 30%,40% 15%,7% 15%)"
             }`,
           }}
         >
-          <div className='img-div'>
+          <div className="img-div">
             <img
-              className={menuState ? 'slide' : 'logo'}
-
-
+              className={menuState ? "slide" : "logo"}
               src="images/hillfair-logo-light.png"
-
               alt="hillfair-logo"
               onClick={menuToggelHandler}
             ></img>
@@ -35,11 +32,6 @@ const Navbar = () => {
           {menuState && (
             <div onClick={menuToggelHandler}>
               <div className="list">
-                {/* <img className="arrow" src={arrow} alt="arrow-img"></img>
-                <img className="arrow" src={arrow} alt="arrow-img"></img>
-                <img className="arrow" src={arrow} alt="arrow-img"></img>
-                <img className="arrow" src={arrowh} alt="arrow-img"></img> */}
-
                 <div className="menu-list">
                   <Link key="/aboutus" to="/">
                     <div className="item">Home</div>
