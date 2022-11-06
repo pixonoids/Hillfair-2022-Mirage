@@ -49,17 +49,17 @@ const RegisterGuest = ({ previousvalue }) => {
 
             <div className="fieldWrapper">
               <label>Designation:</label>
-              <Field autoComplete="off" type="text" name="designation" />
+              <Field autoComplete="off" type="text" name="designation" placeholder="designation" />
               <ErrorMessage component="div" name="designation" className='invalid-feedback' />
             </div>
             <div className="fieldWrapper">
               <label>Social Profile: </label>
-              <Field autoComplete="off" type="text" name="social" />
+              <Field autoComplete="off" type="text" name="social" placeholder="socail profile link i.e.linkedin"/>
               <ErrorMessage component="div" name="social" className='invalid-feedback' />
             </div>
             <div className="fieldWrapper">
               <label>Aadhaar No:</label>
-              <Field autoComplete="off" type="text" name="aadhaar" placeholder="xxxx-xxxx-xxxx" />
+              <Field autoComplete="off" type="text" name="aadhaar" placeholder="xxxxxxxxxxxx" />
               <ErrorMessage component="div" name="aadhaar" className='invalid-feedback' />
             </div>
             <GeneralButton text="Submit" />

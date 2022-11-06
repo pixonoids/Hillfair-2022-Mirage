@@ -54,12 +54,12 @@ const RegisterAudience = ({ previousvalue }) => {
 
             <div className="fieldWrapper">
               <label>Emergency Contact No: </label>
-              <Field autoComplete="off" type="text" name="emergency" placeholder="91XXXXXXXXX" />
+              <Field autoComplete="off" type="text" name="emergency" placeholder="XXXXXXXXX" />
               <ErrorMessage component="div" name="emergency" className='invalid-feedback' />
             </div>
             <div className="fieldWrapper">
               <label>Aadhaar No: </label>
-              <Field autoComplete="off" type="text" name="aadhaar" placeholder="xxxx-xxxx-xxxx" />
+              <Field autoComplete="off" type="text" name="aadhaar" placeholder="xxxxxxxxxxxx" />
               <ErrorMessage component="div" name="aadhaar" className='invalid-feedback' />
             </div>
             <GeneralButton text="Submit" />
