@@ -32,6 +32,7 @@ const PdfLayout = function () {
           <section>
             <p className="name">Name : {user["name"]}</p>
             <p className="email">Email : {user["email"]}</p>
+            <p className="mobile">Mobile Number : {user["contact"]}</p>
           </section>
           <section>
             <p className="address">Address : {user["address"]}</p>
@@ -43,16 +44,15 @@ const PdfLayout = function () {
         {category === "audience" && (
           <div className="secondPageInfo">
             <section>
-              <p className="address">Address : {user["address"]}</p>
               <p className="emergency">
                 Emergency Contact No.: {user["emergency"]}
               </p>
-              <p className="adhaar">Adhaar No.: {user["adhaar"]}</p>
+              <p className="adhaar">Adhaar No.: {user["aadhaar"]}</p>
             </section>
           </div>
         )}
         {/* sponsors */}
-        {category === "sponsors" && (
+        {category === "sponsor" && (
           <div className="secondPageInfo">
             <section>
               <p className="company">Company : {user["company"]}</p>
