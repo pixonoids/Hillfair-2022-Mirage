@@ -37,9 +37,9 @@ const AudioButton = () => {
   const [playing, toggle] = useAudio();
   return (
     <button onClick={toggle} className="audio-button"
-    style={{
-      backgroundColor:(isHovering && hour <= 6 && hour >= 17) ? "#6c3e2b" : "#A697E8",
-    }}
+    // style={{
+    //   backgroundColor:(isHovering && hour <= 6 && hour >= 17) ? "#6c3e2b" : "#A697E8",
+    // }}
     onMouseEnter={handleMouseEnter}
     onMouseLeave={handleMouseLeave}>
       {playing ? <MdOutlineMusicOff /> : <MdOutlineMusicNote />}

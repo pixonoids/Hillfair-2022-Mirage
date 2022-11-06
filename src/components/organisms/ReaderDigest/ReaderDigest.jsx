@@ -9,7 +9,7 @@ const ReaderDigest = () => {
     setnewQuote(quote[index]);
   }, []);
   useEffect(() => {
-    const intervalID = setInterval(shuffle, 60000);
+    const intervalID = setInterval(shuffle, 20000);
 
     return () => clearInterval(intervalID);
   }, [shuffle]);
