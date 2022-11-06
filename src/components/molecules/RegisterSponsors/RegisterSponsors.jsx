@@ -48,7 +48,7 @@ const RegisterSponsors = ({ previousvalue }) => {
 
             <div className="fieldWrapper">
               <label>Company:</label>
-              <Field autoComplete="off" type="text" name="company" placeholder=""/>
+              <Field autoComplete="off" type="text" name="company" placeholder="xyz"/>
               <ErrorMessage component="div" name="company" className='invalid-feedback' />
             </div>
 
