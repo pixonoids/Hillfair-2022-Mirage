@@ -36,7 +36,7 @@ const PdfLayout = function () {
           </section>
           <section>
             <p className="address">Address : {user["address"]}</p>
-            <p className="category">Categeroy : {user["category"]}</p>
+            <p className="category">Category : {user["category"]}</p>
           </section>
         </div>
 
