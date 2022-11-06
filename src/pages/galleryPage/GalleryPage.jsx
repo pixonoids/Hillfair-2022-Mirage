@@ -85,9 +85,10 @@ const GalleryPage = () => {
                 key={id}
                 style={{ width: "100%" }}
                 onClick={() => getImg(data.src1)}
+                loading="lazy"
               />
             ) : (
-              <img style={{ display: "none" }} />
+              <img style={{ display: "none" }} key = {id}/>
             );
           })}
         </div>
@@ -108,9 +109,10 @@ const GalleryPage = () => {
                 key={id}
                 style={{ width: "100%" }}
                 onClick={() => getImg(data.src2)}
+                loading="lazy"
               />
             ) : (
-              <img style={{ display: "none" }} />
+              <img style={{ display: "none" }} key = {id}/>
             );
           })}
         </div>
@@ -131,9 +133,10 @@ const GalleryPage = () => {
                 key={id}
                 style={{ width: "100%" }}
                 onClick={() => getImg(data.src3)}
+                loading="lazy"
               />
             ) : (
-              <img style={{ display: "none" }} />
+              <img style={{ display: "none" }} key={id}/>
             );
           })}
         </div>
@@ -154,9 +157,10 @@ const GalleryPage = () => {
                 key={id}
                 style={{ width: "100%" }}
                 onClick={() => getImg(data.src4)}
+                loading="lazy"
               />
             ) : (
-              <img style={{ display: "none" }} />
+              <img style={{ display: "none" }} key = {id}/>
             );
           })}
         </div>

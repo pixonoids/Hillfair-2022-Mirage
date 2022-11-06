@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import "./App.scss";
 import { Route, Routes } from "react-router-dom";
 import { Menu } from "./components/organisms/";
@@ -11,14 +11,18 @@ import {
   LandingPage,
   Home,
   Sponsors,
-  About,
   RegisterPage,
   Events,
   PdfPage,
-  GalleryPage,
 } from "./pages";
 
 import AudioButton from "./components/molecules/AudioButton/AudioButton";
+
+// dynamic imports
+const GalleryPage = React.lazy(() => import("./pages/GalleryPage/GalleryPage"));
+const About = React.lazy(() => import("./pages/About/About"));
+
+//lazy loading
 
 let currentTime = new Date();
 let hour = currentTime.getHours();
@@ -57,8 +61,22 @@ export default function App() {
         <Routes>
           <Route path="*" element={<Error />} />
           <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="gallery" element={<GalleryPage />} />
+          <Route
+            path="about"
+            element={
+              <Suspense fallback={<LandingPage/>}>
+                <About />
+              </Suspense>
+            }
+          />
+          <Route
+            path="gallery"
+            element={
+              <Suspense fallback={<LandingPage />}>
+                <GalleryPage />
+              </Suspense>
+            }
+          />
           <Route path="sponsors" element={<LandingPage />} />
           <Route path="team" element={<LandingPage />} />
           <Route path="register" element={<RegisterPage />} />
