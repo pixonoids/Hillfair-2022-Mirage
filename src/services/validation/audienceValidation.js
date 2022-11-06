@@ -15,7 +15,7 @@ yup.addMethod(yup.string, "aadhaarValidate", function (errorMessage) {
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 const audienceValidation = yup.object().shape({
   emergency: yup.string().matches(phoneRegExp, 'Phone number is not valid').min(10, "too short").max(12, "too long").required('Required'),
-    aadhaar: yup.string().yup.string().aadhaarValidate('Aadhaar is not valid').required('Required'),
+    aadhaar: yup.string().aadhaarValidate('Aadhaar is not valid').required('Required'),
 });
 
 
