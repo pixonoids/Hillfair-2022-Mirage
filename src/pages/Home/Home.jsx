@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import {
   HomeMain,
   AboutMini,
@@ -7,26 +7,32 @@ import {
   ReaderDigest,
   Newsletter,
 } from "../../components/organisms";
-import {BirdAnimation} from '../../components/molecules'
+import { BirdAnimation } from '../../components/molecules'
 import "./Home.scss";
-  import { Loader } from "../../components/atoms";
+import { Loader } from "../../components/atoms";
 import { useEffect } from "react";
 
 
 export default function Home() {
 
   const [Loading, setLoading] = useState(false);
+
   useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
+    const onPageLoad = () => {
+      setLoading(true);
+    };
+    if (document.readyState === 'complete') {
+      onPageLoad();
+    } else {
+      window.addEventListener('load', onPageLoad);
+      return () => window.removeEventListener('load', onPageLoad);
+    }
   }, []);
   return (
 
     <>
-      {Loading ? (<Loader/>) : (
-        <div className="home"> 
+      {!Loading ? (<Loader />) : (
+        <div className="home">
           <BirdAnimation />
           <HomeMain />
           <AboutMini />
@@ -37,7 +43,7 @@ export default function Home() {
           <Contact />
           <Footer />
         </div>
-    )}
+      )}
     </>
   );
 }
