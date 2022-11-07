@@ -1,16 +1,84 @@
 @mixin flexCenter($direction) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: $direction;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
 }
 
-.team-container {
-    background:linear-gradient(#c0ae90, #695430);
+.team {
+  width: 98%;
+  margin: auto;
+}
+.team-inner {
+  .category-heading {
+    text-align: center;
+    padding: 6rem 0 3rem 0;
+    font-size: 3em;
+    font-family: fino-sans-regular;
+    color: #cbc3ac;
+  }
+  .team-container {
     @include flexCenter(row);
-    gap: 5rem;
+    width: 97%;
     flex-wrap: wrap;
-    height: 100%;
-    padding: 6.5rem 0;
-    min-height: 100vh;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    @media (max-width:558px) {
+        width: 100%;
+    }
+  }
+}
+
+.club-page {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+
+.team-menu {
+  position: sticky;
+  top: 6rem;
+}
+.team-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: sticky;
+  top: 5rem;
+  z-index: 3;
+}
+.team-header a {
+  height: 3rem;
+  @include flexCenter(row);
+  width: 8rem;
+  background-color: rgba(0, 0, 0, 0.293);
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.heightSlide {
+  animation: heightslide 0.2s ease both;
+}
+.hidden {
+  visibility: hidden;
+//   display: none;
+}
+
+@keyframes heightslide {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  100% {
+    top: 5rem;
+    opacity: 1;
+  }
+}
+
+#faculty {
+    padding: 1rem 0 3rem 0;
 }

@@ -10,5 +10,6 @@ export {default as Events} from './eventPage/EventPage'
 export {default as GalleryPage} from './galleryPage/GalleryPage'
 
 export {default as Team} from './teamPage/TeamPage'
+export {default as TeamData} from './teamPage/TeamData'
 
 
