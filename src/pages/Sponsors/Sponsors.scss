@@ -1,20 +1,22 @@
+html{
+    overflow: hidden;
+}
 .sponsors-container{
-    color: white;
     width: 100vw;
     min-height: 100vh;
     text-align: center;
-    translate: 0 6rem;
-    background: linear-gradient(#c0ae90,#695430);
+    // background: linear-gradient(#c0ae90,#695430);
     overflow: hidden;
-    color: black;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 4em;
 
     h1{
         font-weight: 400;
         letter-spacing: 4px;
-        margin: 1rem;
+        padding: 1rem;
     }
 }
 .sponsors-inner-container{
@@ -37,4 +39,47 @@
     scale: -1 1;
     left: -15rem;
     top: -5em;
+}
+
+@media (max-width:900px){
+    .pharo-img-right{
+        scale: .9;
+    }
+    .pharo-img-left{
+        scale: -.9 .9;
+    }
+}
+@media (max-width:700px){
+    .pharo-img-right{
+        scale: .7;
+    }
+    .pharo-img-left{
+        scale: -.7 .7;
+    }
+}
+@media (max-width:500px){
+    .pharo-img-right{
+        scale: .5;
+        right: -17em;
+    }
+    .pharo-img-left{
+        scale: -.5 .5;
+        left: -17em;
+    }
+    .sponsor-card{
+        scale: 0.8;
+    }
+}
+@media (max-width:440px){
+    .pharo-img-right{
+        scale: .45;
+        right: -18em;
+    }
+    .pharo-img-left{
+        scale: -.45 .45;
+        left: -18em;
+    }
+    .sponsor-card{
+        scale: 0.7;
+    }
 }

@@ -77,7 +77,7 @@ export default function App() {
               </Suspense>
             }
           />
-          <Route path="sponsors" element={<LandingPage />} />
+          <Route path="sponsors" element={<Sponsors />} />
           <Route path="team" element={<LandingPage />} />
           <Route path="register" element={<RegisterPage />} />
           <Route path="Footer" element={<LandingPage />} />

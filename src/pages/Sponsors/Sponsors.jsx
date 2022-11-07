@@ -3,18 +3,17 @@ import SponsorCard from "../../components/molecules/SponsorCard/SponsorCard";
 import "./Sponsors.scss";
 
 const DEFAULT = [
-  { img: "/images/hillfair-logo-light.png" },
-  { img: "/images/pixonoids_logo_color.png" },
-  { img: "/images/pixonoids_logo.png" },
-  { img: "/images/hillfair-logo-light.png" },
-  { img: "/images/pixonoids_logo_color.png" },
-  { img: "/images/pixonoids_logo.png" },
-  { img: "/images/hillfair-logo-light.png" },
-  { img: "/images/pixonoids_logo_color.png" },
-  { img: "/images/pixonoids_logo.png" },
-  { img: "/images/hillfair-logo-light.png" },
-  { img: "/images/pixonoids_logo_color.png" },
-  { img: "/images/pixonoids_logo.png" },
+  { img: "/images/sponsors/sjvn_logo.png" },
+  // { img: "/images/pixonoids_logo.png" },
+  // { img: "/images/hillfair-logo-light.png" },
+  // { img: "/images/pixonoids_logo_color.png" },
+  // { img: "/images/pixonoids_logo.png" },
+  // { img: "/images/hillfair-logo-light.png" },
+  // { img: "/images/pixonoids_logo_color.png" },
+  // { img: "/images/pixonoids_logo.png" },
+  // { img: "/images/hillfair-logo-light.png" },
+  // { img: "/images/pixonoids_logo_color.png" },
+  // { img: "/images/pixonoids_logo.png" },
 ];
 
 const Sponsors = () => {
