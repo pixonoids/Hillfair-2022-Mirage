@@ -1,6 +1,3 @@
-html{
-    overflow: hidden;
-}
 .sponsors-container{
     width: 100vw;
     min-height: 100vh;
@@ -30,17 +27,25 @@ html{
 }
 
 .pharo-img-right{
-    position: absolute;
+    position: fixed;
     right: -15em;
-    top: -5em;
+    top: 1em;
 }
 .pharo-img-left{
-    position: absolute;
+    position: fixed;
     scale: -1 1;
     left: -15rem;
-    top: -5em;
+    top: 1em;
 }
 
+// footer
+.footer-waves{
+    position: fixed;
+    width: 100%;
+    bottom: -2em;
+    z-index: 100;
+}
+// media queries
 @media (max-width:900px){
     .pharo-img-right{
         scale: .9;
@@ -60,11 +65,11 @@ html{
 @media (max-width:500px){
     .pharo-img-right{
         scale: .5;
-        right: -17em;
+        right: -18em;
     }
     .pharo-img-left{
         scale: -.5 .5;
-        left: -17em;
+        left: -18em;
     }
     .sponsor-card{
         scale: 0.8;
