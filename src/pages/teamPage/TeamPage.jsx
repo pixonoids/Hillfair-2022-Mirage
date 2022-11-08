@@ -18,16 +18,16 @@ const Team = () => {
     return (
         <div className='team'>
             <div className='team-menu'>
-                <input type="checkbox" id="showTeams" onChange={handleInput} checked={isChecked} />
+                <label onClick={handleInput}>Category</label>
                 <div className={isChecked ? "team-header heightSlide" : "team-header hidden"}>
-                    <a href="#faculty">Faculty</a>
-                    <a href="#core-team">Core Team</a>
-                    <a href="#snc">Secretary & Convener</a>
+                    <a href="#faculty" onClick={handleInput}>Faculty</a>
+                    <a href="#core-team" onClick={handleInput}>Core Team</a>
+                    <a href="#snc" onClick={handleInput}>Secretary & Convener</a>
                 </div>
             </div>
             <div className='team-page'>
                 <div className='team-inner'>
-                    <h1 className='category-heading'>Our Team</h1>
+                    <h1 className='category-heading our-team'>Our Team</h1>
                     <h1 className='category-heading' id='faculty'>Faculty</h1>
                     <div className='team-container'>
                         {(TeamData[0]).map((card, id) => (

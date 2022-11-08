@@ -27,6 +27,9 @@
         width: 100%;
     }
   }
+  .our-menu {
+    padding: 0 0 0 3rem;
+  }
 }
 
 .club-page {
@@ -41,20 +44,35 @@
 
 .team-menu {
   position: sticky;
-  top: 6rem;
+  top: 5.3rem;
+  width: 12rem;
+  z-index:10;
+  @media (max-width:600px) {
+    top: 2.3rem;
+  }
+  label {
+    position: absolute;
+    top: -1.5rem;
+    left: 1.5rem;
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255,.47);
+    border-radius: 5px;
+    padding: 1rem 2.4rem;
 }
+
+}
+
 .team-header {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  position: sticky;
-  top: 5rem;
+  align-items: center;
+  translate: 0 1.9rem;
   z-index: 3;
 }
 .team-header a {
   height: 3rem;
   @include flexCenter(row);
-  width: 8rem;
+  width: 9rem;
   background-color: rgba(0, 0, 0, 0.293);
   color: white;
   text-decoration: none;

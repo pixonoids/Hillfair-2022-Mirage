@@ -24,8 +24,10 @@ font-family: Regular-Text,sans-serif;
     align-items: center;
     border-radius: 0.5rem;
     width: 100%;
+    font-size: 1.5rem;
      @media (max-width: 370px) {
       height: 3rem;
+      font-size: 1.2rem;
      }
   
 }
