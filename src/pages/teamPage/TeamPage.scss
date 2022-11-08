@@ -9,6 +9,7 @@
   width: 98%;
   margin: auto;
 }
+
 .team-inner {
   .category-heading {
     text-align: center;
@@ -17,16 +18,19 @@
     font-family: fino-sans-regular;
     color: #cbc3ac;
   }
+
   .team-container {
     @include flexCenter(row);
     width: 97%;
     flex-wrap: wrap;
     gap: 2rem;
     padding-bottom: 2rem;
+
     @media (max-width:558px) {
-        width: 100%;
+      width: 100%;
     }
   }
+
   .our-menu {
     padding: 0 0 0 3rem;
   }
@@ -46,20 +50,22 @@
   position: sticky;
   top: 5.3rem;
   width: 12rem;
-  z-index:10;
+  z-index: 10;
   font-family: regular-text;
+
   @media (max-width:600px) {
     top: 2.3rem;
   }
+
   label {
     position: absolute;
     top: -1.5rem;
     left: 1.5rem;
     cursor: pointer;
-    border: 1px solid rgba(255,255,255,.47);
-    border-radius: 5px;
-    padding: 1rem 2.4rem;
-}
+    border: 1px solid rgba(255, 255, 255, .47);
+    border-radius: 3px;
+    padding: 1rem 2.9rem;
+  }
 
 }
 
@@ -67,24 +73,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  translate: 0 1.9rem;
+  width: 9rem;
+  translate: 1.5rem 1.9rem;
   z-index: 3;
 }
+
 .team-header a {
+  border-radius: 3px;
   height: 3rem;
+  width: 9rem;
   @include flexCenter(row);
   width: 9rem;
-  background-color: rgba(0, 0, 0, 0.524);
   color: white;
   text-decoration: none;
   font-size: 0.8rem;
 }
+
 .heightSlide {
   animation: heightslide 0.2s ease both;
 }
+
 .hidden {
   visibility: hidden;
-//   display: none;
+  //   display: none;
 }
 
 @keyframes heightslide {
@@ -92,6 +103,7 @@
     top: 0;
     opacity: 0;
   }
+
   100% {
     top: 5rem;
     opacity: 1;
@@ -99,6 +111,6 @@
 }
 
 #faculty {
-    padding: 1rem 0 3rem 0;
-    scroll-margin-top: 4rem;
+  padding: 1rem 0 3rem 0;
+  scroll-margin-top: 4rem;
 }

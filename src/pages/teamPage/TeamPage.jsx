@@ -5,6 +5,8 @@ import { ClubCards, TeamCards } from '../../components/molecules';
 
 import React, { useRef, useEffect } from "react";
 
+let currentTime = new Date();
+let hour = currentTime.getHours();
 /**
  * Hook that alerts clicks outside of the passed ref
  */
@@ -17,30 +19,35 @@ const Team = () => {
     };
     function useOutsideAlerter(ref) {
         useEffect(() => {
-          /**
-           * Alert if clicked on outside of element
-           */
-          function handleClickOutside(event) {
-            if (ref.current && !ref.current.contains(event.target)) {
-              setisChecked(false);
+            function handleClickOutside(event) {
+                if (ref.current && !ref.current.contains(event.target)) {
+                    setisChecked(false);
+                }
             }
-          }
-          // Bind the event listener
-          document.addEventListener("mousedown", handleClickOutside);
-          return () => {
-            // Unbind the event listener on clean up
-            document.removeEventListener("mousedown", handleClickOutside);
-          };
+            document.addEventListener("mousedown", handleClickOutside);
+            return () => {
+                document.removeEventListener("mousedown", handleClickOutside);
+            };
         }, [ref]);
-      }
+    }
     const wrapperRef = useRef(null);
     useOutsideAlerter(wrapperRef);
 
     return (
         <div className='team' >
-            <div className='team-menu'>
-                <label onClick={handleCheck} ref={wrapperRef}>Category</label>
-                <div className={isChecked ? "team-header heightSlide" : "team-header hidden"}>
+            <div className='team-menu' ref={wrapperRef} >
+                <label onClick={handleCheck} style={{
+                    backgroundImage:
+                        hour >= 6 && hour <= 17
+                            ? "linear-gradient(180deg,#3a1c1b 17.15%,#b5874c 120.7%)"
+                            : "linear-gradient(180deg,#151539 17.15%,#331e66 120.7%)",
+                }}>Category</label>
+                <div className={isChecked ? "team-header heightSlide" : "team-header hidden"} style={{
+                    backgroundImage:
+                        hour >= 6 && hour <= 17
+                            ? "linear-gradient(180deg,#3a1c1b 17.15%,#b5874c 120.7%)"
+                            : "linear-gradient(180deg,#151539 17.15%,#331e66 120.7%)",
+                }}>
                     <a href="#faculty" onClick={handleCheck}>Faculty</a>
                     <a href="#core-team" onClick={handleCheck}>Core Team</a>
                     <a href="#snc" onClick={handleCheck}>Secretary & Convener</a>
@@ -67,10 +74,10 @@ const Team = () => {
                 <div className='team-inner' id='snc'>
                     <h1 className='category-heading'>Secretary & Convener</h1>
                     <div className='club-page'>
-                    {(TeamData[2]).map((card, id) => (
-                                <ClubCards card={card} key={id} />
-                            ))}
-                </div>
+                        {(TeamData[2]).map((card, id) => (
+                            <ClubCards card={card} key={id} />
+                        ))}
+                    </div>
                 </div>
             </div>
 
