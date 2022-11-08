@@ -29,7 +29,7 @@ const DEFAULT = [
 
 const Sponsors = () => {
   let [sponsors, setSponsors] = useState(DEFAULT);
-
+ 
   return (
     <div className="sponsors-container">
       {/* pharo :: start*/}
@@ -41,9 +41,30 @@ const Sponsors = () => {
         <div className="sponsors-inner-container">
           <SponsorCard img={'/images/sponsors/sjvn_logo.png'} className="title-sponsors"/>
         </div>
-        <p>... brings you Hill'ffair 2k22</p>
+        <p>Dayaal brings you Hill'ffair 2k22</p>
       </div>
 
+      {/* gold sponsors */}
+      {/* <div className="gold-sponsors-container">
+        <h1>GOLD SPONSORS</h1>
+        <div className="gold-sponsors-inner-container">
+        {sponsors.map((sponsor) => {
+          return <SponsorCard img={sponsor.img} />;
+        })}
+        </div>
+      </div>   */}
+
+        {/* silver sponsors */}
+      {/* <div className="silver-sponsors-container">
+        <h1>SILVER SPONSORS</h1>
+        <div className="silver-sponsors-inner-container">
+        {sponsors.map((sponsor) => {
+          return <SponsorCard img={sponsor.img} />;
+        })}
+        </div>
+      </div> */}
+
+      {/* sponsors */}
       <h1>SPONSORS</h1>
       <div className="sponsors-inner-container">
         {sponsors.map((sponsor) => {
