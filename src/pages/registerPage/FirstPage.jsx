@@ -46,8 +46,8 @@ const RegisterPage = function () {
               email: "",
               contact: "",
               address: "",
-              checkin: "2022-11-04T18:08",
-              checkout: "2022-11-04T18:08",
+              checkin: "2022-11-06T00:00",
+              checkout: "2022-11-18T00:00",
               category: "",
               name: "",
               accept_terms: [],
@@ -144,6 +144,8 @@ const RegisterPage = function () {
                     className="input-text calender"
                     type="datetime-local"
                     name="checkin"
+                    min="2022-11-06T00:00"
+                    max="2022-11-17T00:00"
                   />
                   <ErrorMessage
                     component="div"
@@ -161,6 +163,8 @@ const RegisterPage = function () {
                     className="input-text calender"
                     type="datetime-local"
                     name="checkout"
+                    min="2022-11-18T00:00"
+                    max="2022-11-21T00:00"
                   />
                   <ErrorMessage
                     component="div"
@@ -227,7 +231,14 @@ const RegisterPage = function () {
             )}
           </Formik>
         </div>
+
       )}
+      <div className="query">
+        <h3>For Any Queries Contact :</h3>
+        <p>Divyam Garg : +918219189292</p>
+        <p>Abhimanyu Singh Jaudaun : +917597022308</p>
+      </div>
+
       {category == "audience" && (
         <RegisterAudience previousvalue={firstPageValue.current} />
       )}
