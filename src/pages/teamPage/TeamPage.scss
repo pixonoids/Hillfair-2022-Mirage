@@ -52,15 +52,16 @@
   width: 12rem;
   z-index: 10;
   font-family: regular-text;
-
+  font-size: 2em;
   @media (max-width:600px) {
     top: 2.3rem;
   }
-
+  
   label {
     position: absolute;
     top: -1.5rem;
     left: 1.5rem;
+    letter-spacing: 0.1rem;
     cursor: pointer;
     border: 1px solid rgba(255, 255, 255, .47);
     border-radius: 3px;
@@ -73,20 +74,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 9rem;
-  translate: 1.5rem 1.9rem;
+  width: 13rem;
+  translate: 1.5rem 3.3rem;
   z-index: 3;
 }
 
 .team-header a {
   border-radius: 3px;
+  letter-spacing: 0.1rem;
   height: 3rem;
-  width: 9rem;
   @include flexCenter(row);
-  width: 9rem;
   color: white;
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .heightSlide {
