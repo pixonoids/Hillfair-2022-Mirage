@@ -1,31 +1,109 @@
-// size change krne hain different category ke according // 
+h1{
+    font-family: Al-Andalus,sans-serif;
+}
 .title-sponsors-container{
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4em;
 
-    h1{
-
+    .sponsor-card{
+        height: 20rem;
+        width: 20rem;
     }
 
     .sponsors-inner-container{
+        width: 60vw;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
 
+        .sponsor-card{
+            background-color: rgb(52, 51, 51);
+            border-radius: 50%;
+            width: 16rem;
+            height: 16rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem;
+        }
+        .sponsor-img{
+            width: 13em;
+        }
     }
 
     p{
-
+        font-family: Al-Andalus,sans-serif;
+        font-size: 3em;
+        padding-bottom: 1em;
     }
 }
 .gold-sponsors-container{
-
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4em;
 
     .gold-sponsors-inner-container{
+        width: 60vw;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
 
+        .sponsor-card{
+            background-color: rgb(52, 51, 51);
+            border-radius: 50%;
+            width: 13rem;
+            height: 13rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem;
+        }
+        .sponsor-img{
+            width: 9em;
+        }
     }
 }
 
 .silver-sponsors-container{
-
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4em;
 
     .silver-sponsors-inner-container{
-        
+        width: 60vw;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        .sponsor-card{
+            background-color: rgb(52, 51, 51);
+            border-radius: 50%;
+            width: 10rem;
+            height: 10rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem;
+        }
+        .sponsor-img{
+            width: 7.5em;
+        }
     }
 }
 
@@ -33,7 +111,6 @@
     width: 100vw;
     min-height: 100vh;
     text-align: center;
-    // background: linear-gradient(#c0ae90,#695430);
     overflow: hidden;
     color: white;
     display: flex;
@@ -119,3 +196,4 @@
         scale: 0.7;
     }
 }
+ 
