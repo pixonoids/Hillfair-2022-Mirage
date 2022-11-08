@@ -20,7 +20,7 @@ const Data = [
     {
         event: "Rhythm and Rhymes",
         club: "English Club",
-        date: "8th November",
+        date: "9th November",
         eventStatus: "Coming",
         moon: <CircleIcon />
 

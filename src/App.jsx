@@ -19,7 +19,7 @@ import {
 import AudioButton from "./components/molecules/AudioButton/AudioButton";
 
 // dynamic imports
-const GalleryPage = React.lazy(() => import("./pages/GalleryPage/GalleryPage"));
+const GalleryPage = React.lazy(() => import("./pages/galleryPage/GalleryPage"));
 const About = React.lazy(() => import("./pages/About/About"));
 
 //lazy loading
