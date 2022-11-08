@@ -47,6 +47,7 @@
   top: 5.3rem;
   width: 12rem;
   z-index:10;
+  font-family: regular-text;
   @media (max-width:600px) {
     top: 2.3rem;
   }
@@ -73,7 +74,7 @@
   height: 3rem;
   @include flexCenter(row);
   width: 9rem;
-  background-color: rgba(0, 0, 0, 0.293);
+  background-color: rgba(0, 0, 0, 0.524);
   color: white;
   text-decoration: none;
   font-size: 0.8rem;
@@ -99,4 +100,5 @@
 
 #faculty {
     padding: 1rem 0 3rem 0;
+    scroll-margin-top: 4rem;
 }

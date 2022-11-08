@@ -2,27 +2,48 @@ import './TeamPage.scss';
 import TeamData from './TeamData';
 import { useState } from 'react';
 import { ClubCards, TeamCards } from '../../components/molecules';
+
+import React, { useRef, useEffect } from "react";
+
+/**
+ * Hook that alerts clicks outside of the passed ref
+ */
+
+
 const Team = () => {
-    const [isDropped, setIsDropped] = useState(false);
-    const handleChange = () => {
-        setIsDropped(!isDropped);
-    };
     const [isChecked, setisChecked] = useState(false);
     const handleCheck = () => {
         setisChecked(!isChecked);
     };
-    const handleInput = () => {
-        handleChange();
-        handleCheck();
-    }
+    function useOutsideAlerter(ref) {
+        useEffect(() => {
+          /**
+           * Alert if clicked on outside of element
+           */
+          function handleClickOutside(event) {
+            if (ref.current && !ref.current.contains(event.target)) {
+              setisChecked(false);
+            }
+          }
+          // Bind the event listener
+          document.addEventListener("mousedown", handleClickOutside);
+          return () => {
+            // Unbind the event listener on clean up
+            document.removeEventListener("mousedown", handleClickOutside);
+          };
+        }, [ref]);
+      }
+    const wrapperRef = useRef(null);
+    useOutsideAlerter(wrapperRef);
+
     return (
-        <div className='team'>
+        <div className='team' >
             <div className='team-menu'>
-                <label onClick={handleInput}>Category</label>
+                <label onClick={handleCheck} ref={wrapperRef}>Category</label>
                 <div className={isChecked ? "team-header heightSlide" : "team-header hidden"}>
-                    <a href="#faculty" onClick={handleInput}>Faculty</a>
-                    <a href="#core-team" onClick={handleInput}>Core Team</a>
-                    <a href="#snc" onClick={handleInput}>Secretary & Convener</a>
+                    <a href="#faculty" onClick={handleCheck}>Faculty</a>
+                    <a href="#core-team" onClick={handleCheck}>Core Team</a>
+                    <a href="#snc" onClick={handleCheck}>Secretary & Convener</a>
                 </div>
             </div>
             <div className='team-page'>
