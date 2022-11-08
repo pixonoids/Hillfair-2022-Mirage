@@ -43,7 +43,6 @@ const Sponsors = () => {
         </div>
         <p>... brings you Hill'ffair 2k22</p>
       </div>
-        
 
       <h1>SPONSORS</h1>
       <div className="sponsors-inner-container">
