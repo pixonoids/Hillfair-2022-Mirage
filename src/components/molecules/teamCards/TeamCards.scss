@@ -51,9 +51,6 @@ $maskColor: #2f2525;
       position: absolute;
       top: -2.5rem;
       transition: all 0.3s;
-      path {
-        fill: $maskColor;
-      }
     }
     .card-text {
       display: flex;
@@ -78,15 +75,20 @@ $maskColor: #2f2525;
           rgba(0, 0, 0, 0.6) 70%
           );
           -webkit-mask-size: 200%;
+          text-align: center;
       h1 {
         letter-spacing: 0.2rem;
-        font-size: 2.5rem;
+        font-size: 2rem;
+        font-weight: 900;
+        width: 90%;
           animation: shine 3s infinite ease;
         }
         p {
           font-family: fino-sans-regular;
           letter-spacing: 0.15rem;
-          font-size: 1.3rem;
+          font-size: 1.1rem;
+          font-weight: 700;
+          width: 90%;
       }
     }
   }

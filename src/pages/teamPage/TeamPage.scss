@@ -25,14 +25,14 @@
     flex-wrap: wrap;
     gap: 2rem;
     padding-bottom: 2rem;
-
+    
     @media (max-width:558px) {
       width: 100%;
     }
   }
 
-  .our-menu {
-    padding: 0 0 0 3rem;
+  .our-team {
+    padding: 0 0 3rem 0;
   }
 }
 
@@ -40,7 +40,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 8rem;
   justify-content: center;
   width: 100%;
   margin: auto;
@@ -52,7 +52,7 @@
   width: 12rem;
   z-index: 10;
   font-family: regular-text;
-  font-size: 2em;
+  font-size: 1.7em;
   @media (max-width:600px) {
     top: 2.3rem;
   }
@@ -63,9 +63,12 @@
     left: 1.5rem;
     letter-spacing: 0.1rem;
     cursor: pointer;
-    border: 1px solid rgba(255, 255, 255, .47);
+    border: 2px solid rgba(255, 255, 255, .47);
     border-radius: 3px;
-    padding: 1rem 2.9rem;
+    padding: 0.2rem 2.83rem;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.397);
+    }
   }
 
 }
@@ -74,41 +77,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 13rem;
-  translate: 1.5rem 3.3rem;
+  gap: 3px;
+  translate: 1.5rem 1.3rem;
   z-index: 3;
 }
 
 .team-header a {
+  border: 1px solid rgba(255, 255, 255, .47);
   border-radius: 3px;
+  width: 100%;
   letter-spacing: 0.1rem;
   height: 3rem;
   @include flexCenter(row);
   color: white;
   text-decoration: none;
   font-size: 1rem;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.397);
+  }
 }
 
-.heightSlide {
-  animation: heightslide 0.2s ease both;
-}
 
 .hidden {
   visibility: hidden;
-  //   display: none;
 }
 
-@keyframes heightslide {
-  0% {
-    top: 0;
-    opacity: 0;
-  }
-
-  100% {
-    top: 5rem;
-    opacity: 1;
-  }
-}
 
 #faculty {
   padding: 1rem 0 3rem 0;

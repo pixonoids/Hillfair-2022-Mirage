@@ -19,30 +19,25 @@ const Team = () => {
     };
     function useOutsideAlerter(ref) {
         useEffect(() => {
-            function handleClickOutside(event) {
-                if (ref.current && !ref.current.contains(event.target)) {
-                    setisChecked(false);
-                }
+          function handleClickOutside(event) {
+            if (ref.current && !ref.current.contains(event.target)) {
+              setisChecked(false);
             }
-            document.addEventListener("mousedown", handleClickOutside);
-            return () => {
-                document.removeEventListener("mousedown", handleClickOutside);
-            };
+          }
+          document.addEventListener("mousedown", handleClickOutside);
+          return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+          };
         }, [ref]);
-    }
+      }
     const wrapperRef = useRef(null);
     useOutsideAlerter(wrapperRef);
 
     return (
         <div className='team' >
             <div className='team-menu' ref={wrapperRef} >
-                <label onClick={handleCheck} style={{
-                    backgroundImage:
-                        hour >= 6 && hour <= 17
-                            ? "linear-gradient(180deg,#3a1c1b 17.15%,#b5874c 120.7%)"
-                            : "linear-gradient(180deg,#151539 17.15%,#331e66 120.7%)",
-                }}>Category</label>
-                <div className={isChecked ? "team-header heightSlide" : "team-header hidden"} style={{
+                <label onClick={handleCheck}>Category</label>
+                <div className={isChecked ? "team-header" : "team-header hidden"} style={{
                     backgroundImage:
                         hour >= 6 && hour <= 17
                             ? "linear-gradient(180deg,#3a1c1b 17.15%,#b5874c 120.7%)"
@@ -74,10 +69,10 @@ const Team = () => {
                 <div className='team-inner' id='snc'>
                     <h1 className='category-heading'>Secretary & Convener</h1>
                     <div className='club-page'>
-                        {(TeamData[2]).map((card, id) => (
-                            <ClubCards card={card} key={id} />
-                        ))}
-                    </div>
+                    {(TeamData[2]).map((card, id) => (
+                                <ClubCards card={card} key={id} />
+                            ))}
+                </div>
                 </div>
             </div>
 
