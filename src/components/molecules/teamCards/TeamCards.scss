@@ -16,7 +16,7 @@ $boxShadow: black;
   background-color: transparent;
   box-shadow: 0 0 0.3rem 0.1rem $boxShadow;
   &:hover {
-    box-shadow: 0 0 0.4rem 0.2rem $boxShadow;
+    box-shadow: 0 0 0.4rem 0.15rem $boxShadow;
     img {
       scale: 1.03;
     }
@@ -31,12 +31,14 @@ $boxShadow: black;
   img {
     border-radius: 1rem 1rem 0 0;
     width: 100%;
-    height: 100%;
-    max-height: 20rem;
+    height: 90%;
     object-fit: cover;
     transition: all 0.2s;
+    margin-top: -2rem;
+    aspect-ratio: 4/3;
   }
   .card-mask {
+    // display: none;
     border-radius: 0 0 1rem 1rem;
     position: absolute;
     bottom: 0;

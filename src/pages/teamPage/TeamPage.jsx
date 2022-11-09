@@ -1,7 +1,7 @@
 import './TeamPage.scss';
 import TeamData from './TeamData';
 import { useState } from 'react';
-import { ClubCards, TeamCards } from '../../components/molecules';
+import { ClubCards, ClubCardsD, TeamCards } from '../../components/molecules';
 
 import React, { useRef, useEffect } from "react";
 
@@ -67,11 +67,12 @@ const Team = () => {
                     </div>
                 </div>
                 <div className='team-inner' id='snc'>
-                    <h1 className='category-heading'>Secretary & Convener</h1>
+                    <h1 className='category-heading'>Secretaries & Conveners</h1>
                     <div className='club-page'>
                     {(TeamData[2]).map((card, id) => (
                                 <ClubCards card={card} key={id} />
                             ))}
+                    <ClubCardsD card={TeamData[3]} />
                 </div>
                 </div>
             </div>

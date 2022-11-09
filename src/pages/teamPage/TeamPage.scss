@@ -21,9 +21,8 @@
 
   .team-container {
     @include flexCenter(row);
-    width: 95%;
     flex-wrap: wrap;
-    gap: 5rem;
+    gap: 6rem;
     padding-bottom: 2rem;
     
     @media (max-width:558px) {
@@ -40,7 +39,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 8rem;
+  gap: 2rem;
   justify-content: center;
   width: 100%;
   margin: auto;
@@ -105,5 +104,5 @@
 
 #faculty {
   padding: 1rem 0 3rem 0;
-  scroll-margin-top: 3rem;
+  scroll-margin-top: 3.2rem;
 }
