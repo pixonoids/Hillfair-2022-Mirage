@@ -92,7 +92,7 @@ export default function Contact() {
           </Form>
         )}
       </Formik>
-      <a className="download-app" href="app/app-release.apk" target="_blank" download="hillffair-app.apk"><GeneralButton text="Download App" /></a>
+      <a className="download-app" href="https://play.google.com/store/apps/details?id=nith.appteam.hillffair2022_frontend" target="_blank" download="hillffair-app.apk"><GeneralButton text="Download App" /></a>
     </div>
   );
 }
