@@ -1,18 +1,16 @@
 .club-card {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
-    max-width: 42rem;
+    max-width: 41.5rem;
     min-height: 35rem;
-    padding-top:2rem;
+    padding:1rem 0.5rem 2rem 0.5rem;
     border-radius: 1rem;
     box-shadow: inset -2px -2px 8px #000;
-    @media (max-width:639px) {
-        flex-direction: column-reverse;
-        padding: 1.5rem 1rem;
+    @media (max-width:700px) {
+        padding: 1.5rem 0.1rem;
     }
     @media (max-width:360px) {
-        flex-direction: column-reverse;
         padding: 1.5rem 0;
     }
 
@@ -22,9 +20,9 @@
         justify-content: space-around;
         gap: 1rem;
 
-        @media (max-width:639px) {
+        @media (max-width:662px) {
             flex-direction: column-reverse;
-            gap: 2rem;
+            gap: 1rem;
         }
 
         .new-card {
