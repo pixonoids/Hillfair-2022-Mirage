@@ -2,7 +2,7 @@ import React, { Suspense, useEffect, useState } from "react";
 import "./App.scss";
 import { Route, Routes } from "react-router-dom";
 import { Menu } from "./components/organisms/";
-import { Error } from "./components/molecules/";
+import { ClubCards, Error } from "./components/molecules/";
 import { useSelector } from "react-redux";
 import { useMediaQuery } from "react-responsive";
 import MenuBar from "./pages/MenuBar/MenuBar";
@@ -14,12 +14,13 @@ import {
   RegisterPage,
   Events,
   PdfPage,
+  Team,
 } from "./pages";
 
 import AudioButton from "./components/molecules/AudioButton/AudioButton";
 
 // dynamic imports
-const GalleryPage = React.lazy(() => import("./pages/GalleryPage/GalleryPage"));
+const GalleryPage = React.lazy(() => import("./pages/galleryPage/GalleryPage"));
 const About = React.lazy(() => import("./pages/About/About"));
 
 //lazy loading
@@ -84,6 +85,7 @@ export default function App() {
           <Route path="admin" element={<LandingPage />} />
           <Route path="events" element={<Events />} />
           <Route path="download" element={<PdfPage />} />
+          <Route path="club" element={<ClubCards />} />
 
           {/* <Route path="" element={<ErrorPage />} /> */}
         </Routes>

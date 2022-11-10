@@ -1,16 +1,108 @@
 @mixin flexCenter($direction) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: $direction;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
 }
 
-.team-container {
-    background:linear-gradient(#c0ae90, #695430);
+.team {
+  width: 98%;
+  margin: auto;
+}
+
+.team-inner {
+  .category-heading {
+    text-align: center;
+    padding: 6rem 0 3rem 0;
+    font-size: 3em;
+    font-family: fino-sans-regular;
+    color: #cbc3ac;
+  }
+
+  .team-container {
     @include flexCenter(row);
-    gap: 5rem;
     flex-wrap: wrap;
-    height: 100%;
-    padding: 6.5rem 0;
-    min-height: 100vh;
+    gap: 6rem;
+    padding-bottom: 2rem;
+    
+    @media (max-width:558px) {
+      width: 100%;
+    }
+  }
+
+  .our-team {
+    padding: 0 0 3rem 0;
+  }
+}
+
+.club-page {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+
+.team-menu {
+  position: sticky;
+  top: 5.3rem;
+  width: 12rem;
+  z-index: 10;
+  font-family: regular-text;
+  font-size: 1.7em;
+  @media (max-width:600px) {
+    top: 2.3rem;
+  }
+  
+  label {
+    position: absolute;
+    top: -1.5rem;
+    left: 1.5rem;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, .47);
+    border-radius: 3px;
+    padding: 0.2rem 2.83rem;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.397);
+    }
+  }
+
+}
+
+.team-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  translate: 1.5rem 1.3rem;
+  z-index: 3;
+}
+
+.team-header a {
+  border: 1px solid rgba(255, 255, 255, .47);
+  border-radius: 3px;
+  width: 100%;
+  letter-spacing: 0.1rem;
+  height: 3rem;
+  @include flexCenter(row);
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.397);
+  }
+}
+
+
+.hidden {
+  visibility: hidden;
+}
+
+
+#faculty {
+  padding: 1rem 0 3rem 0;
+  scroll-margin-top: 3.2rem;
 }
