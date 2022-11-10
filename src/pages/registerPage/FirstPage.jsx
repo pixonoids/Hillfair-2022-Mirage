@@ -236,7 +236,7 @@ const RegisterPage = function () {
       <div className="query">
         <h3>For Any Queries Contact :</h3>
         <p>Divyam Garg : +918219189292</p>
-        <p>Abhimanyu Singh Jaudaun : +917597022308</p>
+        <p>Abhimanyu Singh Jadaun : +917597022308</p>
       </div>
 
       {category == "audience" && (
