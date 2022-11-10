@@ -22,7 +22,7 @@ const Data = [
         club: "English Club",
         date: "9th November",
         eventStatus: "Finished",
-        moon: <CircleIcon />
+        moon: <Brightness3Icon />
 
     },
     {
@@ -30,7 +30,7 @@ const Data = [
         club: "In4mals",
         date: "13th November",
         eventStatus: "Coming",
-        moon: <Brightness2Icon />
+        moon: <CircleIcon />
 
     },
     {
