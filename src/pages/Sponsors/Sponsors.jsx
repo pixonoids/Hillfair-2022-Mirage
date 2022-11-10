@@ -4,15 +4,14 @@ import "./Sponsors.scss";
 
 const GOLD = [
   { img: "/images/sponsors/sjvn_logo.png" },
-  { img: "/images/pixonoids_logo.png" },
 ];
 const SILVER = [
-  { img: "/images/sponsors/sjvn_logo.png" },
-  { img: "/images/pixonoids_logo.png" },
+  // { img: "/images/sponsors/sjvn_logo.png" },
+  // { img: "/images/pixonoids_logo.png" },
 ];
 const DEFAULT = [
-  { img: "/images/sponsors/sjvn_logo.png" },
-  { img: "/images/pixonoids_logo.png" },
+  // { img: "/images/sponsors/sjvn_logo.png" },
+  // { img: "/images/pixonoids_logo.png" },
 ];
 
 const Sponsors = () => {
@@ -28,9 +27,9 @@ const Sponsors = () => {
       {/* title sponsors */}
       <div className="title-sponsors-container">
         {/* <h1>TITLE SPONSORS</h1>*/}
-        <p>Dayaal brings you Hill'ffair 2k22</p>
+        <p>Dayal brings you Hill'ffair 2k22</p>
         <div className="sponsors-inner-container">
-          <SponsorCard img={'/images/sponsors/sjvn_logo.png'} className="title-sponsors"/>
+          <SponsorCard img={'/images/sponsors/dayal_logo.png'} className="title-sponsors"/>
         </div>
       </div>
 
@@ -45,17 +44,17 @@ const Sponsors = () => {
       </div>  
 
         {/* silver sponsors */}
-      <div className="silver-sponsors-container">
+      {/* <div className="silver-sponsors-container">
         <h1>SILVER SPONSORS</h1>
         <div className="silver-sponsors-inner-container">
         {silverSponsors.map((sponsor) => {
           return <SponsorCard img={sponsor.img} />;
         })}
         </div>
-      </div>
+      </div> */}
 
       {/* sponsors */}
-      <h1>SPONSORS</h1>
+      {/* <h1>SPONSORS</h1> */}
       <div className="sponsors-inner-container">
         {sponsors.map((sponsor) => {
           return <SponsorCard img={sponsor.img} />;
