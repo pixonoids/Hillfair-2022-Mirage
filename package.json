@@ -29,6 +29,7 @@
     "react-router-dom": "^6.4.1",
     "react-scripts": "^3.x",
     "react-tsparticles": "^2.3.3",
+    "react-wavify": "^1.6.3",
     "sass": "^1.55.0",
     "tsparticles": "^2.3.4",
     "yup": "^0.32.11"
