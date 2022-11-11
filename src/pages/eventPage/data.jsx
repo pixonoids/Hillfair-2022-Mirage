@@ -155,191 +155,199 @@ const Data = [
         date: "19th November",
         eventStatus: "Coming",
         moon: <Brightness3Icon />,
-        time: "1:30M-12:00PM"
+        time: "1:30PM-2:30PM"
     },   
     {
-        event: "Treasure Hunt",
-        club: "In4mals",
+        event: "Dramatics Play (Auditorium)",
+        club: "Dramatics Club",
         date: "19th November",
         eventStatus: "Coming",
         moon: <Brightness3Icon />,
-        time: "10:00AM-12:00PM"
+        time: "2:30PM-3:30PM"
     },   
     {
-        event: "Treasure Hunt",
-        club: "In4mals",
+        event: "Dravida Classical",
+        club: "Dravida Club",
         date: "19th November",
         eventStatus: "Coming",
         moon: <Brightness3Icon />,
-        time: "10:00AM-12:00PM"
+        time: "5:00AM-5:07PM"
     },   
     {
-        event: "Treasure Hunt",
-        club: "In4mals",
+        event: "NSS",
+        club: "NSS",
         date: "19th November",
         eventStatus: "Coming",
         moon: <Brightness3Icon />,
-        time: "10:00AM-12:00PM"
+        time: "5:08AM-5:15PM"
     },   
     {
-        event: "Treasure Hunt",
-        club: "In4mals",
+        event: "Karate",
+        club: "Karate",
         date: "19th November",
         eventStatus: "Coming",
         moon: <Brightness3Icon />,
-        time: "10:00AM-12:00PM"
+        time: "5:18PM-5:25PM"
     },   
     {
-        event: "Treasure Hunt",
-        club: "In4mals",
+        event: "Dance",
+        club: "Rhythmeecz",
         date: "19th November",
         eventStatus: "Coming",
         moon: <Brightness3Icon />,
-        time: "10:00AM-12:00PM"
+        time: "5:28PM-5:35PM"
     },   
     {
-        event: "Treasure Hunt",
-        club: "In4mals",
+        event: "Yogic Self",
+        club: "Yogic Self",
         date: "19th November",
         eventStatus: "Coming",
         moon: <Brightness3Icon />,
-        time: "10:00AM-12:00PM"
+        time: "5:38PM-5:45PM"
     },   
     {
-        event: "Treasure Hunt",
-        club: "In4mals",
+        event: "Nati Club Performance",
+        club: "Nati Club",
         date: "19th November",
         eventStatus: "Coming",
         moon: <Brightness3Icon />,
-        time: "10:00AM-12:00PM"
+        time: "5:50PM-6:10PM"
     },   
     {
-        event: "Treasure Hunt",
-        club: "In4mals",
+        event: "FashP Performance 1",
+        club: "FashP",
         date: "19th November",
         eventStatus: "Coming",
         moon: <Brightness3Icon />,
-        time: "10:00AM-12:00PM"
+        time: "6:15PM-6:25PM"
     },   
     {
-        event: "Treasure Hunt",
-        club: "In4mals",
+        event: "MIME",
+        club: "Dramatics",
         date: "19th November",
         eventStatus: "Coming",
         moon: <Brightness3Icon />,
-        time: "10:00AM-12:00PM"
+        time: "6:25PM-6:40PM"
     },   
     {
-        event: "Treasure Hunt",
-        club: "In4mals",
+        event: "English Club Skit",
+        club: "English Club",
         date: "19th November",
         eventStatus: "Coming",
         moon: <Brightness3Icon />,
-        time: "10:00AM-12:00PM"
+        time: "6:45PM-7:00PM"
     },   
     {
-        event: "Treasure Hunt",
-        club: "In4mals",
+        event: "Bhangra Performance 2",
+        club: "Bhangra Club",
         date: "19th November",
         eventStatus: "Coming",
         moon: <Brightness3Icon />,
-        time: "10:00AM-12:00PM"
+        time: "7:05PM-7:17PM"
     },   
     {
-        event: "Treasure Hunt",
-        club: "In4mals",
+        event: "Music Club 1",
+        club: "Music Club",
         date: "19th November",
         eventStatus: "Coming",
         moon: <Brightness3Icon />,
-        time: "10:00AM-12:00PM"
+        time: "7:20PM-8:20PM"
     },   
     {
-        event: "Treasure Hunt",
-        club: "In4mals",
+        event: "Dramatics Skit",
+        club: "Dramatics Club",
         date: "19th November",
         eventStatus: "Coming",
         moon: <Brightness3Icon />,
-        time: "10:00AM-12:00PM"
+        time: "8:25PM-8:40PM"
     },   
     {
-        event: "Treasure Hunt",
-        club: "In4mals",
-        date: "18th November",
+        event: "Comedian",
+        club: "--",
+        date: "19th November",
         eventStatus: "Coming",
         moon: <Brightness3Icon />,
-        time: "10:00AM-12:00PM"
+        time: "8:45M-9:45PM"
     },   
     {
-        event: "Treasure Hunt",
-        club: "In4mals",
-        date: "18th November",
+        event: "Dance Competition",
+        club: "Rhythmeecz",
+        date: "20th November",
         eventStatus: "Coming",
         moon: <Brightness3Icon />,
-        time: "10:00AM-12:00PM"
+        time: "12:00PM-1:00PM"
     },   
     {
-        event: "Treasure Hunt",
-        club: "In4mals",
-        date: "18th November",
+        event: "Dramatics Play",
+        club: "Dramatics",
+        date: "20th November",
         eventStatus: "Coming",
         moon: <Brightness3Icon />,
-        time: "10:00AM-12:00PM"
+        time: "2:00PM-3:00PM"
+    },    
+    {
+        event: "Devotional Dance",
+        club: "Rhythmeecz",
+        date: "20th November",
+        eventStatus: "Coming",
+        moon: <Brightness3Icon />,
+        time: "5:00PM-5:08PM"
     },   
     {
-        event: "Treasure Hunt",
-        club: "In4mals",
-        date: "18th November",
+        event: "Music Club Performance",
+        club: "Music Club",
+        date: "20th November",
         eventStatus: "Coming",
         moon: <Brightness3Icon />,
-        time: "10:00AM-12:00PM"
+        time: "5:15PM-6:10PM"
+    },     
+    {
+        event: "FashP Performance 2",
+        club: "FashP",
+        date: "20th November",
+        eventStatus: "Coming",
+        moon: <Brightness3Icon />,
+        time: "6:15PM-6:30PM"
+    },     
+    {
+        event: "Dravida",
+        club: "Dravida",
+        date: "20th November",
+        eventStatus: "Coming",
+        moon: <Brightness3Icon />,
+        time: "12:00PM-1:00PM"
+    },     
+    {
+        event: "Closing Ceremony and Felicitation",
+        club: "--",
+        date: "20th November",
+        eventStatus: "Coming",
+        moon: <Brightness3Icon />,
+        time: "6:35PM-7:35PM"
+    },    
+    {
+        event: "Nati Club Performance",
+        club: "Nati Club",
+        date: "20th November",
+        eventStatus: "Coming",
+        moon: <Brightness3Icon />,
+        time: "7:50PM-8:00PM"
+    },    
+    {
+        event: "TRAP Band",
+        club: "STAR NIGHT",
+        date: "20th November",
+        eventStatus: "Coming",
+        moon: <Brightness3Icon />,
+        time: "8:05PM-9:05PM"
     },   
     {
-        event: "Treasure Hunt",
-        club: "In4mals",
-        date: "18th November",
+        event: "DJ Zephytrone",
+        club: "STAR NIGHT",
+        date: "20th November",
         eventStatus: "Coming",
         moon: <Brightness3Icon />,
-        time: "10:00AM-12:00PM"
-    },   
-    {
-        event: "Treasure Hunt",
-        club: "In4mals",
-        date: "18th November",
-        eventStatus: "Coming",
-        moon: <Brightness3Icon />,
-        time: "10:00AM-12:00PM"
-    },   
-    {
-        event: "Treasure Hunt",
-        club: "In4mals",
-        date: "18th November",
-        eventStatus: "Coming",
-        moon: <Brightness3Icon />,
-        time: "10:00AM-12:00PM"
-    },   
-    {
-        event: "Treasure Hunt",
-        club: "In4mals",
-        date: "18th November",
-        eventStatus: "Coming",
-        moon: <Brightness3Icon />,
-        time: "10:00AM-12:00PM"
-    },   
-    {
-        event: "Treasure Hunt",
-        club: "In4mals",
-        date: "18th November",
-        eventStatus: "Coming",
-        moon: <Brightness3Icon />,
-        time: "10:00AM-12:00PM"
-    },   
-    {
-        event: "Treasure Hunt",
-        club: "In4mals",
-        date: "18th November",
-        eventStatus: "Coming",
-        moon: <Brightness3Icon />,
-        time: "10:00AM-2:00PM"
+        time: "9:05PM-10:00PM"
     },
 
 ]
