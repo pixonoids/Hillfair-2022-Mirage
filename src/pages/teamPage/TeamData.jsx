@@ -1,25 +1,25 @@
 
 const faculty = [
     {
-        "name": "Adam Mackie",
-        "post": "Faculty",
-        "img": '/images/gallery/Team/Faculty/'
+        "name": "Prof. Hiralal Murlidhar Suryawanshi",
+        "post": "Director",
+        "img": '/images/gallery/Team/Faculty/Hiralal.jpeg'
     },
     {
-        "name": "Emma Watson",
-        "post": "Faculty",
-        "img": '/images/gallery/Team/Faculty/'
+        "name": "Dr. Pardeep Kumar",
+        "post": "Student Welfare",
+        "img": '/images/gallery/Team/Faculty/Pradeep.jpeg'
     },
-    {
-        "name": "David",
-        "post": "Faculty",
-        "img": '/images/gallery/Team/Faculty/'
-    },
-    {
-        "name": "David",
-        "post": "Faculty",
-        "img": '/images/gallery/Team/Faculty/'
-    },
+    // {
+    //     "name": "David",
+    //     "post": "Faculty",
+    //     "img": '/images/gallery/Team/Faculty/'
+    // },
+    // {
+    //     "name": "David",
+    //     "post": "Faculty",
+    //     "img": '/images/gallery/Team/Faculty/'
+    // },
 ]
 
 const coreTeam = [
@@ -46,7 +46,7 @@ const coreTeam = [
     {
         "name": "Deepak Pathania",
         "post": "Treasurer",
-        "img": '/images/gallery/Team/Core/Deepak Pathania.jpg'
+        "img": '/images/gallery/Team/Core/Deepak.jpg'
     },
     {
         "name": "Akshit Choudhary",
@@ -111,7 +111,7 @@ const clubs = [
         {
             "name": "Tarush Kaundal",
             "post": "Secretary",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Tarush Kaundal.jpg',
         },
         {
             "name": "Harshit Sharma",
@@ -152,12 +152,12 @@ const clubs = [
         {
             "name": "Sasidhar Panthagada",
             "post": "Secretary",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Sasidhar Panthagada.jpg',
         },
         {
             "name": "Prateek Thakur",
             "post": "Convenor",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Prateek.jpg',
         },
     ],
     
@@ -166,12 +166,12 @@ const clubs = [
         {
             "name": "Praveen",
             "post": "Secretary",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Praveen.jpg',
         },
         {
             "name": "Sumit",
             "post": "Convenor",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Sumit.jpg',
         },
     ],
     
@@ -181,7 +181,7 @@ const clubs = [
         {
             "name": "Ajay Saini",
             "post": "Secretary",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Ajay Saini.jpg',
         },
         {
             "name": "Rajeev Khan",
@@ -193,14 +193,14 @@ const clubs = [
     [
         {"club": "DND"},
         {
-            "name": "Shubham Bhardwaj	",
+            "name": "Shubham Bhardwaj",
             "post": "Secretary",
             "img": '/images/gallery/Team/SNC/Shubham Bhardawaj.jpg',
         },
         {
             "name": "Royal Sharma",
             "post": "Convenor",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Royal Sharma.jpg',
         },
     ],
     
@@ -209,12 +209,12 @@ const clubs = [
         {
             "name": "Satyam Kumar",
             "post": "Secretary",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Satyam.jpg',
         },
         {
             "name": "Arpita Naval",
             "post": "Convenor",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Arpita Naval.jpg',
         },
     ],
     
@@ -223,12 +223,12 @@ const clubs = [
         {
             "name": "Satish Chauhan",
             "post": "Secretary",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Satish Chauhan.jpg',
         },
         {
             "name": "Divya Kumar Soni",
             "post": "Convenor",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Divya Kumar Soni.jpg',
         },
     ],
     
@@ -237,12 +237,12 @@ const clubs = [
         {
             "name": "Aditya Rana",
             "post": "Secretary",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Aditya Rana.jpg',
         },
         {
             "name": "Devesh Rana",
             "post": "Convenor",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Devesh Rana.jpg',
         },
     ],
     
@@ -251,12 +251,12 @@ const clubs = [
         {
             "name": "Sidharth Chaudhary",
             "post": "Secretary",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Siddharth.jpg',
         },
         {
             "name": "Mohd. Uvesh",
             "post": "Convenor",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Uvesh.jpg',
         },
     ],
     
@@ -265,12 +265,12 @@ const clubs = [
         {
             "name": "Sayyam",
             "post": "Secretary",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Sayyam Chandra.jpg',
         },
         {
             "name": "Tavishi",
             "post": "Convenor",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Tavishi Sharma.jpg',
         },
     ],
     
@@ -279,7 +279,7 @@ const clubs = [
         {
             "name": "Irshad Ali",
             "post": "Secretary",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Irshaad Ali.jpg',
         },
         {
             "name": "Divyansh Rastogi",
@@ -293,12 +293,12 @@ const clubs = [
         {
             "name": "Kunal chandel",
             "post": "Secretary",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Kunal Chandel.jpg',
         },
         {
             "name": "Sharil",
             "post": "Convenor",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Sharil.jpg',
         },
     ],
     
@@ -307,12 +307,12 @@ const clubs = [
         {
             "name": "Himanshu Shalta",
             "post": "Secretary",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Himanshu Shalta.jpg',
         },
         {
             "name": "Anisha Bhupal",
             "post": "Convenor",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Anisha Bhupal.jpg',
         },
     ],
     
@@ -321,12 +321,12 @@ const clubs = [
         {
             "name": "Deepak Kumar",
             "post": "Secretary",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Deepak.jpg',
         },
         {
             "name": "Vaishnavi Sood",
             "post": "Convenor",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Vaishnavi Sood.jpg',
         },
     ],
     
@@ -335,7 +335,7 @@ const clubs = [
         {
             "name": "Aakanksha Chaudhary",
             "post": "Secretary",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Akanksha Chaudhary.jpg',
         },
         {
             "name": "Fiza negi",
@@ -349,12 +349,12 @@ const clubs = [
         {
             "name": "Sarisa Naveen",
             "post": "Secretary",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Sarisa Naveen.jpg',
         },
         {
             "name": "Gudla Praneeth Shiva Sai",
             "post": "Convenor",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Praneeth Ghudla.jpg',
         },
     ],
     
@@ -363,29 +363,15 @@ const clubs = [
         {
             "name": "Prerna",
             "post": "Secretary",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Prerna Kapoor.jpg',
         },
         {
             "name": "Abhay",
             "post": "Convenor",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Abhay Pratap Singh.jpg',
         },
     ],
     
-    
-    [
-        {"club": "English club"},
-        {
-            "name": "Sasidhar Panthagada",
-            "post": "Secretary",
-            "img": '/images/gallery/Team/SNC/.jpg',
-        },
-        {
-            "name": "Prateek Thakur",
-            "post": "Convenor",
-            "img": '/images/gallery/Team/SNC/.jpg',
-        },
-    ],
     
     
 ]
@@ -397,7 +383,7 @@ const TeamData = [ faculty, coreTeam, clubs, [
     {
         "name": "Sourav Kaundal",
         "post": "Convenor",
-        "img": '/images/gallery/Team/SNC/.jpg',
+        "img": '/images/gallery/Team/SNC/Saurav Kaundal.jpg',
     },
     {
         "name": "Vedant Sachdeva",
@@ -407,7 +393,7 @@ const TeamData = [ faculty, coreTeam, clubs, [
     {
         "name": "Mausami Negi",
         "post": "Convenor",
-        "img": '/images/gallery/Team/SNC/.jpg',
+        "img": '/images/gallery/Team/SNC/Mausami Negi.jpg',
     },
     
 ], ]
