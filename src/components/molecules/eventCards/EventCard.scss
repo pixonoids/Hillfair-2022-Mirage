@@ -10,7 +10,7 @@ $borderRadius: 1rem;
   right: -0.8rem;
 }
 @mixin textGradient {
-  background: linear-gradient(90deg, #522828 0%, #503908cd 49%);
+  background: linear-gradient(90deg, #41382b 25%, #20232ccd 49%);
   background-size: 100%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -85,25 +85,36 @@ $borderRadius: 1rem;
   }
   p:nth-child(3) {
     position: absolute;
-    bottom: 2rem;
+    bottom: 1.5rem;
     left: 2rem;
     @include textGradient();
     font-family: fino-sans-regular, sans-serif;
     font-size: 2rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.2rem;
+    font-weight: 800;
   }
   p:nth-child(4) {
     position: absolute;
     right: 0;
-    bottom: 0;
+    top: 0;
     color: black;
-    border-radius: 0.3rem 0 1rem 0;
+    border-radius: 0 1rem 0 1rem;
     width: 5rem;
     height: 2rem;
     background-color: #d2a84bcd;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  p:nth-child(5) {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 2rem;
+    font-size: 1.5rem;
+    @include textGradient();
+    font-family: fino-sans-regular, sans-serif;
+    letter-spacing: 0.2rem;
+    font-weight: 800;
   }
 }
 @media (max-width: 1100px) {
@@ -115,16 +126,30 @@ $borderRadius: 1rem;
       right: -46%;
     }
     h1:nth-child(1) {
+      margin-left: -1rem;
       font-size: 1.5rem;
     }
     h2 {
+      margin-left: -0.7rem;
       font-size: 0.8rem;
     }
     p:nth-child(3) {
-      bottom: 0.5rem;
-      right: 1rem;
+      bottom: 2rem;
+      left: 1rem;
       font-size: 1.5rem;
     }
+    p:nth-child(4) {
+      font-size: 1rem;
+      width: 4rem;
+      height: 1.5rem;
+    }
+    p:nth-child(5) {
+      left: 1rem;
+      bottom: 0.8rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.1rem;
+    }
+
   }
   .eventCard:nth-child(even) {
     .moon svg {
@@ -146,6 +171,20 @@ $borderRadius: 1rem;
     margin: 0.5rem 0;
     width: 70vw;
     height: 12rem;
+    h1:nth-child(1) {
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+    p:nth-child(3) {
+      bottom: 2.5rem;
+      font-size: 1.8rem;
+    }
+    p:nth-child(5) {
+      font-size: 1.3rem;
+    }
   }
 }
 

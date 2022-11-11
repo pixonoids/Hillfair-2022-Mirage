@@ -31,17 +31,17 @@ const coreTeam = [
     {
         "name": "Vaishaliny V",
         "post": "Vice President",
-        "img": '/images/gallery/Team/Core/.jpg'
+        "img": '/images/gallery/Team/Core/Vishalyni V.jpg'
     },
     {
         "name": "Lakshya Sharma",
         "post": "Vice President",
-        "img": '/images/gallery/Team/Core/.jpg'
+        "img": '/images/gallery/Team/Core/Lakshya.jpg'
     },
     {
         "name": "Rajat Sharma",
         "post": "Treasurer",
-        "img": '/images/gallery/Team/Core/.jpg'
+        "img": '/images/gallery/Team/Core/Rajat Sharma.jpg'
     },
     {
         "name": "Deepak Pathania",
@@ -51,12 +51,12 @@ const coreTeam = [
     {
         "name": "Akshit Choudhary",
         "post": "Finance Secretary",
-        "img": '/images/gallery/Team/Core/.jpg'
+        "img": '/images/gallery/Team/Core/Akshit.jpg'
     },
     {
         "name": "Mallela Rahitya Sai",
         "post": "Finance Secretary",
-        "img": '/images/gallery/Team/Core/.jpg'
+        "img": '/images/gallery/Team/Core/Rahitya Mallela Sai.jpg'
     },
     {
         "name": "Mridul Chauhan",
@@ -66,12 +66,12 @@ const coreTeam = [
     {
         "name": "Divyam Garg",
         "post": "Core Secretary(Non-Performing Clubs)",
-        "img": '/images/gallery/Team/Core/Divpam Garg.jpg'
+        "img": '/images/gallery/Team/Core/Divyam Garg.jpg'
     },,
     {
         "name": "Khwab Kalra",
         "post": "Media & Marketing Head",
-        "img": '/images/gallery/Team/Core/.jpg'
+        "img": '/images/gallery/Team/Core/Khwab Kalra.jpg'
     },
     {
         "name": "Harsh Srivastava",
@@ -116,35 +116,20 @@ const clubs = [
         {
             "name": "Harshit Sharma",
             "post": "Convenor",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Harshit.jpg',
         },
     ],
-    
-    [
-        {"club": "Finance Club"},
-        {
-            "name": "",
-            "post": "Secretary",
-            "img": '/images/gallery/Team/SNC/.jpg',
-        },
-        {
-            "name": "",
-            "post": "Convenor",
-            "img": '/images/gallery/Team/SNC/.jpg',
-        },
-    ],
-    
     [
         {"club": "Organisation"},
         {
             "name": "Sarvagya Singh",
             "post": "Secretary",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Sarvagya Singh.jpg',
         },
         {
             "name": "Kamesh Khatri",
             "post": "Convenor",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Kamesh.jpg',
         },
     ],
     
@@ -153,12 +138,12 @@ const clubs = [
         {
             "name": "Dipesh Kumar",
             "post": "Secretary",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Dipesh.jpg',
         },
         {
             "name": "Ankit Kumar Yadav",
             "post": "Convenor",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Ankit.jpg',
         },
     ],
     
