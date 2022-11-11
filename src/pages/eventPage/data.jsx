@@ -16,7 +16,7 @@ const Data = [
         club: "English Club",
         date: "3rd November",
         eventStatus: "Finished",
-        moon: <Brightness2Icon />,
+        moon: <Brightness3Icon />,
         time: "8:00AM-10:00PM"
     },
     {
@@ -318,7 +318,7 @@ const Data = [
         time: "12:00PM-1:00PM"
     },     
     {
-        event: "Closing Ceremony and Felicitation",
+        event: "Closing Ceremony",
         club: "--",
         date: "20th November",
         eventStatus: "Coming",
