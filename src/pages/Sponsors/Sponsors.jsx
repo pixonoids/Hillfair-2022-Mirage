@@ -6,11 +6,10 @@ const GOLD = [
   { img: "/images/sponsors/sjvn_logo.png" },
 ];
 const SILVER = [
-  // { img: "/images/sponsors/sjvn_logo.png" },
-  // { img: "/images/pixonoids_logo.png" },
+  { img: "/images/sponsors/unacademy_logo.png" },
 ];
 const DEFAULT = [
-  // { img: "/images/sponsors/sjvn_logo.png" },
+  { img: "/images/sponsors/vidyapeeth_logo.png" },
   // { img: "/images/pixonoids_logo.png" },
 ];
 
@@ -44,17 +43,17 @@ const Sponsors = () => {
       </div>  
 
         {/* silver sponsors */}
-      {/* <div className="silver-sponsors-container">
+      <div className="silver-sponsors-container">
         <h1>SILVER SPONSORS</h1>
         <div className="silver-sponsors-inner-container">
         {silverSponsors.map((sponsor) => {
           return <SponsorCard img={sponsor.img} />;
         })}
         </div>
-      </div> */}
+      </div>
 
       {/* sponsors */}
-      {/* <h1>SPONSORS</h1> */}
+      <h1>SPONSORS</h1>
       <div className="sponsors-inner-container">
         {sponsors.map((sponsor) => {
           return <SponsorCard img={sponsor.img} />;
