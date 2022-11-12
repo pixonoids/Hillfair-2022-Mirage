@@ -17,6 +17,9 @@ const Team = () => {
     const handleCheck = () => {
         setisChecked(!isChecked);
     };
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     function useOutsideAlerter(ref) {
         useEffect(() => {
           function handleClickOutside(event) {

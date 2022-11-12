@@ -1,12 +1,13 @@
 import './EventPage.scss';
 import Data from './data';
 import EventCard from '../../components/molecules/eventCards/EventCard';
-import AOS from 'aos';       
-import 'aos/dist/aos.css';    
+import { useEffect } from 'react';
 
 
 const Event = () => {
-    
+        useEffect(() => {
+            window.scrollTo(0, 0)
+        }, [])
     return (
         <div className='timelineContainer'>
             <h1>Events</h1>

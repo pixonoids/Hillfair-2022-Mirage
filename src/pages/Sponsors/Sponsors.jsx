@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useState } from "react";
 import SponsorCard from "../../components/molecules/SponsorCard/SponsorCard";
 import "./Sponsors.scss";
@@ -18,7 +19,9 @@ const Sponsors = () => {
   let [goldSponsors, setGoldSponsors] = useState(GOLD);
   let [silverSponsors, setSilverSponsors] = useState(SILVER);
   let [sponsors, setSponsors] = useState(DEFAULT);
- 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className="sponsors-container">
       {/* pharo :: start*/}

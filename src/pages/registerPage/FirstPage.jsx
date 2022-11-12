@@ -13,13 +13,16 @@ import {
 } from "../../components/molecules";
 import validateSchema from "../../services/validation/firstPage";
 import logo from "/images/hillfair-logo-light.png";
+import { useEffect } from "react";
 
 let currentTime = new Date();
 let hour = currentTime.getHours();
 const RegisterPage = function () {
   const [category, setCategory] = useState(null);
   const firstPageValue = useRef({});
-
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const navigate = useNavigate();
   const pdf = (values) => {
     navigate("/download", { state: values });
