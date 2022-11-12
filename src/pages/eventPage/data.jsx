@@ -94,7 +94,7 @@ const Data = [
         time: "5:40PM-5:55PM"
     },   
     {
-        event: "Literacy Mission Performance",
+        event: "Literacy Mission",
         club: "",
         date: "18th November",
         eventStatus: "Coming",
@@ -109,14 +109,14 @@ const Data = [
         moon: <Brightness3Icon />,
         time: "6:13PM-6:20PM"
     },   
-    {
-        event: "Band - HP14",
-        club: "",
-        date: "18th November",
-        eventStatus: "Coming",
-        moon: <Brightness3Icon />,
-        time: "6:45PM-7:45PM"
-    },   
+    // {
+    //     event: "Band - HP14",
+    //     club: "",
+    //     date: "18th November",
+    //     eventStatus: "Coming",
+    //     moon: <Brightness3Icon />,
+    //     time: "6:45PM-7:45PM"
+    // },   
     {
         event: "Bhangra Performance 1",
         club: "Bhangra Club",
@@ -133,14 +133,14 @@ const Data = [
         moon: <Brightness3Icon />,
         time: "8:12PM-8:22PM"
     },   
-    {
-        event: "Artist (DJ Tejas)",
-        club: "",
-        date: "18th November",
-        eventStatus: "Coming",
-        moon: <Brightness3Icon />,
-        time: "8:30PM-10:00PM"
-    },   
+    // {
+    //     event: "Artist (DJ Tejas)",
+    //     club: "",
+    //     date: "18th November",
+    //     eventStatus: "Coming",
+    //     moon: <Brightness3Icon />,
+    //     time: "8:30PM-10:00PM"
+    // },   
     {
         event: "Fashion Show",
         club: "FashP",
@@ -261,14 +261,14 @@ const Data = [
         moon: <Brightness3Icon />,
         time: "8:25PM-8:40PM"
     },   
-    {
-        event: "Comedian",
-        club: "--",
-        date: "19th November",
-        eventStatus: "Coming",
-        moon: <Brightness3Icon />,
-        time: "8:45M-9:45PM"
-    },   
+    // {
+    //     event: "Comedian",
+    //     club: "--",
+    //     date: "19th November",
+    //     eventStatus: "Coming",
+    //     moon: <Brightness3Icon />,
+    //     time: "8:45M-9:45PM"
+    // },   
     {
         event: "Dance Competition",
         club: "Rhythmeecz",
@@ -333,22 +333,22 @@ const Data = [
         moon: <Brightness3Icon />,
         time: "7:50PM-8:00PM"
     },    
-    {
-        event: "TRAP Band",
-        club: "STAR NIGHT",
-        date: "20th November",
-        eventStatus: "Coming",
-        moon: <Brightness3Icon />,
-        time: "8:05PM-9:05PM"
-    },   
-    {
-        event: "DJ Zephytrone",
-        club: "STAR NIGHT",
-        date: "20th November",
-        eventStatus: "Coming",
-        moon: <Brightness3Icon />,
-        time: "9:05PM-10:00PM"
-    },
+    // {
+    //     event: "TRAP Band",
+    //     club: "STAR NIGHT",
+    //     date: "20th November",
+    //     eventStatus: "Coming",
+    //     moon: <Brightness3Icon />,
+    //     time: "8:05PM-9:05PM"
+    // },   
+    // {
+    //     event: "DJ Zephytrone",
+    //     club: "STAR NIGHT",
+    //     date: "20th November",
+    //     eventStatus: "Coming",
+    //     moon: <Brightness3Icon />,
+    //     time: "9:05PM-10:00PM"
+    // },
 
 ]
 export default Data;
