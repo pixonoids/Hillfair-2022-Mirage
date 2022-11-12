@@ -16,7 +16,6 @@ h1{
     }
 
     .sponsors-inner-container{
-        width: 60vw;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -53,7 +52,7 @@ h1{
     padding-top: 4em;
 
     .gold-sponsors-inner-container{
-        width: 60vw;
+
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -92,7 +91,6 @@ h1{
     padding-top: 4em;
 
     .silver-sponsors-inner-container{
-        width: 60vw;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -133,7 +131,6 @@ h1{
     }
 }
 .sponsors-inner-container{
-    width: 60vw;
     background-color: transparent;
     display: flex;
     flex-direction: row;
@@ -202,6 +199,7 @@ h1{
     }
     .sponsor-card{
         scale: 0.7;
+
     }
 }
  

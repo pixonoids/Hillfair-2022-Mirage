@@ -7,19 +7,20 @@ const faculty = [
     },
     {
         "name": "Dr. Pardeep Kumar",
-        "post": "Student Welfare",
+        "post": "Dean (Student Welfare)",
         "img": '/images/gallery/Team/Faculty/Pradeep.jpeg'
     },
-    // {
-    //     "name": "David",
-    //     "post": "Faculty",
-    //     "img": '/images/gallery/Team/Faculty/'
-    // },
-    // {
-    //     "name": "David",
-    //     "post": "Faculty",
-    //     "img": '/images/gallery/Team/Faculty/'
-    // },
+    {
+        "name": "Dr. Ashok Kumar",
+        "post": "Associate Dean - Student Activities",
+        "img": '/images/gallery/Team/Faculty/Ashok.jpg'
+    },
+    {
+        "name": "Dr. Sandeep Sharma	",
+        "post": "Faculty Incharge",
+        "img": '/images/gallery/Team/Faculty/Sandeep.jpg'
+    },
+    
 ]
 
 const coreTeam = [
