@@ -1,5 +1,5 @@
-$eventsCoveredCount:3;
-$eventCovered: calc($eventsCoveredCount * 2.2% + 2.3%);
+$eventsCoveredCount:4;
+$eventCovered: calc($eventsCoveredCount * 2.2% + 2.9%);
 @mixin flexCenter {
     display: flex;
     justify-content: center;

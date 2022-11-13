@@ -31,17 +31,16 @@ const Data = [
         event: "Campus Star",
         club: "In4mals",
         date: "13th November",
-        eventStatus: "Coming",
-        moon: <CircleIcon />,
+        eventStatus: "Finished",
+        moon: <Brightness3Icon />,
         time: "8:00AM-10:00PM"
-        
     },
     {
         event: "Open Mic",
         club: "Team Public Relations",
         date: "15th November ",
         eventStatus: "Coming",
-        moon: <Brightness3Icon />,
+        moon: <CircleIcon />,
         time: "8:00AM-10:00PM"
     },
     {

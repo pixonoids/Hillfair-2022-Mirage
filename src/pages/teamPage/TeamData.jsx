@@ -80,15 +80,16 @@ const coreTeam = [
         "img": '/images/gallery/Team/Core/Harsh Srivastava.jpg'
     },
     {
-        "name": "Yamini Sharma",
-        "post": "Event Secretary",
-        "img": '/images/gallery/Team/Core/Yamini Sharma.jpg'
-    },
-    {
         "name": "Anvi Kapoor",
         "post": "Event Secretary",
         "img": '/images/gallery/Team/Core/Anvi Kapoor.jpg'
     },
+    {
+        "name": "Yamini Sharma",
+        "post": "Event Secretary",
+        "img": '/images/gallery/Team/Core/Yamini Sharma.jpg'
+    },
+
 ]
 
 const clubs = [
@@ -187,7 +188,7 @@ const clubs = [
         {
             "name": "Rajeev Khan",
             "post": "Convenor",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/gallery/Team/SNC/Rajeev Khan.jpg',
         },
     ],
     
@@ -285,7 +286,7 @@ const clubs = [
         {
             "name": "Divyansh Rastogi",
             "post": "Convenor",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/hillfair-logo-dark.png',
         },
     ],
     
@@ -341,7 +342,7 @@ const clubs = [
         {
             "name": "Fiza negi",
             "post": "Convenor",
-            "img": '/images/gallery/Team/SNC/.jpg',
+            "img": '/images/hillfair-logo-dark.png',
         },
     ],
 
