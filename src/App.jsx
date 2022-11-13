@@ -18,6 +18,7 @@ import {
 } from "./pages";
 
 import AudioButton from "./components/molecules/AudioButton/AudioButton";
+import { Loader } from "./components/atoms";
 
 // dynamic imports
 const GalleryPage = React.lazy(() => import("./pages/galleryPage/GalleryPage"));
@@ -65,7 +66,7 @@ export default function App() {
           <Route
             path="about"
             element={
-              <Suspense fallback={<LandingPage/>}>
+              <Suspense fallback={<Loader/>}>
                 <About />
               </Suspense>
             }
@@ -73,7 +74,7 @@ export default function App() {
           <Route
             path="gallery"
             element={
-              <Suspense fallback={<LandingPage />}>
+              <Suspense fallback={<Loader />}>
                 <GalleryPage />
               </Suspense>
             }

@@ -10,7 +10,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="menu">
+      <div className="menu" onClick={menuToggelHandler}>
         <div
           className={menuState ? "expand" : "nav"}
           style={{
@@ -26,11 +26,10 @@ const Navbar = () => {
               className={menuState ? "slide" : "logo"}
               src="images/hillfair-logo-light.png"
               alt="hillfair-logo"
-              onClick={menuToggelHandler}
             ></img>
           </div>
           {menuState && (
-            <div onClick={menuToggelHandler}>
+            <div >
               <div className="list">
                 <div className="menu-list">
                   <Link key="/aboutus" to="/">

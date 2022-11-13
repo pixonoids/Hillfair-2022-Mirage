@@ -286,7 +286,7 @@ const clubs = [
         {
             "name": "Divyansh Rastogi",
             "post": "Convenor",
-            "img": '/images/hillfair-logo-dark.png',
+            "img": '/images/hillfair-logo-light.png',
         },
     ],
     
@@ -342,7 +342,7 @@ const clubs = [
         {
             "name": "Fiza negi",
             "post": "Convenor",
-            "img": '/images/hillfair-logo-dark.png',
+            "img": '/images/hillfair-logo-light.png',
         },
     ],
 
