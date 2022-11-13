@@ -7,15 +7,7 @@ import { useSelector } from "react-redux";
 import { useMediaQuery } from "react-responsive";
 import MenuBar from "./pages/MenuBar/MenuBar";
 
-import {
-  LandingPage,
-  Home,
-  Sponsors,
-  RegisterPage,
-  Events,
-  PdfPage,
-  Team,
-} from "./pages";
+import { LandingPage, Home, RegisterPage, PdfPage } from "./pages";
 
 import AudioButton from "./components/molecules/AudioButton/AudioButton";
 import { Loader } from "./components/atoms";
@@ -23,6 +15,9 @@ import { Loader } from "./components/atoms";
 // dynamic imports
 const GalleryPage = React.lazy(() => import("./pages/galleryPage/GalleryPage"));
 const About = React.lazy(() => import("./pages/About/About"));
+const Team = React.lazy(() => import("./pages/teamPage/TeamPage"));
+const Sponsors = React.lazy(() => import("./pages/Sponsors/Sponsors"));
+const Events = React.lazy(() => import("./pages/eventPage/EventPage"));
 
 //lazy loading
 
@@ -66,7 +61,7 @@ export default function App() {
           <Route
             path="about"
             element={
-              <Suspense fallback={<Loader/>}>
+              <Suspense fallback={<Loader />}>
                 <About />
               </Suspense>
             }
@@ -79,12 +74,33 @@ export default function App() {
               </Suspense>
             }
           />
-          <Route path="sponsors" element={<Sponsors />} />
-          <Route path="team" element={<Team />} />
+          <Route
+            path="sponsors"
+            element={
+              <Suspense fallback={<Loader />}>
+                <Sponsors />
+              </Suspense>
+            }
+          />
+          <Route
+            path="team"
+            element={
+              <Suspense fallback={<Loader />}>
+                <Team />
+              </Suspense>
+            }
+          />
           <Route path="register" element={<RegisterPage />} />
           <Route path="Footer" element={<LandingPage />} />
           <Route path="admin" element={<LandingPage />} />
-          <Route path="events" element={<Events />} />
+          <Route
+            path="events"
+            element={
+              <Suspense fallback={<Loader />}>
+                <Events />
+              </Suspense>
+            }
+          />
           <Route path="download" element={<PdfPage />} />
           <Route path="club" element={<ClubCards />} />
 
