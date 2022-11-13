@@ -14,7 +14,9 @@ import { useEffect } from "react";
 
 export default function Home() {
   const [Loading, setLoading] = useState(false);
-
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   useEffect(() => {
     const onPageLoad = () => {
       setLoading(true);

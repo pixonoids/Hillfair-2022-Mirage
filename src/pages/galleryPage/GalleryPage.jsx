@@ -8,6 +8,9 @@ const GalleryPage = () => {
   const isPhone = useMediaQuery({
     query: "(max-width: 600px)",
   });
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   const [Model, setModel] = useState(false);
   const [TempImgSrc, setTempImgSrc] = useState("");
