@@ -48,13 +48,13 @@ const RegisterSponsors = ({ previousvalue }) => {
 
             <div className="fieldWrapper">
               <label>Company:</label>
-              <Field autoComplete="off" type="text" name="company" />
+              <Field autoComplete="off" type="text" name="company" placeholder="xyz"/>
               <ErrorMessage component="div" name="company" className='invalid-feedback' />
             </div>
 
             <div className="fieldWrapper">
               <label>GST No.</label>
-              <Field autoComplete="off" type="text" name="gst" />
+              <Field autoComplete="off" type="text" name="gst" placeholder="29AAACC1206D2ZB"  />
               <ErrorMessage component="div" name="gst" className='invalid-feedback' />
             </div>
             <GeneralButton text="Submit" />

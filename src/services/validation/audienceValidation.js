@@ -1,12 +1,21 @@
 import * as yup from 'yup';
+import checkUID from '../../utils/aadhaarValidationAlgorithm'
 
+yup.addMethod(yup.string, "aadhaarValidate", function (errorMessage) {
+    return this.test(`aadhaar`, errorMessage, function (value) {
+      const { path, createError } = this;
 
+      return (
+        checkUID(value)||
+        createError({ path, message: errorMessage })
+      );
+    });
+  });
 
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
-const Numregex = /^(0*[1-9][0-9]*(\.[0-9]*)?|0*\.[0-9]*[1-9][0-9]*)$/
 const audienceValidation = yup.object().shape({
   emergency: yup.string().matches(phoneRegExp, 'Phone number is not valid').min(10, "too short").max(12, "too long").required('Required'),
-    aadhaar: yup.string().matches(phoneRegExp, 'must be 12 digit number').required('Required').max(12, 'Must be 12 number').min(12, 'Must be 12 number '),
+    aadhaar: yup.string().aadhaarValidate('Aadhaar is not valid').required('Required'),
 });
 
 
