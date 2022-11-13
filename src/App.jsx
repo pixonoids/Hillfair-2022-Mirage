@@ -43,7 +43,6 @@ export default function App() {
   //RENDER
   return (
     <div>
-      {/* {navVisible && <MenuBar/>} */}
       {navVisible && (isPhone ? <MenuBar /> : <Menu />)}
       <div
         style={{
@@ -53,8 +52,6 @@ export default function App() {
               : "linear-gradient(180deg,#151539 17.15%,#331e66 120.7%)",
         }}
       >
-        {/* {navVisible && <Menu />} */}
-
         <Routes>
           <Route path="*" element={<Error />} />
           <Route path="/" element={<Home />} />
@@ -103,8 +100,6 @@ export default function App() {
           />
           <Route path="download" element={<PdfPage />} />
           <Route path="club" element={<ClubCards />} />
-
-          {/* <Route path="" element={<ErrorPage />} /> */}
         </Routes>
         <AudioButton />
       </div>
