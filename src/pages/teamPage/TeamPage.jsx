@@ -72,7 +72,7 @@ const Team = () => {
           </div>
         </div>
         <div className="team-inner" id="core-team">
-          <h1 className="category-heading">Core Team No</h1>
+          <h1 className="category-heading">Core Team</h1>
           <div className="team-container">
             {TeamData[1].map((card, id) => (
               <TeamCards card={card} key={id} />
