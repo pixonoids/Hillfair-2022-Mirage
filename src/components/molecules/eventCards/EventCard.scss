@@ -222,13 +222,13 @@ $borderRadius: 1rem;
     opacity: 0.8;
   }
   100% {
-    width: 50%;
+    width: 70%;
     opacity: 1;
   }
 }
 @keyframes imageHide {
   0% {
-    width: 50%;
+    width: 70%;
   }
   100% {
     width: 10%;
