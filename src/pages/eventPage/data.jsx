@@ -28,7 +28,7 @@ const Data = [
         eventStatus: "Finished",
         moon: <Brightness3Icon />,
         time: "8:00AM-10:00PM",
-        image: '/images/eventPoster/rhythm.jpeg',
+        image: '/images/eventPoster/symphonies.jpeg',
     },
     {
         event: "Campus Star",
