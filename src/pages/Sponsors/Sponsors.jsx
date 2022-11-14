@@ -10,7 +10,10 @@ const SILVER = [
 ];
 const DEFAULT = [
   { img: "/images/sponsors/vidyapeeth_logo.png" },
-  // { img: "/images/pixonoids_logo.png" }, 
+  { img: "/images/sponsors/chanakya_academy_logo.png" },
+  { img: "/images/sponsors/komak_logo.png" },
+  { img: "/images/sponsors/magnet_public_logo.png" },
+  { img: "/images/sponsors/him_academy_logo.png" },
 ];
 
 const Sponsors = () => {
