@@ -9,7 +9,8 @@ const Data = [
         date: "31st October",
         eventStatus: "Finished",
         moon: <Brightness3Icon />,
-        time: "8:00AM-10:00PM"
+        time: "8:00AM-10:00PM",
+        image: '/images/eventPoster/halloween.jpeg',
     },
     {
         event: "Bazzinga",
@@ -17,7 +18,8 @@ const Data = [
         date: "3rd November",
         eventStatus: "Finished",
         moon: <Brightness3Icon />,
-        time: "8:00AM-10:00PM"
+        time: "8:00AM-10:00PM",
+        image: '/images/eventPoster/bazzinga.jpeg',
     },
     {
         event: "Rhythm and Rhymes",
@@ -25,7 +27,8 @@ const Data = [
         date: "9th November",
         eventStatus: "Finished",
         moon: <Brightness3Icon />,
-        time: "8:00AM-10:00PM"
+        time: "8:00AM-10:00PM",
+        // image: '/images/eventPoster/halloween.jpeg',
     },
     {
         event: "Campus Star",
@@ -33,7 +36,8 @@ const Data = [
         date: "13th November",
         eventStatus: "Finished",
         moon: <Brightness3Icon />,
-        time: "8:00AM-10:00PM"
+        time: "8:00AM-10:00PM",
+        image: '/images/eventPoster/campusStar.jpeg',
     },
     {
         event: "Open Mic",
@@ -41,7 +45,8 @@ const Data = [
         date: "15th November ",
         eventStatus: "Coming",
         moon: <CircleIcon />,
-        time: "8:00AM-10:00PM"
+        time: "8:00AM-10:00PM",
+        // image: '/images/eventPoster/halloween.jpeg',
     },
     {
         event: "Treasure Hunt",
