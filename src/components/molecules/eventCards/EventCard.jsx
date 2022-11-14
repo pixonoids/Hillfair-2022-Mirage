@@ -22,6 +22,7 @@ const EventCard = ({ data, anim }) => {
                 <p>{data.date}</p>
                 <p>{data.eventStatus}</p>
                 <p>{data.time}</p>
+                <img src={data.image}></img>
             </div>
             <span className='moon'>{data.moon}</span>
         </div>
