@@ -43,9 +43,9 @@ const Data = [
         event: "Tryst With Autumn",
         club: "Team Public Relations",
         date: "15th November ",
-        eventStatus: "Coming",
-        moon: <CircleIcon />,
+        eventStatus: "Finished",
         time: "8:00AM-10:00PM",
+        moon: <CircleIcon />,
         image: '/images/eventPoster/openMic.jpg',
     },
     // {
@@ -53,8 +53,9 @@ const Data = [
     //     club: "In4mals",
     //     date: "18th November",
     //     eventStatus: "Coming",
-    //     moon: <Brightness3Icon />,
-    //     time: "10:00AM-12:00PM"
+    //     moon: <CircleIcon />,
+    //     time: "10:00AM-12:00PM",
+    //     image: '/images/eventPoster/openMic.jpg',
     // },
     // {
     //     event: "Battle of Bands",

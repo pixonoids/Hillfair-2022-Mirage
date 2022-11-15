@@ -96,13 +96,12 @@ $borderRadius: 1rem;
   p:nth-child(5) {
     position: absolute;
     bottom: 1rem;
-    right: 2rem;
+    right: 3rem;
     font-size: 1.5rem;
     @include textGradient();
     font-family: fino-sans-regular, sans-serif;
     letter-spacing: 0.2rem;
     font-weight: 800;
-    z-index: 1;
     pointer-events: none;
     text-shadow:-1px -1px 0 #e2dcfd, 2px 2px 0 #6c3e2b;
   }
@@ -112,7 +111,7 @@ $borderRadius: 1rem;
     right: 0;
     height: 100%;
     object-fit:cover;
-    width: 10%;
+    width: 8%;
     z-index: 0;
     opacity: 0.8;
     border-radius: 0 1rem 1rem 0;
@@ -217,7 +216,7 @@ $borderRadius: 1rem;
 }
 @keyframes imageShow {
   0% {
-    width: 10%;
+    width: 8%;
     opacity: 0.8;
   }
   100% {
@@ -230,6 +229,6 @@ $borderRadius: 1rem;
     width: 100%;
   }
   100% {
-    width: 10%;
+    width: 8%;
   }
 }
