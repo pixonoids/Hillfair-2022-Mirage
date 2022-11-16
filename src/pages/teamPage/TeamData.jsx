@@ -383,14 +383,14 @@ const clubs = [
 const TeamData = [ faculty, coreTeam, clubs, [
     {"club": "Discipline Club"},
     {
-        "name": "Sourav Kaundal",
-        "post": "Convenor",
-        "img": '/images/gallery/Team/SNC/Saurav Kaundal.jpg',
-    },
-    {
         "name": "Vedant Sachdeva",
         "post": "Secretary",
         "img": '/images/gallery/Team/SNC/Vedant Sachdeva.jpg',
+    },
+    {
+        "name": "Sourav Kaundal",
+        "post": "Convenor",
+        "img": '/images/gallery/Team/SNC/Saurav Kaundal.jpg',
     },
     {
         "name": "Mausami Negi",
