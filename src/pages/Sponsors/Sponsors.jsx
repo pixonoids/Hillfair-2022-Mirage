@@ -5,6 +5,7 @@ import "./Sponsors.scss";
 
 const GOLD = [
   { img: "/images/sponsors/sjvn_logo.png" },
+  { img: "/images/sponsors/SBI_logo.png" },
 ];
 const SILVER = [
   { img: "/images/sponsors/unacademy_logo.png" },

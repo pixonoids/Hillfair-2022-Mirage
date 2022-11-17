@@ -286,7 +286,7 @@ const clubs = [
         {
             "name": "Divyansh Rastogi",
             "post": "Convenor",
-            "img": '/images/hillfair-logo-light.png',
+            "img": '/images/gallery/Team/SNC/Divyansh Rastogi.jpg',
         },
     ],
     
@@ -342,7 +342,7 @@ const clubs = [
         {
             "name": "Fiza negi",
             "post": "Convenor",
-            "img": '/images/hillfair-logo-light.png',
+            "img": '/images/gallery/Team/SNC/Fiza Negi.jpg',
         },
     ],
 
@@ -383,14 +383,14 @@ const clubs = [
 const TeamData = [ faculty, coreTeam, clubs, [
     {"club": "Discipline Club"},
     {
-        "name": "Sourav Kaundal",
-        "post": "Convenor",
-        "img": '/images/gallery/Team/SNC/Saurav Kaundal.jpg',
-    },
-    {
         "name": "Vedant Sachdeva",
         "post": "Secretary",
         "img": '/images/gallery/Team/SNC/Vedant Sachdeva.jpg',
+    },
+    {
+        "name": "Sourav Kaundal",
+        "post": "Convenor",
+        "img": '/images/gallery/Team/SNC/Saurav Kaundal.jpg',
     },
     {
         "name": "Mausami Negi",
