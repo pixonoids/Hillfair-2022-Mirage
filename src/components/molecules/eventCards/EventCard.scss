@@ -244,10 +244,9 @@ $borderRadius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(5px);
     transition: opacity .4s ease, visibility .4s ease, transform .5s ease-in-out; 
-    // visibility: hidden;
-    // display: none;
+    visibility: hidden;
     opacity: 0;
     transform: scale(0);
     overflow: hidden;
@@ -256,8 +255,7 @@ $borderRadius: 1rem;
   }
   
   .modelE.open {
-    // visibility: visible;
-    display:block;
+    visibility: visible;
     opacity: 1;
     transform: scale(1);
   }
