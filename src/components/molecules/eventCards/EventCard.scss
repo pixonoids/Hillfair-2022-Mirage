@@ -115,12 +115,13 @@ $borderRadius: 1rem;
     z-index: 0;
     opacity: 0.8;
     border-radius: 0 1rem 1rem 0;
-    &:hover {
-      animation: imageShow 0.2s ease-out both;
-    }
-    &:not(:hover) {
-      animation: imageHide 0.2s ease-out both;
-    }
+    cursor: pointer;
+    // &:hover {
+    //   animation: imageShow 0.2s ease-out both;
+    // }
+    // &:not(:hover) {
+    //   animation: imageHide 0.2s ease-out both;
+    // }
   }
 }
 @media (max-width:1520px) {
@@ -214,21 +215,80 @@ $borderRadius: 1rem;
     box-shadow: none;
   }
 }
-@keyframes imageShow {
-  0% {
-    width: 8%;
-    opacity: 0.8;
-  }
-  100% {
+// @keyframes imageShow {
+//   0% {
+//     width: 8%;
+//     opacity: 0.8;
+//   }
+//   100% {
+//     width: 100%;
+//     opacity: 1;
+//   }
+// }
+// @keyframes imageHide {
+//   0% {
+//     width: 100%;
+//   }
+//   100% {
+//     width: 8%;
+//   }
+// }
+
+
+.modelE {
     width: 100%;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(30px);
+    transition: opacity .4s ease, visibility .4s ease, transform .5s ease-in-out; 
+    // visibility: hidden;
+    // display: none;
+    opacity: 0;
+    transform: scale(0);
+    overflow: hidden;
+    z-index: 999;
+    transform-origin: bottom;
+  }
+  
+  .modelE.open {
+    // visibility: visible;
+    display:block;
     opacity: 1;
+    transform: scale(1);
   }
-}
-@keyframes imageHide {
-  0% {
-    width: 100%;
+  .modelE img {
+    width: calc(10rem + 30vw);
+    max-width: 100%;
+    max-height: 99vh;
+    height: auto;
+    display: block;
+    line-height: 0;
+    padding: 20px 0 20px;
+    margin: auto;
+    z-index: 1;
+    transition: scale 0.5s;
+    &:hover {
+      scale: 1.1;
+    }
+    @media (max-width:600px) {
+      width: 100vw;
+    }
   }
-  100% {
-    width: 8%;
+  
+  .modelE.open svg {
+    position: fixed;
+    top: 10px;
+    right:10px;
+    width: 3rem;
+    height: 3rem;
+    color: white;
+    cursor:pointer;
+    z-index: 2;
+  
   }
-}
+  
