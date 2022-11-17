@@ -96,7 +96,7 @@ $borderRadius: 1rem;
   p:nth-child(5) {
     position: absolute;
     bottom: 1rem;
-    right: 3rem;
+    right: 2rem;
     font-size: 1.5rem;
     @include textGradient();
     font-family: fino-sans-regular, sans-serif;
@@ -111,7 +111,7 @@ $borderRadius: 1rem;
     right: 0;
     height: 100%;
     object-fit:cover;
-    width: 8%;
+    width: 7%;
     z-index: 0;
     opacity: 0.8;
     border-radius: 0 1rem 1rem 0;
@@ -215,25 +215,6 @@ $borderRadius: 1rem;
     box-shadow: none;
   }
 }
-// @keyframes imageShow {
-//   0% {
-//     width: 8%;
-//     opacity: 0.8;
-//   }
-//   100% {
-//     width: 100%;
-//     opacity: 1;
-//   }
-// }
-// @keyframes imageHide {
-//   0% {
-//     width: 100%;
-//   }
-//   100% {
-//     width: 8%;
-//   }
-// }
-
 
 .modelE {
     width: 100%;
@@ -260,10 +241,10 @@ $borderRadius: 1rem;
     transform: scale(1);
   }
   .modelE img {
-    width: calc(10rem + 30vw);
+    width:calc(10rem + 20vw);
     max-width: 100%;
-    max-height: 99vh;
     height: auto;
+    max-height: 100vh;
     display: block;
     line-height: 0;
     padding: 20px 0 20px;
