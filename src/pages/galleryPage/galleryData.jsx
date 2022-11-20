@@ -140,6 +140,33 @@ const galleryData = [
     {
         src1: '/images/gallery/gallery_Image/_MG_4657.jpg'
     },
+    {
+        src1: '/images/gallery/gallery_Image/DSC_0472 (2).jpg'
+    },
+    {
+        src2: '/images/gallery/gallery_Image/DSC_0378.jpg'
+    },
+    {
+        src3: '/images/gallery/gallery_Image/DSC_0375.jpg'
+    },
+    {
+        src4: '/images/gallery/gallery_Image/DSC_0374.jpg'
+    },
+    {
+        src1: '/images/gallery/gallery_Image/DSC_0341.jpg'
+    },
+    {
+        src1: '/images/gallery/gallery_Image/DSC_0223.jpg'
+    },
+    {
+        src2: '/images/gallery/gallery_Image/DSC_0198.jpg'
+    },
+    {
+        src3: '/images/gallery/gallery_Image/DSC_0059.jpg'
+    },
+    {
+        src4: '/images/gallery/gallery_Image/DSC_0005.jpg'
+    },
    
 ]
 export default galleryData;
