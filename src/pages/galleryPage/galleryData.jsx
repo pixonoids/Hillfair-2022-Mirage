@@ -100,6 +100,73 @@ const galleryData = [
     },
     {
         src4: '/images/gallery/gallery_Image/g7.jpg'
-    }
+    },
+    {
+        src1: '/images/gallery/gallery_Image/_DSC0004.jpg'
+    },
+    {
+        src2: '/images/gallery/gallery_Image/_DSC0008.jpg'
+    },
+    {
+        src3: '/images/gallery/gallery_Image/_DSC0041.jpg'
+    },
+    {
+        src4: '/images/gallery/gallery_Image/_DSC0046.jpg'
+    },
+    {
+        src1: '/images/gallery/gallery_Image/_DSC000469.jpg'
+    },
+    {
+        src2: '/images/gallery/gallery_Image/_DSC0067.jpg'
+    },
+    {
+        src3: '/images/gallery/gallery_Image/_DSC0065.jpg'
+    },
+    {
+        src4: '/images/gallery/gallery_Image/_DSC0071.jpg'
+    },
+    {
+        src1: '/images/gallery/gallery_Image/_DSC0074.jpg'
+    },
+    {
+        src2: '/images/gallery/gallery_Image/_MG_4521.jpg'
+    },
+    {
+        src3: '/images/gallery/gallery_Image/_MG_4589.jpg'
+    },
+    {
+        src4: '/images/gallery/gallery_Image/_MG_4650.jpg'
+    },
+    {
+        src1: '/images/gallery/gallery_Image/_MG_4657.jpg'
+    },
+    {
+        src1: '/images/gallery/gallery_Image/DSC_0472 (2).jpg'
+    },
+    {
+        src2: '/images/gallery/gallery_Image/DSC_0378.jpg'
+    },
+    {
+        src3: '/images/gallery/gallery_Image/DSC_0375.jpg'
+    },
+    {
+        src4: '/images/gallery/gallery_Image/DSC_0374.jpg'
+    },
+    {
+        src1: '/images/gallery/gallery_Image/DSC_0341.jpg'
+    },
+    {
+        src1: '/images/gallery/gallery_Image/DSC_0223.jpg'
+    },
+    {
+        src2: '/images/gallery/gallery_Image/DSC_0198.jpg'
+    },
+    {
+        src3: '/images/gallery/gallery_Image/DSC_0059.jpg'
+    },
+    {
+        src4: '/images/gallery/gallery_Image/DSC_0005.jpg'
+    },
+   
 ]
 export default galleryData;
