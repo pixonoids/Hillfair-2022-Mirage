@@ -1,4 +1,4 @@
-# Hillfair-2k22
+# Hillfair-2k23
 
 Hill'ffair is the annual cultural festival of the National Institute of Technology Hamirpur. It is a three-day event that celebrates India's culture and heritage. The festival features a variety of events, including dance, music, drama, and competitions. It is a fun-filled event that brings out the non-technical creativity in students.
 
